@@ -3,6 +3,7 @@ import re, difflib
 
 OUT=Path('outputs/uni_tehran/review/md')
 REF=Path('متن ها/uni_tehran/md')
+REVIEW=Path('متن ها/uni_tehran/review/md')
 REPORT=Path('reports/uni_tehran_source_audit.md')
 
 BAD_PATTERNS=[
@@ -31,32 +32,32 @@ def headings(s): return re.findall(r'^\*\*([^*\n]+)\*\*\s*$',s,flags=re.M)
 def consecutive_dup_heads(s):
     hs=headings(s); return sum(a==b for a,b in zip(hs,hs[1:]))
 
-def matcher(a,b): return difflib.SequenceMatcher(None,words(a),words(b),autojunk=True)
+def similarity(a,b): return difflib.SequenceMatcher(None,words(a),words(b),autojunk=True).ratio()
 
-def similarity(a,b): return matcher(a,b).ratio()
-
-def ref_heavy_spans(o,r):
+def ref_positive_spans(o,r,min_delta=8):
     ow,rw=words(o),words(r)
     sm=difflib.SequenceMatcher(None,ow,rw,autojunk=True)
     spans=[]
     for tag,i1,i2,j1,j2 in sm.get_opcodes():
-        olen=i2-i1; rlen=j2-j1
-        if (tag=='insert' and rlen>=18) or (tag=='replace' and rlen-olen>=18):
-            spans.append((rlen-olen,tag,' '.join(ow[max(0,i1-18):min(len(ow),i2+18)]),' '.join(rw[max(0,j1-18):min(len(rw),j2+18)])))
+        olen=i2-i1; rlen=j2-j1; delta=rlen-olen
+        if (tag=='insert' and rlen>=min_delta) or (tag=='replace' and delta>=min_delta):
+            spans.append((delta,tag,' '.join(ow[max(0,i1-14):min(len(ow),i2+14)]),' '.join(rw[max(0,j1-14):min(len(rw),j2+14)])))
     spans.sort(reverse=True,key=lambda x:x[0])
-    return spans[:5]
+    return spans
 
-outs=numbered(OUT); refs=numbered(REF)
+outs=numbered(OUT); refs=numbered(REF); reviews=numbered(REVIEW)
 allnums=sorted(set(outs)|set(refs))
+mirror_equal=sum(1 for n in outs if n in reviews and outs[n].read_bytes()==reviews[n].read_bytes())
 lines=['# ممیزی منابع دانشگاه تهران','',
 'هدف: تعیین هم‌ترازی دو منبع، کیفیت نسبی ASR، و تشخیص اینکه کدام نسخه باید متن مادر باشد.','',
 '## ساختار','',
 f'- فایل‌های شماره‌دار Output: **{len(outs)}** — {min(outs) if outs else "-"} تا {max(outs) if outs else "-"}',
-f'- فایل‌های شماره‌دار متن‌ها: **{len(refs)}** — {min(refs) if refs else "-"} تا {max(refs) if refs else "-"}',
+f'- فایل‌های شماره‌دار متن خام: **{len(refs)}** — {min(refs) if refs else "-"} تا {max(refs) if refs else "-"}',
+f'- فایل‌های mirror در `متن ها/uni_tehran/review/md`: **{len(reviews)}**؛ برابر byte-for-byte با Output: **{mirror_equal}/{len(outs)}**',
 f'- فقط در Output: `{sorted(set(outs)-set(refs))}`',
-f'- فقط در متن‌ها: `{sorted(set(refs)-set(outs))}`','',
+f'- فقط در متن خام: `{sorted(set(refs)-set(outs))}`','',
 '## مقایسه قسمت‌به‌قسمت','',
-'| قسمت | کلمات Output | کلمات متن‌ها | نسبت O/R | شباهت توکنی | نامفهوم O/R | الگوی ASR بد O/R | تکرار پیاپی گوینده O/R |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
+'| قسمت | کلمات Output | کلمات متن خام | نسبت O/R | شباهت توکنی | نامفهوم O/R | الگوی ASR بد O/R | تکرار پیاپی گوینده O/R | کاندید ref-only ≥8 |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
 
 susp=[]; heavy={}
 for n in allnums:
@@ -65,8 +66,8 @@ for n in allnums:
     ow,rw=len(words(o)),len(words(r))
     op=[p for p in BAD_PATTERNS if p in o]
     rp=[p for p in BAD_PATTERNS if p in r]
-    lines.append(f'| {n} | {ow} | {rw} | {ow/rw:.2f} | {similarity(o,r):.3f} | {o.count("[نامفهوم]")}/{r.count("[نامفهوم]")} | {len(op)}/{len(rp)} | {consecutive_dup_heads(o)}/{consecutive_dup_heads(r)} |')
-    hs=ref_heavy_spans(o,r)
+    hs=ref_positive_spans(o,r,8)
+    lines.append(f'| {n} | {ow} | {rw} | {ow/rw:.2f} | {similarity(o,r):.3f} | {o.count("[نامفهوم]")}/{r.count("[نامفهوم]")} | {len(op)}/{len(rp)} | {consecutive_dup_heads(o)}/{consecutive_dup_heads(r)} | {len(hs)} |')
     if hs: heavy[n]=hs
     if op:
         for p in op:
@@ -81,20 +82,21 @@ if susp:
 else:
     lines += ['- هیچ‌کدام از الگوهای شناخته‌شدهٔ ASR خام در Output پیدا نشد.']
 
-lines += ['', '## بازه‌های بزرگ‌تر در متن‌ها که ممکن است از Output افتاده باشند','',
-'این بخش فقط کاندید است؛ تفاوت شدید ASR یا تکرار متن هم می‌تواند چنین بازه‌ای بسازد.','']
+lines += ['', '## بازه‌های متن خام با مازاد محتوایی ≥ ۸ واژه نسبت به Output','',
+'این بخش غربال اولیه است؛ تفاوت شدید ASR یا تکرار متن می‌تواند کاندید کاذب بسازد.','']
 if not heavy:
-    lines.append('- کاندید بزرگ پیدا نشد.')
+    lines.append('- کاندید پیدا نشد.')
 else:
     for n,spans in heavy.items():
-        lines += [f'### قسمت {n}','']
-        for delta,tag,oc,rc in spans:
-            lines += [f'- **{tag} / مازاد تقریبی متن‌ها: {delta} واژه**',f'  - Output context: `{oc[:650]}`',f'  - متن‌ها context: `{rc[:900]}`','']
+        lines += [f'### قسمت {n} — {len(spans)} کاندید','']
+        for delta,tag,oc,rc in spans[:12]:
+            lines += [f'- **{tag} / مازاد تقریبی متن خام: {delta} واژه**',f'  - Output: `{oc[:520]}`',f'  - Raw: `{rc[:760]}`','']
+        if len(spans)>12: lines += [f'- ... {len(spans)-12} کاندید کوچک‌تر دیگر در غربال ماشینی.','']
 
 lines += ['', '## جمع‌بندی ماشینی','',
+'- Output و `متن ها/uni_tehran/review/md` یک نسخه‌اند؛ مرجع مستقل واقعی `متن ها/uni_tehran/md` است.',
 '- نسبت حجم و شباهت فقط برای تشخیص ساختار استفاده می‌شود و مجوز جایگزینی خودکار متن نیست.',
-'- فهرست بالا باید پیش از هر اصلاح به‌صورت معنایی/دستی بررسی شود.',
-'- اگر Output در همه قسمت‌ها هم‌تراز و از نظر ASR پاک‌تر باشد، Output مادر و `متن ها` مرجع اصلاحی خواهد بود.','']
+'- اگر Output هم‌تراز و پاک‌تر باشد، Output مادر است و متن خام فقط برای بازیابی افتادگی/تصحیح قطعی استفاده می‌شود.','']
 REPORT.parent.mkdir(exist_ok=True)
 REPORT.write_text('\n'.join(lines),encoding='utf-8')
-print('audited',len(outs),len(refs),'suspicious output hits',len(susp),'episodes with ref-heavy spans',len(heavy))
+print('audited',len(outs),len(refs),'mirror',mirror_equal,'suspicious',len(susp),'episodes with candidates',len(heavy))
