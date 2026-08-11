@@ -1,0 +1,24 @@
+name: Khane To ASR audit
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/khane-to-asr-audit.yml
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: python .github/khane_to_asr_audit.py
+      - name: Commit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/khane_to_asr_candidates.md
+          git commit -m "audit khane-to ASR candidates"
+          git push origin HEAD:agent/khane-to-asr-cleanup
