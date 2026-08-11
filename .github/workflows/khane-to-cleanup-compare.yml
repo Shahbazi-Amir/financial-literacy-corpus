@@ -1,0 +1,36 @@
+name: Khane To cleanup and compare
+on:
+  push:
+    branches: [agent/khane-to-final-reconcile]
+    paths:
+      - '.github/khane_to_cleanup_and_compare.py'
+      - '.github/workflows/khane-to-cleanup-compare.yml'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/khane-to-final-reconcile
+      - name: Cleanup markers and compare
+        run: python .github/khane_to_cleanup_and_compare.py
+      - name: Validate scope
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          bad=[]
+          for p in Path('outputs/khane_to/review/md').glob('*.md'):
+              if '[نامفهوم]' in p.read_text(encoding='utf-8'):
+                  bad.append(str(p))
+          assert not bad, bad
+          print('no [نامفهوم] markers remain')
+          PY
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add outputs/khane_to/review/md reports/khane_to_output_vs_texts_audit.md
+          git commit -m 'remove khane-to unclear markers and audit references' || true
+          git push origin HEAD:agent/khane-to-final-reconcile
