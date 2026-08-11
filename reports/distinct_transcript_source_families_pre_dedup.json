@@ -1,0 +1,1023 @@
+{
+  "asre_shirin": {
+    "detected_families_before_exact_collapse": 4,
+    "distinct_families_after_exact_collapse": 3,
+    "families": [
+      {
+        "collection": "asre_shirin",
+        "bucket": "corpus_import",
+        "family": "pipeline_review",
+        "paths": [
+          "collections/asre_shirin/sources/pipeline_review/md"
+        ],
+        "primary_md_count": 25,
+        "signature": "7158afc9f1935192ab842dc29429a58f64bd97832eb4d9db1a975b67e44e8c3f"
+      },
+      {
+        "collection": "asre_shirin",
+        "bucket": "legacy_bucket_۱",
+        "family": "old_agent_archive",
+        "paths": [
+          "متن ها/۱/asre-shirin-season-1",
+          "متن ها/۱/asre-shirin-season-2"
+        ],
+        "primary_md_count": 26,
+        "signature": "8b9b3d235f7b9be0f3ca3ca4b0feb3ca9ce6e0cb1921d857ee5b894b83283ed5"
+      },
+      {
+        "collection": "asre_shirin",
+        "bucket": "legacy_bucket_۳",
+        "family": "md_set:متن ها/۳/asre_shirin",
+        "paths": [
+          "متن ها/۳/asre_shirin/md"
+        ],
+        "primary_md_count": 25,
+        "signature": "03e2f084aa6747f383f8d387e477b8b160944261bc43a81a37b8a9abd490df22"
+      },
+      {
+        "collection": "asre_shirin",
+        "bucket": "legacy_bucket_۳",
+        "family": "review_md_set:متن ها/۳/asre_shirin",
+        "paths": [
+          "متن ها/۳/asre_shirin/review/md"
+        ],
+        "primary_md_count": 25,
+        "signature": "7158afc9f1935192ab842dc29429a58f64bd97832eb4d9db1a975b67e44e8c3f"
+      }
+    ],
+    "exact_equivalent_family_groups": [
+      [
+        {
+          "bucket": "corpus_import",
+          "family": "pipeline_review",
+          "paths": [
+            "collections/asre_shirin/sources/pipeline_review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "review_md_set:متن ها/۳/asre_shirin",
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md"
+          ]
+        }
+      ]
+    ]
+  },
+  "dar_jostojoye_khoshbakhti": {
+    "detected_families_before_exact_collapse": 16,
+    "distinct_families_after_exact_collapse": 11,
+    "families": [
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "corpus_import",
+        "family": "pipeline_review",
+        "paths": [
+          "collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md"
+        ],
+        "primary_md_count": 29,
+        "signature": "17f061cd6ed1e457fb79a0071e772d9639402a21880f8f5211cf65bcc6b0a6dc"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_dar_jostojo",
+        "family": "md_set:متن ها/dar_jostojo",
+        "paths": [
+          "متن ها/dar_jostojo/md"
+        ],
+        "primary_md_count": 29,
+        "signature": "2e755d396cc7197e0c597faf4744796e09c205bb2f467dc8d2aa9a24627e0277"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۱",
+        "family": "legacy_final_collection",
+        "paths": [
+          "متن ها/۱/dar-jostojo-final"
+        ],
+        "primary_md_count": 33,
+        "signature": "517b72582f439bee35b74f550e65bbf7f038cc84c4c8f905b0b7313f1e588893"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۱",
+        "family": "session_final",
+        "paths": [
+          "متن ها/۱/dar-jostojo/session-01/final",
+          "متن ها/۱/dar-jostojo/session-02/final",
+          "متن ها/۱/dar-jostojo/session-03/final",
+          "متن ها/۱/dar-jostojo/session-04/final",
+          "متن ها/۱/dar-jostojo/session-05/final",
+          "متن ها/۱/dar-jostojo/session-06/final",
+          "متن ها/۱/dar-jostojo/session-07/final",
+          "متن ها/۱/dar-jostojo/session-08/final",
+          "متن ها/۱/dar-jostojo/session-09/final",
+          "متن ها/۱/dar-jostojo/session-10/final",
+          "متن ها/۱/dar-jostojo/session-12/final",
+          "متن ها/۱/dar-jostojo/session-14/final",
+          "متن ها/۱/dar-jostojo/session-15/final",
+          "متن ها/۱/dar-jostojo/session-16/final",
+          "متن ها/۱/dar-jostojo/session-17/final",
+          "متن ها/۱/dar-jostojo/session-18/final",
+          "متن ها/۱/dar-jostojo/session-20/final",
+          "متن ها/۱/dar-jostojo/session-21/final",
+          "متن ها/۱/dar-jostojo/session-22/final",
+          "متن ها/۱/dar-jostojo/session-23/final",
+          "متن ها/۱/dar-jostojo/session-25/final",
+          "متن ها/۱/dar-jostojo/session-26/final",
+          "متن ها/۱/dar-jostojo/session-27/final",
+          "متن ها/۱/dar-jostojo/session-28/final",
+          "متن ها/۱/dar-jostojo/session-30/final",
+          "متن ها/۱/dar-jostojo/session-31/final",
+          "متن ها/۱/dar-jostojo/session-32/final",
+          "متن ها/۱/dar-jostojo/session-33/final",
+          "متن ها/۱/dar-jostojo/session-35/final",
+          "متن ها/۱/dar-jostojo/session-37/final",
+          "متن ها/۱/dar-jostojo/session-38/final",
+          "متن ها/۱/dar-jostojo/session-40/final",
+          "متن ها/۱/dar-jostojo/session-41/final"
+        ],
+        "primary_md_count": 33,
+        "signature": "7b5874a22ae5fc13ce2ac87d8612a490a9b4eb8ad048b0620416b7856240e61e"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۱",
+        "family": "session_machine",
+        "paths": [
+          "متن ها/۱/dar-jostojo/session-01/machine",
+          "متن ها/۱/dar-jostojo/session-02/machine",
+          "متن ها/۱/dar-jostojo/session-03/machine",
+          "متن ها/۱/dar-jostojo/session-04/machine",
+          "متن ها/۱/dar-jostojo/session-05/machine",
+          "متن ها/۱/dar-jostojo/session-06/machine",
+          "متن ها/۱/dar-jostojo/session-07/machine",
+          "متن ها/۱/dar-jostojo/session-08/machine",
+          "متن ها/۱/dar-jostojo/session-09/machine",
+          "متن ها/۱/dar-jostojo/session-10/machine",
+          "متن ها/۱/dar-jostojo/session-12/machine",
+          "متن ها/۱/dar-jostojo/session-14/machine",
+          "متن ها/۱/dar-jostojo/session-15/machine",
+          "متن ها/۱/dar-jostojo/session-16/machine",
+          "متن ها/۱/dar-jostojo/session-17/machine",
+          "متن ها/۱/dar-jostojo/session-18/machine",
+          "متن ها/۱/dar-jostojo/session-20/machine",
+          "متن ها/۱/dar-jostojo/session-21/machine",
+          "متن ها/۱/dar-jostojo/session-22/machine",
+          "متن ها/۱/dar-jostojo/session-23/machine",
+          "متن ها/۱/dar-jostojo/session-25/machine",
+          "متن ها/۱/dar-jostojo/session-26/machine",
+          "متن ها/۱/dar-jostojo/session-27/machine",
+          "متن ها/۱/dar-jostojo/session-28/machine",
+          "متن ها/۱/dar-jostojo/session-30/machine",
+          "متن ها/۱/dar-jostojo/session-31/machine",
+          "متن ها/۱/dar-jostojo/session-32/machine",
+          "متن ها/۱/dar-jostojo/session-33/machine",
+          "متن ها/۱/dar-jostojo/session-35/machine",
+          "متن ها/۱/dar-jostojo/session-37/machine",
+          "متن ها/۱/dar-jostojo/session-38/machine",
+          "متن ها/۱/dar-jostojo/session-40/machine",
+          "متن ها/۱/dar-jostojo/session-41/machine"
+        ],
+        "primary_md_count": 33,
+        "signature": "7b5874a22ae5fc13ce2ac87d8612a490a9b4eb8ad048b0620416b7856240e61e"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۱",
+        "family": "session_raw",
+        "paths": [
+          "متن ها/۱/dar-jostojo/session-01/raw",
+          "متن ها/۱/dar-jostojo/session-02/raw",
+          "متن ها/۱/dar-jostojo/session-03/raw",
+          "متن ها/۱/dar-jostojo/session-04/raw",
+          "متن ها/۱/dar-jostojo/session-05/raw",
+          "متن ها/۱/dar-jostojo/session-06/raw",
+          "متن ها/۱/dar-jostojo/session-07/raw",
+          "متن ها/۱/dar-jostojo/session-08/raw",
+          "متن ها/۱/dar-jostojo/session-09/raw",
+          "متن ها/۱/dar-jostojo/session-10/raw",
+          "متن ها/۱/dar-jostojo/session-12/raw",
+          "متن ها/۱/dar-jostojo/session-14/raw",
+          "متن ها/۱/dar-jostojo/session-15/raw",
+          "متن ها/۱/dar-jostojo/session-16/raw",
+          "متن ها/۱/dar-jostojo/session-17/raw",
+          "متن ها/۱/dar-jostojo/session-18/raw",
+          "متن ها/۱/dar-jostojo/session-20/raw",
+          "متن ها/۱/dar-jostojo/session-21/raw",
+          "متن ها/۱/dar-jostojo/session-22/raw",
+          "متن ها/۱/dar-jostojo/session-23/raw",
+          "متن ها/۱/dar-jostojo/session-25/raw",
+          "متن ها/۱/dar-jostojo/session-26/raw",
+          "متن ها/۱/dar-jostojo/session-27/raw",
+          "متن ها/۱/dar-jostojo/session-28/raw",
+          "متن ها/۱/dar-jostojo/session-30/raw",
+          "متن ها/۱/dar-jostojo/session-31/raw",
+          "متن ها/۱/dar-jostojo/session-32/raw",
+          "متن ها/۱/dar-jostojo/session-33/raw",
+          "متن ها/۱/dar-jostojo/session-35/raw",
+          "متن ها/۱/dar-jostojo/session-37/raw",
+          "متن ها/۱/dar-jostojo/session-38/raw",
+          "متن ها/۱/dar-jostojo/session-40/raw",
+          "متن ها/۱/dar-jostojo/session-41/raw"
+        ],
+        "primary_md_count": 33,
+        "signature": "beb5c96f0c764b09a3a38653b687176ca21bec3c9d251028d3862125c7740253"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۱",
+        "family": "session_reviewed",
+        "paths": [
+          "متن ها/۱/dar-jostojo/session-01/reviewed",
+          "متن ها/۱/dar-jostojo/session-02/reviewed",
+          "متن ها/۱/dar-jostojo/session-03/reviewed",
+          "متن ها/۱/dar-jostojo/session-04/reviewed",
+          "متن ها/۱/dar-jostojo/session-05/reviewed",
+          "متن ها/۱/dar-jostojo/session-06/reviewed",
+          "متن ها/۱/dar-jostojo/session-07/reviewed",
+          "متن ها/۱/dar-jostojo/session-08/reviewed",
+          "متن ها/۱/dar-jostojo/session-09/reviewed",
+          "متن ها/۱/dar-jostojo/session-10/reviewed",
+          "متن ها/۱/dar-jostojo/session-12/reviewed",
+          "متن ها/۱/dar-jostojo/session-14/reviewed",
+          "متن ها/۱/dar-jostojo/session-15/reviewed",
+          "متن ها/۱/dar-jostojo/session-16/reviewed",
+          "متن ها/۱/dar-jostojo/session-17/reviewed",
+          "متن ها/۱/dar-jostojo/session-18/reviewed",
+          "متن ها/۱/dar-jostojo/session-20/reviewed",
+          "متن ها/۱/dar-jostojo/session-21/reviewed",
+          "متن ها/۱/dar-jostojo/session-22/reviewed",
+          "متن ها/۱/dar-jostojo/session-23/reviewed",
+          "متن ها/۱/dar-jostojo/session-25/reviewed",
+          "متن ها/۱/dar-jostojo/session-26/reviewed",
+          "متن ها/۱/dar-jostojo/session-27/reviewed",
+          "متن ها/۱/dar-jostojo/session-28/reviewed",
+          "متن ها/۱/dar-jostojo/session-30/reviewed",
+          "متن ها/۱/dar-jostojo/session-31/reviewed",
+          "متن ها/۱/dar-jostojo/session-32/reviewed",
+          "متن ها/۱/dar-jostojo/session-33/reviewed",
+          "متن ها/۱/dar-jostojo/session-35/reviewed",
+          "متن ها/۱/dar-jostojo/session-37/reviewed",
+          "متن ها/۱/dar-jostojo/session-38/reviewed",
+          "متن ها/۱/dar-jostojo/session-40/reviewed",
+          "متن ها/۱/dar-jostojo/session-41/reviewed"
+        ],
+        "primary_md_count": 33,
+        "signature": "517b72582f439bee35b74f550e65bbf7f038cc84c4c8f905b0b7313f1e588893"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "legacy_final_collection",
+        "paths": [
+          "متن ها/۲/dar_jostojo/dar-jostojo-final"
+        ],
+        "primary_md_count": 33,
+        "signature": "517b72582f439bee35b74f550e65bbf7f038cc84c4c8f905b0b7313f1e588893"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "path:متن ها/۲/dar_jostojo",
+        "paths": [
+          "متن ها/۲/dar_jostojo"
+        ],
+        "primary_md_count": 3,
+        "signature": "a84061392470154e6b6c11ba5a2aae407afbd8471f15504dd969f86839e07232"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "path:متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/accuracy",
+        "paths": [
+          "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/accuracy"
+        ],
+        "primary_md_count": 1,
+        "signature": "6d1456de455ee31aa5474480718ebe46d4f1e31cb579f879b36e5e410479a22b"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "path:متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/review",
+        "paths": [
+          "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/review"
+        ],
+        "primary_md_count": 1,
+        "signature": "04392b63168e1e080549ff15f5b1528c018aaf6980b74fa2ed71e270a37b921e"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "session_final",
+        "paths": [
+          "متن ها/۲/dar_jostojo/1bbdd98b5ffa4a798ded41803f7e9b45-1ccbf163/final",
+          "متن ها/۲/dar_jostojo/cc493c442f184f288e0463a5cddd95ed-59dd4b8a/final",
+          "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/final",
+          "متن ها/۲/dar_jostojo/session-01/final",
+          "متن ها/۲/dar_jostojo/session-02/final",
+          "متن ها/۲/dar_jostojo/session-03/final",
+          "متن ها/۲/dar_jostojo/session-04/final",
+          "متن ها/۲/dar_jostojo/session-05/final",
+          "متن ها/۲/dar_jostojo/session-06/final",
+          "متن ها/۲/dar_jostojo/session-07/final",
+          "متن ها/۲/dar_jostojo/session-08/final",
+          "متن ها/۲/dar_jostojo/session-09/final",
+          "متن ها/۲/dar_jostojo/session-10/final",
+          "متن ها/۲/dar_jostojo/session-12/final",
+          "متن ها/۲/dar_jostojo/session-14/final",
+          "متن ها/۲/dar_jostojo/session-15/final",
+          "متن ها/۲/dar_jostojo/session-16/final",
+          "متن ها/۲/dar_jostojo/session-17/final",
+          "متن ها/۲/dar_jostojo/session-18/final",
+          "متن ها/۲/dar_jostojo/session-20/final",
+          "متن ها/۲/dar_jostojo/session-21/final",
+          "متن ها/۲/dar_jostojo/session-22/final",
+          "متن ها/۲/dar_jostojo/session-23/final",
+          "متن ها/۲/dar_jostojo/session-25/final",
+          "متن ها/۲/dar_jostojo/session-26/final",
+          "متن ها/۲/dar_jostojo/session-27/final",
+          "متن ها/۲/dar_jostojo/session-28/final",
+          "متن ها/۲/dar_jostojo/session-30/final",
+          "متن ها/۲/dar_jostojo/session-31/final",
+          "متن ها/۲/dar_jostojo/session-32/final",
+          "متن ها/۲/dar_jostojo/session-33/final",
+          "متن ها/۲/dar_jostojo/session-35/final",
+          "متن ها/۲/dar_jostojo/session-37/final",
+          "متن ها/۲/dar_jostojo/session-38/final",
+          "متن ها/۲/dar_jostojo/session-40/final",
+          "متن ها/۲/dar_jostojo/session-41/final"
+        ],
+        "primary_md_count": 36,
+        "signature": "93f2d9c2beb6dfc4f4944a977ddd72599d6f2755c9449f2560d20e966ce94a25"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "session_machine",
+        "paths": [
+          "متن ها/۲/dar_jostojo/1bbdd98b5ffa4a798ded41803f7e9b45-1ccbf163/machine",
+          "متن ها/۲/dar_jostojo/cc493c442f184f288e0463a5cddd95ed-59dd4b8a/machine",
+          "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/machine",
+          "متن ها/۲/dar_jostojo/session-01/machine",
+          "متن ها/۲/dar_jostojo/session-02/machine",
+          "متن ها/۲/dar_jostojo/session-03/machine",
+          "متن ها/۲/dar_jostojo/session-04/machine",
+          "متن ها/۲/dar_jostojo/session-05/machine",
+          "متن ها/۲/dar_jostojo/session-06/machine",
+          "متن ها/۲/dar_jostojo/session-07/machine",
+          "متن ها/۲/dar_jostojo/session-08/machine",
+          "متن ها/۲/dar_jostojo/session-09/machine",
+          "متن ها/۲/dar_jostojo/session-10/machine",
+          "متن ها/۲/dar_jostojo/session-12/machine",
+          "متن ها/۲/dar_jostojo/session-14/machine",
+          "متن ها/۲/dar_jostojo/session-15/machine",
+          "متن ها/۲/dar_jostojo/session-16/machine",
+          "متن ها/۲/dar_jostojo/session-17/machine",
+          "متن ها/۲/dar_jostojo/session-18/machine",
+          "متن ها/۲/dar_jostojo/session-20/machine",
+          "متن ها/۲/dar_jostojo/session-21/machine",
+          "متن ها/۲/dar_jostojo/session-22/machine",
+          "متن ها/۲/dar_jostojo/session-23/machine",
+          "متن ها/۲/dar_jostojo/session-25/machine",
+          "متن ها/۲/dar_jostojo/session-26/machine",
+          "متن ها/۲/dar_jostojo/session-27/machine",
+          "متن ها/۲/dar_jostojo/session-28/machine",
+          "متن ها/۲/dar_jostojo/session-30/machine",
+          "متن ها/۲/dar_jostojo/session-31/machine",
+          "متن ها/۲/dar_jostojo/session-32/machine",
+          "متن ها/۲/dar_jostojo/session-33/machine",
+          "متن ها/۲/dar_jostojo/session-35/machine",
+          "متن ها/۲/dar_jostojo/session-37/machine",
+          "متن ها/۲/dar_jostojo/session-38/machine",
+          "متن ها/۲/dar_jostojo/session-40/machine",
+          "متن ها/۲/dar_jostojo/session-41/machine"
+        ],
+        "primary_md_count": 36,
+        "signature": "d08a38f1497b34d1d447ff7dfbc7d485d412528145a7f7dae65923dac94f1d5b"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "session_raw",
+        "paths": [
+          "متن ها/۲/dar_jostojo/1bbdd98b5ffa4a798ded41803f7e9b45-1ccbf163/raw",
+          "متن ها/۲/dar_jostojo/cc493c442f184f288e0463a5cddd95ed-59dd4b8a/raw",
+          "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/raw",
+          "متن ها/۲/dar_jostojo/session-01/raw",
+          "متن ها/۲/dar_jostojo/session-02/raw",
+          "متن ها/۲/dar_jostojo/session-03/raw",
+          "متن ها/۲/dar_jostojo/session-04/raw",
+          "متن ها/۲/dar_jostojo/session-05/raw",
+          "متن ها/۲/dar_jostojo/session-06/raw",
+          "متن ها/۲/dar_jostojo/session-07/raw",
+          "متن ها/۲/dar_jostojo/session-08/raw",
+          "متن ها/۲/dar_jostojo/session-09/raw",
+          "متن ها/۲/dar_jostojo/session-10/raw",
+          "متن ها/۲/dar_jostojo/session-12/raw",
+          "متن ها/۲/dar_jostojo/session-14/raw",
+          "متن ها/۲/dar_jostojo/session-15/raw",
+          "متن ها/۲/dar_jostojo/session-16/raw",
+          "متن ها/۲/dar_jostojo/session-17/raw",
+          "متن ها/۲/dar_jostojo/session-18/raw",
+          "متن ها/۲/dar_jostojo/session-20/raw",
+          "متن ها/۲/dar_jostojo/session-21/raw",
+          "متن ها/۲/dar_jostojo/session-22/raw",
+          "متن ها/۲/dar_jostojo/session-23/raw",
+          "متن ها/۲/dar_jostojo/session-25/raw",
+          "متن ها/۲/dar_jostojo/session-26/raw",
+          "متن ها/۲/dar_jostojo/session-27/raw",
+          "متن ها/۲/dar_jostojo/session-28/raw",
+          "متن ها/۲/dar_jostojo/session-30/raw",
+          "متن ها/۲/dar_jostojo/session-31/raw",
+          "متن ها/۲/dar_jostojo/session-32/raw",
+          "متن ها/۲/dar_jostojo/session-33/raw",
+          "متن ها/۲/dar_jostojo/session-35/raw",
+          "متن ها/۲/dar_jostojo/session-37/raw",
+          "متن ها/۲/dar_jostojo/session-38/raw",
+          "متن ها/۲/dar_jostojo/session-40/raw",
+          "متن ها/۲/dar_jostojo/session-41/raw"
+        ],
+        "primary_md_count": 36,
+        "signature": "3775373f0eda6a3997198180aa432d051eb661012a975b050dc14352542b0426"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۲",
+        "family": "session_reviewed",
+        "paths": [
+          "متن ها/۲/dar_jostojo/session-01/reviewed",
+          "متن ها/۲/dar_jostojo/session-02/reviewed",
+          "متن ها/۲/dar_jostojo/session-03/reviewed",
+          "متن ها/۲/dar_jostojo/session-04/reviewed",
+          "متن ها/۲/dar_jostojo/session-05/reviewed",
+          "متن ها/۲/dar_jostojo/session-06/reviewed",
+          "متن ها/۲/dar_jostojo/session-07/reviewed",
+          "متن ها/۲/dar_jostojo/session-08/reviewed",
+          "متن ها/۲/dar_jostojo/session-09/reviewed",
+          "متن ها/۲/dar_jostojo/session-10/reviewed",
+          "متن ها/۲/dar_jostojo/session-12/reviewed",
+          "متن ها/۲/dar_jostojo/session-14/reviewed",
+          "متن ها/۲/dar_jostojo/session-15/reviewed",
+          "متن ها/۲/dar_jostojo/session-16/reviewed",
+          "متن ها/۲/dar_jostojo/session-17/reviewed",
+          "متن ها/۲/dar_jostojo/session-18/reviewed",
+          "متن ها/۲/dar_jostojo/session-20/reviewed",
+          "متن ها/۲/dar_jostojo/session-21/reviewed",
+          "متن ها/۲/dar_jostojo/session-22/reviewed",
+          "متن ها/۲/dar_jostojo/session-23/reviewed",
+          "متن ها/۲/dar_jostojo/session-25/reviewed",
+          "متن ها/۲/dar_jostojo/session-26/reviewed",
+          "متن ها/۲/dar_jostojo/session-27/reviewed",
+          "متن ها/۲/dar_jostojo/session-28/reviewed",
+          "متن ها/۲/dar_jostojo/session-30/reviewed",
+          "متن ها/۲/dar_jostojo/session-31/reviewed",
+          "متن ها/۲/dar_jostojo/session-32/reviewed",
+          "متن ها/۲/dar_jostojo/session-33/reviewed",
+          "متن ها/۲/dar_jostojo/session-35/reviewed",
+          "متن ها/۲/dar_jostojo/session-37/reviewed",
+          "متن ها/۲/dar_jostojo/session-38/reviewed",
+          "متن ها/۲/dar_jostojo/session-40/reviewed",
+          "متن ها/۲/dar_jostojo/session-41/reviewed"
+        ],
+        "primary_md_count": 33,
+        "signature": "517b72582f439bee35b74f550e65bbf7f038cc84c4c8f905b0b7313f1e588893"
+      },
+      {
+        "collection": "dar_jostojoye_khoshbakhti",
+        "bucket": "legacy_bucket_۳",
+        "family": "md_set:متن ها/۳/dar_jostojo",
+        "paths": [
+          "متن ها/۳/dar_jostojo/md"
+        ],
+        "primary_md_count": 29,
+        "signature": "2e755d396cc7197e0c597faf4744796e09c205bb2f467dc8d2aa9a24627e0277"
+      }
+    ],
+    "exact_equivalent_family_groups": [
+      [
+        {
+          "bucket": "legacy_bucket_dar_jostojo",
+          "family": "md_set:متن ها/dar_jostojo",
+          "paths": [
+            "متن ها/dar_jostojo/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "md_set:متن ها/۳/dar_jostojo",
+          "paths": [
+            "متن ها/۳/dar_jostojo/md"
+          ]
+        }
+      ],
+      [
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "legacy_final_collection",
+          "paths": [
+            "متن ها/۱/dar-jostojo-final"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "session_reviewed",
+          "paths": [
+            "متن ها/۱/dar-jostojo/session-01/reviewed",
+            "متن ها/۱/dar-jostojo/session-02/reviewed",
+            "متن ها/۱/dar-jostojo/session-03/reviewed",
+            "متن ها/۱/dar-jostojo/session-04/reviewed",
+            "متن ها/۱/dar-jostojo/session-05/reviewed",
+            "متن ها/۱/dar-jostojo/session-06/reviewed",
+            "متن ها/۱/dar-jostojo/session-07/reviewed",
+            "متن ها/۱/dar-jostojo/session-08/reviewed",
+            "متن ها/۱/dar-jostojo/session-09/reviewed",
+            "متن ها/۱/dar-jostojo/session-10/reviewed",
+            "متن ها/۱/dar-jostojo/session-12/reviewed",
+            "متن ها/۱/dar-jostojo/session-14/reviewed",
+            "متن ها/۱/dar-jostojo/session-15/reviewed",
+            "متن ها/۱/dar-jostojo/session-16/reviewed",
+            "متن ها/۱/dar-jostojo/session-17/reviewed",
+            "متن ها/۱/dar-jostojo/session-18/reviewed",
+            "متن ها/۱/dar-jostojo/session-20/reviewed",
+            "متن ها/۱/dar-jostojo/session-21/reviewed",
+            "متن ها/۱/dar-jostojo/session-22/reviewed",
+            "متن ها/۱/dar-jostojo/session-23/reviewed",
+            "متن ها/۱/dar-jostojo/session-25/reviewed",
+            "متن ها/۱/dar-jostojo/session-26/reviewed",
+            "متن ها/۱/dar-jostojo/session-27/reviewed",
+            "متن ها/۱/dar-jostojo/session-28/reviewed",
+            "متن ها/۱/dar-jostojo/session-30/reviewed",
+            "متن ها/۱/dar-jostojo/session-31/reviewed",
+            "متن ها/۱/dar-jostojo/session-32/reviewed",
+            "متن ها/۱/dar-jostojo/session-33/reviewed",
+            "متن ها/۱/dar-jostojo/session-35/reviewed",
+            "متن ها/۱/dar-jostojo/session-37/reviewed",
+            "متن ها/۱/dar-jostojo/session-38/reviewed",
+            "متن ها/۱/dar-jostojo/session-40/reviewed",
+            "متن ها/۱/dar-jostojo/session-41/reviewed"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "legacy_final_collection",
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "session_reviewed",
+          "paths": [
+            "متن ها/۲/dar_jostojo/session-01/reviewed",
+            "متن ها/۲/dar_jostojo/session-02/reviewed",
+            "متن ها/۲/dar_jostojo/session-03/reviewed",
+            "متن ها/۲/dar_jostojo/session-04/reviewed",
+            "متن ها/۲/dar_jostojo/session-05/reviewed",
+            "متن ها/۲/dar_jostojo/session-06/reviewed",
+            "متن ها/۲/dar_jostojo/session-07/reviewed",
+            "متن ها/۲/dar_jostojo/session-08/reviewed",
+            "متن ها/۲/dar_jostojo/session-09/reviewed",
+            "متن ها/۲/dar_jostojo/session-10/reviewed",
+            "متن ها/۲/dar_jostojo/session-12/reviewed",
+            "متن ها/۲/dar_jostojo/session-14/reviewed",
+            "متن ها/۲/dar_jostojo/session-15/reviewed",
+            "متن ها/۲/dar_jostojo/session-16/reviewed",
+            "متن ها/۲/dar_jostojo/session-17/reviewed",
+            "متن ها/۲/dar_jostojo/session-18/reviewed",
+            "متن ها/۲/dar_jostojo/session-20/reviewed",
+            "متن ها/۲/dar_jostojo/session-21/reviewed",
+            "متن ها/۲/dar_jostojo/session-22/reviewed",
+            "متن ها/۲/dar_jostojo/session-23/reviewed",
+            "متن ها/۲/dar_jostojo/session-25/reviewed",
+            "متن ها/۲/dar_jostojo/session-26/reviewed",
+            "متن ها/۲/dar_jostojo/session-27/reviewed",
+            "متن ها/۲/dar_jostojo/session-28/reviewed",
+            "متن ها/۲/dar_jostojo/session-30/reviewed",
+            "متن ها/۲/dar_jostojo/session-31/reviewed",
+            "متن ها/۲/dar_jostojo/session-32/reviewed",
+            "متن ها/۲/dar_jostojo/session-33/reviewed",
+            "متن ها/۲/dar_jostojo/session-35/reviewed",
+            "متن ها/۲/dar_jostojo/session-37/reviewed",
+            "متن ها/۲/dar_jostojo/session-38/reviewed",
+            "متن ها/۲/dar_jostojo/session-40/reviewed",
+            "متن ها/۲/dar_jostojo/session-41/reviewed"
+          ]
+        }
+      ],
+      [
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "session_final",
+          "paths": [
+            "متن ها/۱/dar-jostojo/session-01/final",
+            "متن ها/۱/dar-jostojo/session-02/final",
+            "متن ها/۱/dar-jostojo/session-03/final",
+            "متن ها/۱/dar-jostojo/session-04/final",
+            "متن ها/۱/dar-jostojo/session-05/final",
+            "متن ها/۱/dar-jostojo/session-06/final",
+            "متن ها/۱/dar-jostojo/session-07/final",
+            "متن ها/۱/dar-jostojo/session-08/final",
+            "متن ها/۱/dar-jostojo/session-09/final",
+            "متن ها/۱/dar-jostojo/session-10/final",
+            "متن ها/۱/dar-jostojo/session-12/final",
+            "متن ها/۱/dar-jostojo/session-14/final",
+            "متن ها/۱/dar-jostojo/session-15/final",
+            "متن ها/۱/dar-jostojo/session-16/final",
+            "متن ها/۱/dar-jostojo/session-17/final",
+            "متن ها/۱/dar-jostojo/session-18/final",
+            "متن ها/۱/dar-jostojo/session-20/final",
+            "متن ها/۱/dar-jostojo/session-21/final",
+            "متن ها/۱/dar-jostojo/session-22/final",
+            "متن ها/۱/dar-jostojo/session-23/final",
+            "متن ها/۱/dar-jostojo/session-25/final",
+            "متن ها/۱/dar-jostojo/session-26/final",
+            "متن ها/۱/dar-jostojo/session-27/final",
+            "متن ها/۱/dar-jostojo/session-28/final",
+            "متن ها/۱/dar-jostojo/session-30/final",
+            "متن ها/۱/dar-jostojo/session-31/final",
+            "متن ها/۱/dar-jostojo/session-32/final",
+            "متن ها/۱/dar-jostojo/session-33/final",
+            "متن ها/۱/dar-jostojo/session-35/final",
+            "متن ها/۱/dar-jostojo/session-37/final",
+            "متن ها/۱/dar-jostojo/session-38/final",
+            "متن ها/۱/dar-jostojo/session-40/final",
+            "متن ها/۱/dar-jostojo/session-41/final"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "session_machine",
+          "paths": [
+            "متن ها/۱/dar-jostojo/session-01/machine",
+            "متن ها/۱/dar-jostojo/session-02/machine",
+            "متن ها/۱/dar-jostojo/session-03/machine",
+            "متن ها/۱/dar-jostojo/session-04/machine",
+            "متن ها/۱/dar-jostojo/session-05/machine",
+            "متن ها/۱/dar-jostojo/session-06/machine",
+            "متن ها/۱/dar-jostojo/session-07/machine",
+            "متن ها/۱/dar-jostojo/session-08/machine",
+            "متن ها/۱/dar-jostojo/session-09/machine",
+            "متن ها/۱/dar-jostojo/session-10/machine",
+            "متن ها/۱/dar-jostojo/session-12/machine",
+            "متن ها/۱/dar-jostojo/session-14/machine",
+            "متن ها/۱/dar-jostojo/session-15/machine",
+            "متن ها/۱/dar-jostojo/session-16/machine",
+            "متن ها/۱/dar-jostojo/session-17/machine",
+            "متن ها/۱/dar-jostojo/session-18/machine",
+            "متن ها/۱/dar-jostojo/session-20/machine",
+            "متن ها/۱/dar-jostojo/session-21/machine",
+            "متن ها/۱/dar-jostojo/session-22/machine",
+            "متن ها/۱/dar-jostojo/session-23/machine",
+            "متن ها/۱/dar-jostojo/session-25/machine",
+            "متن ها/۱/dar-jostojo/session-26/machine",
+            "متن ها/۱/dar-jostojo/session-27/machine",
+            "متن ها/۱/dar-jostojo/session-28/machine",
+            "متن ها/۱/dar-jostojo/session-30/machine",
+            "متن ها/۱/dar-jostojo/session-31/machine",
+            "متن ها/۱/dar-jostojo/session-32/machine",
+            "متن ها/۱/dar-jostojo/session-33/machine",
+            "متن ها/۱/dar-jostojo/session-35/machine",
+            "متن ها/۱/dar-jostojo/session-37/machine",
+            "متن ها/۱/dar-jostojo/session-38/machine",
+            "متن ها/۱/dar-jostojo/session-40/machine",
+            "متن ها/۱/dar-jostojo/session-41/machine"
+          ]
+        }
+      ]
+    ]
+  },
+  "khane_to": {
+    "detected_families_before_exact_collapse": 2,
+    "distinct_families_after_exact_collapse": 2,
+    "families": [
+      {
+        "collection": "khane_to",
+        "bucket": "corpus_import",
+        "family": "pipeline_review",
+        "paths": [
+          "collections/khane_to/sources/pipeline_review/md"
+        ],
+        "primary_md_count": 13,
+        "signature": "a2aca16c3ca3af59eb9efb191eaaef7f0f69de131932fe5cf6310acdcf9e09b5"
+      },
+      {
+        "collection": "khane_to",
+        "bucket": "legacy_bucket_۱",
+        "family": "path:متن ها/۱/khane-to",
+        "paths": [
+          "متن ها/۱/khane-to"
+        ],
+        "primary_md_count": 13,
+        "signature": "9932ec447a43402e368f2bd293f093597a59aa5dcd79542dabff4170b3251afc"
+      }
+    ],
+    "exact_equivalent_family_groups": []
+  },
+  "mq": {
+    "detected_families_before_exact_collapse": 7,
+    "distinct_families_after_exact_collapse": 2,
+    "families": [
+      {
+        "collection": "mq",
+        "bucket": "corpus_import",
+        "family": "pipeline_review",
+        "paths": [
+          "collections/mq/sources/pipeline_review/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "26c0814ff846e4a54f8b0396c089ee6da1a8bd4bc50d93ccd7a14f026f485dc4"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۱",
+        "family": "md_set:متن ها/۱/mq",
+        "paths": [
+          "متن ها/۱/mq/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "bf0ea3f4eb99516a87c1fc1058f70c3c54992346a4a7b59c76140fdceeb55a53"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۱",
+        "family": "review_md_set:متن ها/۱/mq",
+        "paths": [
+          "متن ها/۱/mq/review/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "26c0814ff846e4a54f8b0396c089ee6da1a8bd4bc50d93ccd7a14f026f485dc4"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۲",
+        "family": "md_set:متن ها/۲/mq",
+        "paths": [
+          "متن ها/۲/mq/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "bf0ea3f4eb99516a87c1fc1058f70c3c54992346a4a7b59c76140fdceeb55a53"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۲",
+        "family": "review_md_set:متن ها/۲/mq",
+        "paths": [
+          "متن ها/۲/mq/review/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "26c0814ff846e4a54f8b0396c089ee6da1a8bd4bc50d93ccd7a14f026f485dc4"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۳",
+        "family": "md_set:متن ها/۳/mq",
+        "paths": [
+          "متن ها/۳/mq/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "bf0ea3f4eb99516a87c1fc1058f70c3c54992346a4a7b59c76140fdceeb55a53"
+      },
+      {
+        "collection": "mq",
+        "bucket": "legacy_bucket_۳",
+        "family": "review_md_set:متن ها/۳/mq",
+        "paths": [
+          "متن ها/۳/mq/review/md"
+        ],
+        "primary_md_count": 8,
+        "signature": "26c0814ff846e4a54f8b0396c089ee6da1a8bd4bc50d93ccd7a14f026f485dc4"
+      }
+    ],
+    "exact_equivalent_family_groups": [
+      [
+        {
+          "bucket": "corpus_import",
+          "family": "pipeline_review",
+          "paths": [
+            "collections/mq/sources/pipeline_review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "review_md_set:متن ها/۱/mq",
+          "paths": [
+            "متن ها/۱/mq/review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "review_md_set:متن ها/۲/mq",
+          "paths": [
+            "متن ها/۲/mq/review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "review_md_set:متن ها/۳/mq",
+          "paths": [
+            "متن ها/۳/mq/review/md"
+          ]
+        }
+      ],
+      [
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "md_set:متن ها/۱/mq",
+          "paths": [
+            "متن ها/۱/mq/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "md_set:متن ها/۲/mq",
+          "paths": [
+            "متن ها/۲/mq/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "md_set:متن ها/۳/mq",
+          "paths": [
+            "متن ها/۳/mq/md"
+          ]
+        }
+      ]
+    ]
+  },
+  "tarbiat_morabi": {
+    "detected_families_before_exact_collapse": 2,
+    "distinct_families_after_exact_collapse": 1,
+    "families": [
+      {
+        "collection": "tarbiat_morabi",
+        "bucket": "legacy_bucket_۲",
+        "family": "md_set:متن ها/۲/tarbiat_morabi",
+        "paths": [
+          "متن ها/۲/tarbiat_morabi/md"
+        ],
+        "primary_md_count": 14,
+        "signature": "7223b4e36e0869ed659a258139377afa206ab58f770e24149360896ceb97346a"
+      },
+      {
+        "collection": "tarbiat_morabi",
+        "bucket": "legacy_bucket_۳",
+        "family": "md_set:متن ها/۳/tarbiat_morabi",
+        "paths": [
+          "متن ها/۳/tarbiat_morabi/md"
+        ],
+        "primary_md_count": 14,
+        "signature": "7223b4e36e0869ed659a258139377afa206ab58f770e24149360896ceb97346a"
+      }
+    ],
+    "exact_equivalent_family_groups": [
+      [
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "md_set:متن ها/۲/tarbiat_morabi",
+          "paths": [
+            "متن ها/۲/tarbiat_morabi/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "md_set:متن ها/۳/tarbiat_morabi",
+          "paths": [
+            "متن ها/۳/tarbiat_morabi/md"
+          ]
+        }
+      ]
+    ]
+  },
+  "uni_tehran": {
+    "detected_families_before_exact_collapse": 7,
+    "distinct_families_after_exact_collapse": 2,
+    "families": [
+      {
+        "collection": "uni_tehran",
+        "bucket": "corpus_import",
+        "family": "pipeline_review",
+        "paths": [
+          "collections/uni_tehran/sources/pipeline_review/md"
+        ],
+        "primary_md_count": 37,
+        "signature": "872573e611d8eb36a26756cf090611c7465b47f6592becc605c6e9e44457f1bd"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۱",
+        "family": "md_set:متن ها/۱/uni_tehran",
+        "paths": [
+          "متن ها/۱/uni_tehran/md"
+        ],
+        "primary_md_count": 38,
+        "signature": "f832473656fb0f0a39fd4f55c099edec130b257b8b631a596b0de17fe51dc784"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۱",
+        "family": "review_md_set:متن ها/۱/uni_tehran",
+        "paths": [
+          "متن ها/۱/uni_tehran/review/md"
+        ],
+        "primary_md_count": 37,
+        "signature": "872573e611d8eb36a26756cf090611c7465b47f6592becc605c6e9e44457f1bd"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۲",
+        "family": "md_set:متن ها/۲/uni_tehran",
+        "paths": [
+          "متن ها/۲/uni_tehran/md"
+        ],
+        "primary_md_count": 38,
+        "signature": "f832473656fb0f0a39fd4f55c099edec130b257b8b631a596b0de17fe51dc784"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۲",
+        "family": "review_md_set:متن ها/۲/uni_tehran",
+        "paths": [
+          "متن ها/۲/uni_tehran/review/md"
+        ],
+        "primary_md_count": 37,
+        "signature": "872573e611d8eb36a26756cf090611c7465b47f6592becc605c6e9e44457f1bd"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۳",
+        "family": "md_set:متن ها/۳/uni_tehran",
+        "paths": [
+          "متن ها/۳/uni_tehran/md"
+        ],
+        "primary_md_count": 38,
+        "signature": "f832473656fb0f0a39fd4f55c099edec130b257b8b631a596b0de17fe51dc784"
+      },
+      {
+        "collection": "uni_tehran",
+        "bucket": "legacy_bucket_۳",
+        "family": "review_md_set:متن ها/۳/uni_tehran",
+        "paths": [
+          "متن ها/۳/uni_tehran/review/md"
+        ],
+        "primary_md_count": 37,
+        "signature": "872573e611d8eb36a26756cf090611c7465b47f6592becc605c6e9e44457f1bd"
+      }
+    ],
+    "exact_equivalent_family_groups": [
+      [
+        {
+          "bucket": "corpus_import",
+          "family": "pipeline_review",
+          "paths": [
+            "collections/uni_tehran/sources/pipeline_review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "review_md_set:متن ها/۱/uni_tehran",
+          "paths": [
+            "متن ها/۱/uni_tehran/review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "review_md_set:متن ها/۲/uni_tehran",
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "review_md_set:متن ها/۳/uni_tehran",
+          "paths": [
+            "متن ها/۳/uni_tehran/review/md"
+          ]
+        }
+      ],
+      [
+        {
+          "bucket": "legacy_bucket_۱",
+          "family": "md_set:متن ها/۱/uni_tehran",
+          "paths": [
+            "متن ها/۱/uni_tehran/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۲",
+          "family": "md_set:متن ها/۲/uni_tehran",
+          "paths": [
+            "متن ها/۲/uni_tehran/md"
+          ]
+        },
+        {
+          "bucket": "legacy_bucket_۳",
+          "family": "md_set:متن ها/۳/uni_tehran",
+          "paths": [
+            "متن ها/۳/uni_tehran/md"
+          ]
+        }
+      ]
+    ]
+  }
+}
