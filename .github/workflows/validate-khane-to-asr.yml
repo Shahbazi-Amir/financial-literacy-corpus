@@ -1,0 +1,25 @@
+name: Validate Khane To ASR
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/validate-khane-to-asr.yml
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: git fetch origin main
+      - run: python .github/validate_khane_to_asr.py
+      - name: Commit validation
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/khane_to_asr_validation.md
+          git commit -m "validate khane-to ASR cleanup"
+          git push origin HEAD:agent/khane-to-asr-cleanup
