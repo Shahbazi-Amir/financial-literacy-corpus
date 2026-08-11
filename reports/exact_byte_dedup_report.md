@@ -1,0 +1,1016 @@
+# Exact byte-level deduplication report
+
+- Method: **file size → SHA-256 → byte-for-byte comparison**
+- Content normalization: **none**
+- Transcript files before: **2063**
+- Exact duplicate groups removed: **629**
+- Files deleted as exact copies: **1197**
+- Transcript files after: **866**
+- Residual exact duplicates: **0**
+
+## Unique remaining files per chapter
+
+### asre_shirin
+- Chapter 1: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/1.md` — 31828 bytes — `cc30535d0869…`
+  - `متن ها/۱/asre-shirin-season-1/episode-01.md` — 16844 bytes — `795eb8df27e9…`
+  - `متن ها/۳/asre_shirin/md/1.md` — 32691 bytes — `7e65064c17f7…`
+  - `متن ها/۳/asre_shirin/review/timestamped/1.md` — 35571 bytes — `e6168e7875ac…`
+  - `متن ها/۳/asre_shirin/review/txt/1.txt` — 31615 bytes — `8478f03b4920…`
+  - `متن ها/۳/asre_shirin/timestamped/1.md` — 35211 bytes — `0d5c11434f36…`
+  - `متن ها/۳/asre_shirin/txt/1.txt` — 32190 bytes — `eb6b7cd0ba07…`
+- Chapter 2: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/2.md` — 28301 bytes — `61e0b1f8f1b9…`
+  - `متن ها/۱/asre-shirin-season-1/episode-02.md` — 15139 bytes — `f3066ee10906…`
+  - `متن ها/۳/asre_shirin/md/2.md` — 29721 bytes — `f4a7826788cb…`
+  - `متن ها/۳/asre_shirin/review/timestamped/2.md` — 32700 bytes — `f24c2d257b87…`
+  - `متن ها/۳/asre_shirin/review/txt/2.txt` — 28133 bytes — `a9f54709bda8…`
+  - `متن ها/۳/asre_shirin/timestamped/2.md` — 32337 bytes — `0a8693f59e5b…`
+  - `متن ها/۳/asre_shirin/txt/2.txt` — 29204 bytes — `f163a4f915aa…`
+- Chapter 3: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/3.md` — 28317 bytes — `5354adbd11cf…`
+  - `متن ها/۱/asre-shirin-season-1/episode-03.md` — 11868 bytes — `492b4c175c74…`
+  - `متن ها/۳/asre_shirin/md/3.md` — 29568 bytes — `7d6ef0698411…`
+  - `متن ها/۳/asre_shirin/review/timestamped/3.md` — 32639 bytes — `aaccf7001843…`
+  - `متن ها/۳/asre_shirin/review/txt/3.txt` — 28152 bytes — `1f63771c5236…`
+  - `متن ها/۳/asre_shirin/timestamped/3.md` — 32136 bytes — `810648420d6e…`
+  - `متن ها/۳/asre_shirin/txt/3.txt` — 29072 bytes — `174c85ec0f27…`
+- Chapter 4: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/4.md` — 26902 bytes — `306a776a36a0…`
+  - `متن ها/۱/asre-shirin-season-1/episode-04.md` — 12152 bytes — `3ddec193ec02…`
+  - `متن ها/۳/asre_shirin/md/4.md` — 28383 bytes — `03a09d5e6df9…`
+  - `متن ها/۳/asre_shirin/review/timestamped/4.md` — 31389 bytes — `29c5b128bc6a…`
+  - `متن ها/۳/asre_shirin/review/txt/4.txt` — 26758 bytes — `34de3d3b705d…`
+  - `متن ها/۳/asre_shirin/timestamped/4.md` — 30927 bytes — `d2e867b7fb65…`
+  - `متن ها/۳/asre_shirin/txt/4.txt` — 27869 bytes — `c801482a5a54…`
+- Chapter 5: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/5.md` — 31776 bytes — `f1458aaf3e2c…`
+  - `متن ها/۱/asre-shirin-season-1/episode-05.md` — 12597 bytes — `72a7d2bb6ccc…`
+  - `متن ها/۳/asre_shirin/md/5.md` — 32934 bytes — `271af76d463c…`
+  - `متن ها/۳/asre_shirin/review/timestamped/5.md` — 36546 bytes — `52cc6bc447a0…`
+  - `متن ها/۳/asre_shirin/review/txt/5.txt` — 31524 bytes — `71ebea674b44…`
+  - `متن ها/۳/asre_shirin/timestamped/5.md` — 36102 bytes — `89dfaff4b67b…`
+  - `متن ها/۳/asre_shirin/txt/5.txt` — 32328 bytes — `7ddb88e79b83…`
+- Chapter 6: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/6.md` — 32819 bytes — `fa6f860c0ae2…`
+  - `متن ها/۱/asre-shirin-season-1/episode-06.md` — 12009 bytes — `7748238c7a06…`
+  - `متن ها/۳/asre_shirin/md/6.md` — 33684 bytes — `ada5c2d21a55…`
+  - `متن ها/۳/asre_shirin/review/timestamped/6.md` — 36385 bytes — `037b4392b6c7…`
+  - `متن ها/۳/asre_shirin/review/txt/6.txt` — 32684 bytes — `bf1d62c3c644…`
+  - `متن ها/۳/asre_shirin/timestamped/6.md` — 35796 bytes — `fb5627610549…`
+  - `متن ها/۳/asre_shirin/txt/6.txt` — 33295 bytes — `06403d0d9777…`
+- Chapter 7: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/7.md` — 33535 bytes — `3bb6234e84a4…`
+  - `متن ها/۱/asre-shirin-season-1/episode-07.md` — 18255 bytes — `a9df0c9baabe…`
+  - `متن ها/۳/asre_shirin/md/7.md` — 34735 bytes — `ab2a19d95a61…`
+  - `متن ها/۳/asre_shirin/review/timestamped/7.md` — 38696 bytes — `8e8c56aade09…`
+  - `متن ها/۳/asre_shirin/review/txt/7.txt` — 33292 bytes — `eede9e7ffe2c…`
+  - `متن ها/۳/asre_shirin/timestamped/7.md` — 38023 bytes — `f5d7a6a698f6…`
+  - `متن ها/۳/asre_shirin/txt/7.txt` — 34148 bytes — `7986eb0ef8ec…`
+- Chapter 8: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/8.md` — 31080 bytes — `8f07a74905d7…`
+  - `متن ها/۱/asre-shirin-season-1/episode-08.md` — 11864 bytes — `6baf566cd9b4…`
+  - `متن ها/۳/asre_shirin/md/8.md` — 32192 bytes — `c8624bd465f6…`
+  - `متن ها/۳/asre_shirin/review/timestamped/8.md` — 34886 bytes — `27aad6ef434c…`
+  - `متن ها/۳/asre_shirin/review/txt/8.txt` — 30948 bytes — `36d6b584c01c…`
+  - `متن ها/۳/asre_shirin/timestamped/8.md` — 34376 bytes — `9983da3c3cf7…`
+  - `متن ها/۳/asre_shirin/txt/8.txt` — 31787 bytes — `af445bfa2fe4…`
+- Chapter 9: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/9.md` — 32012 bytes — `14d5f5a92c5e…`
+  - `متن ها/۱/asre-shirin-season-1/episode-09.md` — 12149 bytes — `78c5259325d7…`
+  - `متن ها/۳/asre_shirin/md/9.md` — 32859 bytes — `b841b4004f5e…`
+  - `متن ها/۳/asre_shirin/review/timestamped/9.md` — 36408 bytes — `3566e928fb48…`
+  - `متن ها/۳/asre_shirin/review/txt/9.txt` — 31766 bytes — `712b93670664…`
+  - `متن ها/۳/asre_shirin/timestamped/9.md` — 35811 bytes — `225f53f89d13…`
+  - `متن ها/۳/asre_shirin/txt/9.txt` — 32328 bytes — `7972036fc2a7…`
+- Chapter 10: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/10.md` — 33084 bytes — `c2a5385022c0…`
+  - `متن ها/۱/asre-shirin-season-1/episode-10.md` — 11384 bytes — `19c2b340a39b…`
+  - `متن ها/۳/asre_shirin/md/10.md` — 35124 bytes — `054b4006b39d…`
+  - `متن ها/۳/asre_shirin/review/timestamped/10.md` — 38864 bytes — `103c81c79797…`
+  - `متن ها/۳/asre_shirin/review/txt/10.txt` — 32922 bytes — `fe26cc0ad189…`
+  - `متن ها/۳/asre_shirin/timestamped/10.md` — 38268 bytes — `cbb5583980a9…`
+  - `متن ها/۳/asre_shirin/txt/10.txt` — 34538 bytes — `328436c95fce…`
+- Chapter 11: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/11.md` — 36421 bytes — `cf9958776c62…`
+  - `متن ها/۱/asre-shirin-season-1/episode-11.md` — 13303 bytes — `7f95a5c437a7…`
+  - `متن ها/۳/asre_shirin/md/11.md` — 37002 bytes — `570a53d2b539…`
+  - `متن ها/۳/asre_shirin/review/timestamped/11.md` — 40533 bytes — `31c73420d0e6…`
+  - `متن ها/۳/asre_shirin/review/txt/11.txt` — 36154 bytes — `68a731bda3fb…`
+  - `متن ها/۳/asre_shirin/timestamped/11.md` — 39930 bytes — `79cfdfbf411e…`
+  - `متن ها/۳/asre_shirin/txt/11.txt` — 36446 bytes — `2d474ede4cad…`
+- Chapter 12: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/12.md` — 35667 bytes — `142c3ec33a15…`
+  - `متن ها/۱/asre-shirin-season-1/episode-12.md` — 11545 bytes — `ab940ba584f9…`
+  - `متن ها/۳/asre_shirin/md/12.md` — 36388 bytes — `759d69f6eb40…`
+  - `متن ها/۳/asre_shirin/review/timestamped/12.md` — 38960 bytes — `6fe627806ba3…`
+  - `متن ها/۳/asre_shirin/review/txt/12.txt` — 35538 bytes — `574172cd8bdb…`
+  - `متن ها/۳/asre_shirin/timestamped/12.md` — 38332 bytes — `05401b861d72…`
+  - `متن ها/۳/asre_shirin/txt/12.txt` — 35994 bytes — `8aa66ff9503e…`
+- Chapter 13: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/13.md` — 36034 bytes — `5048a5ee6f75…`
+  - `متن ها/۱/asre-shirin-season-1/episode-13.md` — 16094 bytes — `1294d6dd4b34…`
+  - `متن ها/۳/asre_shirin/md/13.md` — 36335 bytes — `e554aa4a8e65…`
+  - `متن ها/۳/asre_shirin/review/timestamped/13.md` — 38912 bytes — `c95f79d0e2a1…`
+  - `متن ها/۳/asre_shirin/review/txt/13.txt` — 35872 bytes — `25ad1acaa9af…`
+  - `متن ها/۳/asre_shirin/timestamped/13.md` — 38255 bytes — `a5879a89f25e…`
+  - `متن ها/۳/asre_shirin/txt/13.txt` — 35947 bytes — `8ed24159185a…`
+- Chapter 14: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/14.md` — 36310 bytes — `203501e6ec52…`
+  - `متن ها/۱/asre-shirin-season-2/episode-01.md` — 22903 bytes — `d831b4f6bb8a…`
+  - `متن ها/۳/asre_shirin/md/14.md` — 37082 bytes — `e7cb1786795d…`
+  - `متن ها/۳/asre_shirin/review/timestamped/14.md` — 40033 bytes — `78dc4cd27f56…`
+  - `متن ها/۳/asre_shirin/review/txt/14.txt` — 36112 bytes — `7ec74a0c3795…`
+  - `متن ها/۳/asre_shirin/timestamped/14.md` — 39530 bytes — `dda139aa8840…`
+  - `متن ها/۳/asre_shirin/txt/14.txt` — 36604 bytes — `16c406ab6bbe…`
+- Chapter 15: **1 unique files**
+  - `متن ها/۱/asre-shirin-season-2/episode-02.md` — 19340 bytes — `4107cae7fc09…`
+- Chapter 16: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/16.md` — 38061 bytes — `efccc5caa02f…`
+  - `متن ها/۱/asre-shirin-season-2/episode-03.md` — 19955 bytes — `9df3b62d25c0…`
+  - `متن ها/۳/asre_shirin/md/16.md` — 38530 bytes — `a477b26eff5c…`
+  - `متن ها/۳/asre_shirin/review/timestamped/16.md` — 41476 bytes — `b4f36e10a929…`
+  - `متن ها/۳/asre_shirin/review/txt/16.txt` — 37845 bytes — `48bfc1535be0…`
+  - `متن ها/۳/asre_shirin/timestamped/16.md` — 40930 bytes — `f31782b77a2f…`
+  - `متن ها/۳/asre_shirin/txt/16.txt` — 38060 bytes — `b3d4c875faf1…`
+- Chapter 17: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/17.md` — 40709 bytes — `1a97de53eac4…`
+  - `متن ها/۱/asre-shirin-season-2/episode-04.md` — 23885 bytes — `d193fb15705f…`
+  - `متن ها/۳/asre_shirin/md/17.md` — 41112 bytes — `33b02fc1d9e2…`
+  - `متن ها/۳/asre_shirin/review/timestamped/17.md` — 44185 bytes — `da89e9df3e17…`
+  - `متن ها/۳/asre_shirin/review/txt/17.txt` — 40493 bytes — `7bb6a3999e13…`
+  - `متن ها/۳/asre_shirin/timestamped/17.md` — 43536 bytes — `58c12a500449…`
+  - `متن ها/۳/asre_shirin/txt/17.txt` — 40642 bytes — `b0b36abcd507…`
+- Chapter 18: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/18.md` — 36672 bytes — `a9b8a9ac033f…`
+  - `متن ها/۱/asre-shirin-season-2/episode-05.md` — 24743 bytes — `2321b3cca65f…`
+  - `متن ها/۳/asre_shirin/md/18.md` — 37571 bytes — `845ae9986a60…`
+  - `متن ها/۳/asre_shirin/review/timestamped/18.md` — 40082 bytes — `bc547a7edba1…`
+  - `متن ها/۳/asre_shirin/review/txt/18.txt` — 36564 bytes — `1fb8d58f89c3…`
+  - `متن ها/۳/asre_shirin/timestamped/18.md` — 39467 bytes — `389d72c7f65b…`
+  - `متن ها/۳/asre_shirin/txt/18.txt` — 37189 bytes — `c5b0b3dbfa4a…`
+- Chapter 19: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/19.md` — 37509 bytes — `5a2f3b3ee124…`
+  - `متن ها/۱/asre-shirin-season-2/episode-06.md` — 21846 bytes — `f02659db8212…`
+  - `متن ها/۳/asre_shirin/md/19.md` — 38473 bytes — `161925fceef0…`
+  - `متن ها/۳/asre_shirin/review/timestamped/19.md` — 41920 bytes — `0d06d32bd7ea…`
+  - `متن ها/۳/asre_shirin/review/txt/19.txt` — 37296 bytes — `66a67e816057…`
+  - `متن ها/۳/asre_shirin/timestamped/19.md` — 41305 bytes — `bbef18c3706e…`
+  - `متن ها/۳/asre_shirin/txt/19.txt` — 37933 bytes — `254da65c94a2…`
+- Chapter 20: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/20.md` — 37357 bytes — `ed3f887f33f6…`
+  - `متن ها/۱/asre-shirin-season-2/episode-07.md` — 17209 bytes — `8693be17c5e6…`
+  - `متن ها/۳/asre_shirin/md/20.md` — 38107 bytes — `f43a44262e18…`
+  - `متن ها/۳/asre_shirin/review/timestamped/20.md` — 41713 bytes — `7acbdbafa46c…`
+  - `متن ها/۳/asre_shirin/review/txt/20.txt` — 37069 bytes — `4592ddfe6c1e…`
+  - `متن ها/۳/asre_shirin/timestamped/20.md` — 41275 bytes — `1d8fe9d77be2…`
+  - `متن ها/۳/asre_shirin/txt/20.txt` — 37513 bytes — `9a35803320f6…`
+- Chapter 21: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/21.md` — 38680 bytes — `756615be0025…`
+  - `متن ها/۱/asre-shirin-season-2/episode-08.md` — 17941 bytes — `83ff1ff3b830…`
+  - `متن ها/۳/asre_shirin/md/21.md` — 39511 bytes — `aa11e393bd1e…`
+  - `متن ها/۳/asre_shirin/review/timestamped/21.md` — 43073 bytes — `383ec761c5bb…`
+  - `متن ها/۳/asre_shirin/review/txt/21.txt` — 38425 bytes — `4f86bf67c5d9…`
+  - `متن ها/۳/asre_shirin/timestamped/21.md` — 42535 bytes — `e35172992678…`
+  - `متن ها/۳/asre_shirin/txt/21.txt` — 38932 bytes — `afe829e5bab9…`
+- Chapter 22: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/22.md` — 40450 bytes — `8a71a7823444…`
+  - `متن ها/۱/asre-shirin-season-2/episode-09.md` — 20701 bytes — `720bfc5d1bf3…`
+  - `متن ها/۳/asre_shirin/md/22.md` — 40750 bytes — `7120b9aa2a05…`
+  - `متن ها/۳/asre_shirin/review/timestamped/22.md` — 43499 bytes — `372f5999e6dc…`
+  - `متن ها/۳/asre_shirin/review/txt/22.txt` — 40282 bytes — `fd1b665bdf7e…`
+  - `متن ها/۳/asre_shirin/timestamped/22.md` — 42790 bytes — `bc1c946d1869…`
+  - `متن ها/۳/asre_shirin/txt/22.txt` — 40335 bytes — `7fe573ccca21…`
+- Chapter 23: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/23.md` — 40219 bytes — `78e93200904d…`
+  - `متن ها/۱/asre-shirin-season-2/episode-10.md` — 16573 bytes — `bd33d076f14c…`
+  - `متن ها/۳/asre_shirin/md/23.md` — 40801 bytes — `9a77ff48ad93…`
+  - `متن ها/۳/asre_shirin/review/timestamped/23.md` — 44609 bytes — `4f1db1e0d4cc…`
+  - `متن ها/۳/asre_shirin/review/txt/23.txt` — 39946 bytes — `1f40c9ea6eef…`
+  - `متن ها/۳/asre_shirin/timestamped/23.md` — 43897 bytes — `94ce23d2978d…`
+  - `متن ها/۳/asre_shirin/txt/23.txt` — 40210 bytes — `0a4e69b47475…`
+- Chapter 24: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/24.md` — 36666 bytes — `3da5d2b1b0e9…`
+  - `متن ها/۱/asre-shirin-season-2/episode-11.md` — 15701 bytes — `463091bfa477…`
+  - `متن ها/۳/asre_shirin/md/24.md` — 38543 bytes — `bc342b8a094f…`
+  - `متن ها/۳/asre_shirin/review/timestamped/24.md` — 42428 bytes — `950493658553…`
+  - `متن ها/۳/asre_shirin/review/txt/24.txt` — 36489 bytes — `9fd66a44cc7b…`
+  - `متن ها/۳/asre_shirin/timestamped/24.md` — 41783 bytes — `1c37b25a9d23…`
+  - `متن ها/۳/asre_shirin/txt/24.txt` — 37924 bytes — `8e14e347359f…`
+- Chapter 25: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/25.md` — 36224 bytes — `9055c6a1cc1c…`
+  - `متن ها/۱/asre-shirin-season-2/episode-12.md` — 16821 bytes — `e2e38c09c0ca…`
+  - `متن ها/۳/asre_shirin/md/25.md` — 37302 bytes — `f02a9119d65b…`
+  - `متن ها/۳/asre_shirin/review/timestamped/25.md` — 40890 bytes — `1b26364bc553…`
+  - `متن ها/۳/asre_shirin/review/txt/25.txt` — 36044 bytes — `94ca15c3aa75…`
+  - `متن ها/۳/asre_shirin/timestamped/25.md` — 40086 bytes — `10fb382c5104…`
+  - `متن ها/۳/asre_shirin/txt/25.txt` — 36761 bytes — `ddf13e977554…`
+- Chapter 26: **7 unique files**
+  - `collections/asre_shirin/sources/pipeline_review/md/26.md` — 30639 bytes — `8fe8c45d1678…`
+  - `متن ها/۱/asre-shirin-season-2/episode-13.md` — 17074 bytes — `cfa170a832d1…`
+  - `متن ها/۳/asre_shirin/md/26.md` — 33399 bytes — `69ed9b19b521…`
+  - `متن ها/۳/asre_shirin/review/timestamped/26.md` — 38212 bytes — `65f5d0d882a0…`
+  - `متن ها/۳/asre_shirin/review/txt/26.txt` — 30345 bytes — `5aaf4ed1e665…`
+  - `متن ها/۳/asre_shirin/timestamped/26.md` — 37959 bytes — `f6bdb4695dfa…`
+  - `متن ها/۳/asre_shirin/txt/26.txt` — 32564 bytes — `b77d4bdc64e3…`
+
+### dar_jostojoye_khoshbakhti
+- Chapter 1: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/1.md` — 39031 bytes — `26c23ca985a1…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/1.md` — 48823 bytes — `14c535af0923…`
+  - `متن ها/۱/dar-jostojo/session-01/final/transcript.final.md` — 6612 bytes — `5c38e386e019…`
+  - `متن ها/۱/dar-jostojo/session-01/final/transcript.final.txt` — 6200 bytes — `93d59566b4f9…`
+  - `متن ها/۱/dar-jostojo/session-01/raw/transcript.raw.md` — 7898 bytes — `9c619c937626…`
+  - `متن ها/۱/dar-jostojo/session-01/reviewed/transcript.reviewed.md` — 6462 bytes — `58873ae78d8d…`
+  - `متن ها/۱/dar-jostojo/session-01/reviewed/transcript.reviewed.txt` — 6413 bytes — `56cc259d8f43…`
+  - `متن ها/۳/dar_jostojo/md/1.md` — 25836 bytes — `c8b0b85c0970…`
+  - `متن ها/۳/dar_jostojo/timestamped/1.md` — 36043 bytes — `3fef2e78331f…`
+  - `متن ها/۳/dar_jostojo/txt/1.txt` — 25412 bytes — `f6012be29089…`
+- Chapter 2: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/2.md` — 36546 bytes — `9d83e3e6b84f…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/2.md` — 46098 bytes — `f1305d166745…`
+  - `متن ها/۱/dar-jostojo/session-02/final/transcript.final.md` — 2747 bytes — `ae40536f1210…`
+  - `متن ها/۱/dar-jostojo/session-02/final/transcript.final.txt` — 2335 bytes — `7c171fb08d3e…`
+  - `متن ها/۱/dar-jostojo/session-02/raw/transcript.raw.md` — 2959 bytes — `feffe400d1c9…`
+  - `متن ها/۱/dar-jostojo/session-02/reviewed/transcript.reviewed.md` — 2345 bytes — `636d24958e90…`
+  - `متن ها/۱/dar-jostojo/session-02/reviewed/transcript.reviewed.txt` — 2296 bytes — `d2e32acd6fff…`
+  - `متن ها/۳/dar_jostojo/md/2.md` — 23400 bytes — `8110e3b2d155…`
+  - `متن ها/۳/dar_jostojo/timestamped/2.md` — 33325 bytes — `e545107ecd8c…`
+  - `متن ها/۳/dar_jostojo/txt/2.txt` — 22976 bytes — `38129b7af261…`
+- Chapter 3: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/3.md` — 16778 bytes — `6d8b11e1ef83…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/3.md` — 20882 bytes — `2103cacd3197…`
+  - `متن ها/۱/dar-jostojo/session-03/final/transcript.final.md` — 4078 bytes — `f8d28b518336…`
+  - `متن ها/۱/dar-jostojo/session-03/final/transcript.final.txt` — 3666 bytes — `a4736ff4234f…`
+  - `متن ها/۱/dar-jostojo/session-03/raw/transcript.raw.md` — 5136 bytes — `bab19731cfae…`
+  - `متن ها/۱/dar-jostojo/session-03/reviewed/transcript.reviewed.md` — 3177 bytes — `b97c00458cbb…`
+  - `متن ها/۱/dar-jostojo/session-03/reviewed/transcript.reviewed.txt` — 3128 bytes — `0b2733a3b29e…`
+  - `متن ها/۳/dar_jostojo/md/3.md` — 11436 bytes — `0a29b7bace25…`
+  - `متن ها/۳/dar_jostojo/timestamped/3.md` — 15554 bytes — `439e940537d2…`
+  - `متن ها/۳/dar_jostojo/txt/3.txt` — 11012 bytes — `0b2e5812f74f…`
+- Chapter 4: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/4.md` — 24184 bytes — `6795f675d38a…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/4.md` — 30232 bytes — `08bc51c80bae…`
+  - `متن ها/۱/dar-jostojo/session-04/final/transcript.final.md` — 4547 bytes — `8381e8e5fe87…`
+  - `متن ها/۱/dar-jostojo/session-04/final/transcript.final.txt` — 4135 bytes — `55ba35e53eb7…`
+  - `متن ها/۱/dar-jostojo/session-04/raw/transcript.raw.md` — 7856 bytes — `25677b80c672…`
+  - `متن ها/۱/dar-jostojo/session-04/reviewed/transcript.reviewed.md` — 1870 bytes — `36081dc18a5c…`
+  - `متن ها/۱/dar-jostojo/session-04/reviewed/transcript.reviewed.txt` — 1821 bytes — `0085bcf75030…`
+  - `متن ها/۳/dar_jostojo/md/4.md` — 16041 bytes — `a3189ff965e1…`
+  - `متن ها/۳/dar_jostojo/timestamped/4.md` — 22104 bytes — `4b6c70399b1f…`
+  - `متن ها/۳/dar_jostojo/txt/4.txt` — 15617 bytes — `09a90574990d…`
+- Chapter 5: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/5.md` — 32547 bytes — `ad32e42c6174…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/5.md` — 40395 bytes — `7b013a9b9f99…`
+  - `متن ها/۱/dar-jostojo/session-05/final/transcript.final.md` — 7462 bytes — `08a80e37dd14…`
+  - `متن ها/۱/dar-jostojo/session-05/final/transcript.final.txt` — 7050 bytes — `c0164fe7a15c…`
+  - `متن ها/۱/dar-jostojo/session-05/raw/transcript.raw.md` — 9507 bytes — `dba003354f75…`
+  - `متن ها/۱/dar-jostojo/session-05/reviewed/transcript.reviewed.md` — 6342 bytes — `0c721ccf5d99…`
+  - `متن ها/۱/dar-jostojo/session-05/reviewed/transcript.reviewed.txt` — 6293 bytes — `97507d8c9923…`
+  - `متن ها/۳/dar_jostojo/md/5.md` — 21837 bytes — `6ab7c74c8117…`
+  - `متن ها/۳/dar_jostojo/timestamped/5.md` — 39704 bytes — `d0678fed587b…`
+  - `متن ها/۳/dar_jostojo/txt/5.txt` — 21413 bytes — `ee3c0c2a114b…`
+- Chapter 6: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/6.md` — 17634 bytes — `5ac34fd9078e…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/6.md` — 21546 bytes — `93f66b7635f0…`
+  - `متن ها/۱/dar-jostojo/session-06/final/transcript.final.md` — 8512 bytes — `8585f8065cf2…`
+  - `متن ها/۱/dar-jostojo/session-06/final/transcript.final.txt` — 8100 bytes — `79f423054ca5…`
+  - `متن ها/۱/dar-jostojo/session-06/raw/transcript.raw.md` — 11133 bytes — `5e92bff684b6…`
+  - `متن ها/۱/dar-jostojo/session-06/reviewed/transcript.reviewed.md` — 7674 bytes — `c6bcfc8bcb1a…`
+  - `متن ها/۱/dar-jostojo/session-06/reviewed/transcript.reviewed.txt` — 7625 bytes — `50ac4032357d…`
+  - `متن ها/۳/dar_jostojo/md/6.md` — 12408 bytes — `fad39dc6f21d…`
+  - `متن ها/۳/dar_jostojo/timestamped/6.md` — 21104 bytes — `195badf456f2…`
+  - `متن ها/۳/dar_jostojo/txt/6.txt` — 11984 bytes — `3d94397b82b1…`
+- Chapter 7: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/7.md` — 20718 bytes — `18aca8ebac04…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/7.md` — 25974 bytes — `49f155e9d3a7…`
+  - `متن ها/۱/dar-jostojo/session-07/final/transcript.final.md` — 4348 bytes — `f6344b4927cd…`
+  - `متن ها/۱/dar-jostojo/session-07/final/transcript.final.txt` — 3936 bytes — `c3484aa380fb…`
+  - `متن ها/۱/dar-jostojo/session-07/raw/transcript.raw.md` — 5448 bytes — `beb3bfe72d9c…`
+  - `متن ها/۱/dar-jostojo/session-07/reviewed/transcript.reviewed.md` — 4010 bytes — `3881271b5ea0…`
+  - `متن ها/۱/dar-jostojo/session-07/reviewed/transcript.reviewed.txt` — 3961 bytes — `756742b50d13…`
+  - `متن ها/۳/dar_jostojo/md/7.md` — 13648 bytes — `552d3d5046ed…`
+  - `متن ها/۳/dar_jostojo/timestamped/7.md` — 25365 bytes — `ec92b4163788…`
+  - `متن ها/۳/dar_jostojo/txt/7.txt` — 13224 bytes — `ae3813990047…`
+- Chapter 8: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/8.md` — 27120 bytes — `5a64e753502d…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/8.md` — 33456 bytes — `a9fca3510ded…`
+  - `متن ها/۱/dar-jostojo/session-08/final/transcript.final.md` — 2885 bytes — `468638088066…`
+  - `متن ها/۱/dar-jostojo/session-08/final/transcript.final.txt` — 2473 bytes — `7a1eea099795…`
+  - `متن ها/۱/dar-jostojo/session-08/raw/transcript.raw.md` — 3286 bytes — `6bc1ece28e39…`
+  - `متن ها/۱/dar-jostojo/session-08/reviewed/transcript.reviewed.md` — 2639 bytes — `29cff6c155bd…`
+  - `متن ها/۱/dar-jostojo/session-08/reviewed/transcript.reviewed.txt` — 2590 bytes — `942970627757…`
+  - `متن ها/۳/dar_jostojo/md/8.md` — 18422 bytes — `d8b82ee0b130…`
+  - `متن ها/۳/dar_jostojo/timestamped/8.md` — 32766 bytes — `680d01bc908d…`
+  - `متن ها/۳/dar_jostojo/txt/8.txt` — 17998 bytes — `303e7de0b965…`
+- Chapter 9: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/9.md` — 31250 bytes — `bded61b49974…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/9.md` — 39626 bytes — `37db4c649f98…`
+  - `متن ها/۱/dar-jostojo/session-09/final/transcript.final.md` — 6728 bytes — `2fcb103ee9dd…`
+  - `متن ها/۱/dar-jostojo/session-09/final/transcript.final.txt` — 6316 bytes — `312499237889…`
+  - `متن ها/۱/dar-jostojo/session-09/raw/transcript.raw.md` — 8353 bytes — `63df7bf9cd5f…`
+  - `متن ها/۱/dar-jostojo/session-09/reviewed/transcript.reviewed.md` — 6211 bytes — `6f31f455acdd…`
+  - `متن ها/۱/dar-jostojo/session-09/reviewed/transcript.reviewed.txt` — 6162 bytes — `6bd2889b1b75…`
+  - `متن ها/۳/dar_jostojo/md/9.md` — 19716 bytes — `80ddc8dc3958…`
+  - `متن ها/۳/dar_jostojo/timestamped/9.md` — 38845 bytes — `ae1472c0cf6b…`
+  - `متن ها/۳/dar_jostojo/txt/9.txt` — 19292 bytes — `1f460a413727…`
+- Chapter 10: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/10.md` — 24375 bytes — `84c9b22a27a3…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/10.md` — 30255 bytes — `c7ecfa9d6c3d…`
+  - `متن ها/۱/dar-jostojo/session-10/final/transcript.final.md` — 6426 bytes — `70d0cd89c178…`
+  - `متن ها/۱/dar-jostojo/session-10/final/transcript.final.txt` — 6014 bytes — `ba8379e158b8…`
+  - `متن ها/۱/dar-jostojo/session-10/raw/transcript.raw.md` — 8295 bytes — `754ad57c07ef…`
+  - `متن ها/۱/dar-jostojo/session-10/reviewed/transcript.reviewed.md` — 5598 bytes — `8526703442c6…`
+  - `متن ها/۱/dar-jostojo/session-10/reviewed/transcript.reviewed.txt` — 5549 bytes — `791bb8183f16…`
+  - `متن ها/۳/dar_jostojo/md/10.md` — 16390 bytes — `8b121e27a07b…`
+  - `متن ها/۳/dar_jostojo/timestamped/10.md` — 29391 bytes — `a10783f26178…`
+  - `متن ها/۳/dar_jostojo/txt/10.txt` — 15966 bytes — `82ac8fe0d5af…`
+- Chapter 11: **5 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/11.md` — 10858 bytes — `3e933cae8df3…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/11.md` — 13522 bytes — `fca30c6cc544…`
+  - `متن ها/۳/dar_jostojo/md/11.md` — 7419 bytes — `c3d919ac8e4a…`
+  - `متن ها/۳/dar_jostojo/timestamped/11.md` — 13210 bytes — `a18aa9268362…`
+  - `متن ها/۳/dar_jostojo/txt/11.txt` — 6995 bytes — `d4e17bad44a4…`
+- Chapter 12: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/12.md` — 21654 bytes — `c2e9eef9b035…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/12.md` — 26814 bytes — `275f22212564…`
+  - `متن ها/۱/dar-jostojo/session-12/final/transcript.final.md` — 23005 bytes — `8cf1529ed1bd…`
+  - `متن ها/۱/dar-jostojo/session-12/final/transcript.final.txt` — 22593 bytes — `ca60adf64f9b…`
+  - `متن ها/۱/dar-jostojo/session-12/raw/transcript.raw.md` — 30711 bytes — `275b0c161681…`
+  - `متن ها/۱/dar-jostojo/session-12/reviewed/transcript.reviewed.md` — 19350 bytes — `2b831409c86f…`
+  - `متن ها/۱/dar-jostojo/session-12/reviewed/transcript.reviewed.txt` — 19301 bytes — `8ce0a33e62a6…`
+  - `متن ها/۳/dar_jostojo/md/12.md` — 14894 bytes — `1bf6eabc71cc…`
+  - `متن ها/۳/dar_jostojo/timestamped/12.md` — 27002 bytes — `5500131e08e8…`
+  - `متن ها/۳/dar_jostojo/txt/12.txt` — 14470 bytes — `c582c6d15725…`
+- Chapter 13: **5 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/13.md` — 23948 bytes — `00582ea61939…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/13.md` — 30164 bytes — `bb960b7fe676…`
+  - `متن ها/۳/dar_jostojo/md/13.md` — 15467 bytes — `e2dd1c619ead…`
+  - `متن ها/۳/dar_jostojo/timestamped/13.md` — 29534 bytes — `7bb9e7a4555e…`
+  - `متن ها/۳/dar_jostojo/txt/13.txt` — 15043 bytes — `3ccc4415d1ad…`
+- Chapter 14: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/14.md` — 16650 bytes — `13c0ff2f4275…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/14.md` — 21018 bytes — `1a758322a6ae…`
+  - `متن ها/۱/dar-jostojo/session-14/final/transcript.final.md` — 16123 bytes — `78cf5e8eee70…`
+  - `متن ها/۱/dar-jostojo/session-14/final/transcript.final.txt` — 15711 bytes — `2ee74b5f2882…`
+  - `متن ها/۱/dar-jostojo/session-14/raw/transcript.raw.md` — 19152 bytes — `c4ba84e3eb64…`
+  - `متن ها/۱/dar-jostojo/session-14/reviewed/transcript.reviewed.md` — 14452 bytes — `7e8e71c80586…`
+  - `متن ها/۱/dar-jostojo/session-14/reviewed/transcript.reviewed.txt` — 14403 bytes — `68a2f3fa50ee…`
+  - `متن ها/۳/dar_jostojo/md/14.md` — 10911 bytes — `f1d0033b2c3e…`
+  - `متن ها/۳/dar_jostojo/timestamped/14.md` — 20673 bytes — `59cb7170a24c…`
+  - `متن ها/۳/dar_jostojo/txt/14.txt` — 10487 bytes — `8462d557f91b…`
+- Chapter 15: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/15.md` — 25795 bytes — `6ca9cab0873c…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/15.md` — 32683 bytes — `fdf8d4ae7680…`
+  - `متن ها/۱/dar-jostojo/session-15/final/transcript.final.md` — 21773 bytes — `ef1a1988ef5c…`
+  - `متن ها/۱/dar-jostojo/session-15/final/transcript.final.txt` — 21361 bytes — `53ce1ebff32e…`
+  - `متن ها/۱/dar-jostojo/session-15/raw/transcript.raw.md` — 28784 bytes — `f5667d68d7b0…`
+  - `متن ها/۱/dar-jostojo/session-15/reviewed/transcript.reviewed.md` — 16959 bytes — `1f432d41f294…`
+  - `متن ها/۱/dar-jostojo/session-15/reviewed/transcript.reviewed.txt` — 16910 bytes — `08f490ace94c…`
+  - `متن ها/۳/dar_jostojo/md/15.md` — 16633 bytes — `d8f3708f72d0…`
+  - `متن ها/۳/dar_jostojo/timestamped/15.md` — 32154 bytes — `a4e2ef7639fb…`
+  - `متن ها/۳/dar_jostojo/txt/15.txt` — 16209 bytes — `72a1a31925ed…`
+- Chapter 16: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/16.md` — 12186 bytes — `cc17b3d85d2d…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/16.md` — 15162 bytes — `d5bda75144f2…`
+  - `متن ها/۱/dar-jostojo/session-16/final/transcript.final.md` — 12952 bytes — `826f9ee4507e…`
+  - `متن ها/۱/dar-jostojo/session-16/final/transcript.final.txt` — 12540 bytes — `e0bdfe23bc96…`
+  - `متن ها/۱/dar-jostojo/session-16/raw/transcript.raw.md` — 15841 bytes — `594726975c1d…`
+  - `متن ها/۱/dar-jostojo/session-16/reviewed/transcript.reviewed.md` — 10844 bytes — `2be5c1b0f4e3…`
+  - `متن ها/۱/dar-jostojo/session-16/reviewed/transcript.reviewed.txt` — 10795 bytes — `0feafd7eb93d…`
+  - `متن ها/۳/dar_jostojo/md/16.md` — 8438 bytes — `bd724597391a…`
+  - `متن ها/۳/dar_jostojo/timestamped/16.md` — 14956 bytes — `cc5b4e3f69e4…`
+  - `متن ها/۳/dar_jostojo/txt/16.txt` — 8014 bytes — `0c7a897c505b…`
+- Chapter 17: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/17.md` — 30775 bytes — `91c9892c178d…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/17.md` — 38527 bytes — `c46ca85eb0ba…`
+  - `متن ها/۱/dar-jostojo/session-17/final/transcript.final.md` — 13437 bytes — `c12e0faab34e…`
+  - `متن ها/۱/dar-jostojo/session-17/final/transcript.final.txt` — 13025 bytes — `9ac92ac8c7d1…`
+  - `متن ها/۱/dar-jostojo/session-17/raw/transcript.raw.md` — 17962 bytes — `297951d1a0aa…`
+  - `متن ها/۱/dar-jostojo/session-17/reviewed/transcript.reviewed.md` — 11215 bytes — `4625782cb7ce…`
+  - `متن ها/۱/dar-jostojo/session-17/reviewed/transcript.reviewed.txt` — 11166 bytes — `855c2cffe59f…`
+  - `متن ها/۳/dar_jostojo/md/17.md` — 20200 bytes — `9672387cb551…`
+  - `متن ها/۳/dar_jostojo/timestamped/17.md` — 37846 bytes — `8156e87a351f…`
+  - `متن ها/۳/dar_jostojo/txt/17.txt` — 19776 bytes — `f9945ec8abbb…`
+- Chapter 18: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/18.md` — 29576 bytes — `ea85839861dd…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/18.md` — 37688 bytes — `cc6b3d59b903…`
+  - `متن ها/۱/dar-jostojo/session-18/final/transcript.final.md` — 18683 bytes — `f735467e92fe…`
+  - `متن ها/۱/dar-jostojo/session-18/final/transcript.final.txt` — 18271 bytes — `b71b1d2e2eee…`
+  - `متن ها/۱/dar-jostojo/session-18/raw/transcript.raw.md` — 22849 bytes — `d9b51e2bb28c…`
+  - `متن ها/۱/dar-jostojo/session-18/reviewed/transcript.reviewed.md` — 13337 bytes — `159be477d956…`
+  - `متن ها/۱/dar-jostojo/session-18/reviewed/transcript.reviewed.txt` — 13288 bytes — `0fc9b2f0f441…`
+  - `متن ها/۳/dar_jostojo/md/18.md` — 18484 bytes — `baf5d3de9617…`
+  - `متن ها/۳/dar_jostojo/timestamped/18.md` — 36967 bytes — `5c0d5cb08070…`
+  - `متن ها/۳/dar_jostojo/txt/18.txt` — 18060 bytes — `2d502e6c7e47…`
+- Chapter 19: **5 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/19.md` — 13128 bytes — `79d64dd08243…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/19.md` — 16800 bytes — `17c968a1f9fd…`
+  - `متن ها/۳/dar_jostojo/md/19.md` — 8370 bytes — `eae245789039…`
+  - `متن ها/۳/dar_jostojo/timestamped/19.md` — 16511 bytes — `c22c2a6f4105…`
+  - `متن ها/۳/dar_jostojo/txt/19.txt` — 7946 bytes — `072475c70942…`
+- Chapter 20: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/20.md` — 33421 bytes — `97424189f749…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/20.md` — 41317 bytes — `337ffc20d5d3…`
+  - `متن ها/۱/dar-jostojo/session-20/final/transcript.final.md` — 16627 bytes — `35d0b4aa0e94…`
+  - `متن ها/۱/dar-jostojo/session-20/final/transcript.final.txt` — 16215 bytes — `dac3324e12d4…`
+  - `متن ها/۱/dar-jostojo/session-20/raw/transcript.raw.md` — 21620 bytes — `ad4871b25b2c…`
+  - `متن ها/۱/dar-jostojo/session-20/reviewed/transcript.reviewed.md` — 11013 bytes — `937c41fd2513…`
+  - `متن ها/۱/dar-jostojo/session-20/reviewed/transcript.reviewed.txt` — 10964 bytes — `4453e68ad41b…`
+  - `متن ها/۳/dar_jostojo/md/20.md` — 22376 bytes — `848f2b010a00…`
+  - `متن ها/۳/dar_jostojo/timestamped/20.md` — 41358 bytes — `01aa7f7b099c…`
+  - `متن ها/۳/dar_jostojo/txt/20.txt` — 21952 bytes — `92b1806ec882…`
+- Chapter 21: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-21/final/transcript.final.md` — 7393 bytes — `aa220a3a904f…`
+  - `متن ها/۱/dar-jostojo/session-21/final/transcript.final.txt` — 6981 bytes — `ce4edb10b092…`
+  - `متن ها/۱/dar-jostojo/session-21/raw/transcript.raw.md` — 8658 bytes — `608d43adabaa…`
+  - `متن ها/۱/dar-jostojo/session-21/reviewed/transcript.reviewed.md` — 6137 bytes — `efa2fea2cf67…`
+  - `متن ها/۱/dar-jostojo/session-21/reviewed/transcript.reviewed.txt` — 6088 bytes — `56ee5322502b…`
+- Chapter 22: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/22.md` — 20929 bytes — `33c7fe5f4f4b…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/22.md` — 25297 bytes — `356afdadce6a…`
+  - `متن ها/۱/dar-jostojo/session-22/final/transcript.final.md` — 14900 bytes — `955298138f04…`
+  - `متن ها/۱/dar-jostojo/session-22/final/transcript.final.txt` — 14488 bytes — `4a14056f4126…`
+  - `متن ها/۱/dar-jostojo/session-22/raw/transcript.raw.md` — 18419 bytes — `ab32eaad013f…`
+  - `متن ها/۱/dar-jostojo/session-22/reviewed/transcript.reviewed.md` — 11766 bytes — `51746568d28e…`
+  - `متن ها/۱/dar-jostojo/session-22/reviewed/transcript.reviewed.txt` — 11717 bytes — `b6e1400c522c…`
+  - `متن ها/۳/dar_jostojo/md/22.md` — 15111 bytes — `520952f13bc3…`
+  - `متن ها/۳/dar_jostojo/timestamped/22.md` — 24588 bytes — `2d2d34ca571a…`
+  - `متن ها/۳/dar_jostojo/txt/22.txt` — 14687 bytes — `1a72dbb7c4e0…`
+- Chapter 23: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/23.md` — 15585 bytes — `9b4f58bcb777…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/23.md` — 19425 bytes — `7eda2e89e7f1…`
+  - `متن ها/۱/dar-jostojo/session-23/final/transcript.final.md` — 15231 bytes — `04828f236256…`
+  - `متن ها/۱/dar-jostojo/session-23/final/transcript.final.txt` — 14819 bytes — `a925737e5693…`
+  - `متن ها/۱/dar-jostojo/session-23/raw/transcript.raw.md` — 18602 bytes — `e528cf65f6c0…`
+  - `متن ها/۱/dar-jostojo/session-23/reviewed/transcript.reviewed.md` — 9902 bytes — `166a34888af2…`
+  - `متن ها/۱/dar-jostojo/session-23/reviewed/transcript.reviewed.txt` — 9853 bytes — `af0911d96036…`
+  - `متن ها/۳/dar_jostojo/md/23.md` — 10558 bytes — `9644469d0a10…`
+  - `متن ها/۳/dar_jostojo/timestamped/23.md` — 18977 bytes — `5940cd233bee…`
+  - `متن ها/۳/dar_jostojo/txt/23.txt` — 10134 bytes — `10720634ea98…`
+- Chapter 24: **5 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/24.md` — 27315 bytes — `a812944094a6…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/24.md` — 33963 bytes — `14cfd26a13ab…`
+  - `متن ها/۳/dar_jostojo/md/24.md` — 18276 bytes — `cd3ad28489da…`
+  - `متن ها/۳/dar_jostojo/timestamped/24.md` — 33347 bytes — `aa40a1f7de98…`
+  - `متن ها/۳/dar_jostojo/txt/24.txt` — 17852 bytes — `f463c1c6f39b…`
+- Chapter 25: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/25.md` — 30104 bytes — `c5ef9129cfc8…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/25.md` — 38000 bytes — `efb95dcf8776…`
+  - `متن ها/۱/dar-jostojo/session-25/final/transcript.final.md` — 16966 bytes — `8d9dac7b0417…`
+  - `متن ها/۱/dar-jostojo/session-25/final/transcript.final.txt` — 16554 bytes — `5d0f7cd445b8…`
+  - `متن ها/۱/dar-jostojo/session-25/raw/transcript.raw.md` — 21046 bytes — `201c21055549…`
+  - `متن ها/۱/dar-jostojo/session-25/reviewed/transcript.reviewed.md` — 11439 bytes — `4b1ddcfd2695…`
+  - `متن ها/۱/dar-jostojo/session-25/reviewed/transcript.reviewed.txt` — 11390 bytes — `7f5c00a8d073…`
+  - `متن ها/۳/dar_jostojo/md/25.md` — 19325 bytes — `38990530ff20…`
+  - `متن ها/۳/dar_jostojo/timestamped/25.md` — 37306 bytes — `f5fac876bb25…`
+  - `متن ها/۳/dar_jostojo/txt/25.txt` — 18901 bytes — `57fdd6739bc1…`
+- Chapter 26: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/26.md` — 42474 bytes — `2ba84e2babaa…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/26.md` — 53226 bytes — `e3c5547cf4ab…`
+  - `متن ها/۱/dar-jostojo/session-26/final/transcript.final.md` — 20457 bytes — `a4c58bd6621f…`
+  - `متن ها/۱/dar-jostojo/session-26/final/transcript.final.txt` — 20045 bytes — `3f3169dd633e…`
+  - `متن ها/۱/dar-jostojo/session-26/raw/transcript.raw.md` — 27582 bytes — `2e8787caae68…`
+  - `متن ها/۱/dar-jostojo/session-26/reviewed/transcript.reviewed.md` — 19445 bytes — `5057894aa5fb…`
+  - `متن ها/۱/dar-jostojo/session-26/reviewed/transcript.reviewed.txt` — 19396 bytes — `b66f19d87aec…`
+  - `متن ها/۳/dar_jostojo/md/26.md` — 27615 bytes — `69376998ef82…`
+  - `متن ها/۳/dar_jostojo/timestamped/26.md` — 52418 bytes — `8e789ccf806d…`
+  - `متن ها/۳/dar_jostojo/txt/26.txt` — 27191 bytes — `3b23e807c3f1…`
+- Chapter 27: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/27.md` — 24079 bytes — `e63b008a64b8…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/27.md` — 30031 bytes — `b230aa31dfb7…`
+  - `متن ها/۱/dar-jostojo/session-27/final/transcript.final.md` — 8645 bytes — `0d6721165550…`
+  - `متن ها/۱/dar-jostojo/session-27/final/transcript.final.txt` — 8233 bytes — `30021b0ba287…`
+  - `متن ها/۱/dar-jostojo/session-27/raw/transcript.raw.md` — 10499 bytes — `a286202cb016…`
+  - `متن ها/۱/dar-jostojo/session-27/reviewed/transcript.reviewed.md` — 7899 bytes — `88e385d347fb…`
+  - `متن ها/۱/dar-jostojo/session-27/reviewed/transcript.reviewed.txt` — 7850 bytes — `2a4fa1c7fa1a…`
+  - `متن ها/۳/dar_jostojo/md/27.md` — 16206 bytes — `8fd676746b84…`
+  - `متن ها/۳/dar_jostojo/timestamped/27.md` — 29265 bytes — `db537632bb0c…`
+  - `متن ها/۳/dar_jostojo/txt/27.txt` — 15782 bytes — `aff78fb18b76…`
+- Chapter 28: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/28.md` — 26157 bytes — `28fac4767f3b…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/28.md` — 32445 bytes — `1668c2b9e558…`
+  - `متن ها/۱/dar-jostojo/session-28/final/transcript.final.md` — 20339 bytes — `ec15d5e98164…`
+  - `متن ها/۱/dar-jostojo/session-28/final/transcript.final.txt` — 19927 bytes — `a322793f369c…`
+  - `متن ها/۱/dar-jostojo/session-28/raw/transcript.raw.md` — 25599 bytes — `2445cee1ed96…`
+  - `متن ها/۱/dar-jostojo/session-28/reviewed/transcript.reviewed.md` — 15405 bytes — `e63bbc482b86…`
+  - `متن ها/۱/dar-jostojo/session-28/reviewed/transcript.reviewed.txt` — 15356 bytes — `7a8260991cc8…`
+  - `متن ها/۳/dar_jostojo/md/28.md` — 17724 bytes — `fd5247a27498…`
+  - `متن ها/۳/dar_jostojo/timestamped/28.md` — 31956 bytes — `498025f16fb2…`
+  - `متن ها/۳/dar_jostojo/txt/28.txt` — 17300 bytes — `2da1c6604948…`
+- Chapter 29: **5 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/29.md` — 25166 bytes — `f87f42ae0a56…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/29.md` — 30014 bytes — `197f63721739…`
+  - `متن ها/۳/dar_jostojo/md/29.md` — 19430 bytes — `abb93b10f0c8…`
+  - `متن ها/۳/dar_jostojo/timestamped/29.md` — 30356 bytes — `8fd575f0921a…`
+  - `متن ها/۳/dar_jostojo/txt/29.txt` — 19006 bytes — `4cb06f8138e4…`
+- Chapter 30: **10 unique files**
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/md/30.md` — 10239 bytes — `69210a9411a9…`
+  - `collections/dar_jostojoye_khoshbakhti/sources/pipeline_review/timestamped/30.md` — 12519 bytes — `43a15a0337f3…`
+  - `متن ها/۱/dar-jostojo/session-30/final/transcript.final.md` — 8325 bytes — `444c05ba6935…`
+  - `متن ها/۱/dar-jostojo/session-30/final/transcript.final.txt` — 7913 bytes — `d48113cb7b14…`
+  - `متن ها/۱/dar-jostojo/session-30/raw/transcript.raw.md` — 9758 bytes — `83e7d4970eb3…`
+  - `متن ها/۱/dar-jostojo/session-30/reviewed/transcript.reviewed.md` — 7839 bytes — `1770654daf12…`
+  - `متن ها/۱/dar-jostojo/session-30/reviewed/transcript.reviewed.txt` — 7792 bytes — `d357149a3b5f…`
+  - `متن ها/۳/dar_jostojo/md/30.md` — 7384 bytes — `f2b1451eff64…`
+  - `متن ها/۳/dar_jostojo/timestamped/30.md` — 12335 bytes — `5caf00d075b9…`
+  - `متن ها/۳/dar_jostojo/txt/30.txt` — 6960 bytes — `aa84aa3b89ec…`
+- Chapter 31: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-31/final/transcript.final.md` — 22896 bytes — `e971ae1ba11d…`
+  - `متن ها/۱/dar-jostojo/session-31/final/transcript.final.txt` — 22484 bytes — `175b2f303c03…`
+  - `متن ها/۱/dar-jostojo/session-31/raw/transcript.raw.md` — 28231 bytes — `a86912d65373…`
+  - `متن ها/۱/dar-jostojo/session-31/reviewed/transcript.reviewed.md` — 12807 bytes — `1d8a1fc8316b…`
+  - `متن ها/۱/dar-jostojo/session-31/reviewed/transcript.reviewed.txt` — 12760 bytes — `4274f9a5c5cd…`
+- Chapter 32: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-32/final/transcript.final.md` — 16388 bytes — `5f280a266166…`
+  - `متن ها/۱/dar-jostojo/session-32/final/transcript.final.txt` — 15976 bytes — `fa0532025e78…`
+  - `متن ها/۱/dar-jostojo/session-32/raw/transcript.raw.md` — 19691 bytes — `af58e61d9470…`
+  - `متن ها/۱/dar-jostojo/session-32/reviewed/transcript.reviewed.md` — 12700 bytes — `9589141ae224…`
+  - `متن ها/۱/dar-jostojo/session-32/reviewed/transcript.reviewed.txt` — 12653 bytes — `aaa3d3dcd3cc…`
+- Chapter 33: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-33/final/transcript.final.md` — 15095 bytes — `2d54acf28ef6…`
+  - `متن ها/۱/dar-jostojo/session-33/final/transcript.final.txt` — 14683 bytes — `60e5bf0b6944…`
+  - `متن ها/۱/dar-jostojo/session-33/raw/transcript.raw.md` — 17613 bytes — `14cad2754d4c…`
+  - `متن ها/۱/dar-jostojo/session-33/reviewed/transcript.reviewed.md` — 11629 bytes — `e8ec4423fc71…`
+  - `متن ها/۱/dar-jostojo/session-33/reviewed/transcript.reviewed.txt` — 11580 bytes — `f65b7e99e755…`
+- Chapter 35: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-35/final/transcript.final.md` — 18541 bytes — `a926da766c73…`
+  - `متن ها/۱/dar-jostojo/session-35/final/transcript.final.txt` — 18129 bytes — `f8f9c6632c10…`
+  - `متن ها/۱/dar-jostojo/session-35/raw/transcript.raw.md` — 22613 bytes — `c6ccedbeb299…`
+  - `متن ها/۱/dar-jostojo/session-35/reviewed/transcript.reviewed.md` — 12412 bytes — `1e600c6cd0cc…`
+  - `متن ها/۱/dar-jostojo/session-35/reviewed/transcript.reviewed.txt` — 12363 bytes — `9384b21c2c71…`
+- Chapter 37: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-37/final/transcript.final.md` — 27786 bytes — `f13f342990f8…`
+  - `متن ها/۱/dar-jostojo/session-37/final/transcript.final.txt` — 27374 bytes — `f0457c38c2c3…`
+  - `متن ها/۱/dar-jostojo/session-37/raw/transcript.raw.md` — 36012 bytes — `6bb918040b43…`
+  - `متن ها/۱/dar-jostojo/session-37/reviewed/transcript.reviewed.md` — 20091 bytes — `f5d54967c90f…`
+  - `متن ها/۱/dar-jostojo/session-37/reviewed/transcript.reviewed.txt` — 20042 bytes — `453fe05267ea…`
+- Chapter 38: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-38/final/transcript.final.md` — 16474 bytes — `dbafc068f1b7…`
+  - `متن ها/۱/dar-jostojo/session-38/final/transcript.final.txt` — 16062 bytes — `7cfacfa2ed8e…`
+  - `متن ها/۱/dar-jostojo/session-38/raw/transcript.raw.md` — 20856 bytes — `c4539390f28f…`
+  - `متن ها/۱/dar-jostojo/session-38/reviewed/transcript.reviewed.md` — 15614 bytes — `25e2fa3160ee…`
+  - `متن ها/۱/dar-jostojo/session-38/reviewed/transcript.reviewed.txt` — 15565 bytes — `b0ac4d32126b…`
+- Chapter 40: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-40/final/transcript.final.md` — 19873 bytes — `d7b86fb6a2a9…`
+  - `متن ها/۱/dar-jostojo/session-40/final/transcript.final.txt` — 19461 bytes — `a4b4327d53bf…`
+  - `متن ها/۱/dar-jostojo/session-40/raw/transcript.raw.md` — 24280 bytes — `0a59a42e3543…`
+  - `متن ها/۱/dar-jostojo/session-40/reviewed/transcript.reviewed.md` — 19214 bytes — `50e496e01b57…`
+  - `متن ها/۱/dar-jostojo/session-40/reviewed/transcript.reviewed.txt` — 19165 bytes — `dd1e3cbb3b71…`
+- Chapter 41: **5 unique files**
+  - `متن ها/۱/dar-jostojo/session-41/final/transcript.final.md` — 7345 bytes — `221fe2a89dbf…`
+  - `متن ها/۱/dar-jostojo/session-41/final/transcript.final.txt` — 6933 bytes — `d8f6b9cbe7ff…`
+  - `متن ها/۱/dar-jostojo/session-41/raw/transcript.raw.md` — 9119 bytes — `c511020bcdde…`
+  - `متن ها/۱/dar-jostojo/session-41/reviewed/transcript.reviewed.md` — 6989 bytes — `9546e598763a…`
+  - `متن ها/۱/dar-jostojo/session-41/reviewed/transcript.reviewed.txt` — 6940 bytes — `83a2033a0c9a…`
+
+### khane_to
+- Chapter 1: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/1.md` — 17973 bytes — `dcb1186b0447…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/1.md` — 19293 bytes — `295ae93a9989…`
+  - `متن ها/۱/khane-to/episode-01.md` — 12628 bytes — `07463b2b358e…`
+- Chapter 2: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/2.md` — 25271 bytes — `8b2d5801c690…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/2.md` — 26807 bytes — `9155ba352fe0…`
+  - `متن ها/۱/khane-to/episode-02.md` — 13431 bytes — `d7a383de016b…`
+- Chapter 3: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/3.md` — 25614 bytes — `a709b0f960dc…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/3.md` — 27270 bytes — `dd3289ed9712…`
+  - `متن ها/۱/khane-to/episode-03.md` — 14915 bytes — `d092f57495b7…`
+- Chapter 4: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/4.md` — 19828 bytes — `9a81f70cf1df…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/4.md` — 21388 bytes — `50279f51b54b…`
+  - `متن ها/۱/khane-to/episode-04.md` — 11972 bytes — `fb7c8cbbf1a9…`
+- Chapter 5: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/5.md` — 26389 bytes — `d9aafd2772ef…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/5.md` — 28837 bytes — `cb4ee835769c…`
+  - `متن ها/۱/khane-to/episode-05.md` — 14359 bytes — `612c7008bcde…`
+- Chapter 6: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/6.md` — 18012 bytes — `e53fa46c3af4…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/6.md` — 19644 bytes — `7723fac74f70…`
+  - `متن ها/۱/khane-to/episode-06.md` — 10260 bytes — `122bc4aa1668…`
+- Chapter 7: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/7.md` — 13812 bytes — `e080d28dc614…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/7.md` — 14724 bytes — `e9bab52ff25f…`
+  - `متن ها/۱/khane-to/episode-07.md` — 8872 bytes — `ea5da1191a98…`
+- Chapter 8: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/8.md` — 15279 bytes — `5811e2a32362…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/8.md` — 16407 bytes — `11ecd30e9338…`
+  - `متن ها/۱/khane-to/episode-08.md` — 7660 bytes — `042f701b2670…`
+- Chapter 9: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/9.md` — 20073 bytes — `d901cb1e9a7a…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/9.md` — 21369 bytes — `5adc0e86f0c7…`
+  - `متن ها/۱/khane-to/episode-09.md` — 11640 bytes — `e816bd9fdf7a…`
+- Chapter 10: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/10.md` — 25724 bytes — `d017f7f98985…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/10.md` — 28148 bytes — `448d5b411edb…`
+  - `متن ها/۱/khane-to/episode-10.md` — 13755 bytes — `7705674b6f64…`
+- Chapter 11: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/11.md` — 12638 bytes — `f389c749dd2c…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/11.md` — 13262 bytes — `b73d4028708f…`
+  - `متن ها/۱/khane-to/episode-11.md` — 9888 bytes — `1a38d7da70ef…`
+- Chapter 12: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/12.md` — 19991 bytes — `fe567c414af0…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/12.md` — 21047 bytes — `5bc75ba815c9…`
+  - `متن ها/۱/khane-to/episode-12.md` — 10271 bytes — `5aad07072a6e…`
+- Chapter 13: **3 unique files**
+  - `collections/khane_to/sources/pipeline_review/md/13.md` — 24643 bytes — `b2f4f6622a4b…`
+  - `collections/khane_to/sources/pipeline_review/timestamped/13.md` — 26491 bytes — `3a31221f6d7b…`
+  - `متن ها/۱/khane-to/episode-13.md` — 13388 bytes — `015d715b79ca…`
+
+### mq
+- Chapter 1: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/1.md` — 12388 bytes — `36510d923a74…`
+  - `متن ها/۱/mq/md/1.md` — 12795 bytes — `64ba3857b159…`
+  - `متن ها/۱/mq/review/timestamped/1.md` — 18577 bytes — `d307bea9adb4…`
+  - `متن ها/۱/mq/review/txt/1.txt` — 12379 bytes — `21d05ad43548…`
+  - `متن ها/۱/mq/timestamped/1.md` — 17562 bytes — `33a6f70a13de…`
+  - `متن ها/۱/mq/txt/1.txt` — 12371 bytes — `18ed4dce90a7…`
+- Chapter 2: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/2.md` — 12490 bytes — `03a20a2b5e8d…`
+  - `متن ها/۱/mq/md/2.md` — 12930 bytes — `095e12ed878e…`
+  - `متن ها/۱/mq/review/timestamped/2.md` — 19719 bytes — `154f76b65889…`
+  - `متن ها/۱/mq/review/txt/2.txt` — 12481 bytes — `4dc393b0600d…`
+  - `متن ها/۱/mq/timestamped/2.md` — 18424 bytes — `1fca9fae5316…`
+  - `متن ها/۱/mq/txt/2.txt` — 12506 bytes — `e2668c884b0b…`
+- Chapter 3: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/3.md` — 12237 bytes — `6449f5868da3…`
+  - `متن ها/۱/mq/md/3.md` — 11630 bytes — `837fa5a33ef3…`
+  - `متن ها/۱/mq/review/timestamped/3.md` — 17960 bytes — `81a8d1008fa3…`
+  - `متن ها/۱/mq/review/txt/3.txt` — 12228 bytes — `f4ac87c47be9…`
+  - `متن ها/۱/mq/timestamped/3.md` — 16737 bytes — `272dd6e9232f…`
+  - `متن ها/۱/mq/txt/3.txt` — 11206 bytes — `b2aa87ea57a1…`
+- Chapter 4: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/4.md` — 14881 bytes — `3105a2bb9d21…`
+  - `متن ها/۱/mq/md/4.md` — 14184 bytes — `5f8f4f656578…`
+  - `متن ها/۱/mq/review/timestamped/4.md` — 20634 bytes — `9c48c07785bf…`
+  - `متن ها/۱/mq/review/txt/4.txt` — 14872 bytes — `7d900589ea73…`
+  - `متن ها/۱/mq/timestamped/4.md` — 19521 bytes — `bc58d9c26a3f…`
+  - `متن ها/۱/mq/txt/4.txt` — 13760 bytes — `62b539646293…`
+- Chapter 5: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/5.md` — 11325 bytes — `674019d4cc02…`
+  - `متن ها/۱/mq/md/5.md` — 15972 bytes — `46fb2e64a272…`
+  - `متن ها/۱/mq/review/timestamped/5.md` — 24248 bytes — `e74ed1432a37…`
+  - `متن ها/۱/mq/review/txt/5.txt` — 11316 bytes — `d13400d4b02e…`
+  - `متن ها/۱/mq/timestamped/5.md` — 22633 bytes — `7263b9245a73…`
+  - `متن ها/۱/mq/txt/5.txt` — 15548 bytes — `881040e060e7…`
+- Chapter 6: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/6.md` — 5426 bytes — `e3b6031c9e2d…`
+  - `متن ها/۱/mq/md/6.md` — 7131 bytes — `71d0199e19d1…`
+  - `متن ها/۱/mq/review/timestamped/6.md` — 10389 bytes — `d12dcaec08c5…`
+  - `متن ها/۱/mq/review/txt/6.txt` — 5417 bytes — `36da043391f7…`
+  - `متن ها/۱/mq/timestamped/6.md` — 9696 bytes — `f9ac6c2892d1…`
+  - `متن ها/۱/mq/txt/6.txt` — 6707 bytes — `fbf076165b3d…`
+- Chapter 7: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/7.md` — 10390 bytes — `97dda5575780…`
+  - `متن ها/۱/mq/md/7.md` — 12140 bytes — `1daa74b4afc0…`
+  - `متن ها/۱/mq/review/timestamped/7.md` — 18306 bytes — `6c8b846749e7…`
+  - `متن ها/۱/mq/review/txt/7.txt` — 10381 bytes — `a2239a16dd0c…`
+  - `متن ها/۱/mq/timestamped/7.md` — 17142 bytes — `07a26571fc9a…`
+  - `متن ها/۱/mq/txt/7.txt` — 11716 bytes — `75eb1ec493c6…`
+- Chapter 8: **6 unique files**
+  - `collections/mq/sources/pipeline_review/md/8.md` — 9629 bytes — `0be2248d04ee…`
+  - `متن ها/۱/mq/md/8.md` — 10628 bytes — `e4e53f0bb368…`
+  - `متن ها/۱/mq/review/timestamped/8.md` — 14890 bytes — `485fcbe87ed0…`
+  - `متن ها/۱/mq/review/txt/8.txt` — 9620 bytes — `90f2f363ccc1…`
+  - `متن ها/۱/mq/timestamped/8.md` — 14229 bytes — `605914c6a823…`
+  - `متن ها/۱/mq/txt/8.txt` — 10204 bytes — `f30362d460cf…`
+
+### tarbiat_morabi
+- Chapter 1: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/1.md` — 6625 bytes — `f1994e2f04ef…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/1.md` — 9764 bytes — `dd5c99e17d01…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/1.md` — 9451 bytes — `87c7b47188b3…`
+  - `متن ها/۲/tarbiat_morabi/txt/1.txt` — 6201 bytes — `9769985faf13…`
+- Chapter 2: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/2.md` — 5624 bytes — `319f836cd147…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/2.md` — 7285 bytes — `bb1b1beec64d…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/2.md` — 6917 bytes — `89c62a43babf…`
+  - `متن ها/۲/tarbiat_morabi/txt/2.txt` — 5200 bytes — `657252fcb3c6…`
+- Chapter 3: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/3.md` — 19899 bytes — `fb2a7083c3ee…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/3.md` — 27907 bytes — `afb8e6fe5af7…`
+  - `متن ها/۲/tarbiat_morabi/txt/3.txt` — 19475 bytes — `d48afd5e9fe8…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/3.md` — 29073 bytes — `782ead575448…`
+- Chapter 4: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/4.md` — 19516 bytes — `39568ef14cf0…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/4.md` — 29240 bytes — `23197147170e…`
+  - `متن ها/۲/tarbiat_morabi/txt/4.txt` — 19092 bytes — `21a37c3d4e3a…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/4.md` — 30170 bytes — `e3a9fde0b049…`
+- Chapter 5: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/5.md` — 9714 bytes — `85dd55654227…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/5.md` — 14214 bytes — `c7f362e34921…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/5.md` — 13627 bytes — `97157dcf906a…`
+  - `متن ها/۲/tarbiat_morabi/txt/5.txt` — 9290 bytes — `3b5f2cd5744b…`
+- Chapter 6: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/6.md` — 11020 bytes — `5fb341cc7da6…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/6.md` — 16070 bytes — `c02d1a512222…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/6.md` — 15634 bytes — `e7f8c9d5aeba…`
+  - `متن ها/۲/tarbiat_morabi/txt/6.txt` — 10596 bytes — `0b0fe6e308f5…`
+- Chapter 7: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/7.md` — 13024 bytes — `1ad21fe259fb…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/7.md` — 15269 bytes — `edc14eb83bbf…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/7.md` — 18182 bytes — `654a12949f9e…`
+  - `متن ها/۲/tarbiat_morabi/txt/7.txt` — 12600 bytes — `406dce7c113b…`
+- Chapter 8: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/8.md` — 10602 bytes — `84632b984729…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/8.md` — 15035 bytes — `6a0aa83628f6…`
+  - `متن ها/۲/tarbiat_morabi/txt/8.txt` — 10178 bytes — `13eee30d9bfd…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/8.md` — 4297 bytes — `b851381af54d…`
+- Chapter 9: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/9.md` — 6905 bytes — `311e64761a80…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/9.md` — 9166 bytes — `fccd3e8af94d…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/9.md` — 8925 bytes — `fbcb453687b7…`
+  - `متن ها/۲/tarbiat_morabi/txt/9.txt` — 6481 bytes — `c46332d804e9…`
+- Chapter 10: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/10.md` — 15549 bytes — `ff827f41301f…`
+  - `متن ها/۲/tarbiat_morabi/review/timestamped/10.md` — 22624 bytes — `8f10e3e736b6…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/10.md` — 21612 bytes — `670196693b2d…`
+  - `متن ها/۲/tarbiat_morabi/txt/10.txt` — 15125 bytes — `2c9010fe9103…`
+- Chapter 11: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/11.md` — 7792 bytes — `708f5a5ed078…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/11.md` — 10174 bytes — `4d74fb31c8ed…`
+  - `متن ها/۲/tarbiat_morabi/txt/11.txt` — 7368 bytes — `14064aaafdbb…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/11.md` — 10707 bytes — `4da977a622d8…`
+- Chapter 12: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/12.md` — 25601 bytes — `d3965d0b2521…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/12.md` — 35707 bytes — `a23ddc92440f…`
+  - `متن ها/۲/tarbiat_morabi/txt/12.txt` — 25177 bytes — `43fa1173b46d…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/12.md` — 37188 bytes — `3add38cf484a…`
+- Chapter 13: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/13.md` — 8261 bytes — `00a7ffb00c34…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/13.md` — 10929 bytes — `7d9e8ae53992…`
+  - `متن ها/۲/tarbiat_morabi/txt/13.txt` — 7837 bytes — `7586ffa791e2…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/13.md` — 11250 bytes — `048aef5e69cd…`
+- Chapter 14: **4 unique files**
+  - `متن ها/۲/tarbiat_morabi/md/14.md` — 20983 bytes — `3fceb25b22d2…`
+  - `متن ها/۲/tarbiat_morabi/timestamped/14.md` — 29275 bytes — `8d05554a2417…`
+  - `متن ها/۲/tarbiat_morabi/txt/14.txt` — 20559 bytes — `b7e7d813a484…`
+  - `متن ها/۳/tarbiat_morabi/review/timestamped/14.md` — 30455 bytes — `d8d7135f7312…`
+
+### uni_tehran
+- Chapter 1: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/1.md` — 21691 bytes — `ed29f465e17d…`
+  - `متن ها/۱/uni_tehran/md/1.md` — 20675 bytes — `7faeec9108fc…`
+  - `متن ها/۱/uni_tehran/review/timestamped/1.md` — 22821 bytes — `042c75961736…`
+  - `متن ها/۱/uni_tehran/review/txt/1.txt` — 21619 bytes — `493c18b0db77…`
+  - `متن ها/۱/uni_tehran/timestamped/1.md` — 21563 bytes — `894ce719b569…`
+  - `متن ها/۱/uni_tehran/txt/1.txt` — 20518 bytes — `294456971902…`
+- Chapter 2: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/2.md` — 24395 bytes — `03364e6b5db6…`
+  - `متن ها/۱/uni_tehran/md/2.md` — 23194 bytes — `5c5f075c0bfa…`
+  - `متن ها/۱/uni_tehran/review/timestamped/2.md` — 25529 bytes — `13903558c9f2…`
+  - `متن ها/۱/uni_tehran/review/txt/2.txt` — 24308 bytes — `c1b1c1d01fd3…`
+  - `متن ها/۱/uni_tehran/timestamped/2.md` — 24130 bytes — `481abcdb33d2…`
+  - `متن ها/۱/uni_tehran/txt/2.txt` — 23029 bytes — `6c253252895a…`
+- Chapter 3: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/3.md` — 23259 bytes — `44db6c27e463…`
+  - `متن ها/۱/uni_tehran/md/3.md` — 22279 bytes — `0980ed72aa69…`
+  - `متن ها/۱/uni_tehran/review/timestamped/3.md` — 24695 bytes — `e42a31c56665…`
+  - `متن ها/۱/uni_tehran/review/txt/3.txt` — 23169 bytes — `96cb11bcf915…`
+  - `متن ها/۱/uni_tehran/timestamped/3.md` — 23407 bytes — `ae706dd7549b…`
+  - `متن ها/۱/uni_tehran/txt/3.txt` — 22082 bytes — `09069dc0d7cb…`
+- Chapter 4: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/4.md` — 25247 bytes — `8eeb96e58ca6…`
+  - `متن ها/۱/uni_tehran/md/4.md` — 29276 bytes — `237329fde912…`
+  - `متن ها/۱/uni_tehran/review/timestamped/4.md` — 31059 bytes — `292ecb1b7271…`
+  - `متن ها/۱/uni_tehran/review/txt/4.txt` — 25225 bytes — `234827def762…`
+  - `متن ها/۱/uni_tehran/timestamped/4.md` — 29924 bytes — `b7a30d589ff0…`
+  - `متن ها/۱/uni_tehran/txt/4.txt` — 29159 bytes — `ff0721942db4…`
+- Chapter 5: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/5.md` — 30274 bytes — `4e758888873b…`
+  - `متن ها/۱/uni_tehran/md/5.md` — 28923 bytes — `07bccdd5a50e…`
+  - `متن ها/۱/uni_tehran/review/timestamped/5.md` — 32230 bytes — `399a2785fecb…`
+  - `متن ها/۱/uni_tehran/review/txt/5.txt` — 30148 bytes — `4c254fdc337d…`
+  - `متن ها/۱/uni_tehran/timestamped/5.md` — 30483 bytes — `7fd158a31075…`
+  - `متن ها/۱/uni_tehran/txt/5.txt` — 28654 bytes — `6fe270d83992…`
+- Chapter 6: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/6.md` — 18353 bytes — `79d5ded3f73f…`
+  - `متن ها/۱/uni_tehran/md/6.md` — 17522 bytes — `5ff9ef5aabee…`
+  - `متن ها/۱/uni_tehran/review/timestamped/6.md` — 19491 bytes — `953e14f1b9e1…`
+  - `متن ها/۱/uni_tehran/review/txt/6.txt` — 18251 bytes — `5357ac5009ed…`
+  - `متن ها/۱/uni_tehran/timestamped/6.md` — 18506 bytes — `5c1dac35b84b…`
+  - `متن ها/۱/uni_tehran/txt/6.txt` — 17349 bytes — `1051704c9d8e…`
+- Chapter 7: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/7.md` — 29083 bytes — `488f950904fb…`
+  - `متن ها/۱/uni_tehran/md/7.md` — 28202 bytes — `ba7da64e3e45…`
+  - `متن ها/۱/uni_tehran/review/timestamped/7.md` — 30943 bytes — `def5b1a3f86e…`
+  - `متن ها/۱/uni_tehran/review/txt/7.txt` — 28999 bytes — `01cee0ce94ca…`
+  - `متن ها/۱/uni_tehran/timestamped/7.md` — 29474 bytes — `3a256b0274b1…`
+  - `متن ها/۱/uni_tehran/txt/7.txt` — 27981 bytes — `d61c4bcef8c2…`
+- Chapter 8: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/8.md` — 32449 bytes — `abc11a9b8a49…`
+  - `متن ها/۱/uni_tehran/md/8.md` — 31029 bytes — `ba657a01cbf2…`
+  - `متن ها/۱/uni_tehran/review/timestamped/8.md` — 35545 bytes — `2b8dee4f63d5…`
+  - `متن ها/۱/uni_tehran/review/txt/8.txt` — 32257 bytes — `636b539ec416…`
+  - `متن ها/۱/uni_tehran/timestamped/8.md` — 33477 bytes — `5b22fc46e9ed…`
+  - `متن ها/۱/uni_tehran/txt/8.txt` — 30612 bytes — `afd4f32adb04…`
+- Chapter 9: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/9.md` — 38782 bytes — `5c7813bda261…`
+  - `متن ها/۱/uni_tehran/md/9.md` — 37097 bytes — `60ffa1d13523…`
+  - `متن ها/۱/uni_tehran/review/timestamped/9.md` — 41286 bytes — `69b7a2345a9b…`
+  - `متن ها/۱/uni_tehran/review/txt/9.txt` — 38608 bytes — `bdf3023935e8…`
+  - `متن ها/۱/uni_tehran/timestamped/9.md` — 39137 bytes — `160f7aa98290…`
+  - `متن ها/۱/uni_tehran/txt/9.txt` — 36748 bytes — `0020786c0d97…`
+- Chapter 10: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/10.md` — 21822 bytes — `1a4b1c2900fa…`
+  - `متن ها/۱/uni_tehran/md/10.md` — 20704 bytes — `29f1ce702dbd…`
+  - `متن ها/۱/uni_tehran/review/timestamped/10.md` — 23118 bytes — `575b691af5cd…`
+  - `متن ها/۱/uni_tehran/review/txt/10.txt` — 21750 bytes — `92665c95ebba…`
+  - `متن ها/۱/uni_tehran/timestamped/10.md` — 21688 bytes — `cdaa5add5d76…`
+  - `متن ها/۱/uni_tehran/txt/10.txt` — 20531 bytes — `4342bd098439…`
+- Chapter 11: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/11.md` — 23117 bytes — `521aa86d1789…`
+  - `متن ها/۱/uni_tehran/md/11.md` — 22382 bytes — `e90d7f6f34da…`
+  - `متن ها/۱/uni_tehran/review/timestamped/11.md` — 25093 bytes — `e1210b07896e…`
+  - `متن ها/۱/uni_tehran/review/txt/11.txt` — 22985 bytes — `1ed93a106020…`
+  - `متن ها/۱/uni_tehran/timestamped/11.md` — 24016 bytes — `5c675aec923c…`
+  - `متن ها/۱/uni_tehran/txt/11.txt` — 22109 bytes — `efae22f496fe…`
+- Chapter 12: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/12.md` — 20431 bytes — `5f5b9cf258d6…`
+  - `متن ها/۱/uni_tehran/md/12.md` — 19502 bytes — `d4c6e893ee56…`
+  - `متن ها/۱/uni_tehran/review/timestamped/12.md` — 21937 bytes — `4fb96c51a2b6…`
+  - `متن ها/۱/uni_tehran/review/txt/12.txt` — 20368 bytes — `dbc5a3524567…`
+  - `متن ها/۱/uni_tehran/timestamped/12.md` — 20632 bytes — `693cea2cd58f…`
+  - `متن ها/۱/uni_tehran/txt/12.txt` — 19313 bytes — `6f996e025834…`
+- Chapter 13: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/13.md` — 26215 bytes — `719c59d891fc…`
+  - `متن ها/۱/uni_tehran/md/13.md` — 25047 bytes — `694f54ac2af8…`
+  - `متن ها/۱/uni_tehran/review/timestamped/13.md` — 27865 bytes — `869904fa2b36…`
+  - `متن ها/۱/uni_tehran/review/txt/13.txt` — 26104 bytes — `3b308fc6bd10…`
+  - `متن ها/۱/uni_tehran/timestamped/13.md` — 26367 bytes — `b411e2393074…`
+  - `متن ها/۱/uni_tehran/txt/13.txt` — 24818 bytes — `e694f76e583d…`
+- Chapter 14: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/14.md` — 26170 bytes — `9a4a821184d4…`
+  - `متن ها/۱/uni_tehran/md/14.md` — 24987 bytes — `754262b325fb…`
+  - `متن ها/۱/uni_tehran/review/timestamped/14.md` — 28180 bytes — `fdcd6b5184d3…`
+  - `متن ها/۱/uni_tehran/review/txt/14.txt` — 26008 bytes — `45f321bf9f21…`
+  - `متن ها/۱/uni_tehran/timestamped/14.md` — 26691 bytes — `bc9b50e9558f…`
+  - `متن ها/۱/uni_tehran/txt/14.txt` — 24694 bytes — `9d1d61470c25…`
+- Chapter 15: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/15.md` — 31936 bytes — `50e8bf5d4672…`
+  - `متن ها/۱/uni_tehran/md/15.md` — 30478 bytes — `a6dfeea67afe…`
+  - `متن ها/۱/uni_tehran/review/timestamped/15.md` — 34518 bytes — `4378f616a728…`
+  - `متن ها/۱/uni_tehran/review/txt/15.txt` — 31783 bytes — `097ea9e90605…`
+  - `متن ها/۱/uni_tehran/timestamped/15.md` — 32544 bytes — `7f20c5476d10…`
+  - `متن ها/۱/uni_tehran/txt/15.txt` — 30133 bytes — `96fbcadd094f…`
+- Chapter 16: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/16.md` — 25923 bytes — `9c60b10f7743…`
+  - `متن ها/۱/uni_tehran/md/16.md` — 24984 bytes — `21c8f1a1ad0c…`
+  - `متن ها/۱/uni_tehran/review/timestamped/16.md` — 27441 bytes — `76e584a95971…`
+  - `متن ها/۱/uni_tehran/review/txt/16.txt` — 25827 bytes — `a632566b97ca…`
+  - `متن ها/۱/uni_tehran/timestamped/16.md` — 26209 bytes — `f346ac2fccdb…`
+  - `متن ها/۱/uni_tehran/txt/16.txt` — 24775 bytes — `2ffebdcc4232…`
+- Chapter 17: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/17.md` — 32522 bytes — `8a523808e753…`
+  - `متن ها/۱/uni_tehran/md/17.md` — 30961 bytes — `412342041739…`
+  - `متن ها/۱/uni_tehran/review/timestamped/17.md` — 34810 bytes — `4951c85f7271…`
+  - `متن ها/۱/uni_tehran/review/txt/17.txt` — 32330 bytes — `573f7cce9355…`
+  - `متن ها/۱/uni_tehran/timestamped/17.md` — 32929 bytes — `97c6a93bda3b…`
+  - `متن ها/۱/uni_tehran/txt/17.txt` — 30624 bytes — `3af033a8a38e…`
+- Chapter 18: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/18.md` — 29329 bytes — `a504cf9748e2…`
+  - `متن ها/۱/uni_tehran/md/18.md` — 28010 bytes — `872d7e89b2d3…`
+  - `متن ها/۱/uni_tehran/review/timestamped/18.md` — 31273 bytes — `1e4a6fc8b2d2…`
+  - `متن ها/۱/uni_tehran/review/txt/18.txt` — 29167 bytes — `7398df931732…`
+  - `متن ها/۱/uni_tehran/timestamped/18.md` — 29643 bytes — `ba47d0df5369…`
+  - `متن ها/۱/uni_tehran/txt/18.txt` — 27733 bytes — `3a3f7cc1a197…`
+- Chapter 19: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/19.md` — 25525 bytes — `a1320b0df0df…`
+  - `متن ها/۱/uni_tehran/md/19.md` — 24320 bytes — `fb43cd35e74d…`
+  - `متن ها/۱/uni_tehran/review/timestamped/19.md` — 26915 bytes — `005d93cf4a29…`
+  - `متن ها/۱/uni_tehran/review/txt/19.txt` — 25435 bytes — `a162977a775a…`
+  - `متن ها/۱/uni_tehran/timestamped/19.md` — 25424 bytes — `3b17ca2a9ae0…`
+  - `متن ها/۱/uni_tehran/txt/19.txt` — 24127 bytes — `db6286e7cd12…`
+- Chapter 20: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/20.md` — 21070 bytes — `c07184716e90…`
+  - `متن ها/۱/uni_tehran/md/20.md` — 20253 bytes — `b8cd10d0680e…`
+  - `متن ها/۱/uni_tehran/review/timestamped/20.md` — 22836 bytes — `ba8709b05870…`
+  - `متن ها/۱/uni_tehran/review/txt/20.txt` — 20974 bytes — `2e5866d7abe0…`
+  - `متن ها/۱/uni_tehran/timestamped/20.md` — 21597 bytes — `1367ff7c05a2…`
+  - `متن ها/۱/uni_tehran/txt/20.txt` — 20020 bytes — `91247a7bc0f4…`
+- Chapter 21: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/21.md` — 25381 bytes — `3674fb35587a…`
+  - `متن ها/۱/uni_tehran/md/21.md` — 24129 bytes — `9ee306476ed1…`
+  - `متن ها/۱/uni_tehran/review/timestamped/21.md` — 27379 bytes — `8d304e10e131…`
+  - `متن ها/۱/uni_tehran/review/txt/21.txt` — 25231 bytes — `451394916541…`
+  - `متن ها/۱/uni_tehran/timestamped/21.md` — 25810 bytes — `0e9fb5fcb3e0…`
+  - `متن ها/۱/uni_tehran/txt/21.txt` — 23844 bytes — `09247be81849…`
+- Chapter 22: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/22.md` — 32834 bytes — `ea8c8bba44c8…`
+  - `متن ها/۱/uni_tehran/md/22.md` — 31399 bytes — `a220348924e8…`
+  - `متن ها/۱/uni_tehran/review/timestamped/22.md` — 34982 bytes — `4aefde0c7b72…`
+  - `متن ها/۱/uni_tehran/review/txt/22.txt` — 32684 bytes — `b8c9a23816f1…`
+  - `متن ها/۱/uni_tehran/timestamped/22.md` — 33176 bytes — `77e5aae47220…`
+  - `متن ها/۱/uni_tehran/txt/22.txt` — 31098 bytes — `8aad2a889d0c…`
+- Chapter 23: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/23.md` — 22255 bytes — `b6a2083f8856…`
+  - `متن ها/۱/uni_tehran/md/23.md` — 21151 bytes — `644482e0ecc4…`
+  - `متن ها/۱/uni_tehran/review/timestamped/23.md` — 23381 bytes — `a0276d15f1a6…`
+  - `متن ها/۱/uni_tehran/review/txt/23.txt` — 22159 bytes — `dbfccdf528c5…`
+  - `متن ها/۱/uni_tehran/timestamped/23.md` — 22111 bytes — `fc56864484a6…`
+  - `متن ها/۱/uni_tehran/txt/23.txt` — 20982 bytes — `c6cf9f874d22…`
+- Chapter 24: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/24.md` — 24722 bytes — `dcd5f557ffc3…`
+  - `متن ها/۱/uni_tehran/md/24.md` — 23938 bytes — `4fdd2833beca…`
+  - `متن ها/۱/uni_tehran/review/timestamped/24.md` — 26352 bytes — `f9335e7453ef…`
+  - `متن ها/۱/uni_tehran/review/txt/24.txt` — 24608 bytes — `7723ece32b25…`
+  - `متن ها/۱/uni_tehran/timestamped/24.md` — 25258 bytes — `25d600106fb7…`
+  - `متن ها/۱/uni_tehran/txt/24.txt` — 23709 bytes — `af1c18adbcc9…`
+- Chapter 25: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/25.md` — 23147 bytes — `362bb2c60292…`
+  - `متن ها/۱/uni_tehran/md/25.md` — 22391 bytes — `e94e0826ec33…`
+  - `متن ها/۱/uni_tehran/review/timestamped/25.md` — 24925 bytes — `2c58169b4846…`
+  - `متن ها/۱/uni_tehran/review/txt/25.txt` — 23033 bytes — `3e7e17571b94…`
+  - `متن ها/۱/uni_tehran/timestamped/25.md` — 23832 bytes — `63ff3d7eb63b…`
+  - `متن ها/۱/uni_tehran/txt/25.txt` — 22146 bytes — `d92b457d78df…`
+- Chapter 26: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/26.md` — 30093 bytes — `a32f223283e3…`
+  - `متن ها/۱/uni_tehran/md/26.md` — 28568 bytes — `a458bec1c6f7…`
+  - `متن ها/۱/uni_tehran/review/timestamped/26.md` — 32547 bytes — `085d76817e36…`
+  - `متن ها/۱/uni_tehran/review/txt/26.txt` — 29895 bytes — `acc225dbb10e…`
+  - `متن ها/۱/uni_tehran/timestamped/26.md` — 30681 bytes — `b74044a49627…`
+  - `متن ها/۱/uni_tehran/txt/26.txt` — 28211 bytes — `e525784d0f9d…`
+- Chapter 27: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/27.md` — 26146 bytes — `6527085ffa1e…`
+  - `متن ها/۱/uni_tehran/md/27.md` — 25045 bytes — `09ef279551bf…`
+  - `متن ها/۱/uni_tehran/review/timestamped/27.md` — 27655 bytes — `15fe7235be79…`
+  - `متن ها/۱/uni_tehran/review/txt/27.txt` — 26044 bytes — `f583f7c17560…`
+  - `متن ها/۱/uni_tehran/timestamped/27.md` — 26222 bytes — `b058fe1902af…`
+  - `متن ها/۱/uni_tehran/txt/27.txt` — 24844 bytes — `52732d001f43…`
+- Chapter 28: **4 unique files**
+  - `متن ها/۱/uni_tehran/md/28.md` — 21743 bytes — `dd5bba75d5f5…`
+  - `متن ها/۱/uni_tehran/review/timestamped/28.md` — 25110 bytes — `4950f2296efc…`
+  - `متن ها/۱/uni_tehran/timestamped/28.md` — 24048 bytes — `43c20fc82729…`
+  - `متن ها/۱/uni_tehran/txt/28.txt` — 21354 bytes — `d51a396e0d95…`
+- Chapter 29: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/29.md` — 24266 bytes — `db3f3064d2aa…`
+  - `متن ها/۱/uni_tehran/md/29.md` — 23768 bytes — `4c1929d6e574…`
+  - `متن ها/۱/uni_tehran/review/timestamped/29.md` — 26144 bytes — `21d0bb73a038…`
+  - `متن ها/۱/uni_tehran/review/txt/29.txt` — 24212 bytes — `d2808e31e7ba…`
+  - `متن ها/۱/uni_tehran/timestamped/29.md` — 25040 bytes — `1531420c3f9a…`
+  - `متن ها/۱/uni_tehran/txt/29.txt` — 23547 bytes — `dd155b5f02c6…`
+- Chapter 30: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/30.md` — 29158 bytes — `b0444928951f…`
+  - `متن ها/۱/uni_tehran/md/30.md` — 28665 bytes — `62109d140925…`
+  - `متن ها/۱/uni_tehran/review/timestamped/30.md` — 31050 bytes — `4d35d46a925f…`
+  - `متن ها/۱/uni_tehran/review/txt/30.txt` — 29050 bytes — `caef7d8831c8…`
+  - `متن ها/۱/uni_tehran/timestamped/30.md` — 30129 bytes — `3c29dc394b9a…`
+  - `متن ها/۱/uni_tehran/txt/30.txt` — 28412 bytes — `cb8199d56879…`
+- Chapter 31: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/31.md` — 28925 bytes — `3e7d9da17b2b…`
+  - `متن ها/۱/uni_tehran/md/31.md` — 27572 bytes — `1dc7c2d74249…`
+  - `متن ها/۱/uni_tehran/review/timestamped/31.md` — 29918 bytes — `3100c8a41389…`
+  - `متن ها/۱/uni_tehran/review/txt/31.txt` — 28865 bytes — `961737fa958e…`
+  - `متن ها/۱/uni_tehran/timestamped/31.md` — 28292 bytes — `1456a14786d2…`
+  - `متن ها/۱/uni_tehran/txt/31.txt` — 27443 bytes — `295835e6ebb2…`
+- Chapter 32: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/32.md` — 24870 bytes — `9477b5293a1d…`
+  - `متن ها/۱/uni_tehran/md/32.md` — 23908 bytes — `2a2fdab9e270…`
+  - `متن ها/۱/uni_tehran/review/timestamped/32.md` — 26373 bytes — `016958828c82…`
+  - `متن ها/۱/uni_tehran/review/txt/32.txt` — 24780 bytes — `caf79d92b15e…`
+  - `متن ها/۱/uni_tehran/timestamped/32.md` — 25012 bytes — `cb795d2b5e11…`
+  - `متن ها/۱/uni_tehran/txt/32.txt` — 23715 bytes — `d2b42e8c6707…`
+- Chapter 33: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/33.md` — 38683 bytes — `96162449f7aa…`
+  - `متن ها/۱/uni_tehran/md/33.md` — 36638 bytes — `0ad008bf2e46…`
+  - `متن ها/۱/uni_tehran/review/timestamped/33.md` — 40797 bytes — `a770f4dcb431…`
+  - `متن ها/۱/uni_tehran/review/txt/33.txt` — 38527 bytes — `994bb8f2222c…`
+  - `متن ها/۱/uni_tehran/timestamped/33.md` — 38390 bytes — `9854ff39c667…`
+  - `متن ها/۱/uni_tehran/txt/33.txt` — 36337 bytes — `7c02867fcd54…`
+- Chapter 34: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/34.md` — 42454 bytes — `bd3237c271cd…`
+  - `متن ها/۱/uni_tehran/md/34.md` — 40603 bytes — `b8d65eafa002…`
+  - `متن ها/۱/uni_tehran/review/timestamped/34.md` — 45410 bytes — `0cde1bd3bc39…`
+  - `متن ها/۱/uni_tehran/review/txt/34.txt` — 42214 bytes — `f8f6a9a5cb64…`
+  - `متن ها/۱/uni_tehran/timestamped/34.md` — 43123 bytes — `c0d5984f8416…`
+  - `متن ها/۱/uni_tehran/txt/34.txt` — 40174 bytes — `50bd36b541bc…`
+- Chapter 35: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/35.md` — 30362 bytes — `6c14c1ecd5c1…`
+  - `متن ها/۱/uni_tehran/md/35.md` — 29141 bytes — `8ed3f65448a7…`
+  - `متن ها/۱/uni_tehran/review/timestamped/35.md` — 32321 bytes — `2a3d266a446f…`
+  - `متن ها/۱/uni_tehran/review/txt/35.txt` — 30260 bytes — `c9fd89af63ae…`
+  - `متن ها/۱/uni_tehran/timestamped/35.md` — 30583 bytes — `e2cb0005013e…`
+  - `متن ها/۱/uni_tehran/txt/35.txt` — 28900 bytes — `7062a6c9adaa…`
+- Chapter 36: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/36.md` — 19873 bytes — `35cf424d385e…`
+  - `متن ها/۱/uni_tehran/md/36.md` — 18679 bytes — `5fda170bc3fb…`
+  - `متن ها/۱/uni_tehran/review/timestamped/36.md` — 20811 bytes — `fa896401e043…`
+  - `متن ها/۱/uni_tehran/review/txt/36.txt` — 19786 bytes — `35f5a396f052…`
+  - `متن ها/۱/uni_tehran/timestamped/36.md` — 19495 bytes — `47ea8f74c5ba…`
+  - `متن ها/۱/uni_tehran/txt/36.txt` — 18534 bytes — `2d737817b1e6…`
+- Chapter 37: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/37.md` — 27464 bytes — `50a24ea9a24e…`
+  - `متن ها/۱/uni_tehran/md/37.md` — 25843 bytes — `ca2cfe02ed70…`
+  - `متن ها/۱/uni_tehran/review/timestamped/37.md` — 29012 bytes — `dd38316516fd…`
+  - `متن ها/۱/uni_tehran/review/txt/37.txt` — 27326 bytes — `d8ec58c560b7…`
+  - `متن ها/۱/uni_tehran/timestamped/37.md` — 27187 bytes — `4ef14353db7c…`
+  - `متن ها/۱/uni_tehran/txt/37.txt` — 25610 bytes — `94f802aa4bfe…`
+- Chapter 38: **6 unique files**
+  - `collections/uni_tehran/sources/pipeline_review/md/38.md` — 21812 bytes — `c1db091156dc…`
+  - `متن ها/۱/uni_tehran/md/38.md` — 20681 bytes — `07363ea896bb…`
+  - `متن ها/۱/uni_tehran/review/timestamped/38.md` — 22980 bytes — `7e5db52c425e…`
+  - `متن ها/۱/uni_tehran/review/txt/38.txt` — 21740 bytes — `1c0440cf3764…`
+  - `متن ها/۱/uni_tehran/timestamped/38.md` — 21593 bytes — `addf3942bf6c…`
+  - `متن ها/۱/uni_tehran/txt/38.txt` — 20520 bytes — `68534bff09d1…`
+
