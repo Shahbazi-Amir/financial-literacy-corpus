@@ -1,0 +1,181 @@
+name: Restructure Asre into three references
+on:
+  push:
+    branches: [agent/asre-shirin-reconcile-final-md]
+permissions:
+  contents: write
+jobs:
+  restructure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve final candidates and restore source output
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          rm -rf final/asre_shirin
+          mkdir -p final/asre_shirin/md
+          cp outputs/asre_shirin/review/md/*.md final/asre_shirin/md/
+
+          cat > final/asre_shirin/README.md <<'EOF'
+          # Asre Shirin — Final Candidates
+
+          This folder is the third working reference for Asre Shirin.
+
+          - `متن ها/` = user-curated/audio-reviewed reference. Immutable.
+          - `outputs/asre_shirin/review/` = original ChatGPT review/output reference. Immutable.
+          - `final/asre_shirin/md/` = reconciled candidates produced from comparison of the two references.
+
+          Important: files in this folder are candidates until episode-level review is approved. Some episodes were edited conservatively, while others were substantially restructured and therefore require review before being treated as canonical.
+          EOF
+
+          # Restore outputs exactly from current main reference.
+          git rm -r --ignore-unmatch -- outputs/asre_shirin/review/md
+          git checkout origin/main -- outputs/asre_shirin/review/md
+
+      - name: Generate transparent change reports
+        shell: python
+        run: |
+          from pathlib import Path
+          import subprocess, difflib, re
+
+          root = Path('.')
+          report_dir = root / 'reports' / 'asre_shirin_reconciliation'
+          diff_dir = report_dir / 'diffs'
+          diff_dir.mkdir(parents=True, exist_ok=True)
+
+          def words(s):
+              return len(re.findall(r'\S+', s or ''))
+
+          def read(path):
+              p = Path(path)
+              return p.read_text(encoding='utf-8') if p.exists() else None
+
+          def main_text(ep):
+              path = f'outputs/asre_shirin/review/md/{ep}.md'
+              try:
+                  return subprocess.check_output(['git','show',f'origin/main:{path}'], text=True)
+              except subprocess.CalledProcessError:
+                  return None
+
+          def user_path(ep):
+              if ep <= 13:
+                  return Path(f'متن ها/۱/asre_shirin/asre-shirin-season-1/episode-{ep:02d}.md')
+              return Path(f'متن ها/۱/asre_shirin/asre-shirin-season-2/episode-{ep-13:02d}.md')
+
+          rows=[]
+          detailed=[]
+          for ep in range(1,27):
+              out = main_text(ep)
+              usr = read(user_path(ep))
+              fin = read(f'final/asre_shirin/md/{ep}.md')
+              ow, uw, fw = words(out), words(usr), words(fin)
+              ratio = (fw/ow) if ow else None
+              if out is None:
+                  level='RECONSTRUCTED: Output reference missing; candidate built from user reference.'
+              elif ratio >= .90:
+                  level='LIGHT: metadata/ambiguity cleanup; content largely retained.'
+              elif ratio >= .75:
+                  level='MODERATE: meaningful editing/restructuring; review recommended.'
+              else:
+                  level='HEAVY: substantial compression/restructuring; must be reviewed before canonical use.'
+
+              def stats(a,b):
+                  if a is None or b is None: return (0,0,0)
+                  sm=difflib.SequenceMatcher(a=a.splitlines(), b=b.splitlines())
+                  add=delete=replace=0
+                  for tag,i1,i2,j1,j2 in sm.get_opcodes():
+                      if tag=='insert': add += j2-j1
+                      elif tag=='delete': delete += i2-i1
+                      elif tag=='replace': replace += max(i2-i1,j2-j1)
+                  return add,delete,replace
+              a,d,r=stats(out,fin)
+              rows.append((ep,uw,ow,fw,ratio,level,a,d,r))
+
+              if out is not None and fin is not None:
+                  diff=''.join(difflib.unified_diff(out.splitlines(True),fin.splitlines(True),fromfile=f'output/{ep}.md',tofile=f'final/{ep}.md'))
+                  (diff_dir/f'ep{ep:02d}_output_to_final.diff').write_text(diff,encoding='utf-8')
+              if usr is not None and fin is not None:
+                  diff=''.join(difflib.unified_diff(usr.splitlines(True),fin.splitlines(True),fromfile=str(user_path(ep)),tofile=f'final/{ep}.md'))
+                  (diff_dir/f'ep{ep:02d}_user_to_final.diff').write_text(diff,encoding='utf-8')
+
+          lines=[
+              '# Asre Shirin — What was changed', '',
+              'This report separates the three references and describes the scale of edits made in each episode.', '',
+              '## Three references', '',
+              '1. `متن ها/` — user-curated/audio-reviewed source; unchanged.',
+              '2. `outputs/asre_shirin/review/` — original ChatGPT review/output; restored from `main` and unchanged.',
+              '3. `final/asre_shirin/md/` — reconciliation candidates created during this branch.', '',
+              '## Important interpretation', '',
+              'A lower Final/Output word ratio does **not** automatically mean worse quality, but it is a strong warning that the edit moved from correction toward restructuring or compression. Such episodes must be reviewed before canonical approval.', '',
+              '## Episode-by-episode summary', '',
+              '| Ep | User words | Output words | Final words | Final/Output | Edit scale | Added lines | Deleted lines | Replaced blocks |',
+              '|---:|---:|---:|---:|---:|---|---:|---:|---:|'
+          ]
+          for ep,uw,ow,fw,ratio,level,a,d,r in rows:
+              rs='—' if ratio is None else f'{ratio:.3f}'
+              lines.append(f'| {ep} | {uw} | {ow or "—"} | {fw} | {rs} | {level} | {a} | {d} | {r} |')
+          lines += ['', '## Episode 1 — detailed example', '',
+                    'Episode 1 is a conservative reconciliation example:',
+                    '- The original conversational Output was kept as the base.',
+                    '- Season/episode metadata, duration, and source information were added from the user-curated reference.',
+                    '- `[نامفهوم]` fragments were removed only where the user-curated/audio-reviewed reference supported a specific reading or showed the fragment to be non-essential overlap/noise.',
+                    '- Speaker turns and the long-form conversational structure were retained rather than summarized.',
+                    '- No wholesale topical rewrite was intended in this episode.', '',
+                    'For exact line-level evidence see:',
+                    '- `diffs/ep01_output_to_final.diff`',
+                    '- `diffs/ep01_user_to_final.diff`', '',
+                    '## Global assessment of the work already done', '',
+                    '- Episodes 1–4 are generally the least invasive group; episode 1 is the clearest conservative example.',
+                    '- Episode 15 was reconstructed because the Output MD reference did not contain that episode.',
+                    '- Many later episodes were rewritten into cleaner topical sections and became much shorter than the original Output. Those are **not automatically approved finals** and should be reviewed pair-by-pair before canonicalization.',
+                    '- The correct next workflow is: review one episode, approve or revise its Final candidate, then continue to the next episode while preserving both source references unchanged.', '']
+          (report_dir/'WHAT_CHANGED.md').write_text('\n'.join(lines),encoding='utf-8')
+
+          # explicit episode 1 report
+          ep1 = [
+              '# Episode 1 — edit report', '',
+              '## References',
+              '- User reference: `متن ها/۱/asre_shirin/asre-shirin-season-1/episode-01.md`',
+              '- Output reference: `outputs/asre_shirin/review/md/1.md`',
+              '- Final candidate: `final/asre_shirin/md/1.md`', '',
+              '## What changed',
+              '1. Added structured metadata: program, season/episode, speakers, duration, and source link.',
+              '2. Preserved the Output conversational transcript as the primary body.',
+              '3. Resolved supported ambiguous fragments using the user-curated/audio-reviewed reference.',
+              '4. Removed unsupported `[نامفهوم]` placeholders only where the second reference justified doing so.',
+              '5. Did not convert the episode into a short thematic summary; dialogue order and coverage were retained.', '',
+              '## What did NOT change',
+              '- `متن ها/` source file was not edited.',
+              '- Original `outputs/` reference is restored and remains separate.',
+              '- Final candidate is now stored separately under `final/`.', '',
+              '## Exact diffs',
+              '- `diffs/ep01_output_to_final.diff`',
+              '- `diffs/ep01_user_to_final.diff`', ''
+          ]
+          (report_dir/'EPISODE_01_EDIT_REPORT.md').write_text('\n'.join(ep1),encoding='utf-8')
+
+      - name: Verify immutability and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          # متن ها must still match branch merge-base/source archive state.
+          if ! git diff --quiet $(git merge-base HEAD origin/main) -- 'متن ها'; then
+            echo 'ERROR: متن ها changed'
+            git diff -- 'متن ها'
+            exit 1
+          fi
+          # outputs MD must exactly match current main.
+          if ! git diff --quiet origin/main -- outputs/asre_shirin/review/md; then
+            echo 'ERROR: outputs MD differs from main'
+            git diff origin/main -- outputs/asre_shirin/review/md
+            exit 1
+          fi
+          git add final/asre_shirin reports/asre_shirin_reconciliation outputs/asre_shirin/review/md
+          git commit -m 'refactor: separate Asre sources from final candidates' || true
+          git rm .github/workflows/restructure-asre-three-references.yml
+          git commit -m 'ops: remove Asre restructure workflow'
+          git push origin HEAD
