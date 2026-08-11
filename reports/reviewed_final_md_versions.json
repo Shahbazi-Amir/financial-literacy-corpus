@@ -1,0 +1,4288 @@
+{
+  "collections": {
+    "asre_shirin": {
+      "candidate_md_files": 25,
+      "unique_exact_files": 25,
+      "episode_count": 25,
+      "source_classes": {
+        "review_md": 25
+      },
+      "version_distribution": {
+        "1": 25
+      },
+      "episodes": {
+        "1": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/1.md"
+          ]
+        },
+        "2": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/2.md"
+          ]
+        },
+        "3": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/3.md"
+          ]
+        },
+        "4": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/4.md"
+          ]
+        },
+        "5": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/5.md"
+          ]
+        },
+        "6": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/6.md"
+          ]
+        },
+        "7": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/7.md"
+          ]
+        },
+        "8": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/8.md"
+          ]
+        },
+        "9": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/9.md"
+          ]
+        },
+        "10": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/10.md"
+          ]
+        },
+        "11": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/11.md"
+          ]
+        },
+        "12": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/12.md"
+          ]
+        },
+        "13": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/13.md"
+          ]
+        },
+        "14": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/14.md"
+          ]
+        },
+        "16": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/16.md"
+          ]
+        },
+        "17": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/17.md"
+          ]
+        },
+        "18": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/18.md"
+          ]
+        },
+        "19": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/19.md"
+          ]
+        },
+        "20": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/20.md"
+          ]
+        },
+        "21": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/21.md"
+          ]
+        },
+        "22": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/22.md"
+          ]
+        },
+        "23": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/23.md"
+          ]
+        },
+        "24": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/24.md"
+          ]
+        },
+        "25": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/25.md"
+          ]
+        },
+        "26": {
+          "unique_versions": 1,
+          "files": 1,
+          "classes": {
+            "review_md": 1
+          },
+          "paths": [
+            "متن ها/۳/asre_shirin/review/md/26.md"
+          ]
+        }
+      }
+    },
+    "dar_jostojoye_khoshbakhti": {
+      "candidate_md_files": 202,
+      "unique_exact_files": 69,
+      "episode_count": 33,
+      "source_classes": {
+        "final": 135,
+        "reviewed": 66,
+        "review_other": 1
+      },
+      "version_distribution": {
+        "2": 33
+      },
+      "episodes": {
+        "1": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/1.md",
+            "متن ها/۲/dar_jostojo/session-01/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-01/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/1.md",
+            "متن ها/۱/dar-jostojo/session-01/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-01/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "2": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/2.md",
+            "متن ها/۲/dar_jostojo/session-02/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-02/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/2.md",
+            "متن ها/۱/dar-jostojo/session-02/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-02/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "3": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/3.md",
+            "متن ها/۲/dar_jostojo/session-03/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-03/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/3.md",
+            "متن ها/۱/dar-jostojo/session-03/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-03/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "4": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/4.md",
+            "متن ها/۲/dar_jostojo/session-04/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-04/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/4.md",
+            "متن ها/۱/dar-jostojo/session-04/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-04/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "5": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/5.md",
+            "متن ها/۲/dar_jostojo/session-05/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-05/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/5.md",
+            "متن ها/۱/dar-jostojo/session-05/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-05/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "6": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/6.md",
+            "متن ها/۲/dar_jostojo/session-06/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-06/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/6.md",
+            "متن ها/۱/dar-jostojo/session-06/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-06/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "7": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/7.md",
+            "متن ها/۲/dar_jostojo/session-07/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-07/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/7.md",
+            "متن ها/۱/dar-jostojo/session-07/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-07/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "8": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/8.md",
+            "متن ها/۲/dar_jostojo/session-08/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-08/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/8.md",
+            "متن ها/۱/dar-jostojo/session-08/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-08/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "9": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/9.md",
+            "متن ها/۲/dar_jostojo/session-09/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-09/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/9.md",
+            "متن ها/۱/dar-jostojo/session-09/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-09/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "10": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/10.md",
+            "متن ها/۲/dar_jostojo/session-10/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-10/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/10.md",
+            "متن ها/۱/dar-jostojo/session-10/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-10/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "12": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/12.md",
+            "متن ها/۲/dar_jostojo/session-12/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-12/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/12.md",
+            "متن ها/۱/dar-jostojo/session-12/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-12/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "14": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/14.md",
+            "متن ها/۲/dar_jostojo/session-14/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-14/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/14.md",
+            "متن ها/۱/dar-jostojo/session-14/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-14/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "15": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/15.md",
+            "متن ها/۲/dar_jostojo/session-15/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-15/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/15.md",
+            "متن ها/۱/dar-jostojo/session-15/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-15/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "16": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/16.md",
+            "متن ها/۲/dar_jostojo/session-16/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-16/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/16.md",
+            "متن ها/۱/dar-jostojo/session-16/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-16/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "17": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/17.md",
+            "متن ها/۲/dar_jostojo/session-17/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-17/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/17.md",
+            "متن ها/۱/dar-jostojo/session-17/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-17/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "18": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/18.md",
+            "متن ها/۲/dar_jostojo/session-18/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-18/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/18.md",
+            "متن ها/۱/dar-jostojo/session-18/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-18/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "20": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/20.md",
+            "متن ها/۲/dar_jostojo/session-20/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-20/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/20.md",
+            "متن ها/۱/dar-jostojo/session-20/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-20/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "21": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/21.md",
+            "متن ها/۲/dar_jostojo/session-21/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-21/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/21.md",
+            "متن ها/۱/dar-jostojo/session-21/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-21/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "22": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/22.md",
+            "متن ها/۲/dar_jostojo/session-22/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-22/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/22.md",
+            "متن ها/۱/dar-jostojo/session-22/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-22/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "23": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/23.md",
+            "متن ها/۲/dar_jostojo/session-23/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-23/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/23.md",
+            "متن ها/۱/dar-jostojo/session-23/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-23/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "25": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/25.md",
+            "متن ها/۲/dar_jostojo/session-25/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-25/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/25.md",
+            "متن ها/۱/dar-jostojo/session-25/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-25/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "26": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/26.md",
+            "متن ها/۲/dar_jostojo/session-26/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-26/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/26.md",
+            "متن ها/۱/dar-jostojo/session-26/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-26/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "27": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/27.md",
+            "متن ها/۲/dar_jostojo/session-27/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-27/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/27.md",
+            "متن ها/۱/dar-jostojo/session-27/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-27/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "28": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/28.md",
+            "متن ها/۲/dar_jostojo/session-28/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-28/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/28.md",
+            "متن ها/۱/dar-jostojo/session-28/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-28/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "30": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/30.md",
+            "متن ها/۲/dar_jostojo/session-30/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-30/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/30.md",
+            "متن ها/۱/dar-jostojo/session-30/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-30/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "31": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/31.md",
+            "متن ها/۲/dar_jostojo/session-31/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-31/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/31.md",
+            "متن ها/۱/dar-jostojo/session-31/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-31/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "32": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/32.md",
+            "متن ها/۲/dar_jostojo/session-32/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-32/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/32.md",
+            "متن ها/۱/dar-jostojo/session-32/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-32/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "33": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/33.md",
+            "متن ها/۲/dar_jostojo/session-33/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-33/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/33.md",
+            "متن ها/۱/dar-jostojo/session-33/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-33/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "35": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/35.md",
+            "متن ها/۲/dar_jostojo/session-35/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-35/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/35.md",
+            "متن ها/۱/dar-jostojo/session-35/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-35/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "37": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/37.md",
+            "متن ها/۲/dar_jostojo/session-37/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-37/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/37.md",
+            "متن ها/۱/dar-jostojo/session-37/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-37/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "38": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/38.md",
+            "متن ها/۲/dar_jostojo/session-38/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-38/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/38.md",
+            "متن ها/۱/dar-jostojo/session-38/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-38/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "40": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/40.md",
+            "متن ها/۲/dar_jostojo/session-40/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-40/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/40.md",
+            "متن ها/۱/dar-jostojo/session-40/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-40/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "41": {
+          "unique_versions": 2,
+          "files": 6,
+          "classes": {
+            "final": 4,
+            "reviewed": 2
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/dar-jostojo-final/41.md",
+            "متن ها/۲/dar_jostojo/session-41/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/session-41/reviewed/transcript.reviewed.md",
+            "متن ها/۱/dar-jostojo-final/41.md",
+            "متن ها/۱/dar-jostojo/session-41/final/transcript.final.md",
+            "متن ها/۱/dar-jostojo/session-41/reviewed/transcript.reviewed.md"
+          ]
+        },
+        "unknown": {
+          "unique_versions": 4,
+          "files": 4,
+          "classes": {
+            "final": 3,
+            "review_other": 1
+          },
+          "paths": [
+            "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/review/review.md",
+            "متن ها/۲/dar_jostojo/1bbdd98b5ffa4a798ded41803f7e9b45-1ccbf163/final/transcript.final.md",
+            "متن ها/۲/dar_jostojo/cc493c442f184f288e0463a5cddd95ed-59dd4b8a/final/transcript.final.md"
+          ]
+        }
+      }
+    },
+    "mq": {
+      "candidate_md_files": 24,
+      "unique_exact_files": 8,
+      "episode_count": 8,
+      "source_classes": {
+        "review_md": 24
+      },
+      "version_distribution": {
+        "1": 8
+      },
+      "episodes": {
+        "1": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/1.md",
+            "متن ها/۱/mq/review/md/1.md",
+            "متن ها/۳/mq/review/md/1.md"
+          ]
+        },
+        "2": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/2.md",
+            "متن ها/۱/mq/review/md/2.md",
+            "متن ها/۳/mq/review/md/2.md"
+          ]
+        },
+        "3": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/3.md",
+            "متن ها/۱/mq/review/md/3.md",
+            "متن ها/۳/mq/review/md/3.md"
+          ]
+        },
+        "4": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/4.md",
+            "متن ها/۱/mq/review/md/4.md",
+            "متن ها/۳/mq/review/md/4.md"
+          ]
+        },
+        "5": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/5.md",
+            "متن ها/۱/mq/review/md/5.md",
+            "متن ها/۳/mq/review/md/5.md"
+          ]
+        },
+        "6": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/6.md",
+            "متن ها/۱/mq/review/md/6.md",
+            "متن ها/۳/mq/review/md/6.md"
+          ]
+        },
+        "7": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/7.md",
+            "متن ها/۱/mq/review/md/7.md",
+            "متن ها/۳/mq/review/md/7.md"
+          ]
+        },
+        "8": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/mq/review/md/8.md",
+            "متن ها/۱/mq/review/md/8.md",
+            "متن ها/۳/mq/review/md/8.md"
+          ]
+        }
+      }
+    },
+    "uni_tehran": {
+      "candidate_md_files": 111,
+      "unique_exact_files": 37,
+      "episode_count": 37,
+      "source_classes": {
+        "review_md": 111
+      },
+      "version_distribution": {
+        "1": 37
+      },
+      "episodes": {
+        "1": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/1.md",
+            "متن ها/۱/uni_tehran/review/md/1.md",
+            "متن ها/۳/uni_tehran/review/md/1.md"
+          ]
+        },
+        "2": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/2.md",
+            "متن ها/۱/uni_tehran/review/md/2.md",
+            "متن ها/۳/uni_tehran/review/md/2.md"
+          ]
+        },
+        "3": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/3.md",
+            "متن ها/۱/uni_tehran/review/md/3.md",
+            "متن ها/۳/uni_tehran/review/md/3.md"
+          ]
+        },
+        "4": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/4.md",
+            "متن ها/۱/uni_tehran/review/md/4.md",
+            "متن ها/۳/uni_tehran/review/md/4.md"
+          ]
+        },
+        "5": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/5.md",
+            "متن ها/۱/uni_tehran/review/md/5.md",
+            "متن ها/۳/uni_tehran/review/md/5.md"
+          ]
+        },
+        "6": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/6.md",
+            "متن ها/۱/uni_tehran/review/md/6.md",
+            "متن ها/۳/uni_tehran/review/md/6.md"
+          ]
+        },
+        "7": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/7.md",
+            "متن ها/۱/uni_tehran/review/md/7.md",
+            "متن ها/۳/uni_tehran/review/md/7.md"
+          ]
+        },
+        "8": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/8.md",
+            "متن ها/۱/uni_tehran/review/md/8.md",
+            "متن ها/۳/uni_tehran/review/md/8.md"
+          ]
+        },
+        "9": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/9.md",
+            "متن ها/۱/uni_tehran/review/md/9.md",
+            "متن ها/۳/uni_tehran/review/md/9.md"
+          ]
+        },
+        "10": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/10.md",
+            "متن ها/۱/uni_tehran/review/md/10.md",
+            "متن ها/۳/uni_tehran/review/md/10.md"
+          ]
+        },
+        "11": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/11.md",
+            "متن ها/۱/uni_tehran/review/md/11.md",
+            "متن ها/۳/uni_tehran/review/md/11.md"
+          ]
+        },
+        "12": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/12.md",
+            "متن ها/۱/uni_tehran/review/md/12.md",
+            "متن ها/۳/uni_tehran/review/md/12.md"
+          ]
+        },
+        "13": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/13.md",
+            "متن ها/۱/uni_tehran/review/md/13.md",
+            "متن ها/۳/uni_tehran/review/md/13.md"
+          ]
+        },
+        "14": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/14.md",
+            "متن ها/۱/uni_tehran/review/md/14.md",
+            "متن ها/۳/uni_tehran/review/md/14.md"
+          ]
+        },
+        "15": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/15.md",
+            "متن ها/۱/uni_tehran/review/md/15.md",
+            "متن ها/۳/uni_tehran/review/md/15.md"
+          ]
+        },
+        "16": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/16.md",
+            "متن ها/۱/uni_tehran/review/md/16.md",
+            "متن ها/۳/uni_tehran/review/md/16.md"
+          ]
+        },
+        "17": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/17.md",
+            "متن ها/۱/uni_tehran/review/md/17.md",
+            "متن ها/۳/uni_tehran/review/md/17.md"
+          ]
+        },
+        "18": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/18.md",
+            "متن ها/۱/uni_tehran/review/md/18.md",
+            "متن ها/۳/uni_tehran/review/md/18.md"
+          ]
+        },
+        "19": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/19.md",
+            "متن ها/۱/uni_tehran/review/md/19.md",
+            "متن ها/۳/uni_tehran/review/md/19.md"
+          ]
+        },
+        "20": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/20.md",
+            "متن ها/۱/uni_tehran/review/md/20.md",
+            "متن ها/۳/uni_tehran/review/md/20.md"
+          ]
+        },
+        "21": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/21.md",
+            "متن ها/۱/uni_tehran/review/md/21.md",
+            "متن ها/۳/uni_tehran/review/md/21.md"
+          ]
+        },
+        "22": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/22.md",
+            "متن ها/۱/uni_tehran/review/md/22.md",
+            "متن ها/۳/uni_tehran/review/md/22.md"
+          ]
+        },
+        "23": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/23.md",
+            "متن ها/۱/uni_tehran/review/md/23.md",
+            "متن ها/۳/uni_tehran/review/md/23.md"
+          ]
+        },
+        "24": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/24.md",
+            "متن ها/۱/uni_tehran/review/md/24.md",
+            "متن ها/۳/uni_tehran/review/md/24.md"
+          ]
+        },
+        "25": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/25.md",
+            "متن ها/۱/uni_tehran/review/md/25.md",
+            "متن ها/۳/uni_tehran/review/md/25.md"
+          ]
+        },
+        "26": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/26.md",
+            "متن ها/۱/uni_tehran/review/md/26.md",
+            "متن ها/۳/uni_tehran/review/md/26.md"
+          ]
+        },
+        "27": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/27.md",
+            "متن ها/۱/uni_tehran/review/md/27.md",
+            "متن ها/۳/uni_tehran/review/md/27.md"
+          ]
+        },
+        "29": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/29.md",
+            "متن ها/۱/uni_tehran/review/md/29.md",
+            "متن ها/۳/uni_tehran/review/md/29.md"
+          ]
+        },
+        "30": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/30.md",
+            "متن ها/۱/uni_tehran/review/md/30.md",
+            "متن ها/۳/uni_tehran/review/md/30.md"
+          ]
+        },
+        "31": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/31.md",
+            "متن ها/۱/uni_tehran/review/md/31.md",
+            "متن ها/۳/uni_tehran/review/md/31.md"
+          ]
+        },
+        "32": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/32.md",
+            "متن ها/۱/uni_tehran/review/md/32.md",
+            "متن ها/۳/uni_tehran/review/md/32.md"
+          ]
+        },
+        "33": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/33.md",
+            "متن ها/۱/uni_tehran/review/md/33.md",
+            "متن ها/۳/uni_tehran/review/md/33.md"
+          ]
+        },
+        "34": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/34.md",
+            "متن ها/۱/uni_tehran/review/md/34.md",
+            "متن ها/۳/uni_tehran/review/md/34.md"
+          ]
+        },
+        "35": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/35.md",
+            "متن ها/۱/uni_tehran/review/md/35.md",
+            "متن ها/۳/uni_tehran/review/md/35.md"
+          ]
+        },
+        "36": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/36.md",
+            "متن ها/۱/uni_tehran/review/md/36.md",
+            "متن ها/۳/uni_tehran/review/md/36.md"
+          ]
+        },
+        "37": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/37.md",
+            "متن ها/۱/uni_tehran/review/md/37.md",
+            "متن ها/۳/uni_tehran/review/md/37.md"
+          ]
+        },
+        "38": {
+          "unique_versions": 1,
+          "files": 3,
+          "classes": {
+            "review_md": 3
+          },
+          "paths": [
+            "متن ها/۲/uni_tehran/review/md/38.md",
+            "متن ها/۱/uni_tehran/review/md/38.md",
+            "متن ها/۳/uni_tehran/review/md/38.md"
+          ]
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "collection": "uni_tehran",
+      "episode": 33,
+      "path": "متن ها/۲/uni_tehran/review/md/33.md",
+      "sha256": "96162449f7aaaaa7ede618b67cb12d953e7dcc5af95c71d817582ca5aba1ad82",
+      "size": 38683,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 35,
+      "path": "متن ها/۲/uni_tehran/review/md/35.md",
+      "sha256": "6c14c1ecd5c128042f153faee18744b1693ea1996522b138589009d94faa7942",
+      "size": 30362,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 34,
+      "path": "متن ها/۲/uni_tehran/review/md/34.md",
+      "sha256": "bd3237c271cd9c47cf8b677fc3109cd981e3684412aebf65d4fb05774b1c6de6",
+      "size": 42454,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 3,
+      "path": "متن ها/۲/uni_tehran/review/md/3.md",
+      "sha256": "44db6c27e463266fe8e32b3a624f0ed9dfe6e7c04a39de273b98cfc314c436fa",
+      "size": 23259,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 18,
+      "path": "متن ها/۲/uni_tehran/review/md/18.md",
+      "sha256": "a504cf9748e272920581af7f903e9da59a6d30a21ec95fcdb53c9678e798d842",
+      "size": 29329,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 10,
+      "path": "متن ها/۲/uni_tehran/review/md/10.md",
+      "sha256": "1a4b1c2900faa78de3941f1c666e522a002b814b9974132984c41b96bf76cc3e",
+      "size": 21822,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 7,
+      "path": "متن ها/۲/uni_tehran/review/md/7.md",
+      "sha256": "488f950904fb41302cec5d7e5bf8af91f744f82fe7dceb6aca9ea88a96fddc02",
+      "size": 29083,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 19,
+      "path": "متن ها/۲/uni_tehran/review/md/19.md",
+      "sha256": "a1320b0df0dfb60e55c231b1a7b769dfa0dab68c5f27f05109880f8d7612eaad",
+      "size": 25525,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 1,
+      "path": "متن ها/۲/uni_tehran/review/md/1.md",
+      "sha256": "ed29f465e17d468b2478589622c533099e49a0d944d6a080f70348105f818d41",
+      "size": 21691,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 11,
+      "path": "متن ها/۲/uni_tehran/review/md/11.md",
+      "sha256": "521aa86d17892318226567e53521f94f5be0b85025b45a824740121a60b8780b",
+      "size": 23117,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 21,
+      "path": "متن ها/۲/uni_tehran/review/md/21.md",
+      "sha256": "3674fb35587a6ea659c7ab6569a56b55c4ee145217857d9ceb872c7f8bd2e972",
+      "size": 25381,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 20,
+      "path": "متن ها/۲/uni_tehran/review/md/20.md",
+      "sha256": "c07184716e90f0a77cece87ac5101e8888cf119fcb79ae1b00650e178393dde7",
+      "size": 21070,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 12,
+      "path": "متن ها/۲/uni_tehran/review/md/12.md",
+      "sha256": "5f5b9cf258d673bc9e9e4b2fda626a16a98b461614ad4ccbd2bdeaa9eed0b9a2",
+      "size": 20431,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 26,
+      "path": "متن ها/۲/uni_tehran/review/md/26.md",
+      "sha256": "a32f223283e322318afe13c0cbf3c31d38dc728ab2d9229266c1920d50b1158d",
+      "size": 30093,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 6,
+      "path": "متن ها/۲/uni_tehran/review/md/6.md",
+      "sha256": "79d5ded3f73f75edfc44b132f57b6ed9a1140995c4032af1dc73e9708218985c",
+      "size": 18353,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 24,
+      "path": "متن ها/۲/uni_tehran/review/md/24.md",
+      "sha256": "dcd5f557ffc3fc0631e866ce9e8f4cafb3369e522fff03838d0c5a6e01a7b6d1",
+      "size": 24722,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 4,
+      "path": "متن ها/۲/uni_tehran/review/md/4.md",
+      "sha256": "8eeb96e58ca61f31f5dbacb91d1af68f2fb9ca114b680941db5bf6765f2a5f01",
+      "size": 25247,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 17,
+      "path": "متن ها/۲/uni_tehran/review/md/17.md",
+      "sha256": "8a523808e753e04dd197a5d3aa367ad71f0bb6be5786f87d4a5ad4131f177ded",
+      "size": 32522,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 22,
+      "path": "متن ها/۲/uni_tehran/review/md/22.md",
+      "sha256": "ea8c8bba44c8eee01e6cd1680c03e48175e4a724b2058229da618abc53fbe888",
+      "size": 32834,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 2,
+      "path": "متن ها/۲/uni_tehran/review/md/2.md",
+      "sha256": "03364e6b5db6d67aef4e90761eedb6773ea2c0b34ed4b3b00489e1d99fb6bfd0",
+      "size": 24395,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 8,
+      "path": "متن ها/۲/uni_tehran/review/md/8.md",
+      "sha256": "abc11a9b8a492b800c702224ded5f56124c1aed612a2ff7e73be3ef5ee77a324",
+      "size": 32449,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 13,
+      "path": "متن ها/۲/uni_tehran/review/md/13.md",
+      "sha256": "719c59d891fc97e6084b20a72801b738493197d9182a0cf379f2c5c222e7d641",
+      "size": 26215,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 14,
+      "path": "متن ها/۲/uni_tehran/review/md/14.md",
+      "sha256": "9a4a821184d4c2dc0ee44a76c65a924c887980ffd2ed384cd1a4df728d535195",
+      "size": 26170,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 38,
+      "path": "متن ها/۲/uni_tehran/review/md/38.md",
+      "sha256": "c1db091156dcc44de4e8591cc34c12d4b2cd7d69a463fcc93aa633441fdf7d64",
+      "size": 21812,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 16,
+      "path": "متن ها/۲/uni_tehran/review/md/16.md",
+      "sha256": "9c60b10f7743c43046196fd5903b35ca537148a192ea18e86a1bfc27caebb8b4",
+      "size": 25923,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 9,
+      "path": "متن ها/۲/uni_tehran/review/md/9.md",
+      "sha256": "5c7813bda2610651977d749766c66fec714b346d1fd67715a8ce715255b30370",
+      "size": 38782,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 25,
+      "path": "متن ها/۲/uni_tehran/review/md/25.md",
+      "sha256": "362bb2c60292b3cdfd1db632f2ea522ee07a506e4fd7d14a9692e56ba5cf72b8",
+      "size": 23147,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 31,
+      "path": "متن ها/۲/uni_tehran/review/md/31.md",
+      "sha256": "3e7d9da17b2ba67b6b03dfbe6b623682e6bf49e293500b509317882029ae65c3",
+      "size": 28925,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 23,
+      "path": "متن ها/۲/uni_tehran/review/md/23.md",
+      "sha256": "b6a2083f8856dae21ddffd50aa79ee1d969f4ad23cdb2bea222ec7250b9432de",
+      "size": 22255,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 27,
+      "path": "متن ها/۲/uni_tehran/review/md/27.md",
+      "sha256": "6527085ffa1e0339f2fe7bbe8d751389a076c9734250a8888308024c82133ad8",
+      "size": 26146,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 36,
+      "path": "متن ها/۲/uni_tehran/review/md/36.md",
+      "sha256": "35cf424d385ede0eb976678947672ea01db0d0361a4b0e50714918553de6a687",
+      "size": 19873,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 37,
+      "path": "متن ها/۲/uni_tehran/review/md/37.md",
+      "sha256": "50a24ea9a24e230e403c6525b27e09cf9198d57698446a292cd50da384a3f73f",
+      "size": 27464,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 30,
+      "path": "متن ها/۲/uni_tehran/review/md/30.md",
+      "sha256": "b0444928951fd59192d465974f9472462ea319f697d36f6577cb5210bd5a3082",
+      "size": 29158,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 5,
+      "path": "متن ها/۲/uni_tehran/review/md/5.md",
+      "sha256": "4e758888873bfbf966210773760ffb5153c5773aebaf8325efd88d2dfe569030",
+      "size": 30274,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 32,
+      "path": "متن ها/۲/uni_tehran/review/md/32.md",
+      "sha256": "9477b5293a1d745420124984802f1bb1b4ebec1694e64bcbe5c8cb2f4427a327",
+      "size": 24870,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 15,
+      "path": "متن ها/۲/uni_tehran/review/md/15.md",
+      "sha256": "50e8bf5d4672e9a214ab617190c6e17ce3a3730be4c2d198b8805ca8e89a23c8",
+      "size": 31936,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 29,
+      "path": "متن ها/۲/uni_tehran/review/md/29.md",
+      "sha256": "db3f3064d2aa048c3ec7b115a3e0578a7cb9eb4013a0fd86be25944fd226c6b4",
+      "size": 24266,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 3,
+      "path": "متن ها/۲/mq/review/md/3.md",
+      "sha256": "6449f5868da376873f842fc90be9978c8b54fe3a59c91f13012d489d9e606736",
+      "size": 12237,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 7,
+      "path": "متن ها/۲/mq/review/md/7.md",
+      "sha256": "97dda557578028f623caa42002177aeb125c6a312edf74ceb012e4d3fca6b472",
+      "size": 10390,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 1,
+      "path": "متن ها/۲/mq/review/md/1.md",
+      "sha256": "36510d923a748e5e077a73ab26e5f3ffefedfd9ebf475e5f06b20117973269d6",
+      "size": 12388,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 6,
+      "path": "متن ها/۲/mq/review/md/6.md",
+      "sha256": "e3b6031c9e2df7fddcd5d11b789f6e55bd4eef57050625a9062b95e489b3d500",
+      "size": 5426,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 4,
+      "path": "متن ها/۲/mq/review/md/4.md",
+      "sha256": "3105a2bb9d216f442bb4ec2aa6012df7f7152ef57c3d7fcef3ec84070ee0cc9a",
+      "size": 14881,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 2,
+      "path": "متن ها/۲/mq/review/md/2.md",
+      "sha256": "03a20a2b5e8dc5814c6e3a57e76a3c4e9bcb25ad9e8f60b8333955f5f7e96d59",
+      "size": 12490,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 8,
+      "path": "متن ها/۲/mq/review/md/8.md",
+      "sha256": "0be2248d04ee87a4da23b21631bf4e62685b2d2b0063912e384778bacbcdd0c1",
+      "size": 9629,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 5,
+      "path": "متن ها/۲/mq/review/md/5.md",
+      "sha256": "674019d4cc0215452cca910f223933a410429fe0169a092f6bdf79397bdc6686",
+      "size": 11325,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/33.md",
+      "sha256": "e8ec4423fc716fad30b8ae5542c4cdd9b83c3f5ba6b6939b318251746f3141ed",
+      "size": 11629,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/35.md",
+      "sha256": "1e600c6cd0cc7d169b3795181e91885624c0f8f521e45c3ea62c9388db9a512f",
+      "size": 12412,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/3.md",
+      "sha256": "b97c00458cbb5f2e9f76b4cac55abf15f17a3cccae9873ab070ff1ccf0e1ec2a",
+      "size": 3177,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/40.md",
+      "sha256": "50e496e01b574fa15b4509c07418d976647ea3994b0d47fe16dc0bc98c16599a",
+      "size": 19214,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/18.md",
+      "sha256": "159be477d956ea715d51f2c0de95a247744ec274a88063f90dd969b13e347047",
+      "size": 13337,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/10.md",
+      "sha256": "8526703442c6279d808cc51d007b38b5647071b974c6fb2920df5bbd145a66d4",
+      "size": 5598,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/7.md",
+      "sha256": "3881271b5ea03cd726d9d477f8a43810f35feb33761f95c8346d4393bc0f74a8",
+      "size": 4010,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/1.md",
+      "sha256": "58873ae78d8d72e01d846f20bd2ec2b2bf2102ace41c1942c89b904c41bcf1f6",
+      "size": 6462,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/21.md",
+      "sha256": "efa2fea2cf677956143898fb7a7e14907d6cd5c76eccf405346ad6555ce82533",
+      "size": 6137,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/20.md",
+      "sha256": "937c41fd25139e92f177e6dc1c2cb0171b3774adac415bedf474d4bc60ad773c",
+      "size": 11013,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/12.md",
+      "sha256": "2b831409c86f3308e7294c0a0760f647172e8e20b6f238cd88dbface0d39629c",
+      "size": 19350,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/26.md",
+      "sha256": "5057894aa5fb41740b80b0fca30df7a1d0ba929581f8ba022689b45dbf973e9c",
+      "size": 19445,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/6.md",
+      "sha256": "c6bcfc8bcb1ae7c12d54e53e002f4679c898ced4d041660ee8e2e50c5d0d849d",
+      "size": 7674,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/4.md",
+      "sha256": "36081dc18a5c0e4c2ff898d008737adaf6538863b10ad1836b4009985b63a757",
+      "size": 1870,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/17.md",
+      "sha256": "4625782cb7ce17f60899e6948386d61bd44209a2046238a708332ee87052e87d",
+      "size": 11215,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/22.md",
+      "sha256": "51746568d28e4467649f94ce2bf725e6535ea0cfc693b70f6d3fef78e9ba221a",
+      "size": 11766,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/28.md",
+      "sha256": "e63bbc482b861ff94146c04b6cb1bf738a97683632243042ff8b0053d88d6dc9",
+      "size": 15405,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/41.md",
+      "sha256": "9546e598763a1d9bd3d4a689538e94c461d395ada5701738ea941f4426669fb9",
+      "size": 6989,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/2.md",
+      "sha256": "636d24958e905480c31d291f7ea223062d1f5ce8708922d3bfd359a99ff54a3e",
+      "size": 2345,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/8.md",
+      "sha256": "29cff6c155bd1a6ababd597f72c7809129bf0533db8ed86404d729e57e7aaaa8",
+      "size": 2639,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/14.md",
+      "sha256": "7e8e71c805868289e94d775c85db64fc6865a2c12229f70be4450584633fc74c",
+      "size": 14452,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/38.md",
+      "sha256": "25e2fa3160eef8247e6bab3080ebcb7a2bd7c04786f7f3936e09c7fb7e19d6ba",
+      "size": 15614,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/16.md",
+      "sha256": "2be5c1b0f4e37fb6acb1c7f67ded97a38084fdbb8ddbe26e9ab4033b67526f33",
+      "size": 10844,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/9.md",
+      "sha256": "6f31f455acddb3ccbfa26a158fca2ec3de3485f7d76d82c2870e1bac3c275d4b",
+      "size": 6211,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/25.md",
+      "sha256": "4b1ddcfd26955a7891fa5947ac782487b172c5aab612d4b1f14fd71ae54b4ca4",
+      "size": 11439,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/31.md",
+      "sha256": "1d8a1fc8316b51835056057de09cc563f55db8bfef95b2456b4ad72b9ed87d16",
+      "size": 12807,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/23.md",
+      "sha256": "166a34888af2a35af60bce442832852e95fb5c60c4cbffebdc733a0d12fbf17d",
+      "size": 9902,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/27.md",
+      "sha256": "88e385d347fb4d36259bb7d9360e5255147cab81b117acb69eff36f838a23efc",
+      "size": 7899,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/37.md",
+      "sha256": "f5d54967c90fde3bb616db2501f55a527ad9fdb4b2c3930b106ab46acfd08630",
+      "size": 20091,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/30.md",
+      "sha256": "1770654daf1208667a61b13715d284a8205c94fb1783008723464eed46d4f40d",
+      "size": 7839,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/5.md",
+      "sha256": "0c721ccf5d990ba0ed3014ed72182e6543c66d54eb3a5159d55f186f67e4a651",
+      "size": 6342,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/32.md",
+      "sha256": "9589141ae2243a9e99c11f263377df99768f7de82b9603f5502d49c28124600a",
+      "size": 12700,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۲/dar_jostojo/dar-jostojo-final/15.md",
+      "sha256": "1f432d41f2944a5cf4a42dfe4f9e187f01d588adbeb7297548ab6c8ebfa7dbfd",
+      "size": 16959,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۲/dar_jostojo/session-10/final/transcript.final.md",
+      "sha256": "70d0cd89c178b119f1cccba56669ae5308ec54d364e0430b863abefa98f1efc1",
+      "size": 6426,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۲/dar_jostojo/session-10/reviewed/transcript.reviewed.md",
+      "sha256": "8526703442c6279d808cc51d007b38b5647071b974c6fb2920df5bbd145a66d4",
+      "size": 5598,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۲/dar_jostojo/session-15/final/transcript.final.md",
+      "sha256": "ef1a1988ef5c843e4cd1729c23df0a4a86427ab2029a2f6f26549fd05a851742",
+      "size": 21773,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۲/dar_jostojo/session-15/reviewed/transcript.reviewed.md",
+      "sha256": "1f432d41f2944a5cf4a42dfe4f9e187f01d588adbeb7297548ab6c8ebfa7dbfd",
+      "size": 16959,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۲/dar_jostojo/session-37/final/transcript.final.md",
+      "sha256": "f13f342990f87b43beeaaea98977bf43bef993097d9536551e270978aed84c8a",
+      "size": 27786,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۲/dar_jostojo/session-37/reviewed/transcript.reviewed.md",
+      "sha256": "f5d54967c90fde3bb616db2501f55a527ad9fdb4b2c3930b106ab46acfd08630",
+      "size": 20091,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۲/dar_jostojo/session-01/final/transcript.final.md",
+      "sha256": "5c38e386e0198e540dc0eddb1eb2981a46c20577dd884c3d03b1be671663923f",
+      "size": 6612,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۲/dar_jostojo/session-01/reviewed/transcript.reviewed.md",
+      "sha256": "58873ae78d8d72e01d846f20bd2ec2b2bf2102ace41c1942c89b904c41bcf1f6",
+      "size": 6462,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۲/dar_jostojo/session-04/final/transcript.final.md",
+      "sha256": "8381e8e5fe87643818590e7faec4610bcd1102b249c8b1c4bb443bb5dab52e4f",
+      "size": 4547,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۲/dar_jostojo/session-04/reviewed/transcript.reviewed.md",
+      "sha256": "36081dc18a5c0e4c2ff898d008737adaf6538863b10ad1836b4009985b63a757",
+      "size": 1870,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۲/dar_jostojo/session-23/final/transcript.final.md",
+      "sha256": "04828f236256d2aae9b2459baf3e39a77f2ab85f1980f83cf7f6051cc3e252fb",
+      "size": 15231,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۲/dar_jostojo/session-23/reviewed/transcript.reviewed.md",
+      "sha256": "166a34888af2a35af60bce442832852e95fb5c60c4cbffebdc733a0d12fbf17d",
+      "size": 9902,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۲/dar_jostojo/session-40/final/transcript.final.md",
+      "sha256": "d7b86fb6a2a90e6f48cbcc76bf9a81cac6018993ded51ea976bf59a52384c961",
+      "size": 19873,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۲/dar_jostojo/session-40/reviewed/transcript.reviewed.md",
+      "sha256": "50e496e01b574fa15b4509c07418d976647ea3994b0d47fe16dc0bc98c16599a",
+      "size": 19214,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۲/dar_jostojo/session-32/final/transcript.final.md",
+      "sha256": "5f280a26616601cd5a675754ab07f216de98fd4421c053675a824754a3a5e98c",
+      "size": 16388,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۲/dar_jostojo/session-32/reviewed/transcript.reviewed.md",
+      "sha256": "9589141ae2243a9e99c11f263377df99768f7de82b9603f5502d49c28124600a",
+      "size": 12700,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۲/dar_jostojo/session-02/final/transcript.final.md",
+      "sha256": "ae40536f1210e055579fbe13501596593d36d40e97a68fa2a1867c0a49f71f6f",
+      "size": 2747,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۲/dar_jostojo/session-02/reviewed/transcript.reviewed.md",
+      "sha256": "636d24958e905480c31d291f7ea223062d1f5ce8708922d3bfd359a99ff54a3e",
+      "size": 2345,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۲/dar_jostojo/session-21/final/transcript.final.md",
+      "sha256": "aa220a3a904f62adf24a345556ce671026c0179a1943caf50b5f676d55bfa2fa",
+      "size": 7393,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۲/dar_jostojo/session-21/reviewed/transcript.reviewed.md",
+      "sha256": "efa2fea2cf677956143898fb7a7e14907d6cd5c76eccf405346ad6555ce82533",
+      "size": 6137,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۲/dar_jostojo/session-12/final/transcript.final.md",
+      "sha256": "8cf1529ed1bd4662e4e3e63e3697a2d2f2eaa9f1dbc785f7f49eda5bff36f674",
+      "size": 23005,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۲/dar_jostojo/session-12/reviewed/transcript.reviewed.md",
+      "sha256": "2b831409c86f3308e7294c0a0760f647172e8e20b6f238cd88dbface0d39629c",
+      "size": 19350,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۲/dar_jostojo/session-41/final/transcript.final.md",
+      "sha256": "221fe2a89dbf4366c8a066ce13759291feb0b83fb96a1afc88ba7010a75fde4a",
+      "size": 7345,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۲/dar_jostojo/session-41/reviewed/transcript.reviewed.md",
+      "sha256": "9546e598763a1d9bd3d4a689538e94c461d395ada5701738ea941f4426669fb9",
+      "size": 6989,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۲/dar_jostojo/session-09/final/transcript.final.md",
+      "sha256": "2fcb103ee9dd4a7876a67885de5de5d19618e9ecc282857b772b0a6750a56d36",
+      "size": 6728,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۲/dar_jostojo/session-09/reviewed/transcript.reviewed.md",
+      "sha256": "6f31f455acddb3ccbfa26a158fca2ec3de3485f7d76d82c2870e1bac3c275d4b",
+      "size": 6211,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۲/dar_jostojo/session-30/final/transcript.final.md",
+      "sha256": "444c05ba6935538536aab97c33a228903d5c1a02a7cce00b0380ddfd0fb23da5",
+      "size": 8325,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۲/dar_jostojo/session-30/reviewed/transcript.reviewed.md",
+      "sha256": "1770654daf1208667a61b13715d284a8205c94fb1783008723464eed46d4f40d",
+      "size": 7839,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۲/dar_jostojo/session-31/final/transcript.final.md",
+      "sha256": "e971ae1ba11d5d1df6c357bdfd82a2d9d593812e8d7f58794aab8a299388fde5",
+      "size": 22896,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۲/dar_jostojo/session-31/reviewed/transcript.reviewed.md",
+      "sha256": "1d8a1fc8316b51835056057de09cc563f55db8bfef95b2456b4ad72b9ed87d16",
+      "size": 12807,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": null,
+      "path": "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/final/transcript.final.md",
+      "sha256": "daac710a85a47947e37c8c4e01d51f247be22dbf4a30c1cb7477d57e4d4e7710",
+      "size": 747,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": null,
+      "path": "متن ها/۲/dar_jostojo/db4afdac50f14d84ba861693bbe47b6e-f7b92503/review/review.md",
+      "sha256": "305bd638a30a1270aa002504da1825dff54b2203aef2f24d71893b5ddd38a849",
+      "size": 2015,
+      "source_class": "review_other"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۲/dar_jostojo/session-35/final/transcript.final.md",
+      "sha256": "a926da766c73344c1b9dac649af1ca981678a4344ad186ee12f1109d0abd956e",
+      "size": 18541,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۲/dar_jostojo/session-35/reviewed/transcript.reviewed.md",
+      "sha256": "1e600c6cd0cc7d169b3795181e91885624c0f8f521e45c3ea62c9388db9a512f",
+      "size": 12412,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۲/dar_jostojo/session-07/final/transcript.final.md",
+      "sha256": "f6344b4927cdec93411eebfc4391c4417fbf0ae4394a83b9bc356a4fceeb2b40",
+      "size": 4348,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۲/dar_jostojo/session-07/reviewed/transcript.reviewed.md",
+      "sha256": "3881271b5ea03cd726d9d477f8a43810f35feb33761f95c8346d4393bc0f74a8",
+      "size": 4010,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۲/dar_jostojo/session-22/final/transcript.final.md",
+      "sha256": "955298138f04dc3ae65b735830de974cc14a91ffe69c57aaebef3997a03f9e41",
+      "size": 14900,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۲/dar_jostojo/session-22/reviewed/transcript.reviewed.md",
+      "sha256": "51746568d28e4467649f94ce2bf725e6535ea0cfc693b70f6d3fef78e9ba221a",
+      "size": 11766,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۲/dar_jostojo/session-16/final/transcript.final.md",
+      "sha256": "826f9ee4507e2c0652bf758c6707ff5c17ced84b4ad4ba0585d7af2b496ca894",
+      "size": 12952,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۲/dar_jostojo/session-16/reviewed/transcript.reviewed.md",
+      "sha256": "2be5c1b0f4e37fb6acb1c7f67ded97a38084fdbb8ddbe26e9ab4033b67526f33",
+      "size": 10844,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۲/dar_jostojo/session-26/final/transcript.final.md",
+      "sha256": "a4c58bd6621fe1281a83220110cb5a38f0d46b2763160aed8f703c11f17b1557",
+      "size": 20457,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۲/dar_jostojo/session-26/reviewed/transcript.reviewed.md",
+      "sha256": "5057894aa5fb41740b80b0fca30df7a1d0ba929581f8ba022689b45dbf973e9c",
+      "size": 19445,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۲/dar_jostojo/session-33/final/transcript.final.md",
+      "sha256": "2d54acf28ef68490b4d35cdbbec01ab4c9a7dd2fffd3c58b59ade37993d5820d",
+      "size": 15095,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۲/dar_jostojo/session-33/reviewed/transcript.reviewed.md",
+      "sha256": "e8ec4423fc716fad30b8ae5542c4cdd9b83c3f5ba6b6939b318251746f3141ed",
+      "size": 11629,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۲/dar_jostojo/session-27/final/transcript.final.md",
+      "sha256": "0d6721165550746353bd3e612b705e49c3e386b3926e4dc228340a9e88c2d7e0",
+      "size": 8645,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۲/dar_jostojo/session-27/reviewed/transcript.reviewed.md",
+      "sha256": "88e385d347fb4d36259bb7d9360e5255147cab81b117acb69eff36f838a23efc",
+      "size": 7899,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۲/dar_jostojo/session-08/final/transcript.final.md",
+      "sha256": "4686380880668ad1cfb65b6a0c698d0464c981141618b0278485cecc4bea7b16",
+      "size": 2885,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۲/dar_jostojo/session-08/reviewed/transcript.reviewed.md",
+      "sha256": "29cff6c155bd1a6ababd597f72c7809129bf0533db8ed86404d729e57e7aaaa8",
+      "size": 2639,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۲/dar_jostojo/session-17/final/transcript.final.md",
+      "sha256": "c12e0faab34e3e9d45f04e913c3db1c592c9b8db9c93e6d056c68e363210f075",
+      "size": 13437,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۲/dar_jostojo/session-17/reviewed/transcript.reviewed.md",
+      "sha256": "4625782cb7ce17f60899e6948386d61bd44209a2046238a708332ee87052e87d",
+      "size": 11215,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۲/dar_jostojo/session-18/final/transcript.final.md",
+      "sha256": "f735467e92fe507060eea735df61a86fe7258a87b5e8891734c3cba0bdab05e5",
+      "size": 18683,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۲/dar_jostojo/session-18/reviewed/transcript.reviewed.md",
+      "sha256": "159be477d956ea715d51f2c0de95a247744ec274a88063f90dd969b13e347047",
+      "size": 13337,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۲/dar_jostojo/session-05/final/transcript.final.md",
+      "sha256": "08a80e37dd149e573490922a825673184eeaadf3c008f175fa08cc3bc5ed570f",
+      "size": 7462,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۲/dar_jostojo/session-05/reviewed/transcript.reviewed.md",
+      "sha256": "0c721ccf5d990ba0ed3014ed72182e6543c66d54eb3a5159d55f186f67e4a651",
+      "size": 6342,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۲/dar_jostojo/session-06/final/transcript.final.md",
+      "sha256": "8585f8065cf236890986b90530f9c14245bb49b2bd739b3922c4887c2fbf186e",
+      "size": 8512,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۲/dar_jostojo/session-06/reviewed/transcript.reviewed.md",
+      "sha256": "c6bcfc8bcb1ae7c12d54e53e002f4679c898ced4d041660ee8e2e50c5d0d849d",
+      "size": 7674,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": null,
+      "path": "متن ها/۲/dar_jostojo/1bbdd98b5ffa4a798ded41803f7e9b45-1ccbf163/final/transcript.final.md",
+      "sha256": "ae40536f1210e055579fbe13501596593d36d40e97a68fa2a1867c0a49f71f6f",
+      "size": 2747,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۲/dar_jostojo/session-38/final/transcript.final.md",
+      "sha256": "dbafc068f1b72e6c083d31b46c0bcb11c23550365d94624dfe37deb8030e6dd5",
+      "size": 16474,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۲/dar_jostojo/session-38/reviewed/transcript.reviewed.md",
+      "sha256": "25e2fa3160eef8247e6bab3080ebcb7a2bd7c04786f7f3936e09c7fb7e19d6ba",
+      "size": 15614,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۲/dar_jostojo/session-20/final/transcript.final.md",
+      "sha256": "35d0b4aa0e9467cd04c0669fb2e0cffa329504e7a769fdde76d6dcfcbb03e1b5",
+      "size": 16627,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۲/dar_jostojo/session-20/reviewed/transcript.reviewed.md",
+      "sha256": "937c41fd25139e92f177e6dc1c2cb0171b3774adac415bedf474d4bc60ad773c",
+      "size": 11013,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۲/dar_jostojo/session-28/final/transcript.final.md",
+      "sha256": "ec15d5e981645764e1b9ad35ff1cc5ccb63e9d5c8b2a0567f33202433fd0b769",
+      "size": 20339,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۲/dar_jostojo/session-28/reviewed/transcript.reviewed.md",
+      "sha256": "e63bbc482b861ff94146c04b6cb1bf738a97683632243042ff8b0053d88d6dc9",
+      "size": 15405,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۲/dar_jostojo/session-14/final/transcript.final.md",
+      "sha256": "78cf5e8eee703c7a7fbcb77d4fc226869cc1efe6d87726403fc9037879d83530",
+      "size": 16123,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۲/dar_jostojo/session-14/reviewed/transcript.reviewed.md",
+      "sha256": "7e8e71c805868289e94d775c85db64fc6865a2c12229f70be4450584633fc74c",
+      "size": 14452,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۲/dar_jostojo/session-03/final/transcript.final.md",
+      "sha256": "f8d28b51833656b90e7707f4e7e5bf87e11bbe29c67eaa14e6b6046e38ad5844",
+      "size": 4078,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۲/dar_jostojo/session-03/reviewed/transcript.reviewed.md",
+      "sha256": "b97c00458cbb5f2e9f76b4cac55abf15f17a3cccae9873ab070ff1ccf0e1ec2a",
+      "size": 3177,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": null,
+      "path": "متن ها/۲/dar_jostojo/cc493c442f184f288e0463a5cddd95ed-59dd4b8a/final/transcript.final.md",
+      "sha256": "f8c4171845a62377223ff88412df3aef1db216d0151586969319d6fea005b950",
+      "size": 468,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۲/dar_jostojo/session-25/final/transcript.final.md",
+      "sha256": "8d9dac7b0417c55be2239ac0e65757c41c187554504fdd094436d86429539b0e",
+      "size": 16966,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۲/dar_jostojo/session-25/reviewed/transcript.reviewed.md",
+      "sha256": "4b1ddcfd26955a7891fa5947ac782487b172c5aab612d4b1f14fd71ae54b4ca4",
+      "size": 11439,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۱/dar-jostojo-final/33.md",
+      "sha256": "e8ec4423fc716fad30b8ae5542c4cdd9b83c3f5ba6b6939b318251746f3141ed",
+      "size": 11629,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۱/dar-jostojo-final/35.md",
+      "sha256": "1e600c6cd0cc7d169b3795181e91885624c0f8f521e45c3ea62c9388db9a512f",
+      "size": 12412,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۱/dar-jostojo-final/3.md",
+      "sha256": "b97c00458cbb5f2e9f76b4cac55abf15f17a3cccae9873ab070ff1ccf0e1ec2a",
+      "size": 3177,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۱/dar-jostojo-final/40.md",
+      "sha256": "50e496e01b574fa15b4509c07418d976647ea3994b0d47fe16dc0bc98c16599a",
+      "size": 19214,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۱/dar-jostojo-final/18.md",
+      "sha256": "159be477d956ea715d51f2c0de95a247744ec274a88063f90dd969b13e347047",
+      "size": 13337,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۱/dar-jostojo-final/10.md",
+      "sha256": "8526703442c6279d808cc51d007b38b5647071b974c6fb2920df5bbd145a66d4",
+      "size": 5598,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۱/dar-jostojo-final/7.md",
+      "sha256": "3881271b5ea03cd726d9d477f8a43810f35feb33761f95c8346d4393bc0f74a8",
+      "size": 4010,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۱/dar-jostojo-final/1.md",
+      "sha256": "58873ae78d8d72e01d846f20bd2ec2b2bf2102ace41c1942c89b904c41bcf1f6",
+      "size": 6462,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۱/dar-jostojo-final/21.md",
+      "sha256": "efa2fea2cf677956143898fb7a7e14907d6cd5c76eccf405346ad6555ce82533",
+      "size": 6137,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۱/dar-jostojo-final/20.md",
+      "sha256": "937c41fd25139e92f177e6dc1c2cb0171b3774adac415bedf474d4bc60ad773c",
+      "size": 11013,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۱/dar-jostojo-final/12.md",
+      "sha256": "2b831409c86f3308e7294c0a0760f647172e8e20b6f238cd88dbface0d39629c",
+      "size": 19350,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۱/dar-jostojo-final/26.md",
+      "sha256": "5057894aa5fb41740b80b0fca30df7a1d0ba929581f8ba022689b45dbf973e9c",
+      "size": 19445,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۱/dar-jostojo-final/6.md",
+      "sha256": "c6bcfc8bcb1ae7c12d54e53e002f4679c898ced4d041660ee8e2e50c5d0d849d",
+      "size": 7674,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۱/dar-jostojo-final/4.md",
+      "sha256": "36081dc18a5c0e4c2ff898d008737adaf6538863b10ad1836b4009985b63a757",
+      "size": 1870,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۱/dar-jostojo-final/17.md",
+      "sha256": "4625782cb7ce17f60899e6948386d61bd44209a2046238a708332ee87052e87d",
+      "size": 11215,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۱/dar-jostojo-final/22.md",
+      "sha256": "51746568d28e4467649f94ce2bf725e6535ea0cfc693b70f6d3fef78e9ba221a",
+      "size": 11766,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۱/dar-jostojo-final/28.md",
+      "sha256": "e63bbc482b861ff94146c04b6cb1bf738a97683632243042ff8b0053d88d6dc9",
+      "size": 15405,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۱/dar-jostojo-final/41.md",
+      "sha256": "9546e598763a1d9bd3d4a689538e94c461d395ada5701738ea941f4426669fb9",
+      "size": 6989,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۱/dar-jostojo-final/2.md",
+      "sha256": "636d24958e905480c31d291f7ea223062d1f5ce8708922d3bfd359a99ff54a3e",
+      "size": 2345,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۱/dar-jostojo-final/8.md",
+      "sha256": "29cff6c155bd1a6ababd597f72c7809129bf0533db8ed86404d729e57e7aaaa8",
+      "size": 2639,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۱/dar-jostojo-final/14.md",
+      "sha256": "7e8e71c805868289e94d775c85db64fc6865a2c12229f70be4450584633fc74c",
+      "size": 14452,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۱/dar-jostojo-final/38.md",
+      "sha256": "25e2fa3160eef8247e6bab3080ebcb7a2bd7c04786f7f3936e09c7fb7e19d6ba",
+      "size": 15614,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۱/dar-jostojo-final/16.md",
+      "sha256": "2be5c1b0f4e37fb6acb1c7f67ded97a38084fdbb8ddbe26e9ab4033b67526f33",
+      "size": 10844,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۱/dar-jostojo-final/9.md",
+      "sha256": "6f31f455acddb3ccbfa26a158fca2ec3de3485f7d76d82c2870e1bac3c275d4b",
+      "size": 6211,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۱/dar-jostojo-final/25.md",
+      "sha256": "4b1ddcfd26955a7891fa5947ac782487b172c5aab612d4b1f14fd71ae54b4ca4",
+      "size": 11439,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۱/dar-jostojo-final/31.md",
+      "sha256": "1d8a1fc8316b51835056057de09cc563f55db8bfef95b2456b4ad72b9ed87d16",
+      "size": 12807,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۱/dar-jostojo-final/23.md",
+      "sha256": "166a34888af2a35af60bce442832852e95fb5c60c4cbffebdc733a0d12fbf17d",
+      "size": 9902,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۱/dar-jostojo-final/27.md",
+      "sha256": "88e385d347fb4d36259bb7d9360e5255147cab81b117acb69eff36f838a23efc",
+      "size": 7899,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۱/dar-jostojo-final/37.md",
+      "sha256": "f5d54967c90fde3bb616db2501f55a527ad9fdb4b2c3930b106ab46acfd08630",
+      "size": 20091,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۱/dar-jostojo-final/30.md",
+      "sha256": "1770654daf1208667a61b13715d284a8205c94fb1783008723464eed46d4f40d",
+      "size": 7839,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۱/dar-jostojo-final/5.md",
+      "sha256": "0c721ccf5d990ba0ed3014ed72182e6543c66d54eb3a5159d55f186f67e4a651",
+      "size": 6342,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۱/dar-jostojo-final/32.md",
+      "sha256": "9589141ae2243a9e99c11f263377df99768f7de82b9603f5502d49c28124600a",
+      "size": 12700,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۱/dar-jostojo-final/15.md",
+      "sha256": "1f432d41f2944a5cf4a42dfe4f9e187f01d588adbeb7297548ab6c8ebfa7dbfd",
+      "size": 16959,
+      "source_class": "final"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 33,
+      "path": "متن ها/۱/uni_tehran/review/md/33.md",
+      "sha256": "96162449f7aaaaa7ede618b67cb12d953e7dcc5af95c71d817582ca5aba1ad82",
+      "size": 38683,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 35,
+      "path": "متن ها/۱/uni_tehran/review/md/35.md",
+      "sha256": "6c14c1ecd5c128042f153faee18744b1693ea1996522b138589009d94faa7942",
+      "size": 30362,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 34,
+      "path": "متن ها/۱/uni_tehran/review/md/34.md",
+      "sha256": "bd3237c271cd9c47cf8b677fc3109cd981e3684412aebf65d4fb05774b1c6de6",
+      "size": 42454,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 3,
+      "path": "متن ها/۱/uni_tehran/review/md/3.md",
+      "sha256": "44db6c27e463266fe8e32b3a624f0ed9dfe6e7c04a39de273b98cfc314c436fa",
+      "size": 23259,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 18,
+      "path": "متن ها/۱/uni_tehran/review/md/18.md",
+      "sha256": "a504cf9748e272920581af7f903e9da59a6d30a21ec95fcdb53c9678e798d842",
+      "size": 29329,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 10,
+      "path": "متن ها/۱/uni_tehran/review/md/10.md",
+      "sha256": "1a4b1c2900faa78de3941f1c666e522a002b814b9974132984c41b96bf76cc3e",
+      "size": 21822,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 7,
+      "path": "متن ها/۱/uni_tehran/review/md/7.md",
+      "sha256": "488f950904fb41302cec5d7e5bf8af91f744f82fe7dceb6aca9ea88a96fddc02",
+      "size": 29083,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 19,
+      "path": "متن ها/۱/uni_tehran/review/md/19.md",
+      "sha256": "a1320b0df0dfb60e55c231b1a7b769dfa0dab68c5f27f05109880f8d7612eaad",
+      "size": 25525,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 1,
+      "path": "متن ها/۱/uni_tehran/review/md/1.md",
+      "sha256": "ed29f465e17d468b2478589622c533099e49a0d944d6a080f70348105f818d41",
+      "size": 21691,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 11,
+      "path": "متن ها/۱/uni_tehran/review/md/11.md",
+      "sha256": "521aa86d17892318226567e53521f94f5be0b85025b45a824740121a60b8780b",
+      "size": 23117,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 21,
+      "path": "متن ها/۱/uni_tehran/review/md/21.md",
+      "sha256": "3674fb35587a6ea659c7ab6569a56b55c4ee145217857d9ceb872c7f8bd2e972",
+      "size": 25381,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 20,
+      "path": "متن ها/۱/uni_tehran/review/md/20.md",
+      "sha256": "c07184716e90f0a77cece87ac5101e8888cf119fcb79ae1b00650e178393dde7",
+      "size": 21070,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 12,
+      "path": "متن ها/۱/uni_tehran/review/md/12.md",
+      "sha256": "5f5b9cf258d673bc9e9e4b2fda626a16a98b461614ad4ccbd2bdeaa9eed0b9a2",
+      "size": 20431,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 26,
+      "path": "متن ها/۱/uni_tehran/review/md/26.md",
+      "sha256": "a32f223283e322318afe13c0cbf3c31d38dc728ab2d9229266c1920d50b1158d",
+      "size": 30093,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 6,
+      "path": "متن ها/۱/uni_tehran/review/md/6.md",
+      "sha256": "79d5ded3f73f75edfc44b132f57b6ed9a1140995c4032af1dc73e9708218985c",
+      "size": 18353,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 24,
+      "path": "متن ها/۱/uni_tehran/review/md/24.md",
+      "sha256": "dcd5f557ffc3fc0631e866ce9e8f4cafb3369e522fff03838d0c5a6e01a7b6d1",
+      "size": 24722,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 4,
+      "path": "متن ها/۱/uni_tehran/review/md/4.md",
+      "sha256": "8eeb96e58ca61f31f5dbacb91d1af68f2fb9ca114b680941db5bf6765f2a5f01",
+      "size": 25247,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 17,
+      "path": "متن ها/۱/uni_tehran/review/md/17.md",
+      "sha256": "8a523808e753e04dd197a5d3aa367ad71f0bb6be5786f87d4a5ad4131f177ded",
+      "size": 32522,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 22,
+      "path": "متن ها/۱/uni_tehran/review/md/22.md",
+      "sha256": "ea8c8bba44c8eee01e6cd1680c03e48175e4a724b2058229da618abc53fbe888",
+      "size": 32834,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 2,
+      "path": "متن ها/۱/uni_tehran/review/md/2.md",
+      "sha256": "03364e6b5db6d67aef4e90761eedb6773ea2c0b34ed4b3b00489e1d99fb6bfd0",
+      "size": 24395,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 8,
+      "path": "متن ها/۱/uni_tehran/review/md/8.md",
+      "sha256": "abc11a9b8a492b800c702224ded5f56124c1aed612a2ff7e73be3ef5ee77a324",
+      "size": 32449,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 13,
+      "path": "متن ها/۱/uni_tehran/review/md/13.md",
+      "sha256": "719c59d891fc97e6084b20a72801b738493197d9182a0cf379f2c5c222e7d641",
+      "size": 26215,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 14,
+      "path": "متن ها/۱/uni_tehran/review/md/14.md",
+      "sha256": "9a4a821184d4c2dc0ee44a76c65a924c887980ffd2ed384cd1a4df728d535195",
+      "size": 26170,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 38,
+      "path": "متن ها/۱/uni_tehran/review/md/38.md",
+      "sha256": "c1db091156dcc44de4e8591cc34c12d4b2cd7d69a463fcc93aa633441fdf7d64",
+      "size": 21812,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 16,
+      "path": "متن ها/۱/uni_tehran/review/md/16.md",
+      "sha256": "9c60b10f7743c43046196fd5903b35ca537148a192ea18e86a1bfc27caebb8b4",
+      "size": 25923,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 9,
+      "path": "متن ها/۱/uni_tehran/review/md/9.md",
+      "sha256": "5c7813bda2610651977d749766c66fec714b346d1fd67715a8ce715255b30370",
+      "size": 38782,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 25,
+      "path": "متن ها/۱/uni_tehran/review/md/25.md",
+      "sha256": "362bb2c60292b3cdfd1db632f2ea522ee07a506e4fd7d14a9692e56ba5cf72b8",
+      "size": 23147,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 31,
+      "path": "متن ها/۱/uni_tehran/review/md/31.md",
+      "sha256": "3e7d9da17b2ba67b6b03dfbe6b623682e6bf49e293500b509317882029ae65c3",
+      "size": 28925,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 23,
+      "path": "متن ها/۱/uni_tehran/review/md/23.md",
+      "sha256": "b6a2083f8856dae21ddffd50aa79ee1d969f4ad23cdb2bea222ec7250b9432de",
+      "size": 22255,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 27,
+      "path": "متن ها/۱/uni_tehran/review/md/27.md",
+      "sha256": "6527085ffa1e0339f2fe7bbe8d751389a076c9734250a8888308024c82133ad8",
+      "size": 26146,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 36,
+      "path": "متن ها/۱/uni_tehran/review/md/36.md",
+      "sha256": "35cf424d385ede0eb976678947672ea01db0d0361a4b0e50714918553de6a687",
+      "size": 19873,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 37,
+      "path": "متن ها/۱/uni_tehran/review/md/37.md",
+      "sha256": "50a24ea9a24e230e403c6525b27e09cf9198d57698446a292cd50da384a3f73f",
+      "size": 27464,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 30,
+      "path": "متن ها/۱/uni_tehran/review/md/30.md",
+      "sha256": "b0444928951fd59192d465974f9472462ea319f697d36f6577cb5210bd5a3082",
+      "size": 29158,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 5,
+      "path": "متن ها/۱/uni_tehran/review/md/5.md",
+      "sha256": "4e758888873bfbf966210773760ffb5153c5773aebaf8325efd88d2dfe569030",
+      "size": 30274,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 32,
+      "path": "متن ها/۱/uni_tehran/review/md/32.md",
+      "sha256": "9477b5293a1d745420124984802f1bb1b4ebec1694e64bcbe5c8cb2f4427a327",
+      "size": 24870,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 15,
+      "path": "متن ها/۱/uni_tehran/review/md/15.md",
+      "sha256": "50e8bf5d4672e9a214ab617190c6e17ce3a3730be4c2d198b8805ca8e89a23c8",
+      "size": 31936,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 29,
+      "path": "متن ها/۱/uni_tehran/review/md/29.md",
+      "sha256": "db3f3064d2aa048c3ec7b115a3e0578a7cb9eb4013a0fd86be25944fd226c6b4",
+      "size": 24266,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 3,
+      "path": "متن ها/۱/mq/review/md/3.md",
+      "sha256": "6449f5868da376873f842fc90be9978c8b54fe3a59c91f13012d489d9e606736",
+      "size": 12237,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 7,
+      "path": "متن ها/۱/mq/review/md/7.md",
+      "sha256": "97dda557578028f623caa42002177aeb125c6a312edf74ceb012e4d3fca6b472",
+      "size": 10390,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 1,
+      "path": "متن ها/۱/mq/review/md/1.md",
+      "sha256": "36510d923a748e5e077a73ab26e5f3ffefedfd9ebf475e5f06b20117973269d6",
+      "size": 12388,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 6,
+      "path": "متن ها/۱/mq/review/md/6.md",
+      "sha256": "e3b6031c9e2df7fddcd5d11b789f6e55bd4eef57050625a9062b95e489b3d500",
+      "size": 5426,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 4,
+      "path": "متن ها/۱/mq/review/md/4.md",
+      "sha256": "3105a2bb9d216f442bb4ec2aa6012df7f7152ef57c3d7fcef3ec84070ee0cc9a",
+      "size": 14881,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 2,
+      "path": "متن ها/۱/mq/review/md/2.md",
+      "sha256": "03a20a2b5e8dc5814c6e3a57e76a3c4e9bcb25ad9e8f60b8333955f5f7e96d59",
+      "size": 12490,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 8,
+      "path": "متن ها/۱/mq/review/md/8.md",
+      "sha256": "0be2248d04ee87a4da23b21631bf4e62685b2d2b0063912e384778bacbcdd0c1",
+      "size": 9629,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 5,
+      "path": "متن ها/۱/mq/review/md/5.md",
+      "sha256": "674019d4cc0215452cca910f223933a410429fe0169a092f6bdf79397bdc6686",
+      "size": 11325,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۱/dar-jostojo/session-10/final/transcript.final.md",
+      "sha256": "70d0cd89c178b119f1cccba56669ae5308ec54d364e0430b863abefa98f1efc1",
+      "size": 6426,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 10,
+      "path": "متن ها/۱/dar-jostojo/session-10/reviewed/transcript.reviewed.md",
+      "sha256": "8526703442c6279d808cc51d007b38b5647071b974c6fb2920df5bbd145a66d4",
+      "size": 5598,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۱/dar-jostojo/session-15/final/transcript.final.md",
+      "sha256": "ef1a1988ef5c843e4cd1729c23df0a4a86427ab2029a2f6f26549fd05a851742",
+      "size": 21773,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 15,
+      "path": "متن ها/۱/dar-jostojo/session-15/reviewed/transcript.reviewed.md",
+      "sha256": "1f432d41f2944a5cf4a42dfe4f9e187f01d588adbeb7297548ab6c8ebfa7dbfd",
+      "size": 16959,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۱/dar-jostojo/session-37/final/transcript.final.md",
+      "sha256": "f13f342990f87b43beeaaea98977bf43bef993097d9536551e270978aed84c8a",
+      "size": 27786,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 37,
+      "path": "متن ها/۱/dar-jostojo/session-37/reviewed/transcript.reviewed.md",
+      "sha256": "f5d54967c90fde3bb616db2501f55a527ad9fdb4b2c3930b106ab46acfd08630",
+      "size": 20091,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۱/dar-jostojo/session-01/final/transcript.final.md",
+      "sha256": "5c38e386e0198e540dc0eddb1eb2981a46c20577dd884c3d03b1be671663923f",
+      "size": 6612,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 1,
+      "path": "متن ها/۱/dar-jostojo/session-01/reviewed/transcript.reviewed.md",
+      "sha256": "58873ae78d8d72e01d846f20bd2ec2b2bf2102ace41c1942c89b904c41bcf1f6",
+      "size": 6462,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۱/dar-jostojo/session-04/final/transcript.final.md",
+      "sha256": "8381e8e5fe87643818590e7faec4610bcd1102b249c8b1c4bb443bb5dab52e4f",
+      "size": 4547,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 4,
+      "path": "متن ها/۱/dar-jostojo/session-04/reviewed/transcript.reviewed.md",
+      "sha256": "36081dc18a5c0e4c2ff898d008737adaf6538863b10ad1836b4009985b63a757",
+      "size": 1870,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۱/dar-jostojo/session-23/final/transcript.final.md",
+      "sha256": "04828f236256d2aae9b2459baf3e39a77f2ab85f1980f83cf7f6051cc3e252fb",
+      "size": 15231,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 23,
+      "path": "متن ها/۱/dar-jostojo/session-23/reviewed/transcript.reviewed.md",
+      "sha256": "166a34888af2a35af60bce442832852e95fb5c60c4cbffebdc733a0d12fbf17d",
+      "size": 9902,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۱/dar-jostojo/session-40/final/transcript.final.md",
+      "sha256": "d7b86fb6a2a90e6f48cbcc76bf9a81cac6018993ded51ea976bf59a52384c961",
+      "size": 19873,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 40,
+      "path": "متن ها/۱/dar-jostojo/session-40/reviewed/transcript.reviewed.md",
+      "sha256": "50e496e01b574fa15b4509c07418d976647ea3994b0d47fe16dc0bc98c16599a",
+      "size": 19214,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۱/dar-jostojo/session-32/final/transcript.final.md",
+      "sha256": "5f280a26616601cd5a675754ab07f216de98fd4421c053675a824754a3a5e98c",
+      "size": 16388,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 32,
+      "path": "متن ها/۱/dar-jostojo/session-32/reviewed/transcript.reviewed.md",
+      "sha256": "9589141ae2243a9e99c11f263377df99768f7de82b9603f5502d49c28124600a",
+      "size": 12700,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۱/dar-jostojo/session-02/final/transcript.final.md",
+      "sha256": "ae40536f1210e055579fbe13501596593d36d40e97a68fa2a1867c0a49f71f6f",
+      "size": 2747,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 2,
+      "path": "متن ها/۱/dar-jostojo/session-02/reviewed/transcript.reviewed.md",
+      "sha256": "636d24958e905480c31d291f7ea223062d1f5ce8708922d3bfd359a99ff54a3e",
+      "size": 2345,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۱/dar-jostojo/session-21/final/transcript.final.md",
+      "sha256": "aa220a3a904f62adf24a345556ce671026c0179a1943caf50b5f676d55bfa2fa",
+      "size": 7393,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 21,
+      "path": "متن ها/۱/dar-jostojo/session-21/reviewed/transcript.reviewed.md",
+      "sha256": "efa2fea2cf677956143898fb7a7e14907d6cd5c76eccf405346ad6555ce82533",
+      "size": 6137,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۱/dar-jostojo/session-12/final/transcript.final.md",
+      "sha256": "8cf1529ed1bd4662e4e3e63e3697a2d2f2eaa9f1dbc785f7f49eda5bff36f674",
+      "size": 23005,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 12,
+      "path": "متن ها/۱/dar-jostojo/session-12/reviewed/transcript.reviewed.md",
+      "sha256": "2b831409c86f3308e7294c0a0760f647172e8e20b6f238cd88dbface0d39629c",
+      "size": 19350,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۱/dar-jostojo/session-41/final/transcript.final.md",
+      "sha256": "221fe2a89dbf4366c8a066ce13759291feb0b83fb96a1afc88ba7010a75fde4a",
+      "size": 7345,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 41,
+      "path": "متن ها/۱/dar-jostojo/session-41/reviewed/transcript.reviewed.md",
+      "sha256": "9546e598763a1d9bd3d4a689538e94c461d395ada5701738ea941f4426669fb9",
+      "size": 6989,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۱/dar-jostojo/session-09/final/transcript.final.md",
+      "sha256": "2fcb103ee9dd4a7876a67885de5de5d19618e9ecc282857b772b0a6750a56d36",
+      "size": 6728,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 9,
+      "path": "متن ها/۱/dar-jostojo/session-09/reviewed/transcript.reviewed.md",
+      "sha256": "6f31f455acddb3ccbfa26a158fca2ec3de3485f7d76d82c2870e1bac3c275d4b",
+      "size": 6211,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۱/dar-jostojo/session-30/final/transcript.final.md",
+      "sha256": "444c05ba6935538536aab97c33a228903d5c1a02a7cce00b0380ddfd0fb23da5",
+      "size": 8325,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 30,
+      "path": "متن ها/۱/dar-jostojo/session-30/reviewed/transcript.reviewed.md",
+      "sha256": "1770654daf1208667a61b13715d284a8205c94fb1783008723464eed46d4f40d",
+      "size": 7839,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۱/dar-jostojo/session-31/final/transcript.final.md",
+      "sha256": "e971ae1ba11d5d1df6c357bdfd82a2d9d593812e8d7f58794aab8a299388fde5",
+      "size": 22896,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 31,
+      "path": "متن ها/۱/dar-jostojo/session-31/reviewed/transcript.reviewed.md",
+      "sha256": "1d8a1fc8316b51835056057de09cc563f55db8bfef95b2456b4ad72b9ed87d16",
+      "size": 12807,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۱/dar-jostojo/session-35/final/transcript.final.md",
+      "sha256": "a926da766c73344c1b9dac649af1ca981678a4344ad186ee12f1109d0abd956e",
+      "size": 18541,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 35,
+      "path": "متن ها/۱/dar-jostojo/session-35/reviewed/transcript.reviewed.md",
+      "sha256": "1e600c6cd0cc7d169b3795181e91885624c0f8f521e45c3ea62c9388db9a512f",
+      "size": 12412,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۱/dar-jostojo/session-07/final/transcript.final.md",
+      "sha256": "f6344b4927cdec93411eebfc4391c4417fbf0ae4394a83b9bc356a4fceeb2b40",
+      "size": 4348,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 7,
+      "path": "متن ها/۱/dar-jostojo/session-07/reviewed/transcript.reviewed.md",
+      "sha256": "3881271b5ea03cd726d9d477f8a43810f35feb33761f95c8346d4393bc0f74a8",
+      "size": 4010,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۱/dar-jostojo/session-22/final/transcript.final.md",
+      "sha256": "955298138f04dc3ae65b735830de974cc14a91ffe69c57aaebef3997a03f9e41",
+      "size": 14900,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 22,
+      "path": "متن ها/۱/dar-jostojo/session-22/reviewed/transcript.reviewed.md",
+      "sha256": "51746568d28e4467649f94ce2bf725e6535ea0cfc693b70f6d3fef78e9ba221a",
+      "size": 11766,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۱/dar-jostojo/session-16/final/transcript.final.md",
+      "sha256": "826f9ee4507e2c0652bf758c6707ff5c17ced84b4ad4ba0585d7af2b496ca894",
+      "size": 12952,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 16,
+      "path": "متن ها/۱/dar-jostojo/session-16/reviewed/transcript.reviewed.md",
+      "sha256": "2be5c1b0f4e37fb6acb1c7f67ded97a38084fdbb8ddbe26e9ab4033b67526f33",
+      "size": 10844,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۱/dar-jostojo/session-26/final/transcript.final.md",
+      "sha256": "a4c58bd6621fe1281a83220110cb5a38f0d46b2763160aed8f703c11f17b1557",
+      "size": 20457,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 26,
+      "path": "متن ها/۱/dar-jostojo/session-26/reviewed/transcript.reviewed.md",
+      "sha256": "5057894aa5fb41740b80b0fca30df7a1d0ba929581f8ba022689b45dbf973e9c",
+      "size": 19445,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۱/dar-jostojo/session-33/final/transcript.final.md",
+      "sha256": "2d54acf28ef68490b4d35cdbbec01ab4c9a7dd2fffd3c58b59ade37993d5820d",
+      "size": 15095,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 33,
+      "path": "متن ها/۱/dar-jostojo/session-33/reviewed/transcript.reviewed.md",
+      "sha256": "e8ec4423fc716fad30b8ae5542c4cdd9b83c3f5ba6b6939b318251746f3141ed",
+      "size": 11629,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۱/dar-jostojo/session-27/final/transcript.final.md",
+      "sha256": "0d6721165550746353bd3e612b705e49c3e386b3926e4dc228340a9e88c2d7e0",
+      "size": 8645,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 27,
+      "path": "متن ها/۱/dar-jostojo/session-27/reviewed/transcript.reviewed.md",
+      "sha256": "88e385d347fb4d36259bb7d9360e5255147cab81b117acb69eff36f838a23efc",
+      "size": 7899,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۱/dar-jostojo/session-08/final/transcript.final.md",
+      "sha256": "4686380880668ad1cfb65b6a0c698d0464c981141618b0278485cecc4bea7b16",
+      "size": 2885,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 8,
+      "path": "متن ها/۱/dar-jostojo/session-08/reviewed/transcript.reviewed.md",
+      "sha256": "29cff6c155bd1a6ababd597f72c7809129bf0533db8ed86404d729e57e7aaaa8",
+      "size": 2639,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۱/dar-jostojo/session-17/final/transcript.final.md",
+      "sha256": "c12e0faab34e3e9d45f04e913c3db1c592c9b8db9c93e6d056c68e363210f075",
+      "size": 13437,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 17,
+      "path": "متن ها/۱/dar-jostojo/session-17/reviewed/transcript.reviewed.md",
+      "sha256": "4625782cb7ce17f60899e6948386d61bd44209a2046238a708332ee87052e87d",
+      "size": 11215,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۱/dar-jostojo/session-18/final/transcript.final.md",
+      "sha256": "f735467e92fe507060eea735df61a86fe7258a87b5e8891734c3cba0bdab05e5",
+      "size": 18683,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 18,
+      "path": "متن ها/۱/dar-jostojo/session-18/reviewed/transcript.reviewed.md",
+      "sha256": "159be477d956ea715d51f2c0de95a247744ec274a88063f90dd969b13e347047",
+      "size": 13337,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۱/dar-jostojo/session-05/final/transcript.final.md",
+      "sha256": "08a80e37dd149e573490922a825673184eeaadf3c008f175fa08cc3bc5ed570f",
+      "size": 7462,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 5,
+      "path": "متن ها/۱/dar-jostojo/session-05/reviewed/transcript.reviewed.md",
+      "sha256": "0c721ccf5d990ba0ed3014ed72182e6543c66d54eb3a5159d55f186f67e4a651",
+      "size": 6342,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۱/dar-jostojo/session-06/final/transcript.final.md",
+      "sha256": "8585f8065cf236890986b90530f9c14245bb49b2bd739b3922c4887c2fbf186e",
+      "size": 8512,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 6,
+      "path": "متن ها/۱/dar-jostojo/session-06/reviewed/transcript.reviewed.md",
+      "sha256": "c6bcfc8bcb1ae7c12d54e53e002f4679c898ced4d041660ee8e2e50c5d0d849d",
+      "size": 7674,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۱/dar-jostojo/session-38/final/transcript.final.md",
+      "sha256": "dbafc068f1b72e6c083d31b46c0bcb11c23550365d94624dfe37deb8030e6dd5",
+      "size": 16474,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 38,
+      "path": "متن ها/۱/dar-jostojo/session-38/reviewed/transcript.reviewed.md",
+      "sha256": "25e2fa3160eef8247e6bab3080ebcb7a2bd7c04786f7f3936e09c7fb7e19d6ba",
+      "size": 15614,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۱/dar-jostojo/session-20/final/transcript.final.md",
+      "sha256": "35d0b4aa0e9467cd04c0669fb2e0cffa329504e7a769fdde76d6dcfcbb03e1b5",
+      "size": 16627,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 20,
+      "path": "متن ها/۱/dar-jostojo/session-20/reviewed/transcript.reviewed.md",
+      "sha256": "937c41fd25139e92f177e6dc1c2cb0171b3774adac415bedf474d4bc60ad773c",
+      "size": 11013,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۱/dar-jostojo/session-28/final/transcript.final.md",
+      "sha256": "ec15d5e981645764e1b9ad35ff1cc5ccb63e9d5c8b2a0567f33202433fd0b769",
+      "size": 20339,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 28,
+      "path": "متن ها/۱/dar-jostojo/session-28/reviewed/transcript.reviewed.md",
+      "sha256": "e63bbc482b861ff94146c04b6cb1bf738a97683632243042ff8b0053d88d6dc9",
+      "size": 15405,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۱/dar-jostojo/session-14/final/transcript.final.md",
+      "sha256": "78cf5e8eee703c7a7fbcb77d4fc226869cc1efe6d87726403fc9037879d83530",
+      "size": 16123,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 14,
+      "path": "متن ها/۱/dar-jostojo/session-14/reviewed/transcript.reviewed.md",
+      "sha256": "7e8e71c805868289e94d775c85db64fc6865a2c12229f70be4450584633fc74c",
+      "size": 14452,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۱/dar-jostojo/session-03/final/transcript.final.md",
+      "sha256": "f8d28b51833656b90e7707f4e7e5bf87e11bbe29c67eaa14e6b6046e38ad5844",
+      "size": 4078,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 3,
+      "path": "متن ها/۱/dar-jostojo/session-03/reviewed/transcript.reviewed.md",
+      "sha256": "b97c00458cbb5f2e9f76b4cac55abf15f17a3cccae9873ab070ff1ccf0e1ec2a",
+      "size": 3177,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۱/dar-jostojo/session-25/final/transcript.final.md",
+      "sha256": "8d9dac7b0417c55be2239ac0e65757c41c187554504fdd094436d86429539b0e",
+      "size": 16966,
+      "source_class": "final"
+    },
+    {
+      "collection": "dar_jostojoye_khoshbakhti",
+      "episode": 25,
+      "path": "متن ها/۱/dar-jostojo/session-25/reviewed/transcript.reviewed.md",
+      "sha256": "4b1ddcfd26955a7891fa5947ac782487b172c5aab612d4b1f14fd71ae54b4ca4",
+      "size": 11439,
+      "source_class": "reviewed"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 3,
+      "path": "متن ها/۳/asre_shirin/review/md/3.md",
+      "sha256": "5354adbd11cfa8ece16fe0764ba99a86529e26bb07e73f8bcc4fd097bac16011",
+      "size": 28317,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 18,
+      "path": "متن ها/۳/asre_shirin/review/md/18.md",
+      "sha256": "a9b8a9ac033feecc55375f4afa50a4363616250c897e78bdeadb5ad3f19f2276",
+      "size": 36672,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 10,
+      "path": "متن ها/۳/asre_shirin/review/md/10.md",
+      "sha256": "c2a5385022c002a34a74b5e6d3d1e81a630ab27b4ad926e137125a359c2977fb",
+      "size": 33084,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 7,
+      "path": "متن ها/۳/asre_shirin/review/md/7.md",
+      "sha256": "3bb6234e84a48fb57859d142b410999ddb93ae46a3f9554b74e2ea2cd81c531a",
+      "size": 33535,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 19,
+      "path": "متن ها/۳/asre_shirin/review/md/19.md",
+      "sha256": "5a2f3b3ee124246b23bf27395d9c861224a84a98087854a215eb0d4d3881b23b",
+      "size": 37509,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 1,
+      "path": "متن ها/۳/asre_shirin/review/md/1.md",
+      "sha256": "cc30535d08694935f2182e1cce01caaacf4b54c5418db7b1fe02f7c673551031",
+      "size": 31828,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 11,
+      "path": "متن ها/۳/asre_shirin/review/md/11.md",
+      "sha256": "cf9958776c62b713a528a9deeca23a2adb3150e7c880942a77e6b7e0a5afa9b4",
+      "size": 36421,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 21,
+      "path": "متن ها/۳/asre_shirin/review/md/21.md",
+      "sha256": "756615be00259adcf29d381dd20ceb3f235ab1dfd5fde847615f567df6f9490c",
+      "size": 38680,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 20,
+      "path": "متن ها/۳/asre_shirin/review/md/20.md",
+      "sha256": "ed3f887f33f6952ae1f84a0faa2372695f7dcf890685de7ce5a4c04451f735bc",
+      "size": 37357,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 12,
+      "path": "متن ها/۳/asre_shirin/review/md/12.md",
+      "sha256": "142c3ec33a15a5d1a2e199b9c0138b49ae356f3f8b261043ed93c24c1e66d34d",
+      "size": 35667,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 26,
+      "path": "متن ها/۳/asre_shirin/review/md/26.md",
+      "sha256": "8fe8c45d1678c015103b8ed59612aa0b18ad0c1f309c5fcaf7d91e1fb02f9200",
+      "size": 30639,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 6,
+      "path": "متن ها/۳/asre_shirin/review/md/6.md",
+      "sha256": "fa6f860c0ae220c84dd24d0b15ac95bb8d0b46b8f6d67fbd77b8f50c1a83b5fb",
+      "size": 32819,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 24,
+      "path": "متن ها/۳/asre_shirin/review/md/24.md",
+      "sha256": "3da5d2b1b0e9741af154d3b8aeef753c65b605bc7f05bc31f358cf4b731bc822",
+      "size": 36666,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 4,
+      "path": "متن ها/۳/asre_shirin/review/md/4.md",
+      "sha256": "306a776a36a0cbc7cb15d10e73e12b08f75c3c056c6ef10a2f8164c1ba09edc5",
+      "size": 26902,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 17,
+      "path": "متن ها/۳/asre_shirin/review/md/17.md",
+      "sha256": "1a97de53eac4c201f3905bf3c18d412f7779d90bce95d839216326e70fc7c4c2",
+      "size": 40709,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 22,
+      "path": "متن ها/۳/asre_shirin/review/md/22.md",
+      "sha256": "8a71a7823444c47d39f51594f8ce90219bd4aca6fc9c3f2a0993e69fccdcee3c",
+      "size": 40450,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 2,
+      "path": "متن ها/۳/asre_shirin/review/md/2.md",
+      "sha256": "61e0b1f8f1b932054d680316eaf46ac9fdde0f0e90171c9b9c80257aadbf0321",
+      "size": 28301,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 8,
+      "path": "متن ها/۳/asre_shirin/review/md/8.md",
+      "sha256": "8f07a74905d7c528a4b5a06a3f7b647d629ce2e487f4cfdc82369a937635ad93",
+      "size": 31080,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 13,
+      "path": "متن ها/۳/asre_shirin/review/md/13.md",
+      "sha256": "5048a5ee6f75b3e724f850f44e911aa175b0b621940adf4fa735c06aa8777bd7",
+      "size": 36034,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 14,
+      "path": "متن ها/۳/asre_shirin/review/md/14.md",
+      "sha256": "203501e6ec52c48512990c3fe95481f0e3333c25d15af3763001a895f8fdc52e",
+      "size": 36310,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 16,
+      "path": "متن ها/۳/asre_shirin/review/md/16.md",
+      "sha256": "efccc5caa02f3737eceb5ced0a5c94bff6e1aa8eb24ba9cce8aae14a10a8bed6",
+      "size": 38061,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 9,
+      "path": "متن ها/۳/asre_shirin/review/md/9.md",
+      "sha256": "14d5f5a92c5ec0e88b3f62f1b3050f765fa9ede00c0ebf196587982893df8cec",
+      "size": 32012,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 25,
+      "path": "متن ها/۳/asre_shirin/review/md/25.md",
+      "sha256": "9055c6a1cc1c1f5d1d8571db9eb50ad41f8b39ce9e22b535abff17e56b8ef04f",
+      "size": 36224,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 23,
+      "path": "متن ها/۳/asre_shirin/review/md/23.md",
+      "sha256": "78e93200904d014354e6226d9ac6516a83bff91ddb3677211ee287b88fb103e3",
+      "size": 40219,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "asre_shirin",
+      "episode": 5,
+      "path": "متن ها/۳/asre_shirin/review/md/5.md",
+      "sha256": "f1458aaf3e2c0e40f0cbc2b95f3c7262524c1993ca09de04553b71981cb731e1",
+      "size": 31776,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 33,
+      "path": "متن ها/۳/uni_tehran/review/md/33.md",
+      "sha256": "96162449f7aaaaa7ede618b67cb12d953e7dcc5af95c71d817582ca5aba1ad82",
+      "size": 38683,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 35,
+      "path": "متن ها/۳/uni_tehran/review/md/35.md",
+      "sha256": "6c14c1ecd5c128042f153faee18744b1693ea1996522b138589009d94faa7942",
+      "size": 30362,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 34,
+      "path": "متن ها/۳/uni_tehran/review/md/34.md",
+      "sha256": "bd3237c271cd9c47cf8b677fc3109cd981e3684412aebf65d4fb05774b1c6de6",
+      "size": 42454,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 3,
+      "path": "متن ها/۳/uni_tehran/review/md/3.md",
+      "sha256": "44db6c27e463266fe8e32b3a624f0ed9dfe6e7c04a39de273b98cfc314c436fa",
+      "size": 23259,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 18,
+      "path": "متن ها/۳/uni_tehran/review/md/18.md",
+      "sha256": "a504cf9748e272920581af7f903e9da59a6d30a21ec95fcdb53c9678e798d842",
+      "size": 29329,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 10,
+      "path": "متن ها/۳/uni_tehran/review/md/10.md",
+      "sha256": "1a4b1c2900faa78de3941f1c666e522a002b814b9974132984c41b96bf76cc3e",
+      "size": 21822,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 7,
+      "path": "متن ها/۳/uni_tehran/review/md/7.md",
+      "sha256": "488f950904fb41302cec5d7e5bf8af91f744f82fe7dceb6aca9ea88a96fddc02",
+      "size": 29083,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 19,
+      "path": "متن ها/۳/uni_tehran/review/md/19.md",
+      "sha256": "a1320b0df0dfb60e55c231b1a7b769dfa0dab68c5f27f05109880f8d7612eaad",
+      "size": 25525,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 1,
+      "path": "متن ها/۳/uni_tehran/review/md/1.md",
+      "sha256": "ed29f465e17d468b2478589622c533099e49a0d944d6a080f70348105f818d41",
+      "size": 21691,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 11,
+      "path": "متن ها/۳/uni_tehran/review/md/11.md",
+      "sha256": "521aa86d17892318226567e53521f94f5be0b85025b45a824740121a60b8780b",
+      "size": 23117,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 21,
+      "path": "متن ها/۳/uni_tehran/review/md/21.md",
+      "sha256": "3674fb35587a6ea659c7ab6569a56b55c4ee145217857d9ceb872c7f8bd2e972",
+      "size": 25381,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 20,
+      "path": "متن ها/۳/uni_tehran/review/md/20.md",
+      "sha256": "c07184716e90f0a77cece87ac5101e8888cf119fcb79ae1b00650e178393dde7",
+      "size": 21070,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 12,
+      "path": "متن ها/۳/uni_tehran/review/md/12.md",
+      "sha256": "5f5b9cf258d673bc9e9e4b2fda626a16a98b461614ad4ccbd2bdeaa9eed0b9a2",
+      "size": 20431,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 26,
+      "path": "متن ها/۳/uni_tehran/review/md/26.md",
+      "sha256": "a32f223283e322318afe13c0cbf3c31d38dc728ab2d9229266c1920d50b1158d",
+      "size": 30093,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 6,
+      "path": "متن ها/۳/uni_tehran/review/md/6.md",
+      "sha256": "79d5ded3f73f75edfc44b132f57b6ed9a1140995c4032af1dc73e9708218985c",
+      "size": 18353,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 24,
+      "path": "متن ها/۳/uni_tehran/review/md/24.md",
+      "sha256": "dcd5f557ffc3fc0631e866ce9e8f4cafb3369e522fff03838d0c5a6e01a7b6d1",
+      "size": 24722,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 4,
+      "path": "متن ها/۳/uni_tehran/review/md/4.md",
+      "sha256": "8eeb96e58ca61f31f5dbacb91d1af68f2fb9ca114b680941db5bf6765f2a5f01",
+      "size": 25247,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 17,
+      "path": "متن ها/۳/uni_tehran/review/md/17.md",
+      "sha256": "8a523808e753e04dd197a5d3aa367ad71f0bb6be5786f87d4a5ad4131f177ded",
+      "size": 32522,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 22,
+      "path": "متن ها/۳/uni_tehran/review/md/22.md",
+      "sha256": "ea8c8bba44c8eee01e6cd1680c03e48175e4a724b2058229da618abc53fbe888",
+      "size": 32834,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 2,
+      "path": "متن ها/۳/uni_tehran/review/md/2.md",
+      "sha256": "03364e6b5db6d67aef4e90761eedb6773ea2c0b34ed4b3b00489e1d99fb6bfd0",
+      "size": 24395,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 8,
+      "path": "متن ها/۳/uni_tehran/review/md/8.md",
+      "sha256": "abc11a9b8a492b800c702224ded5f56124c1aed612a2ff7e73be3ef5ee77a324",
+      "size": 32449,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 13,
+      "path": "متن ها/۳/uni_tehran/review/md/13.md",
+      "sha256": "719c59d891fc97e6084b20a72801b738493197d9182a0cf379f2c5c222e7d641",
+      "size": 26215,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 14,
+      "path": "متن ها/۳/uni_tehran/review/md/14.md",
+      "sha256": "9a4a821184d4c2dc0ee44a76c65a924c887980ffd2ed384cd1a4df728d535195",
+      "size": 26170,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 38,
+      "path": "متن ها/۳/uni_tehran/review/md/38.md",
+      "sha256": "c1db091156dcc44de4e8591cc34c12d4b2cd7d69a463fcc93aa633441fdf7d64",
+      "size": 21812,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 16,
+      "path": "متن ها/۳/uni_tehran/review/md/16.md",
+      "sha256": "9c60b10f7743c43046196fd5903b35ca537148a192ea18e86a1bfc27caebb8b4",
+      "size": 25923,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 9,
+      "path": "متن ها/۳/uni_tehran/review/md/9.md",
+      "sha256": "5c7813bda2610651977d749766c66fec714b346d1fd67715a8ce715255b30370",
+      "size": 38782,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 25,
+      "path": "متن ها/۳/uni_tehran/review/md/25.md",
+      "sha256": "362bb2c60292b3cdfd1db632f2ea522ee07a506e4fd7d14a9692e56ba5cf72b8",
+      "size": 23147,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 31,
+      "path": "متن ها/۳/uni_tehran/review/md/31.md",
+      "sha256": "3e7d9da17b2ba67b6b03dfbe6b623682e6bf49e293500b509317882029ae65c3",
+      "size": 28925,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 23,
+      "path": "متن ها/۳/uni_tehran/review/md/23.md",
+      "sha256": "b6a2083f8856dae21ddffd50aa79ee1d969f4ad23cdb2bea222ec7250b9432de",
+      "size": 22255,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 27,
+      "path": "متن ها/۳/uni_tehran/review/md/27.md",
+      "sha256": "6527085ffa1e0339f2fe7bbe8d751389a076c9734250a8888308024c82133ad8",
+      "size": 26146,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 36,
+      "path": "متن ها/۳/uni_tehran/review/md/36.md",
+      "sha256": "35cf424d385ede0eb976678947672ea01db0d0361a4b0e50714918553de6a687",
+      "size": 19873,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 37,
+      "path": "متن ها/۳/uni_tehran/review/md/37.md",
+      "sha256": "50a24ea9a24e230e403c6525b27e09cf9198d57698446a292cd50da384a3f73f",
+      "size": 27464,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 30,
+      "path": "متن ها/۳/uni_tehran/review/md/30.md",
+      "sha256": "b0444928951fd59192d465974f9472462ea319f697d36f6577cb5210bd5a3082",
+      "size": 29158,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 5,
+      "path": "متن ها/۳/uni_tehran/review/md/5.md",
+      "sha256": "4e758888873bfbf966210773760ffb5153c5773aebaf8325efd88d2dfe569030",
+      "size": 30274,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 32,
+      "path": "متن ها/۳/uni_tehran/review/md/32.md",
+      "sha256": "9477b5293a1d745420124984802f1bb1b4ebec1694e64bcbe5c8cb2f4427a327",
+      "size": 24870,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 15,
+      "path": "متن ها/۳/uni_tehran/review/md/15.md",
+      "sha256": "50e8bf5d4672e9a214ab617190c6e17ce3a3730be4c2d198b8805ca8e89a23c8",
+      "size": 31936,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "uni_tehran",
+      "episode": 29,
+      "path": "متن ها/۳/uni_tehran/review/md/29.md",
+      "sha256": "db3f3064d2aa048c3ec7b115a3e0578a7cb9eb4013a0fd86be25944fd226c6b4",
+      "size": 24266,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 3,
+      "path": "متن ها/۳/mq/review/md/3.md",
+      "sha256": "6449f5868da376873f842fc90be9978c8b54fe3a59c91f13012d489d9e606736",
+      "size": 12237,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 7,
+      "path": "متن ها/۳/mq/review/md/7.md",
+      "sha256": "97dda557578028f623caa42002177aeb125c6a312edf74ceb012e4d3fca6b472",
+      "size": 10390,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 1,
+      "path": "متن ها/۳/mq/review/md/1.md",
+      "sha256": "36510d923a748e5e077a73ab26e5f3ffefedfd9ebf475e5f06b20117973269d6",
+      "size": 12388,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 6,
+      "path": "متن ها/۳/mq/review/md/6.md",
+      "sha256": "e3b6031c9e2df7fddcd5d11b789f6e55bd4eef57050625a9062b95e489b3d500",
+      "size": 5426,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 4,
+      "path": "متن ها/۳/mq/review/md/4.md",
+      "sha256": "3105a2bb9d216f442bb4ec2aa6012df7f7152ef57c3d7fcef3ec84070ee0cc9a",
+      "size": 14881,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 2,
+      "path": "متن ها/۳/mq/review/md/2.md",
+      "sha256": "03a20a2b5e8dc5814c6e3a57e76a3c4e9bcb25ad9e8f60b8333955f5f7e96d59",
+      "size": 12490,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 8,
+      "path": "متن ها/۳/mq/review/md/8.md",
+      "sha256": "0be2248d04ee87a4da23b21631bf4e62685b2d2b0063912e384778bacbcdd0c1",
+      "size": 9629,
+      "source_class": "review_md"
+    },
+    {
+      "collection": "mq",
+      "episode": 5,
+      "path": "متن ها/۳/mq/review/md/5.md",
+      "sha256": "674019d4cc0215452cca910f223933a410429fe0169a092f6bdf79397bdc6686",
+      "size": 11325,
+      "source_class": "review_md"
+    }
+  ]
+}
