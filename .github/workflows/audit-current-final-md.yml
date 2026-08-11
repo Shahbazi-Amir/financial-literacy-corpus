@@ -1,0 +1,138 @@
+name: Audit current final reviewed MD files
+
+on:
+  push:
+    branches: [agent/audit-current-final-md]
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.event.head_commit.message != 'audit: write current final MD report'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan reviewed/final MD candidates
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib, json, re
+          from collections import defaultdict, Counter
+
+          root = Path('.')
+
+          def collection_of(p):
+              s = p.as_posix().lower()
+              if 'asre_shirin' in s or 'asre-shirin' in s:
+                  return 'asre_shirin'
+              if 'dar_jostojo' in s or 'dar-jostojo' in s or 'dar_again' in s:
+                  return 'dar_jostojoye_khoshbakhti'
+              if 'khane_to' in s or 'khane-to' in s:
+                  return 'khane_to'
+              if re.search(r'(^|/)mq(/|$)', s):
+                  return 'mq'
+              if 'tarbiat_morabi' in s or 'tarbiat-morabi' in s or 'tarbiat' in s:
+                  return 'tarbiat_morabi'
+              if 'uni_tehran' in s or 'uni-tehran' in s:
+                  return 'uni_tehran'
+              return None
+
+          def source_class(p):
+              s = p.as_posix().lower()
+              if '/review/md/' in s:
+                  return 'review_md'
+              if '/reviewed/' in s or 'reviewed' in p.name.lower():
+                  return 'reviewed'
+              if '/final/' in s or 'final' in p.name.lower() or '/dar-jostojo-final/' in s:
+                  return 'final'
+              # Bare md/N.md can be the primary reviewed text of a 3-format package.
+              if re.search(r'/md/\d+\.md$', s):
+                  return 'bare_md_package'
+              return None
+
+          files=[]
+          for p in root.rglob('*.md'):
+              s=p.as_posix()
+              sl=s.lower()
+              if s.startswith('.git/') or s.startswith('reports/') or s.startswith('.github/'):
+                  continue
+              if '/timestamped/' in sl or '/raw/' in sl or '/machine/' in sl or '/base/' in sl:
+                  continue
+              col=collection_of(p)
+              cls=source_class(p)
+              if not col or not cls:
+                  continue
+              b=p.read_bytes()
+              sha=hashlib.sha256(b).hexdigest()
+              files.append({'path':s,'collection':col,'class':cls,'sha256':sha,'bytes':len(b)})
+
+          by_col=defaultdict(list)
+          for x in files: by_col[x['collection']].append(x)
+
+          # Source series = parent directory, useful because user wants to know how many MD sets exist.
+          series=[]
+          for col, items in sorted(by_col.items()):
+              by_parent=defaultdict(list)
+              for x in items: by_parent[str(Path(x['path']).parent)].append(x)
+              for parent, arr in sorted(by_parent.items()):
+                  series.append({
+                      'collection':col,
+                      'directory':parent,
+                      'class':Counter(x['class'] for x in arr).most_common(1)[0][0],
+                      'file_count':len(arr),
+                      'unique_sha_count':len({x['sha256'] for x in arr}),
+                  })
+
+          # Exact duplicate relationships between series: how many files in one series share SHA with another.
+          sha_paths=defaultdict(list)
+          for x in files: sha_paths[x['sha256']].append(x['path'])
+
+          summary={}
+          for col, items in sorted(by_col.items()):
+              summary[col]={
+                  'candidate_md_files':len(items),
+                  'exact_unique_contents':len({x['sha256'] for x in items}),
+                  'classes':dict(Counter(x['class'] for x in items)),
+                  'series_count':len({str(Path(x['path']).parent) for x in items}),
+              }
+
+          out={
+              'main_commit_audited':'7bd03a95791f0d7d4562780bdcbd6902d2a12145',
+              'definition':'MD only; excludes timestamped/raw/machine/base; includes review/md, reviewed, final, and bare md/N.md package-primary files.',
+              'summary':summary,
+              'series':series,
+              'files':files,
+              'duplicate_sha_groups':[{'sha256':sha,'paths':paths} for sha,paths in sha_paths.items() if len(paths)>1],
+          }
+          Path('reports').mkdir(exist_ok=True)
+          Path('reports/current_final_md_audit.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          lines=['# Current final/reviewed MD audit','',out['definition'],'',f"Audited main commit: `{out['main_commit_audited']}`",'']
+          for col in ['asre_shirin','dar_jostojoye_khoshbakhti','khane_to','mq','tarbiat_morabi','uni_tehran']:
+              lines += [f'## {col}']
+              sm=summary.get(col,{})
+              lines += [f"- candidate MD files: **{sm.get('candidate_md_files',0)}**",f"- exact-unique contents: **{sm.get('exact_unique_contents',0)}**",f"- source series: **{sm.get('series_count',0)}**",f"- classes: `{sm.get('classes',{})}`",'', '### series']
+              ss=[x for x in series if x['collection']==col]
+              if not ss: lines.append('- none')
+              for x in ss:
+                  lines.append(f"- `{x['directory']}` — {x['class']} — files **{x['file_count']}** — unique SHA **{x['unique_sha_count']}**")
+              lines.append('')
+          lines += ['## Exact duplicate SHA groups across candidate paths']
+          dups=out['duplicate_sha_groups']
+          lines.append(f'- groups: **{len(dups)}**')
+          for g in dups:
+              lines.append(f"- `{g['sha256'][:12]}`")
+              for p in g['paths']: lines.append(f"  - `{p}`")
+          Path('reports/current_final_md_audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+
+      - name: Commit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/current_final_md_audit.md reports/current_final_md_audit.json
+          git commit -m "audit: write current final MD report"
+          git push
