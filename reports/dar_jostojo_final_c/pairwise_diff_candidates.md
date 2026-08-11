@@ -1,0 +1,4431 @@
+# Dar Jostojo Final C — pairwise audit
+
+Base: `outputs/dar_jostojo_dar_again_raw_30/review/md`  
+Reference: `متن ها/dar_jostojo_30/md`
+
+Only small word-level differences are listed as correction candidates. They are not auto-applied.
+
+## 1.md
+- similarity: `0.8394`
+- tokens: base `3086` / ref `3004`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `مالی` → ref: `مولی`
+  - `replace` | base: `بزرگسالام` → ref: `بزرگ سالا`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `اتفاق هایی` → ref: `اتفاقهایی`
+  - `replace` | base: `دانشگاه،` → ref: `دانشگاه`
+  - `replace` | base: `زندگی موده` → ref: `زندگیم بوده`
+  - `replace` | base: `این ها` → ref: `اینها`
+  - `replace` | base: `ازدواج` → ref: `ازدواج،`
+  - `replace` | base: `آدم هایی،` → ref: `آدمهایی،`
+  - `replace` | base: `صحنه` → ref: `سحنه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `ثروت` → ref: `سروت`
+  - `replace` | base: `میزنن` → ref: `میزنن،`
+  - `replace` | base: `می کنن آدرنالین خون` → ref: `میکنن آدرینالین خونه`
+  - `replace` | base: `نمی شنوید` → ref: `نمیشنوید`
+  - `replace` | base: `نمی خوام` → ref: `نمیخوام`
+  - `replace` | base: `شهر` → ref: `شرح`
+  - `replace` | base: `نمی کنم شما ها` → ref: `نمیکنم شماها`
+  - `replace` | base: `می کنم` → ref: `میکنن`
+  - `replace` | base: `ثروت` → ref: `سروت`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `می خواهم` → ref: `میخواهم`
+  - `replace` | base: `مالی، موفقیت، ثروت` → ref: `مالی موفقیت سروت`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `مهارتی` → ref: `محارتی`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `مهارتیه` → ref: `محارتیه`
+  - `replace` | base: `مهارته` → ref: `محارته`
+  - `replace` | base: `یافتهش` → ref: `یافتش`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `تقویت` → ref: `تقوییت`
+  - `replace` | base: `بنابراین` → ref: `بلابراین`
+  - `replace` | base: `خودارزیابی` → ref: `خودعرضیابی`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `تابستون ها` → ref: `تا به سونا`
+  - `replace` | base: `میرفتن باغ` → ref: `میرفتم باقه`
+  - `replace` | base: `سبدی` → ref: `ثبتی`
+  - `replace` | base: `میوه چینی` → ref: `میوچینی`
+  - `replace` | base: `علف های` → ref: `عرفهای`
+  - `replace` | base: `داس` → ref: `داست`
+  - `replace` | base: `داس` → ref: `داست`
+  - `replace` | base: `باغ` → ref: `باق`
+  - `replace` | base: `میوهها` → ref: `میواه ها`
+  - `replace` | base: `باغ` → ref: `باق`
+  - `replace` | base: `سبد` → ref: `ثبت`
+  - `replace` | base: `باغ` → ref: `باق`
+  - `replace` | base: `سبد` → ref: `ثبت`
+  - `replace` | base: `باغ` → ref: `باق`
+  - `replace` | base: `ته باغ` → ref: `تای باق`
+  - `replace` | base: `می کردیم میوهر` → ref: `میکردیم میواه`
+  - `replace` | base: `می رسیم سهر باغ ثبت` → ref: `میرسیم سر باق سبت`
+  - `replace` | base: `نباشیم` → ref: `نباشه`
+  - `replace` | base: `رو` → ref: `و`
+  - `replace` | base: `می گفتش` → ref: `میگفتش`
+  - `replace` | base: `می دن؟` → ref: `میدن`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `بزرگسال` → ref: `بزرگ سال`
+  - `replace` | base: `می گذرونیم` → ref: `میگذرونیم`
+  - `replace` | base: `گذشته` → ref: `گذشتهی`
+  - `replace` | base: `مهارتی` → ref: `محارتی`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `رو` → ref: `را`
+  - `replace` | base: `مهارتی` → ref: `محارتی`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `مهارت برشمردن` → ref: `محارت برش مردن`
+  - `replace` | base: `برشمردن` → ref: `برش مردن`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `رشد یافته` → ref: `رشتیافته`
+  - `replace` | base: `توسعه یافتهی` → ref: `توسعیافتهی`
+  - `replace` | base: `زاویه` → ref: `زازیه`
+  - `replace` | base: `رشتیافه` → ref: `رشد یافته`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `توسعه` → ref: `توصیه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `امور` → ref: `امر`
+  - `replace` | base: `می کنیم راجع به` → ref: `میکنیم راجب`
+  - `replace` | base: `نمی کنیم` → ref: `نمیکنیم`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `زاویهی` → ref: `ظاویهی`
+  - `replace` | base: `می خوام` → ref: `میخواهم`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `شدم` → ref: `شدم؟`
+  - `replace` | base: `بدم` → ref: `بدم؟`
+  - `replace` | base: `نقشی` → ref: `نخودی`
+  - `replace` | base: `این عالم` → ref: `آش آلم`
+  - `replace` | base: `بکنم` → ref: `بکنم؟`
+  - `replace` | base: `می گم مأموریت` → ref: `میگم معمولیت`
+  - `replace` | base: `تدوین` → ref: `تدویم`
+  - `replace` | base: `چشم انداز می خوام` → ref: `چشمنداز میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `بشه` → ref: `بشه؟`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `به چشم می زنه` → ref: `بشکم میزن`
+  - `replace` | base: `وادار می کنه` → ref: `وادان میکنه`
+  - `replace` | base: `چشم انداز` → ref: `چشمنداز`
+  - `replace` | base: `کمّی ش` → ref: `کمیش`
+  - `replace` | base: `هزینهی` → ref: `حضینهی`
+  - `replace` | base: `حوزهی` → ref: `حوضهی`
+  - `replace` | base: `مأموریت چشم انداز` → ref: `معمولیت چشمنداز`
+  - `replace` | base: `زمان هم` → ref: `زمانم`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `حوزه` → ref: `حوضه ی`
+  - `replace` | base: `حوزه` → ref: `حوضه ی`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `اهداف هم` → ref: `اهدافم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `ابزارهایی` → ref: `ابزار هایی`
+  - `replace` | base: `بیانی` → ref: `باید`
+  - `replace` | base: `اندیشه مون` → ref: `اندیش همون`
+  - `replace` | base: `درگیره` → ref: `درگیر`
+  - `replace` | base: `همینم` → ref: `همین هم`
+  - `replace` | base: `می گن هوش` → ref: `میگن حوش`
+  - `replace` | base: `بود` → ref: `بعد`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `راهبردی` → ref: `راه بردی`
+  - `replace` | base: `می شنویم` → ref: `میشنویم`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مأموریتمون` → ref: `معمولیت همون`
+  - `replace` | base: `رفتار وانه می داره` → ref: `رفتاروانه نمیداره`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه عاطفیه` → ref: `حوضه آتفیه`
+  - `replace` | base: `هوش عاطفی` → ref: `حوش آتفی`
+  - `replace` | base: `می پردازن` → ref: `میپردازن`
+  - `insert` | base: `` → ref: `و`
+  - `insert` | base: `` → ref: `و احساسات`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می تونم عصبانیت` → ref: `میتونم اصابانیت`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `چقدر` → ref: `چه قدر`
+  - `replace` | base: `عصبانی` → ref: `اصابانی`
+  - `replace` | base: `می کنم؟` → ref: `میکنم`
+  - `replace` | base: `می کنم؟` → ref: `میکنم`
+  - `replace` | base: `حوزه عاطفی` → ref: `حوضه آتفی`
+  - `replace` | base: `نمی کرد` → ref: `نمیکرد`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیره رفتار` → ref: `میگیره رفتاره`
+  - `replace` | base: `چیزی` → ref: `شید`
+  - `replace` | base: `می گن` → ref: `مگن`
+  - `delete` | base: `بیهیویر` → ref: ``
+  - `replace` | base: `بعد` → ref: `بعده`
+  - `replace` | base: `بعد` → ref: `بعده`
+  - `replace` | base: `می گن هوش` → ref: `مگن حوش`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `هوش عاطفی داریم` → ref: `حوش آتفی داری`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `معلفی` → ref: `معلفه`
+  - `replace` | base: `توان` → ref: `توانه`
+  - `replace` | base: `معلفی` → ref: `معلفه`
+  - `replace` | base: `ازولاتم` → ref: `از اولاتم`
+  - `replace` | base: `توان جابه جایی` → ref: `توانه جا به جای`
+  - `replace` | base: `معلفی` → ref: `معلفه یه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `ای` → ref: `یه`
+  - `replace` | base: `هرچوقت` → ref: `هر چقدر`
+  - `replace` | base: `شاخصه` → ref: `شاخص`
+  - `replace` | base: `و` → ref: `اگه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `اکسان عمل` → ref: `اکسالاون`
+  - `replace` | base: `خیابون رو` → ref: `خیابونو`
+  - `replace` | base: `نخوره` → ref: `نخور`
+  - `replace` | base: `و` → ref: `من`
+  - `replace` | base: `جیمناسیکارا` → ref: `جیمناسیکار ها`
+  - `replace` | base: `رد` → ref: `رک`
+  - `replace` | base: `ارزشمنده` → ref: `عرضشمنده`
+  - `replace` | base: `اکس الامل فوق العاده` → ref: `اکسال عمل فوقلاده`
+  - `replace` | base: `بدم` → ref: `بدن`
+  - `replace` | base: `بیاد` → ref: `بیاده`
+  - `replace` | base: `رو من` → ref: `رومند`
+  - `replace` | base: `برمیگشتم` → ref: `برمی گشتم`
+  - `replace` | base: `رو ماشین` → ref: `روماشین`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `بدم` → ref: `بدن؟`
+  - `replace` | base: `رون` → ref: `جون`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `تغذیه` → ref: `تغذیهی`
+  - `replace` | base: `گذشته` → ref: `گذاشته`
+  - `replace` | base: `استراحت های` → ref: `استراحتهای`
+  - `replace` | base: `اکسانوال هایی` → ref: `اکسال عملهای`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `رو` → ref: `را`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `عاملی رو` → ref: `آملی و`
+  - `replace` | base: `نوه` → ref: `نه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `نوه` → ref: `نه`
+  - `replace` | base: `آب؟` → ref: `آب`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `هدفم` → ref: `هدف هم`
+  - `replace` | base: `این هم` → ref: `اینم`
+  - `replace` | base: `اذر` → ref: `ازر`
+  - `replace` | base: `بود` → ref: `بوده`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `بود` → ref: `بوده`
+  - `replace` | base: `می خوام` → ref: `بخوام`
+  - `replace` | base: `هوش` → ref: `حوش`
+  - `replace` | base: `میامد سمتمون` → ref: `میومد سمت مون`
+  - `replace` | base: `اکسانونامال` → ref: `اکسالاول`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `فرض میدید` → ref: `فرص`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `ذخیرهی` → ref: `زخیره ای`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `insert` | base: `` → ref: `و`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `نمی تونم اکس الامل` → ref: `نمیتونم اکسال عمل`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `بیرونی می گم این` → ref: `بیرونیم یه میگم بایین`
+  - `replace` | base: `تو این` → ref: `کنی`
+  - `replace` | base: `تو` → ref: `که`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `باشن` → ref: `باشم`
+  - `replace` | base: `می خواییم` → ref: `میخوایم`
+  - `replace` | base: `می خواییم، درآمد می خواییم،` → ref: `میخوایم؟ درامت میخوایم؟`
+  - `replace` | base: `می خواییم،` → ref: `میخوایم؟`
+  - `replace` | base: `می خواهیم` → ref: `میخوایم؟`
+  - ... 78 more
+
+## 2.md
+- similarity: `0.8769`
+- tokens: base `2884` / ref `2747`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `خشکو میذد` → ref: `خوشکو میزد`
+  - `replace` | base: `الهمدلالله` → ref: `الحمدلله`
+  - `replace` | base: `خشکت و` → ref: `خشکتو`
+  - `replace` | base: `الحمدالله` → ref: `الحمدلله`
+  - `replace` | base: `گفتو` → ref: `گفت و`
+  - `replace` | base: `می دونه` → ref: `میدونه`
+  - `replace` | base: `الحمدالله` → ref: `الحمدلله`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `ارضیابی مونیم` → ref: `عرضی ها بیمونیم`
+  - `replace` | base: `بحچه` → ref: `بچه`
+  - `delete` | base: `و` → ref: ``
+  - `replace` | base: `نمی کنیم` → ref: `نمیکنیم`
+  - `replace` | base: `دیگر رو` → ref: `دیگرم`
+  - `insert` | base: `` → ref: `هم`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `بلنگت` → ref: `بلنقد`
+  - `insert` | base: `` → ref: `هم`
+  - `replace` | base: `کتا قد` → ref: `کتاقد`
+  - `replace` | base: `هن؟` → ref: `هن`
+  - `replace` | base: `چی` → ref: `چه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `مقایثه` → ref: `مقایسه`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `مبدأ` → ref: `مبدع`
+  - `replace` | base: `جای` → ref: `جایی`
+  - `replace` | base: `کجای` → ref: `کجایی`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گیره مبدأ` → ref: `میگیره مبدع`
+  - `replace` | base: `نمی دونم شیرازید گرگانید تبریزید` → ref: `نمیدونم شیرازید، گرگانید، تبریزید،`
+  - `delete` | base: `این` → ref: ``
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `نمی گیره` → ref: `نمیگیره`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `متری` → ref: `متری،`
+  - `replace` | base: `مالی` → ref: `مالی،`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `وایی سدن` → ref: `وایسدن`
+  - `replace` | base: `اونجای` → ref: `اونجا`
+  - `replace` | base: `میفته` → ref: `میافته`
+  - `replace` | base: `مالی` → ref: `مالیه`
+  - `delete` | base: `این` → ref: ``
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `هامو` → ref: `ها منو`
+  - `replace` | base: `پس` → ref: `پست`
+  - `replace` | base: `اعتیاده` → ref: `اعتیاد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `انجامنی` → ref: `انجامانی`
+  - `replace` | base: `انجامن` → ref: `انجامان`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `رو` → ref: `و`
+  - `delete` | base: `هم` → ref: ``
+  - `replace` | base: `بگیرن` → ref: `بکنن`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `نمی دیم` → ref: `نمیدیم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می کنیم می گیم` → ref: `میکنیم میگیم`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `می آد` → ref: `میاد`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می داریم` → ref: `میداریم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `نمی گیریم` → ref: `نمیگیریم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `من` → ref: `مون`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `شرایطی هم` → ref: `شرایطیم`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `insert` | base: `` → ref: `مثل`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `درآمد هزینه درآمد هزینه` → ref: `درامت حزینه درامت حزینه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هست` → ref: `هم`
+  - `replace` | base: `بش می گن` → ref: `بشه میگن`
+  - `replace` | base: `چیز` → ref: `چی`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `بگیریم` → ref: `بریم`
+  - `replace` | base: `این هم` → ref: `اینم`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `نمی رفت` → ref: `نمیرفت`
+  - `replace` | base: `پله` → ref: `پل`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می گن تاب آوری` → ref: `میگن تاباوری`
+  - `replace` | base: `بیفته` → ref: `بیافته`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `هزینهیه` → ref: `حزینهیه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `نزدیکان هم` → ref: `نزدیکانم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `هزینهیه` → ref: `حزینهیه`
+  - `replace` | base: `ممکن` → ref: `ممکنه`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `یه` → ref: `یا`
+  - `replace` | base: `سلاقه` → ref: `سلاغ`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `اهدافامو` → ref: `اهدافمو`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `3` → ref: `سه`
+  - `replace` | base: `5` → ref: `پنی`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می بینم` → ref: `میبینم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می دونم محیا می` → ref: `میدونم محیامی`
+  - `replace` | base: `تصمیم رو نمی گیرم` → ref: `تصمیمون نمیگیرم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `این هم` → ref: `اینم`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `کردن` → ref: `که این`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `من` → ref: `ما`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `یک که` → ref: `یکی`
+  - `replace` | base: `من` → ref: `ما`
+  - `replace` | base: `وزه` → ref: `وضع`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `پراید می خواد` → ref: `پرایت میخواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هست` → ref: `است`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `وایستادیم` → ref: `وای سادیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `عالیه` → ref: `آلیه`
+  - `replace` | base: `براموری` → ref: `بلا برای`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `قناه` → ref: `قنا`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می رسم` → ref: `میرسم`
+  - `replace` | base: `مسافرات می کنیم` → ref: `مسافرهت میکنیم`
+  - `replace` | base: `مقصدمون` → ref: `مقصد من`
+  - `replace` | base: `نمی داریم می دونیم` → ref: `نمیداریم میدونیم`
+  - `replace` | base: `مبدأیمون` → ref: `مبدعیمون`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `مقصدمونم` → ref: `مقصد مونم`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می خواهیم` → ref: `میخواییم`
+  - `replace` | base: `دوابند` → ref: `دوامند`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `دوابند` → ref: `دوامند`
+  - `delete` | base: `هم` → ref: ``
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `خودمون رو` → ref: `خودمونو`
+  - `replace` | base: `مبدأ` → ref: `مبدع`
+  - `replace` | base: `مهمترین` → ref: `مهمتر این`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `دقی` → ref: `دقیقی`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `شیشتا` → ref: `شیش تا`
+  - `replace` | base: `پس انداز،` → ref: `پسنداز،`
+  - `replace` | base: `درآمد،` → ref: `درامت،`
+  - `replace` | base: `شیشت سرفصل،` → ref: `شیش سرفصل`
+  - `replace` | base: `شیشت` → ref: `شیش`
+  - `replace` | base: `سد` → ref: `صد`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `کاربرگه` → ref: `کاربرگی`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می کنم؟` → ref: `میکنم؟`
+  - `replace` | base: `درآمدم` → ref: `درامدم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `گیرم` → ref: `گیرم؟ حقا من چقدر؟`
+  - `replace` | base: `هم رو` → ref: `همو`
+  - `replace` | base: `ی عمر` → ref: `امر`
+  - `replace` | base: `مواظبت می کنم؟` → ref: `موازبت میکنم؟`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `قلعه` → ref: `قله`
+  - `replace` | base: `کوهباییم` → ref: `کوه بایید`
+  - `replace` | base: `این` → ref: `اید`
+  - `replace` | base: `قلعه` → ref: `قله`
+  - `replace` | base: `شفاف تر می کنه` → ref: `شفافتر میکنه`
+  - `replace` | base: `چه شکلیه` → ref: `چشکلیه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `مبدأ` → ref: `مبدع`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `کوه` → ref: `کوح`
+  - `replace` | base: `پاسخوی` → ref: `پاسخ بوی`
+  - `replace` | base: `موافق هم` → ref: `موافقم`
+  - `replace` | base: `مخالف هم` → ref: `مخالفم`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `خوب` → ref: `خوبی`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `نشد` → ref: `نشود`
+  - `replace` | base: `وضعیتیه` → ref: `وضیعتیه`
+  - `replace` | base: `یکمی` → ref: `یکمیه`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `وضعیت` → ref: `وضیعت`
+  - `delete` | base: `په` → ref: ``
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `پس اندازه` → ref: `پسندازه`
+  - `replace` | base: `درآمد،` → ref: `درامت`
+  - `replace` | base: `گذاری،` → ref: `گذاری`
+  - `replace` | base: `سمایی` → ref: `سرمایی`
+  - `replace` | base: `دقیقت` → ref: `دقت`
+  - `replace` | base: `تمرین هاشو` → ref: `تمرینهاشو`
+  - `replace` | base: `مبدأ` → ref: `مبدع`
+  - `replace` | base: `می خواهیم` → ref: `میخوایم`
+  - `replace` | base: `می خواهیم` → ref: `میخوایم`
+  - `replace` | base: `مفاهیم` → ref: `مفاهم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `باشه` → ref: `باشیم`
+
+## 3.md
+- similarity: `0.8609`
+- tokens: base `1342` / ref `1311`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `خواییم` → ref: `خواهیم`
+  - `replace` | base: `مالیمونو` → ref: `مالیمون رو`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `اقساط` → ref: `اقصاد`
+  - `insert` | base: `` → ref: `من`
+  - `replace` | base: `میخانی` → ref: `می خوانی`
+  - `replace` | base: `هزینه` → ref: `حضینه ی`
+  - `replace` | base: `انتفاعی` → ref: `انتفایی`
+  - `replace` | base: `مسارفت` → ref: `مسارف برات`
+  - `replace` | base: `خرجم` → ref: `خرج هم`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `insert` | base: `` → ref: `این`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `وضع ما` → ref: `وزمون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `اوضاعع مالی` → ref: `اوضاع مالیی`
+  - `replace` | base: `باره` → ref: `باری`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `عصبانیت،` → ref: `اصابانیت،`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `insert` | base: `` → ref: `ما`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `هزینه` → ref: `حضینه مون`
+  - `replace` | base: `دو تا` → ref: `دوتا`
+  - `replace` | base: `چه راه هایی؟` → ref: `چراهایی؟`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `دو طرف` → ref: `دوترف`
+  - `replace` | base: `بعد درآمد` → ref: `باید درامت`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `رو وارده` → ref: `وارد`
+  - `replace` | base: `حالا` → ref: `الان`
+  - `replace` | base: `نداره نمی شه` → ref: `ندار نمیشه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `هزینه ها` → ref: `حضینها`
+  - `replace` | base: `کاهش` → ref: `کاش`
+  - `replace` | base: `اولویت داره` → ref: `علویت داره؟`
+  - `replace` | base: `این که` → ref: `اینکه`
+  - `replace` | base: `می خوام درآمد` → ref: `میخوام درامد`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `ارزشی برای` → ref: `عرضشی به`
+  - `replace` | base: `افزایش بده افزایش` → ref: `افضایش بدم افضایش`
+  - `replace` | base: `حد` → ref: `حتی`
+  - `replace` | base: `بوده` → ref: `بودن`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `افزایش درآمد` → ref: `افضایش درامت`
+  - `replace` | base: `دوشواره` → ref: `دوشباره`
+  - `replace` | base: `درآمدم افزایش` → ref: `درامت هم افضایش`
+  - `replace` | base: `تضمینیه` → ref: `تزمینیه`
+  - `replace` | base: `هام افزایش` → ref: `هم افضایش`
+  - `replace` | base: `افزایش درآمد` → ref: `افضایش درامت`
+  - `replace` | base: `هامون` → ref: `همون`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `درآمدمون` → ref: `درامت همون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `چهار میلیون` → ref: `چار ملیون`
+  - `replace` | base: `می گرفتم` → ref: `میگرفتم`
+  - `replace` | base: `حقوقم` → ref: `حقوق هم`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `هزینه همم` → ref: `حزینه هم هم`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `افزایش درآمد، هزینه` → ref: `افضایش درامت، حزینه`
+  - `replace` | base: `افزایش بده کرده می گن` → ref: `افضایش بتکرده میگن`
+  - `replace` | base: `گندوم` → ref: `گندم`
+  - `replace` | base: `گندوم` → ref: `گندم`
+  - `replace` | base: `افزایش درآمد` → ref: `افضایش درامت`
+  - `replace` | base: `قطعا` → ref: `قصد`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `افزایش درآمد` → ref: `افضایش درامت`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `اینجوری` → ref: `اینجور`
+  - `replace` | base: `خساست به خرش` → ref: `خصاصت بخرج`
+  - `replace` | base: `هدر` → ref: `حدر`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `چار میلیون` → ref: `4 ملیون`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `ده درصد` → ref: `10%`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه چار میلیون` → ref: `میشه 4 ملیون`
+  - `replace` | base: `چارزن` → ref: `4%`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `درصد هم` → ref: `درصدم`
+  - `replace` | base: `بشه` → ref: `به شه`
+  - `replace` | base: `شیشتت` → ref: `شیشتد`
+  - `replace` | base: `تغیی` → ref: `تغییر`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `400` → ref: `چار سد`
+  - `replace` | base: `زمانبر` → ref: `زمان بر`
+  - `replace` | base: `کفیت` → ref: `کیفیت`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `پولچاب` → ref: `پول چاب`
+  - `replace` | base: `پولو` → ref: `پول رو`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `افزایش درآمد` → ref: `افضایش درامت`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنه می گه` → ref: `میکنه میگه`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `داسان سواد` → ref: `داستان ثواد`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+
+## 4.md
+- similarity: `0.8428`
+- tokens: base `1914` / ref `1840`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `پس انداز رو` → ref: `پسندازو`
+  - `replace` | base: `کاربردیه` → ref: `کاربوردیه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می ده می گه` → ref: `میده میگه`
+  - `replace` | base: `می خوانن` → ref: `میخوانند`
+  - `replace` | base: `خوشک رودی` → ref: `خوشگرودی`
+  - `replace` | base: `می توانیم` → ref: `بتونیم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `تعادله` → ref: `تعادل`
+  - `delete` | base: `ما` → ref: ``
+  - `replace` | base: `هزینهٔک` → ref: `حزینه یک`
+  - `replace` | base: `آموزای` → ref: `آموزه`
+  - `replace` | base: `می گهن` → ref: `میگه نه`
+  - `replace` | base: `ساده` → ref: `سازه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `نمی خواد` → ref: `نمیخواد`
+  - `replace` | base: `نمی خواد` → ref: `نمیخواد`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `ربونو ها` → ref: `ربونوها`
+  - `replace` | base: `اله` → ref: `الهه`
+  - `replace` | base: `راجع بهشون` → ref: `راجبشون`
+  - `replace` | base: `میشود` → ref: `میشد`
+  - `replace` | base: `دیدم` → ref: `دیدن`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `insert` | base: `` → ref: `ببینید`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `میخوریم` → ref: `مخوریم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `چیزی` → ref: `چیز`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `و القلمه` → ref: `ولقلمه`
+  - `delete` | base: `این` → ref: ``
+  - `replace` | base: `آن چی` → ref: `آنچه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشین`
+  - `replace` | base: `چیزه` → ref: `چیز`
+  - `replace` | base: `کابلگیه یکی` → ref: `کابرگی یه که`
+  - `replace` | base: `بنویسین` → ref: `بنویسید`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `پیدا` → ref: `بیدا`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `مثلا یه` → ref: `در`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می نویسیم` → ref: `مینویسیم`
+  - `replace` | base: `آلم` → ref: `عالم`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `delete` | base: `و` → ref: ``
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `چیکار` → ref: `چی کار`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `میاورش` → ref: `می آورش`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `عالم` → ref: `آلم`
+  - `replace` | base: `اونو` → ref: `اون رو`
+  - `replace` | base: `ما` → ref: `محقق`
+  - `replace` | base: `پیدار می کنه` → ref: `بیدان میکنه`
+  - `replace` | base: `هامون` → ref: `ها من`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ده می گن` → ref: `میده میگن`
+  - `replace` | base: `اینه` → ref: `یعنی`
+  - `replace` | base: `بنویسیم` → ref: `بنویسی`
+  - `replace` | base: `میانید` → ref: `میبینی`
+  - `replace` | base: `نیز` → ref: `نیست`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `استرانه` → ref: `اصرانه`
+  - `replace` | base: `استرانه` → ref: `اصطرونه`
+  - `delete` | base: `دو` → ref: ``
+  - `replace` | base: `پردم` → ref: `خوردم`
+  - `replace` | base: `اصلونه` → ref: `اصطرونه`
+  - `replace` | base: `حض` → ref: `حضب`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مینویسیم` → ref: `منویسیم`
+  - `replace` | base: `میفته` → ref: `میفتی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ریم، صرفاً` → ref: `میریم صرفا`
+  - `replace` | base: `مثلاً می گیم یه` → ref: `مثلا میگیم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `سرفه هست` → ref: `سرفس`
+  - `replace` | base: `کنیم` → ref: `کنید`
+  - `replace` | base: `خونمون هزینه می کنیم` → ref: `خونه همون حضینه میکنیم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `لبنی` → ref: `لبنی،`
+  - `replace` | base: `می خوریم` → ref: `میخوریم`
+  - `replace` | base: `چیزایی` → ref: `چیزهایی`
+  - `replace` | base: `بهداشتی` → ref: `بهداشتیم`
+  - `replace` | base: `زرفشوی نمی دونم` → ref: `زرفشوی، نمیدونم`
+  - `replace` | base: `بدن` → ref: `بدن،`
+  - `replace` | base: `بهداشتی پنجمی` → ref: `بهداشتیم پنجومی`
+  - `replace` | base: `کافر، رسطوران` → ref: `کافه، رستوران`
+  - `replace` | base: `ششمی` → ref: `ششومی`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `پاگوشایی،` → ref: `پاگوش هایی،`
+  - `replace` | base: `به` → ref: `مثل`
+  - `replace` | base: `هشتمی` → ref: `هشتومی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `تلفن، تلفن` → ref: `تلفون، تلفون`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `خانه` → ref: `خانه،`
+  - `replace` | base: `لباسچوی نمی دونم` → ref: `لباسچوی، نمیدونم،`
+  - `replace` | base: `اسبابازی` → ref: `اصبابازی`
+  - `replace` | base: `دیم،` → ref: `دیم`
+  - `replace` | base: `اززواج ها، تولد ها،` → ref: `ازدواجها تولدها`
+  - `replace` | base: `مادر،` → ref: `مادر`
+  - `replace` | base: `پدر،` → ref: `پدر`
+  - `replace` | base: `هزینه هایی` → ref: `هزینایی`
+  - `replace` | base: `بنزین، تعمیر،` → ref: `بنزین تعمیر`
+  - `replace` | base: `روغم،` → ref: `روغم`
+  - `delete` | base: `هایی` → ref: ``
+  - `replace` | base: `داریم،` → ref: `داریم`
+  - `replace` | base: `میگره` → ref: `می گیره`
+  - `replace` | base: `می خریم،` → ref: `میخریم`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `هزینه` → ref: `هزینهی`
+  - `insert` | base: `` → ref: `و`
+  - `replace` | base: `دستبندی رشته` → ref: `دسته بندی رشد`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `هامون` → ref: `ها ما`
+  - `replace` | base: `دستبندی` → ref: `دسته بندی`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `تو` → ref: `توی`
+  - `replace` | base: `رشد` → ref: `رشته`
+  - `replace` | base: `دستبندی` → ref: `دستواندی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `نمیخواستم` → ref: `نمی خواستم`
+  - `replace` | base: `بدم` → ref: `بدن`
+  - `replace` | base: `هزینهٔا` → ref: `حزینه یا`
+  - `replace` | base: `میدادم` → ref: `می دادن`
+  - `replace` | base: `هزینهٔا` → ref: `حزینه یا`
+  - `replace` | base: `میدادم` → ref: `می دادن`
+  - `replace` | base: `ندادم` → ref: `ندادن`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `کنه` → ref: `کنن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `هزینهی` → ref: `حزینهی`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `کافلته ها` → ref: `کافلتها`
+  - `replace` | base: `توی` → ref: `تو`
+  - `insert` | base: `` → ref: `میده وقتی`
+  - `replace` | base: `ده وقتی مینویسیم` → ref: `نویسیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `ما` → ref: `من`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `دیگم` → ref: `دیگه هم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `پیچیدهی` → ref: `پیچیده`
+  - `replace` | base: `ببین` → ref: `ببینیم`
+  - `replace` | base: `میکشید` → ref: `می کشید`
+  - `replace` | base: `و` → ref: `رو`
+  - `replace` | base: `دارید؟` → ref: `داری؟`
+  - `replace` | base: `و` → ref: `اون`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می خواید` → ref: `میخواید`
+  - `replace` | base: `نمی گم این` → ref: `نمیگم اینو باید`
+  - `delete` | base: `اسنادان` → ref: ``
+  - `replace` | base: `لازمی` → ref: `لازمه`
+  - `replace` | base: `خریدیم،` → ref: `خریدیم`
+  - `replace` | base: `هزینهی` → ref: `حزینهی`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `زمانتنامه` → ref: `زماندنامه`
+  - `replace` | base: `زمانتنامه` → ref: `زماندنامه`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `مدارک` → ref: `مداره که`
+  - `replace` | base: `را` → ref: `رو`
+  - `replace` | base: `زمانت نامه` → ref: `زمانتنامه`
+  - `replace` | base: `دست رول عمل` → ref: `دسترالعمل`
+  - `replace` | base: `خریدین` → ref: `خریدیم`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `نداریم` → ref: `ندونیم`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `مینویسیم` → ref: `می نویسیم`
+  - `replace` | base: `امار` → ref: `اماره`
+  - `replace` | base: `طراحی` → ref: `ترراحی`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `هزینه ها` → ref: `هزینها`
+  - `replace` | base: `نرم افضارایی` → ref: `نرمفضارایی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `بدید` → ref: `بذید`
+  - `replace` | base: `یکمی مهارت` → ref: `یک کمی محارت`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+
+## 5.md
+- similarity: `0.9193`
+- tokens: base `2618` / ref `2510`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می خوایم،` → ref: `میخوایم،`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می دیم بالاخره` → ref: `میدیم بلاخره`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می ریم؟ همی شه` → ref: `میریم؟ همیشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم؟ همی شه` → ref: `میکنیم؟ همیشه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم؟` → ref: `میکنیم؟`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنم؟` → ref: `میکنم؟`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می شه می گه` → ref: `میشه میگه`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `راجع بهش` → ref: `راجبش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `عاطفیه` → ref: `آتفیه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `باغیه` → ref: `باقیه`
+  - `replace` | base: `عاطفی،` → ref: `آتفی،`
+  - `replace` | base: `عاطفیه` → ref: `آتفیه`
+  - `replace` | base: `باغیه` → ref: `باقیه`
+  - `replace` | base: `می خریمش` → ref: `میخریمش`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `پیدا می کنه می گه` → ref: `بیدا میکنه میگه`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `می شن می گه` → ref: `میشن میگه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می بینیم می گیم` → ref: `میبینیم میگیم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می خریم` → ref: `میخریم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می شناسه` → ref: `میشناسه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شناخت نمی دونم` → ref: `میشناخت نمیدونم`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `بزرگسالان می تونه` → ref: `بزرگ سالان میتونه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می کنه لزوماً` → ref: `میکنه لزومن`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+
+## 6.md
+- similarity: `0.8935`
+- tokens: base `1496` / ref `1425`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده پس انداز فوق العاده` → ref: `میده پسنداز فوقلاده`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `راجع بهش` → ref: `راجبش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `شوکی` → ref: `شکی`
+  - `replace` | base: `مون` → ref: `همون`
+  - `replace` | base: `اضطراریمون` → ref: `استراریمون`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `اضطراریم` → ref: `استراریم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `درآمدم` → ref: `درامدم`
+  - `replace` | base: `درآمدم` → ref: `درامدم`
+  - `replace` | base: `اوضاع` → ref: `اوضا`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `ارزشش` → ref: `عرضشش`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `نمی گم` → ref: `نمیگم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شه پونزده` → ref: `میشه پونزه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `مثبتی` → ref: `مصبتی`
+  - `replace` | base: `راجع بهش` → ref: `راجبش`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `مثبته` → ref: `مصبته`
+  - `replace` | base: `ارزشمنده` → ref: `عرضشمنده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `توانمندی می کنم` → ref: `توامندی میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `درآمدت` → ref: `درامدت`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+
+## 7.md
+- similarity: `0.8832`
+- tokens: base `1645` / ref `1573`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می خوایم هزینه` → ref: `میخوایم حزینه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `رعایت` → ref: `رایت`
+  - `replace` | base: `خساست` → ref: `خصاصت`
+  - `replace` | base: `می خوای؟` → ref: `میخوای؟`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `کنترلی` → ref: `کنترولی`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `بودجهت` → ref: `بوجهت`
+  - `replace` | base: `می خوام هزینه` → ref: `میخوام حزینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنین` → ref: `میکنی این`
+  - `replace` | base: `رعایت` → ref: `آیت`
+  - `replace` | base: `ماهی` → ref: `ماه یه`
+  - `insert` | base: `` → ref: `های`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `ماهی` → ref: `ماه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `رعایت` → ref: `آیت`
+  - `replace` | base: `را` → ref: `رو`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `را` → ref: `رو`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `بودجه را` → ref: `بوجه رو`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `همه` → ref: `هم هیچ`
+  - `replace` | base: `سینیف` → ref: `سینیست`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می بینم` → ref: `میبینم`
+  - `replace` | base: `بودجه ام رو رعایت` → ref: `بوجه ما رایت`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `و دیویست` → ref: `دیویس`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `نمی تونن بودجه` → ref: `نمیتونن بوجه`
+  - `replace` | base: `رعایت` → ref: `رایت`
+  - `replace` | base: `آدم اون` → ref: `آدمیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `رعایت` → ref: `رایت`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `افزایش پیدا` → ref: `افضایش بیدا`
+  - `replace` | base: `تحقق بودجه` → ref: `تحقیق بوجه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می بینیم` → ref: `میبینیم`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمدمون` → ref: `درامدمون`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `درآمدمون` → ref: `درامدمون`
+  - `replace` | base: `میلیون درآمد` → ref: `ملیون درامت`
+  - `replace` | base: `میلیون درآمد` → ref: `ملیون درامت`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می شه بودجه` → ref: `میشه بوجه`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `درآمده` → ref: `درامده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `درآمدهای` → ref: `درامدهای`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گیرم اینو` → ref: `میگیرم این رو`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خواید` → ref: `میخواید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `مثبتش` → ref: `مصبتش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+
+## 8.md
+- similarity: `0.9017`
+- tokens: base `2220` / ref `2114`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خواییم راجع به` → ref: `میخواییم راجب`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `پس انداز راجع بهش` → ref: `پسنداز راجبش`
+  - `replace` | base: `می کنیم؟` → ref: `میکنیم؟`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می دهد` → ref: `میدهد`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `می دهد` → ref: `میدهد`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می گن هزینه` → ref: `میگن حضینه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `عقود طراحی` → ref: `اقود تراحی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `می دهیم` → ref: `میدهیم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می دهیم` → ref: `میدهیم`
+  - `replace` | base: `تضمین می کنه` → ref: `تضمیم میکنه`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی گیره` → ref: `نمیگیره`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `تلفن` → ref: `تلفون`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `می خواید` → ref: `میخواید`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `قرض الحسنه` → ref: `قرضالحسنه`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `قرض الحسنه` → ref: `قرضالحسنه`
+  - `replace` | base: `قرض الحسنه پس انداز` → ref: `قرضالحسنه پسنداز`
+  - `replace` | base: `قرض الحسنه` → ref: `قرضالحسنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `سپرده گذاری` → ref: `سپردگذاری`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `تضمین می شه` → ref: `تضمیم میشه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `ضررش` → ref: `زررش`
+  - `replace` | base: `علی الحسابی` → ref: `علال حسابی`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `نمی گنن` → ref: `نمیگنن`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `سپرده` → ref: `سپورده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `سپرده` → ref: `سپورده`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `سپرده گذاری کوتاه` → ref: `سپردگذاری کتاه`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `سپرده گذاری` → ref: `سپردگذاری`
+  - `replace` | base: `سپرده گذاری می کنی` → ref: `سپردگذاری میکنی`
+  - `replace` | base: `علی الحساب` → ref: `علال حساب`
+  - `replace` | base: `سپرده گذاری` → ref: `سپردگذاری`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `سپرده کوتاه` → ref: `سپورده کتاه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `سپردهی کوتاه` → ref: `سپوردهی کتاه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می شه می تونه` → ref: `میشه میتونه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `سقف` → ref: `سخف`
+  - `replace` | base: `می تونیم رعایت` → ref: `میتونیم رایت`
+  - `replace` | base: `می شه سقف` → ref: `میشه سخف`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون می تونید جابه` → ref: `ملیون میتونید جا به`
+  - `replace` | base: `مبدأ` → ref: `مبدع`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+
+## 9.md
+- similarity: `0.9007`
+- tokens: base `2402` / ref `2272`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `کوتاهترین` → ref: `کتاهترین`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `لزوماً کوتاه` → ref: `لزومن کتاه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می خواییم می گیم` → ref: `میخواییم میگیم`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `ارزیابی می کنیم` → ref: `عرضیابی میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `نمی کنن` → ref: `نمیکنن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `لپ تاپ` → ref: `لپتاب`
+  - `replace` | base: `لپ تاپ می خرم` → ref: `لپتاب میخرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می بینم` → ref: `میبینم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `لپ تاپم` → ref: `لپتابم`
+  - `replace` | base: `می کنم لپ تاپم` → ref: `میکنم لپتابم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می خریم` → ref: `میخریم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `نمی کنیم` → ref: `نمیکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `delete` | base: `رضایت نارضایتی` → ref: ``
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `شفاف تر` → ref: `شفافتر`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `پس انداز می گه` → ref: `پسنداز میگه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس اندازی` → ref: `پسندازی`
+  - `replace` | base: `پس اندازیت` → ref: `پسندازیت`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `صبر` → ref: `سبر`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `درآمدمون` → ref: `درامدمون`
+  - `replace` | base: `می آییم` → ref: `میاییم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `درآمدمون افزایش پیدا` → ref: `درامدمون افضایش بیدا`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `پراید` → ref: `پرایت`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `تاب آوری` → ref: `تاباوری`
+  - `replace` | base: `نمی تونیم` → ref: `نمیتونیم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `نمی تونیم` → ref: `نمیتونیم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `مثبتی` → ref: `مصبتی`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می شیم می ریم` → ref: `میشیم میریم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `عاطفی می شه` → ref: `آتفی میشه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+
+## 10.md
+- similarity: `0.8241`
+- tokens: base `1992` / ref `1903`
+- large diff spans: `2`
+- small candidates:
+  - `replace` | base: `مفاهیم` → ref: `مفاهم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `خب` → ref: `خوب`
+  - `replace` | base: `می خواییم بگیم` → ref: `میخواییم`
+  - `replace` | base: `کنیم؟` → ref: `بکنیم؟`
+  - `replace` | base: `ماها` → ref: `ما ها`
+  - `replace` | base: `ببینید مثلا من می گم` → ref: `دیگم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `کلوی` → ref: `کیلوی`
+  - `insert` | base: `` → ref: `خب`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هرفیی` → ref: `هرفهی`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `کلوی رو` → ref: `کیلوی`
+  - `replace` | base: `ریکورد` → ref: `ریکرد`
+  - `replace` | base: `تمریم می کنم` → ref: `تمرین میکنم`
+  - `replace` | base: `وضنی 100 کلوی` → ref: `وزنی صد کیلوی`
+  - `replace` | base: `همونا` → ref: `همانا`
+  - `replace` | base: `کمردد` → ref: `کمردرد`
+  - `replace` | base: `زانودد` → ref: `زانودرد`
+  - `replace` | base: `برا` → ref: `برای`
+  - `replace` | base: `ورزشگار` → ref: `ورزشکار`
+  - `replace` | base: `ظرفیتشو` → ref: `ظرفیتش رو`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `این که` → ref: `اینکه`
+  - `replace` | base: `جایی دیگهی` → ref: `جای دیگه`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `این که` → ref: `اینکه`
+  - `delete` | base: `ی` → ref: ``
+  - `replace` | base: `جزو` → ref: `جز به`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هم عقصاتشو` → ref: `ام اقصاتشو`
+  - `replace` | base: `و عد` → ref: `را`
+  - `replace` | base: `نمی ره` → ref: `نمیره`
+  - `replace` | base: `عد` → ref: `را`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `سرف دادم` → ref: `سر افتادم`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `درصم` → ref: `درست`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `پس انداز راجع بهش` → ref: `پسنداز راجبش`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می دونیم هزینه` → ref: `میدونیم حزینه`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `می بینم` → ref: `میبینم`
+  - `replace` | base: `زار` → ref: `هزار`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `زار` → ref: `هزار`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `برای` → ref: `برام`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `delete` | base: `یه` → ref: ``
+  - `replace` | base: `می تونم هزینهش` → ref: `میتونم حضینهش`
+  - `replace` | base: `قفت` → ref: `قصد`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `موقع` → ref: `وقت`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `ماه` → ref: `ماهی`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `ثبت ومی` → ref: `ثومی`
+  - `replace` | base: `چقدره` → ref: `چقدره؟`
+  - `replace` | base: `قصد` → ref: `قسط`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می شه نمی دونم` → ref: `میشه نمیدونم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `چند` → ref: `چم`
+  - `replace` | base: `چند` → ref: `چم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `بگیرم چند` → ref: `بگیرم؟ چم`
+  - `replace` | base: `بار رو` → ref: `بارو`
+  - `replace` | base: `بذارم` → ref: `بذارم؟`
+  - `replace` | base: `نصده ای` → ref: `نطقه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `چقدره` → ref: `چقدره؟`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `برمی گرده` → ref: `برمیگرده`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می شه هزینه` → ref: `میشه حزینه`
+  - `insert` | base: `` → ref: `میسن`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `اون` → ref: `ما`
+  - `replace` | base: `پولی` → ref: `پول`
+  - `replace` | base: `نمی گیره` → ref: `نمیگیره`
+  - `replace` | base: `میلیونی` → ref: `ملیونی`
+  - `replace` | base: `میلیونم` → ref: `ملیونم`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `delete` | base: `این` → ref: ``
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `بیای` → ref: `بیایی`
+  - `replace` | base: `غرز` → ref: `قرض`
+  - `replace` | base: `رباس` → ref: `رباست`
+  - `replace` | base: `جنگه` → ref: `جنگ`
+  - `replace` | base: `خداس` → ref: `خداست`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `غرزی` → ref: `قرضی`
+  - `replace` | base: `هامی` → ref: `حامی`
+  - `replace` | base: `هزینه مالی` → ref: `حزینه ایمالی`
+  - `replace` | base: `میلیونشو` → ref: `میلیونش رو`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `پولش` → ref: `پولیش`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `من` → ref: `اون`
+  - `replace` | base: `برای` → ref: `برا`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `بهت قرز` → ref: `باید قرض`
+  - `replace` | base: `لیمو` → ref: `لیمون`
+  - `replace` | base: `لیموش` → ref: `لیمونش`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `کارمزدی` → ref: `کارموزدی`
+  - `replace` | base: `مؤسسه،` → ref: `مؤسسه`
+  - `replace` | base: `نمی دونم، یه` → ref: `نمیدونم یک`
+  - `replace` | base: `اعتباری،` → ref: `اعتباری`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `کارمزد داره،` → ref: `کارموز داره`
+  - `replace` | base: `کارمزد چیه؟ می گه بالاخره` → ref: `کارموز چیه میگه بلاخره`
+  - `replace` | base: `دارم،` → ref: `دارم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می گن کارمزد` → ref: `میگن کارموز`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `بر میگرده` → ref: `برمی گرده`
+  - `replace` | base: `اقساط` → ref: `اقصات`
+  - `replace` | base: `پرداخت` → ref: `پرداخ`
+  - `replace` | base: `کارمزد` → ref: `کارموز`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `4` → ref: `چار`
+  - `replace` | base: `کنی رو` → ref: `کنین و`
+  - `replace` | base: `100` → ref: `صد`
+  - `replace` | base: `100` → ref: `صد`
+  - `replace` | base: `4 درصد` → ref: `چهار درزده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `104` → ref: `صد و چهار`
+  - `replace` | base: `106` → ref: `صد و شیش`
+  - `replace` | base: `108` → ref: `صد و هشت`
+  - `replace` | base: `تناسوب` → ref: `تناسب`
+  - `replace` | base: `کارمزدی` → ref: `کارموزی`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `و` → ref: `رو`
+  - `replace` | base: `تراهی` → ref: `ترراحی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `لپ تاپ می خوام لپ تاپ` → ref: `لپتاب میخوام لپتاب`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `برات می خرم` → ref: `برایت میخورم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `لپ تاپ` → ref: `لپتاب`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `بوریده` → ref: `بریده`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گن هزینه تسهیلات` → ref: `میگن حضینه تحصیلات`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گن هزینه` → ref: `میگن حضینه`
+  - `replace` | base: `تسهیلات 14` → ref: `تحصیلات چارده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `کارمزد` → ref: `کارموز`
+  - `replace` | base: `نمی دونم 24 درصد 26 درصد هزینه` → ref: `نمیدونم 24% 26% حزینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `اقساط` → ref: `اقصاد`
+  - `replace` | base: `دو چگونگی پرداخته اقساط ماهانه شقدره` → ref: `اقصات ماهانش چقدره`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `پنج تا` → ref: `پنشتا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هزینهای مصرفیمون` → ref: `حضینه های مصرفی من`
+  - `replace` | base: `بگیرین` → ref: `بگیریم`
+  - `replace` | base: `رو` → ref: `و`
+  - `replace` | base: `کالای` → ref: `کالایی`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `جدا` → ref: `جدای`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `ام` → ref: `هم`
+  - `replace` | base: `مصرف` → ref: `مسرف`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می کنی بینید` → ref: `میکنی برید`
+  - `replace` | base: `داس` → ref: `داست`
+  - `replace` | base: `دیگه هرمون` → ref: `که همون`
+  - `replace` | base: `تاست` → ref: `داست`
+  - `delete` | base: `یه` → ref: ``
+  - `replace` | base: `مثلا بندازه پونزدهتا بندازه بیستا بندازه سیتا` → ref: `به اندازه سی تا`
+  - `replace` | base: `اتفاق` → ref: `اتفاقی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `بایدام می کنه` → ref: `بیدا میکنه`
+  - `replace` | base: `اقتصاد هم` → ref: `اقتصادم`
+  - `replace` | base: `سومین` → ref: `ثومین`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `میتونی مصرف بکنی` → ref: `میتونیم اصرف بکنیم`
+  - `replace` | base: `می خوایی` → ref: `میخوایی`
+  - `replace` | base: `نیسی` → ref: `میسی`
+  - `replace` | base: `حوزه` → ref: `حوضه ی`
+  - `replace` | base: `36` → ref: `سی`
+  - `replace` | base: `40%` → ref: `شیش و چهل درصد`
+  - `replace` | base: `36` → ref: `سی و شیش`
+  - `replace` | base: `40% در آمد` → ref: `چهل درصد درامد`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `راجع به` → ref: `راجب`
+
+## 11.md
+- similarity: `0.8911`
+- tokens: base `875` / ref `824`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می دونم هزینه` → ref: `میدونم حضینه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیونی می خوام` → ref: `ملیونی میخوام`
+  - `replace` | base: `می تونم اقساط` → ref: `میتونم اقصاد`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیونی` → ref: `ملیونی`
+  - `replace` | base: `میلیونی` → ref: `ملیونی`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گن پس انداز` → ref: `میگن پسنداز`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `پس اندازی` → ref: `پسندازی`
+  - `replace` | base: `پس اندازی` → ref: `پسندازی`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `پس اندازی` → ref: `پسندازی`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس اندازیم` → ref: `پسندازیم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می خریم` → ref: `میخریم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `رعایت` → ref: `رایت`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می خواییم راجع به` → ref: `میخواییم راجب`
+
+## 12.md
+- similarity: `0.8638`
+- tokens: base `1721` / ref `1685`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `چقدر` → ref: `چقدر؟`
+  - `replace` | base: `میارزیم` → ref: `میارزیم؟`
+  - `replace` | base: `روما` → ref: `رو ما`
+  - `replace` | base: `می دن؟` → ref: `میدن؟`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `دارم` → ref: `دارم؟`
+  - `replace` | base: `می گفت` → ref: `میگفت`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می دادن` → ref: `میدادن`
+  - `replace` | base: `می کرد` → ref: `میکرد`
+  - `replace` | base: `می گفتن` → ref: `میگفتن`
+  - `replace` | base: `30` → ref: `سی`
+  - `replace` | base: `2` → ref: `دو`
+  - `replace` | base: `می داد` → ref: `میداد`
+  - `replace` | base: `نبوده` → ref: `نبود و`
+  - `replace` | base: `بعدم` → ref: `دیگه بعدا`
+  - `replace` | base: `تو بانکداری` → ref: `توی بانک داریه`
+  - `replace` | base: `مرابعه` → ref: `مرابهه`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `کارتهای` → ref: `کارتایی`
+  - `replace` | base: `تو بانکداری` → ref: `توی بانک داریه`
+  - `replace` | base: `بحری` → ref: `بهرهی`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `تو` → ref: `توی`
+  - `replace` | base: `اضافه نمی خواد` → ref: `اضافهی نمیخواد`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `سررسیدش` → ref: `سر رسیدش`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `ماه` → ref: `ماهه`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `چهار` → ref: `چار`
+  - `replace` | base: `سررسیدم` → ref: `سر رسیدم`
+  - `replace` | base: `نمی کنم می ره` → ref: `نمیکنم میره`
+  - `replace` | base: `پرداخت هم` → ref: `پرداختم`
+  - `replace` | base: `اقساطیه` → ref: `اقصاتیه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `delete` | base: `ببینید چقدر ما میاردیم که یه` → ref: ``
+  - `replace` | base: `تعییم` → ref: `تقییم`
+  - `replace` | base: `بالا تر می ده` → ref: `بالاتر میده`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `بوده؟` → ref: `بوده`
+  - `replace` | base: `سلیغی` → ref: `سلیغهی`
+  - `replace` | base: `دوشوار` → ref: `دشبار`
+  - `replace` | base: `رو` → ref: `ها`
+  - `replace` | base: `تسهیلات` → ref: `تحصیلات`
+  - `replace` | base: `می گرفتن` → ref: `میگرفتن`
+  - `insert` | base: `` → ref: `یه`
+  - `replace` | base: `اعتبار سنجی` → ref: `اعتبارسنجی`
+  - `replace` | base: `نهادهای` → ref: `نحات های`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `اعتبار سنجی` → ref: `اعتبارسنجی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `محسس` → ref: `مؤسس`
+  - `replace` | base: `اعتبار سنجی` → ref: `اعتبارسنجی`
+  - `replace` | base: `مراته` → ref: `مرعاته`
+  - `replace` | base: `قردالحسنهی` → ref: `قرضالحسنهی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `بسنجید` → ref: `بسنجین`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `دارید خب` → ref: `دارین خوب`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `ارزوی` → ref: `عرضی`
+  - `replace` | base: `چقدر؟` → ref: `چقدر`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `قصد` → ref: `قفت`
+  - `replace` | base: `ده میلیونه` → ref: `10 ملیونه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `یک میلیون` → ref: `1 ملیون`
+  - `replace` | base: `ده` → ref: `10`
+  - `replace` | base: `یک` → ref: `1`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `یک میلیون` → ref: `1 ملیون`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `ده` → ref: `10`
+  - `replace` | base: `ده میلیون` → ref: `10 ملیون`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `خوبی خوب` → ref: `خوبیه خب`
+  - `replace` | base: `پایدارم` → ref: `پای دارم`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `میلیونم` → ref: `ملیونم`
+  - `replace` | base: `کنم` → ref: `کنن`
+  - `replace` | base: `کاسبم` → ref: `کاسب هم`
+  - `replace` | base: `کارم` → ref: `کار هم`
+  - `replace` | base: `کارم` → ref: `کار هم`
+  - `replace` | base: `سؤال هاستانم` → ref: `سوال هاستان هم`
+  - `replace` | base: `کس با کارم` → ref: `کسب و کار هم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `10 میلیون` → ref: `ده ملیون`
+  - `replace` | base: `10 میلیون` → ref: `ده ملیون`
+  - `replace` | base: `7 8 میلیون` → ref: `هفتش ملیون`
+  - `replace` | base: `خواییم` → ref: `خواهیم`
+  - `replace` | base: `صد` → ref: `ست`
+  - `replace` | base: `تقاضای 100 میلیون` → ref: `تقاضایی ست ملیون`
+  - `replace` | base: `بدم` → ref: `بدن`
+  - `replace` | base: `تالا` → ref: `تا حالا`
+  - `replace` | base: `10 میلیون` → ref: `ده ملیون`
+  - `replace` | base: `تقاضای 10 میلیون` → ref: `تقاضایی ده ملیون`
+  - `replace` | base: `تالا` → ref: `تا حالا`
+  - `replace` | base: `مالی` → ref: `مالیم`
+  - `replace` | base: `3 میلیون` → ref: `سه ملیون`
+  - `replace` | base: `قبلم` → ref: `قبلن`
+  - `replace` | base: `اقساطمو همی شه` → ref: `اقصاتم رو همیشه`
+  - `replace` | base: `عقب` → ref: `اقب`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `داشت شوشم` → ref: `داشته باشم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `سد میلیون تغاظایی` → ref: `100 ملیون تقاضایی`
+  - `replace` | base: `هشتاد و پنج میلیون` → ref: `85 ملیون`
+  - `replace` | base: `شیش` → ref: `6`
+  - `replace` | base: `سد میلیون تغاظا` → ref: `100 ملیون تقاضا`
+  - `replace` | base: `شست و پنج میلیون` → ref: `65 ملیون`
+  - `replace` | base: `اقصادی` → ref: `اقصاتی`
+  - `replace` | base: `کود` → ref: `کوده`
+  - `replace` | base: `می تونیم همین جوری` → ref: `میتونیم همینجوری`
+  - `replace` | base: `شاخص ها خودمون رو` → ref: `شاخصها خودمونو`
+  - `replace` | base: `خودمون نشون` → ref: `خودمونشون`
+  - `replace` | base: `خودمون نشون` → ref: `خودمونشون`
+  - `replace` | base: `درآمدمون رو افزایش` → ref: `درامدمونو افضایش`
+  - `replace` | base: `افضادمون` → ref: `اقصادمون`
+  - `replace` | base: `ببریم` → ref: `ببرید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `خودمونو خدشدار` → ref: `خودمون رو خدچدار`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+
+## 13.md
+- similarity: `0.8845`
+- tokens: base `1887` / ref `1776`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `عقود طراحی` → ref: `اقود تراحی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `عقودی طراحی` → ref: `اقودی تراحی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ذاره` → ref: `میذاره`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `قرض الحسنه` → ref: `قرضالحسنه`
+  - `replace` | base: `کارمزدی` → ref: `کارموزدی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `قرض الحسنه می کنی` → ref: `قرضالحسنه میکنی`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `کارمزدی` → ref: `کارموزدی`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `اقساطیه مرابحه` → ref: `اقصاتیه مرابه`
+  - `replace` | base: `شرط` → ref: `شمت`
+  - `replace` | base: `راجع بهش` → ref: `راجبش`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `قرارداد` → ref: `قراردات`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `پیگرد` → ref: `پیرد`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `تسهیلات` → ref: `تحصیلات`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `پونزده میلیون` → ref: `پونزه ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `شرط` → ref: `شمت`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `رعایت` → ref: `رایت`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `نمی دن` → ref: `نمیدن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `اقساطی` → ref: `اقصاتی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `ارزشمنده` → ref: `عرضشمنده`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده می گه` → ref: `میده میگه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `قرارداد` → ref: `قراردات`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `اسناد` → ref: `اصناد`
+  - `replace` | base: `میلیون می خوام` → ref: `ملیون میخوام`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `میلیونو` → ref: `ملیونو`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `قرض الحسنه` → ref: `قرضالحسنه`
+  - `replace` | base: `لپ تاپ می خوام` → ref: `لپتاب میخوام`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `قرارداد` → ref: `قراردات`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `عقود` → ref: `اقود`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+
+## 14.md
+- similarity: `0.9161`
+- tokens: base `1295` / ref `1244`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می تونم شغلهای` → ref: `میتونم شغلایی`
+  - `replace` | base: `درواقع` → ref: `در واقع`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `از وقتو می خوایم` → ref: `ازتون میخوام`
+  - `replace` | base: `کار رو` → ref: `کارو`
+  - `replace` | base: `ها،` → ref: `ها`
+  - `replace` | base: `تون رو` → ref: `تونو`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `یافتلبانه` → ref: `دافتلبانه`
+  - `replace` | base: `یافتلبانه` → ref: `دافتلبانه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `داوطلبانه` → ref: `دافتالبانه`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `داوطلبانه` → ref: `دافتالبانه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `مدیریت` → ref: `مدریت`
+  - `replace` | base: `مهارتهای` → ref: `محارتهای`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `یافتر` → ref: `دافتر`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `یافت` → ref: `دافت`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `یافت` → ref: `دافت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `تلفنتو` → ref: `تلفونتو`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `یافت` → ref: `دافت`
+  - `replace` | base: `پنج تا` → ref: `پنجتا`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `نمی گم` → ref: `نمیگم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `یافت` → ref: `دافت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+
+## 15.md
+- similarity: `0.8770`
+- tokens: base `1943` / ref `1893`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `سلام` → ref: `سلام،`
+  - `replace` | base: `می ده نه` → ref: `میده نه،`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `هفتاد و پنج` → ref: `75`
+  - `replace` | base: `متوسطش` → ref: `متوسطش،`
+  - `replace` | base: `نوت` → ref: `90`
+  - `replace` | base: `صد نوت` → ref: `190`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هستیم` → ref: `هستید`
+  - `replace` | base: `برمیگردیم` → ref: `برمیگردید`
+  - `replace` | base: `هستین` → ref: `هستید`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `شه کنید` → ref: `شکن`
+  - `replace` | base: `ناراحتین` → ref: `ناراحتی`
+  - `replace` | base: `همکارها` → ref: `همکارا`
+  - `replace` | base: `هواتونو` → ref: `هواتون رو`
+  - `replace` | base: `می شه سازمانو` → ref: `میشه سازمان رو`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `شغلتونو` → ref: `شغلتون رو`
+  - `replace` | base: `هیچی` → ref: `هیچی؟`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `استعفا` → ref: `استفا`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `نمی کنه می گه` → ref: `نمیکنه میگه`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `برای` → ref: `براید`
+  - `replace` | base: `پیادشی می خوای` → ref: `پیاده شی میخوای`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `نمی شه ثبات` → ref: `نمیشه ثواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `چاهو` → ref: `چاه رو`
+  - `replace` | base: `شادی آور` → ref: `شادیاور`
+  - `replace` | base: `پنج تا` → ref: `پنجتا`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `زرفیت` → ref: `یعنی ظرفیت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `بعض` → ref: `بعضی`
+  - `replace` | base: `زرفیت` → ref: `ظرفیت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد ارزیابی می شن` → ref: `درامد ارضیابی میشن`
+  - `replace` | base: `زندگیم رو` → ref: `زندگیمو`
+  - `replace` | base: `درآمدی می خوام` → ref: `درامدی میخوام`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `زندگیم رو` → ref: `زندگیمو`
+  - `replace` | base: `درآمدم` → ref: `درامدم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `ارزیابی` → ref: `عرضیابی`
+  - `replace` | base: `ارزیابی` → ref: `عرضیابی`
+  - `replace` | base: `تو یه` → ref: `توی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `تو` → ref: `توی`
+  - `replace` | base: `ارزشی` → ref: `عرضشی`
+  - `replace` | base: `عرضا بیمی` → ref: `عرضیبی می`
+  - `replace` | base: `بگی` → ref: `بگم`
+  - `replace` | base: `بهتاشت` → ref: `بهتاشن`
+  - `replace` | base: `میشم` → ref: `می شم`
+  - `replace` | base: `برمیداره` → ref: `بر میداره`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `مینوازه` → ref: `می نوازه`
+  - `replace` | base: `دقیقی،` → ref: `دقیقی`
+  - `replace` | base: `منظم،` → ref: `منظم`
+  - `replace` | base: `خودش` → ref: `خود`
+  - `replace` | base: `ارزشمند` → ref: `عرضشمند`
+  - `replace` | base: `ارزشی` → ref: `عرضشی`
+  - `replace` | base: `می ده،` → ref: `میده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `نمی شه ارزیابیش` → ref: `نمیشه عرضیابیش`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `آبدارچیه` → ref: `آبدارچی`
+  - `replace` | base: `سازمانه` → ref: `سازمان`
+  - `replace` | base: `ثومی` → ref: `ثبوتی`
+  - `replace` | base: `علاقه` → ref: `علاق یک`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `سراغ مومیاد` → ref: `سراغمون میاد`
+  - `replace` | base: `می کنه می گیم` → ref: `میکنه میگیم`
+  - `replace` | base: `بکنیم` → ref: `بکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `delete` | base: `که بالاخره` → ref: ``
+  - `replace` | base: `چیه؟` → ref: `چیه`
+  - `replace` | base: `درونش` → ref: `در اونش`
+  - `replace` | base: `یکی` → ref: `یک`
+  - `replace` | base: `صحنه` → ref: `سحنه`
+  - `replace` | base: `خواند` → ref: `خاند`
+  - `replace` | base: `صحنه روید صحنه` → ref: `سحنه رود سحنه`
+  - `replace` | base: `بجاز` → ref: `به جاز`
+  - `replace` | base: `احدای` → ref: `اهدای`
+  - `replace` | base: `صحنه` → ref: `سحنه`
+  - `replace` | base: `نمایش نامه` → ref: `نمایشنامه`
+  - `replace` | base: `آیا` → ref: `آیه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `گیتز` → ref: `گیتس`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `شیشه` → ref: `شیش`
+  - `replace` | base: `زور` → ref: `اور`
+  - `replace` | base: `چار` → ref: `چهار`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `نبیانی` → ref: `نبینی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم می بینیم` → ref: `میکنیم میبینیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `نمی خوام` → ref: `نمیخوام`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `یک` → ref: `یه`
+  - `replace` | base: `محرم` → ref: `مهرم`
+  - `replace` | base: `محره` → ref: `مهره`
+  - `replace` | base: `محره` → ref: `مهره`
+  - `replace` | base: `نظومن` → ref: `لزومن`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `انگوشت` → ref: `انگشته`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `کنین` → ref: `کنیم`
+  - `replace` | base: `شغلی رو` → ref: `شغلیو`
+  - `replace` | base: `ویژگی،` → ref: `سویجگی،`
+  - `replace` | base: `استعفاهمون رو` → ref: `استفاهمونو`
+  - `replace` | base: `شغلمون رو` → ref: `شغلمونو`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خوایی` → ref: `میخوایی`
+  - `replace` | base: `پلای` → ref: `پولای`
+  - `replace` | base: `سرت رو` → ref: `سرتو`
+  - `replace` | base: `شغلا` → ref: `شغلم`
+  - `replace` | base: `خودکار` → ref: `خود کار`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `3` → ref: `سه`
+  - `replace` | base: `1 ماه 2` → ref: `یک ماهه دو`
+  - `replace` | base: `ببینید` → ref: `ببینی`
+  - `replace` | base: `بد نمی دن` → ref: `به ادنه میدن`
+  - `replace` | base: `صده` → ref: `صد`
+  - `replace` | base: `ساعات` → ref: `ساعت`
+  - `replace` | base: `ببین` → ref: `ببینی`
+  - `replace` | base: `گفت وگو` → ref: `گفتگو`
+  - `replace` | base: `تون` → ref: `تو اون`
+  - `insert` | base: `` → ref: `هم`
+  - `replace` | base: `گفت وگوه هم` → ref: `گفتگوها`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `یه` → ref: `یک`
+  - `replace` | base: `منابع` → ref: `منابه`
+  - `replace` | base: `یه حرفهی` → ref: `هرفهی`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `خواهته` → ref: `خواهده`
+  - `replace` | base: `می دهیم` → ref: `میدین`
+  - `replace` | base: `استعفا` → ref: `استفا`
+  - `replace` | base: `گفت وگو` → ref: `گفتگو`
+  - `replace` | base: `مطمئن` → ref: `مطبعین`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `می گم` → ref: `میگم`
+
+## 16.md
+- similarity: `0.9401`
+- tokens: base `964` / ref `938`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `دائماً` → ref: `دائمان`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می دونه` → ref: `میدونه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `طراحی می کنم` → ref: `تراحی میکنم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `می گن درآمد` → ref: `میگن درامد`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می خواید` → ref: `میخواید`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می گن` → ref: `میگن`
+
+## 17.md
+- similarity: `0.9032`
+- tokens: base `2380` / ref `2270`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `نمی تونیم` → ref: `نمیتونیم`
+  - `replace` | base: `ارزشمند` → ref: `عرضشمند`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `ارزشمند` → ref: `عرضشمند`
+  - `replace` | base: `کارآفرینیه` → ref: `کارافرینیه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `لزوماً نمی تونم` → ref: `لزومن نمیتونم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `می کنن؟ کارآفرینی` → ref: `میکنن؟ کارافرینی`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `توضیح می دن` → ref: `توصیح میدن`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `کارآفرینیه` → ref: `کارافرینیه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `نمی ریم` → ref: `نمیریم`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `پونزده` → ref: `پونزه`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `پونزده` → ref: `پونزه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزشی` → ref: `عرضشی`
+  - `replace` | base: `کارآفرینی` → ref: `کارافرینی`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `ارزشافرین` → ref: `عرضشافرین`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `نمی خواد` → ref: `نمیخواد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `پنج تا` → ref: `پنجتا`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `حوزه ی` → ref: `حوضی`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `حوزه ی` → ref: `حوضی`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می کنه می گه` → ref: `میکنه میگه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ارزیابی می کنن` → ref: `عرضیابی میکنن`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `فراخوانی` → ref: `فراخانی`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `صبر می کنه` → ref: `سبر میکنه`
+  - `replace` | base: `نمی کنه` → ref: `نمیکنه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `صبر می کنه` → ref: `سبر میکنه`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `فراخوان` → ref: `فراخان`
+  - `replace` | base: `نمی تونن` → ref: `نمیتونن`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می بینن` → ref: `میبینن`
+  - `replace` | base: `کوچک` → ref: `کچک`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می بینن` → ref: `میبینن`
+  - `replace` | base: `می کنن می گن` → ref: `میکنن میگن`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `نمی دونن` → ref: `نمیدونن`
+  - `replace` | base: `می دونن` → ref: `میدونن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن می گن` → ref: `میکنن میگن`
+  - `replace` | base: `می کنم می گن` → ref: `میکنم میگن`
+  - `replace` | base: `نمی ره` → ref: `نمیره`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `نمی دونن` → ref: `نمیدونن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `فراخوان` → ref: `فراخان`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+
+## 18.md
+- similarity: `0.9040`
+- tokens: base `2263` / ref `2164`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می کنم لزوماً` → ref: `میکنم لزومن`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `نمی کنه` → ref: `نمیکنه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `افزایش درآمد نمی شه` → ref: `افضایش درامت نمیشه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `نمی ذارن` → ref: `نمیذارن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمده` → ref: `درامده`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `میلیون درآمد` → ref: `ملیون درامد`
+  - `replace` | base: `میلیونم` → ref: `ملیونم`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیونه` → ref: `ملیونه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `می ذاریم` → ref: `میذاریم`
+  - `replace` | base: `ضعف` → ref: `زعف`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `پیدا` → ref: `بیدا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `طلاست` → ref: `تلاست`
+  - `replace` | base: `طلا` → ref: `تلاعه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه ارزش` → ref: `میکنه عرضش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم؟` → ref: `میکنم؟`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می کنم افزایش` → ref: `میکنم افضایش`
+  - `replace` | base: `کوچکتر` → ref: `کچکتر`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گیم پس انداز` → ref: `میگیم پسنداز`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `میلیونی می شه` → ref: `ملیونی میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیونونی` → ref: `ملیونونی`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `میلیونه می خوام` → ref: `ملیونه میخوام`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `حفظ` → ref: `هفت`
+  - `replace` | base: `درآمده` → ref: `درامده`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `حفظ` → ref: `هفت`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+
+## 19.md
+- similarity: `0.9382`
+- tokens: base `982` / ref `960`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `کارمزد` → ref: `کارموز`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `ارزشش` → ref: `عرضشش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `سرمایهم` → ref: `سرماییم`
+  - `replace` | base: `سرمایه` → ref: `سرمایی`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `پونزده` → ref: `پونزه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می گنم` → ref: `میگنم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `ارزشی` → ref: `عرضشی`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیرید` → ref: `میگیرید`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+
+## 20.md
+- similarity: `0.8663`
+- tokens: base `2696` / ref `2568`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `تلفن` → ref: `تلفون`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `طلا، ارز،` → ref: `تلا، عرض،`
+  - `replace` | base: `پنج تا گزینه، پنج تا گزینه` → ref: `پنجتا گذینه، پنجتا گذینه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `حفظ` → ref: `هفت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `عرفاً` → ref: `اروفن`
+  - `replace` | base: `پنج تا گزینه` → ref: `پنجتا گذین`
+  - `replace` | base: `امو ایدایی` → ref: `اموی دایی`
+  - `replace` | base: `باشید` → ref: `باشین`
+  - `replace` | base: `قواعد` → ref: `قواهد`
+  - `replace` | base: `ناموهای` → ref: `نامه های`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `نمی ریم` → ref: `نمیریم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `کاهش` → ref: `کاش`
+  - `replace` | base: `این هم` → ref: `اینم`
+  - `replace` | base: `می گن اقیمه` → ref: `میگن عقیمه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `ارزشش` → ref: `عرضشش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `هست معمول` → ref: `است معمولا`
+  - `replace` | base: `در میلیون،` → ref: `ده ملیون،`
+  - `replace` | base: `میلیون،` → ref: `ملیون،`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `پنج دو گزینه` → ref: `پنجتا گذینه`
+  - `replace` | base: `علاوات` → ref: `اولاد`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `غریبی` → ref: `قریبی`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `چار` → ref: `چهار`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می داریم` → ref: `میذاریم`
+  - `replace` | base: `می افته؟` → ref: `میفته؟`
+  - `replace` | base: `علی الحساب` → ref: `علل حساب`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `پیدا می کنه` → ref: `بیدا میکنه`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `پیدام می کنه` → ref: `بیدام میکنه`
+  - `replace` | base: `نقد شوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `نقد شوندگیش` → ref: `نقشوندگیش`
+  - `replace` | base: `می گم` → ref: `میگن`
+  - `replace` | base: `می شه بنابراین` → ref: `میشه برنابراین`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `سپرده گذاری` → ref: `سپردگذاری`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `اسطلاح` → ref: `اصطلاح`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می تونید سپرده گذاری` → ref: `میتونید سپردگذاری`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `نمی کنن` → ref: `نمیکنن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `بیشتر طلا` → ref: `بیش در تلا`
+  - `replace` | base: `کالای` → ref: `کالا یه`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `ریسکی` → ref: `ریسک`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `اگر هم` → ref: `اگرم`
+  - `replace` | base: `امونات` → ref: `امانات`
+  - `replace` | base: `هزینهی` → ref: `حزینهی`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `نقدشوندگیش` → ref: `نقشوندگیش`
+  - `replace` | base: `نقدشوندگیش` → ref: `نقشوندگیش`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `طلایی` → ref: `تلایی`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `همون ها` → ref: `همونها`
+  - `replace` | base: `می خرن` → ref: `میخورن`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `حلقه های` → ref: `حلقای`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `کنید` → ref: `کنی`
+  - `replace` | base: `طلایی` → ref: `تلایی`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `چیزهای` → ref: `چیزای`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `طلای` → ref: `تلای`
+  - `replace` | base: `می تونن` → ref: `میتونن`
+  - `replace` | base: `پولیو` → ref: `پولی رو`
+  - `replace` | base: `بخاریم` → ref: `بخنیم`
+  - `replace` | base: `بخاریم` → ref: `بخریم`
+  - `replace` | base: `می خوایم` → ref: `میخوایم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `وله` → ref: `والا`
+  - `replace` | base: `نمی خوام` → ref: `نمیخوام`
+  - `replace` | base: `نمی خوام` → ref: `نمیخوام`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `خودمون رو` → ref: `خودمونو`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `باسوبات تره` → ref: `باسوباتتره`
+  - `replace` | base: `باسوبات تره` → ref: `باسوباتتره`
+  - `replace` | base: `همین رو` → ref: `همینو`
+  - `replace` | base: `نصفه` → ref: `نسته`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `بگیری` → ref: `بگیره`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نقدشوندگیش` → ref: `نقشمندگیش`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `هزارتومان` → ref: `هزار تومان`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `هزارتومان` → ref: `هزار تومان`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `توی` → ref: `تو`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `بذارن` → ref: `بذارم`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `پایینه` → ref: `بالاست`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ضرر` → ref: `زرره`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `اولیه` → ref: `اولی`
+  - `replace` | base: `فرض` → ref: `فرف`
+  - `replace` | base: `می شه؟` → ref: `میشه؟`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `میلیارد` → ref: `میرارد`
+  - `replace` | base: `پونکسد` → ref: `پونسد`
+  - `replace` | base: `بخواییم پولمون رو` → ref: `بخوایم پولمونو`
+  - `replace` | base: `ارزشش` → ref: `عرضشش`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می ده هر ستا` → ref: `میده از ست تا`
+  - `replace` | base: `اینکه ارزش` → ref: `این که عرضش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مون` → ref: `همون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونیم درآمد` → ref: `میتونیم درامت`
+  - `replace` | base: `گزینه پنجمچیه` → ref: `گذینه پنجم چیه؟`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `علل` → ref: `علال`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `ی` → ref: `ای`
+  - `replace` | base: `واسطش` → ref: `واسطهش`
+  - `replace` | base: `کوتاهدره می دونی` → ref: `کتاهدره میدونی`
+  - `replace` | base: `حوزهی` → ref: `حوضه ای`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می افته فاصلهی کوتاهدری` → ref: `میفته فاصله کتاهتری`
+  - `replace` | base: `برس` → ref: `بورس`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `صبر می خواد می گم` → ref: `سبر میخواد میگم`
+  - `replace` | base: `آدم های عجور می گیره می ده` → ref: `آدمهای عجول میگیره میده`
+  - `replace` | base: `آدم های سبور` → ref: `آدمهای سبر`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `ضرر می کنیم می گنیم` → ref: `زرر میکنیم میریم`
+  - `replace` | base: `ضرر می دن` → ref: `زرر میدن`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `نمی دونیم` → ref: `نمیدونیم`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `می کنم` → ref: `میکنن`
+  - `replace` | base: `می دونن` → ref: `میدونن`
+  - `replace` | base: `می کنن من این` → ref: `میکنن منی`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `طلا ضرر می کنم` → ref: `تلا زرر میکنم`
+  - `replace` | base: `جدیتره` → ref: `جدی تره`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `replace` | base: `اخیرم` → ref: `اخیر هم`
+  - `replace` | base: `ضررای` → ref: `زررهای`
+  - `replace` | base: `نقدشوندگی چجوریه` → ref: `نقشوندگی چجوری`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `نقدش` → ref: `نقش`
+  - `delete` | base: `یک` → ref: ``
+  - `replace` | base: `صد` → ref: `100`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `سی صد` → ref: `300`
+  - `replace` | base: `چارصد` → ref: `400`
+  - `replace` | base: `سد` → ref: `100`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می تونیم بهاش` → ref: `میتونیم با هاش`
+  - `replace` | base: `دارایی` → ref: `دارائی`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `میخواستم` → ref: `می خواستم`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `اضطراریه` → ref: `استراریه`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `نقدشوندگیش` → ref: `نقص شوندگیش`
+  - `replace` | base: `افق های` → ref: `افقهای`
+  - `replace` | base: `کوتاها` → ref: `کتا`
+  - `replace` | base: `کوتاها` → ref: `کتا`
+  - `replace` | base: `می تونیم نقدشوندگی` → ref: `میتونیم نقشوندگی`
+  - `replace` | base: `دیگه و` → ref: `یا`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `اضطراری` → ref: `استراری`
+  - `replace` | base: `نقدشوندگی` → ref: `نقشوندگی`
+  - `replace` | base: `بعدا` → ref: `بعدن`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+
+## 22.md
+- similarity: `0.9111`
+- tokens: base `1731` / ref `1678`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی دن` → ref: `نمیدن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `عاملی` → ref: `آملی`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `زاویه` → ref: `ظاویه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `راجع بهش` → ref: `راجبش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `سهامی ضرر` → ref: `صحامی زرر`
+  - `replace` | base: `تنوع` → ref: `تنو`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سومین` → ref: `ثومین`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `سومین` → ref: `ثومین`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `ریسک` → ref: `ریست`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `سهامیه` → ref: `صحامیه`
+  - `replace` | base: `ریسک` → ref: `ریست`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سپرده` → ref: `سپورده`
+  - `replace` | base: `درآمده` → ref: `درامده`
+  - `replace` | base: `درآمده` → ref: `درامده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `سهامیه` → ref: `صحامیه`
+  - `replace` | base: `اوراق بهاداردار` → ref: `اراغ بهادار`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `اوراق بهاداردار` → ref: `اراغ بهادار`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `نمی دن` → ref: `نمیدن`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `سرمای گذارتون چقده` → ref: `سرمایه گذاریتون چقدر`
+  - `replace` | base: `ریسک` → ref: `ریست`
+  - `replace` | base: `چقده` → ref: `چقدر`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `ببری` → ref: `ببرید`
+  - `replace` | base: `صندوق های سحامی` → ref: `صندوقهای سهامی`
+  - `replace` | base: `ببری` → ref: `ببرید`
+  - `replace` | base: `صندوق های سرمای` → ref: `صندوقهای سرمایه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `نحتم` → ref: `نقطتن`
+  - `replace` | base: `کنلا نمیخواهن ریسک` → ref: `کلن نمیخوان ریست`
+  - `replace` | base: `بخال می تونن` → ref: `بخوان میتونن`
+  - `insert` | base: `` → ref: `رو`
+  - `replace` | base: `سرمای` → ref: `سرمایه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مدل ارزیابی` → ref: `مودل عرضیابی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `کاربردی` → ref: `کاربوردی`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `ارزیابی` → ref: `عرضیابی`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شه` → ref: `میشه`
+
+## 23.md
+- similarity: `0.8576`
+- tokens: base `1242` / ref `1181`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `delete` | base: `های` → ref: ``
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `انتظار هم` → ref: `انتظارم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `از` → ref: `بر`
+  - `replace` | base: `داسان` → ref: `داستان`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `و بلقاش` → ref: `رو به لغاش`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنم` → ref: `میکنن`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `بیخیار` → ref: `بی خیار`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `راید` → ref: `رد`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `های می کنه` → ref: `هایی میکنه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `پیدا` → ref: `بیدا`
+  - `replace` | base: `پیدا` → ref: `بیدا`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `یکی` → ref: `یک`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `بدنم` → ref: `بدن هم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `کنترل` → ref: `کنترول`
+  - `replace` | base: `حوزهٔ` → ref: `حوضه ی`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `تنو` → ref: `تنف`
+  - `replace` | base: `نمی ذارن توی` → ref: `نمیذارن تو`
+  - `replace` | base: `می ذارن` → ref: `میذارن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `سهامی` → ref: `صحامی`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `تنف و` → ref: `تنو`
+  - `replace` | base: `تنف و` → ref: `تنو`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می دونم` → ref: `میدونم`
+  - `replace` | base: `حوزهٔ` → ref: `حوضه این`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `حوزه` → ref: `حوضه ی`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `حوزه` → ref: `حوضه ی`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `ایدهشون تنف` → ref: `ایدشون تنب`
+  - `replace` | base: `و` → ref: `یا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `delete` | base: `این` → ref: ``
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شناسم` → ref: `میشناسم`
+  - `replace` | base: `می شناسم` → ref: `میشناسم`
+  - `replace` | base: `می شناسم` → ref: `میشناسم`
+  - `replace` | base: `می شناسم قراردادها` → ref: `میشناسم قرارداد ها`
+  - `replace` | base: `متمرکیز` → ref: `تمام متمرکز`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `delete` | base: `جابه` → ref: ``
+  - `replace` | base: `می کنم` → ref: `به جا میکنم`
+  - `replace` | base: `تعیین` → ref: `تعین`
+  - `replace` | base: `ضرره برید` → ref: `زرره بیارید`
+  - `replace` | base: `ضرری` → ref: `زرری`
+  - `replace` | base: `ضرر` → ref: `زرره`
+  - `replace` | base: `ضرری` → ref: `زرری`
+  - `replace` | base: `ضرره` → ref: `زرره`
+  - `replace` | base: `می تونید تعیین` → ref: `میتونید تعین`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `80` → ref: `هشتاد`
+  - `replace` | base: `80` → ref: `هشتاد`
+  - `replace` | base: `سرمایهمه` → ref: `سرماییمه`
+  - `replace` | base: `50` → ref: `پنجاه`
+  - `replace` | base: `10` → ref: `ده`
+  - `replace` | base: `5` → ref: `پنج`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `می شه 50` → ref: `میشه پنجاه`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `هیچوقت` → ref: `هیچ وقت`
+  - `replace` | base: `ضررمون رو تعیین` → ref: `زررمونو تعین`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `داراییان می خواد` → ref: `دارایی هم میخواد`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `شرکتهایی` → ref: `شرکت هایی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+
+## 24.md
+- similarity: `0.9181`
+- tokens: base `2239` / ref `2144`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `باریسک` → ref: `باریست`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گیرن می گن` → ref: `میگیرن میگن`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `حوزهٔه` → ref: `حوضه یه`
+  - `replace` | base: `مدیریت` → ref: `مدریت`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `صد` → ref: `100`
+  - `replace` | base: `می شه صد` → ref: `میشه 100`
+  - `replace` | base: `نوت` → ref: `90`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `قرارداد` → ref: `قراردات`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می تونن` → ref: `میتونن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `ان شاءالله` → ref: `ایشالله`
+  - `replace` | base: `ان شاءالله` → ref: `ایشالله`
+  - `replace` | base: `نمی بینیم` → ref: `نمیبینیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `کارمزد` → ref: `کارموز`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `کارمزد` → ref: `کارموز`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنم می گم` → ref: `میکنم میگم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `ضرر` → ref: `زرر`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون ارزش` → ref: `ملیون عرضش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ذاره` → ref: `میذاره`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `پیدام می کنه` → ref: `بیدام میکنه`
+  - `replace` | base: `پیدا می کنه` → ref: `بیدا میکنه`
+  - `replace` | base: `پیدا` → ref: `بیدا`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `نمی خوایم` → ref: `نمیخوایم`
+  - `replace` | base: `می کنیم می گیم` → ref: `میکنیم میگیم`
+  - `replace` | base: `نمی خواهیم` → ref: `نمیخواهیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می دیم می گیم` → ref: `میدیم میگیم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `پس اندازه` → ref: `پسندازه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+
+## 25.md
+- similarity: `0.8734`
+- tokens: base `2305` / ref `2204`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `پس انداز، مدیریت` → ref: `پسنداز، مدریت`
+  - `replace` | base: `درآمد،` → ref: `درامت،`
+  - `replace` | base: `مدیریت` → ref: `مدریت`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `مدیریت` → ref: `مدریت`
+  - `replace` | base: `مدیریت` → ref: `مدریت`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `سرمایهم` → ref: `سرماییم`
+  - `replace` | base: `مواظبت` → ref: `موازبت`
+  - `replace` | base: `پنج تا حوزهی` → ref: `پنجتا حوضهی`
+  - `replace` | base: `حوزهی` → ref: `حوضهی`
+  - `replace` | base: `حوزهی` → ref: `حوضهی`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `مدل` → ref: `مودل`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنیم؟` → ref: `میکنیم؟`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `نمی خواییم` → ref: `نمیخواییم`
+  - `replace` | base: `نمی خواییم` → ref: `نمیخواییم`
+  - `replace` | base: `تلفن،` → ref: `تلفون،`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `هزینه زا` → ref: `حزینزا`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `هزینه زا` → ref: `حزینزا`
+  - `replace` | base: `تلفن` → ref: `تلفون`
+  - `replace` | base: `خرم` → ref: `خورم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `هزینه زا` → ref: `حزینزا`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `هزینه زا` → ref: `حزینزا`
+  - `replace` | base: `هزینه زا` → ref: `حزینزا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `مدل` → ref: `مودل`
+  - `replace` | base: `هزینه زاست` → ref: `حزینزاست`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می خرم` → ref: `میخرم`
+  - `replace` | base: `ثروتمند` → ref: `سروتمند`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `ثروتمند` → ref: `سروتمند`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی کنه` → ref: `نمیکنه`
+  - `replace` | base: `می کنه؟` → ref: `میکنه؟`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `ثروت` → ref: `سروت`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `می شه می رن` → ref: `میشه میرن`
+  - `replace` | base: `درآمدزای` → ref: `درامتزای`
+  - `replace` | base: `هزینه می کنن` → ref: `حزینه میکنن`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمدش` → ref: `درامدش`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `طلا` → ref: `تلا`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `درآمدی` → ref: `درامدی`
+  - `replace` | base: `باغی` → ref: `باقی`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی شیم` → ref: `نمیشیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گیم صبر` → ref: `میگیم سبر`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `درآمدش` → ref: `درامدش`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `درآمدش` → ref: `درامتش`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `درآمدش` → ref: `درامدش`
+  - `replace` | base: `درآمدشو می ره` → ref: `درامدشو میره`
+  - `replace` | base: `درآمدزا` → ref: `درامدزا`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می دهید` → ref: `میدهید`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می دهم` → ref: `میدهم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `بالاخره می خوای` → ref: `بلاخره میخوای`
+  - `replace` | base: `می خوای` → ref: `میخوای`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `insert` | base: `` → ref: `حضینه هست`
+  - `replace` | base: `هست هزینهٔه` → ref: `یه`
+  - `replace` | base: `هزینهٔه` → ref: `هزینه یه`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی خواد نمی ده` → ref: `نمیخواد نمیده`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می خرم هزینه` → ref: `میخرم حضینه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `نمی تونم` → ref: `نمیتونم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `درآمدش` → ref: `درامتش`
+  - `replace` | base: `هوطلای` → ref: `هوتلای`
+  - `replace` | base: `هزینهٔه` → ref: `حضینه یه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `جابه` → ref: `جا به`
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `از دست` → ref: `ادست`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `از دست` → ref: `ادست`
+  - `replace` | base: `ازای` → ref: `اضای`
+  - `replace` | base: `از دست` → ref: `ادست`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `می خوام` → ref: `میخوام`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `درآمدزا` → ref: `درامتزا`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+
+## 26.md
+- similarity: `0.9106`
+- tokens: base `3312` / ref `3176`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `درآمدزای` → ref: `درامتزای`
+  - `replace` | base: `درآمدزای` → ref: `درامتزای`
+  - `replace` | base: `نمی گیرم` → ref: `نمیگیرم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `ارزیابی` → ref: `عرضیابی`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `انتباغی` → ref: `انتباقی`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `انتباغی` → ref: `انتباقی`
+  - `replace` | base: `بزرگسال` → ref: `بزرگ سال`
+  - `replace` | base: `انتباغ` → ref: `انتباق`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `انتباغی` → ref: `انتباقی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `توضیح` → ref: `توصیح`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می تونید` → ref: `میتونید`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `واقعیت` → ref: `واقعیته`
+  - `insert` | base: `` → ref: `خب`
+  - `replace` | base: `ممکن` → ref: `ممکنه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `گزینه گزینه` → ref: `گذینه گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنید؟` → ref: `میکنید؟`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می ذارن` → ref: `میذارن`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنی؟ گزینه` → ref: `میکنی؟ گذینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `نمی کنی` → ref: `نمیکنی`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می گیرم گزینه` → ref: `میگیرم گذینه`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `نمی گیرم` → ref: `نمیگیرم`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنی؟ گزینه` → ref: `میکنی؟ گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `نمی کنی` → ref: `نمیکنی`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیریم` → ref: `میگیریم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می دیم می گیم` → ref: `میدیم میگیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `پونزده` → ref: `پونزه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `می شه می گیم` → ref: `میشه میگیم`
+  - `replace` | base: `پونزده` → ref: `پونزه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می کنیم می گیم` → ref: `میکنیم میگیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `90 در فرق` → ref: `نود درفت`
+  - `replace` | base: `اهدام` → ref: `اهدا`
+  - `replace` | base: `اهدام` → ref: `اهدا`
+  - `replace` | base: `اهدام` → ref: `اهدا`
+  - `replace` | base: `اهدام` → ref: `اهدا`
+  - `replace` | base: `میکرده` → ref: `می کرده`
+  - `replace` | base: `اهدام` → ref: `اهدا`
+  - `replace` | base: `گفته` → ref: `گفت`
+  - `replace` | base: `میخواهید اهدا` → ref: `می خواهید احدا`
+  - `replace` | base: `پیشفردش` → ref: `پیشفرزش`
+  - `replace` | base: `اهدا` → ref: `احدا`
+  - `replace` | base: `اهدا` → ref: `احدا`
+  - `replace` | base: `پیشفرد` → ref: `پیشفرز`
+  - `replace` | base: `پیشفردسان` → ref: `پیشفرزها`
+  - `replace` | base: `سؤال` → ref: `سواله`
+  - `delete` | base: `هم` → ref: ``
+  - `replace` | base: `میکشه سؤالو` → ref: `می کشه سوالو`
+  - `replace` | base: `میفته` → ref: `می افته`
+  - `replace` | base: `میفته` → ref: `می افته`
+  - `replace` | base: `مثبت می دن` → ref: `مصبت میدن`
+  - `replace` | base: `جدایی` → ref: `جدای`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ضربل` → ref: `زربال`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `توصیه` → ref: `توصیح`
+  - `replace` | base: `ثروتمندان` → ref: `سروتمندان`
+  - `replace` | base: `می گیرند` → ref: `میگیرند`
+  - `replace` | base: `برای اینکه` → ref: `برانکه`
+  - `replace` | base: `نمی خواییم ثروتمند` → ref: `نمیخواییم سروتمند`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می دونیم` → ref: `میدونیم`
+  - `replace` | base: `می کنیم؟` → ref: `میکنیم؟`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می کنید` → ref: `میکنید`
+  - `replace` | base: `نمی خواییم` → ref: `نمیخواییم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `می تونه توسعه` → ref: `میتونه توصیح`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `نمی کنه` → ref: `نمیکنه`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می کنی` → ref: `میکنی`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `مثبت` → ref: `مصبت`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می ره،` → ref: `میره،`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `اززواژه` → ref: `اززواجه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `ارزیابی` → ref: `عرضیابی`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+
+## 27.md
+- similarity: `0.9027`
+- tokens: base `1887` / ref `1835`
+- large diff spans: `1`
+- small candidates:
+  - `replace` | base: `همی شه` → ref: `همیشه`
+  - `replace` | base: `یک` → ref: `یه`
+  - `replace` | base: `یک` → ref: `یه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `گفت وگو می کنیم` → ref: `گفتگو میکنیم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `گفت وگوه` → ref: `گفتگوه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `راجع به` → ref: `راجب`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `delete` | base: `دونی` → ref: ``
+  - `replace` | base: `می رسونه` → ref: `میرسونه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می آم` → ref: `میان`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `کوتاه` → ref: `کتاه`
+  - `replace` | base: `راهل` → ref: `راحل`
+  - `replace` | base: `خوردن` → ref: `خوردنه`
+  - `replace` | base: `متن` → ref: `متنه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شنویم` → ref: `میشنویم`
+  - `replace` | base: `محت مونده` → ref: `مطمونه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `چیکار` → ref: `چی کار`
+  - `delete` | base: `یه` → ref: ``
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `گزینه` → ref: `گذینه`
+  - `replace` | base: `ارضیابی می کنه` → ref: `ارزیابی میکنه`
+  - `replace` | base: `راهل` → ref: `راحل`
+  - `replace` | base: `اومدن` → ref: `آمدن`
+  - `replace` | base: `چیزایی` → ref: `چیزهایی`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `نکتهی` → ref: `نکته`
+  - `replace` | base: `اصلا دوره های` → ref: `دورهای`
+  - `replace` | base: `مهارت فوق العاده` → ref: `محارت فوقلاده`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `کنیم` → ref: `کنید`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `قرارداد` → ref: `قرار داد`
+  - `replace` | base: `دسته` → ref: `دست`
+  - `replace` | base: `عادی` → ref: `آدی`
+  - `replace` | base: `سبت` → ref: `ثبت`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `خداس` → ref: `خداست`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `پولایی` → ref: `پولای`
+  - `replace` | base: `مقابلم اشالله` → ref: `مقابل هم ایشالله`
+  - `replace` | base: `حوزهٔ` → ref: `حوضه ی`
+  - `replace` | base: `بدهکاری` → ref: `بدهکاری،`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `برسه،` → ref: `برسه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `آمون رو` → ref: `آمونو`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `خودمون رو` → ref: `خودمونو`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `می ره` → ref: `میره`
+  - `replace` | base: `می گه احفظ،` → ref: `میگه احفظ`
+  - `insert` | base: `` → ref: `و`
+  - `replace` | base: `بکنن` → ref: `بکنه`
+  - `replace` | base: `است` → ref: `هست`
+  - `replace` | base: `رو` → ref: `و`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می تونن` → ref: `میتونن`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `مون` → ref: `همون`
+  - `replace` | base: `امر` → ref: `عمر`
+  - `delete` | base: `بالاخره این` → ref: ``
+  - `replace` | base: `دوم این` → ref: `دومین`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `گذاری` → ref: `گذاری،`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `حوالت` → ref: `البته`
+  - `replace` | base: `توصیه سواد` → ref: `توصیح ثواد`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `در واقع` → ref: `از`
+  - `replace` | base: `تلفن` → ref: `تلفون`
+  - `replace` | base: `نمی دونم` → ref: `نمیدونم`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `مجووز` → ref: `مجوز`
+  - `replace` | base: `بشت` → ref: `بهش`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `می خوادو` → ref: `میخواد رو`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `مینویسن` → ref: `منویسن`
+  - `delete` | base: `رو` → ref: ``
+  - `replace` | base: `ده تا` → ref: `دهتا`
+  - `replace` | base: `اعداد` → ref: `مثلا عداد`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `ده تا` → ref: `دهتا`
+  - `replace` | base: `ده تا` → ref: `دهتا`
+  - `replace` | base: `ی ده تا` → ref: `یه دهتا`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `این ها می تونه` → ref: `اینها میتونه`
+  - `replace` | base: `سرفصل` → ref: `سرفس`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `سرفصل` → ref: `سرف هست`
+  - `replace` | base: `دیگه` → ref: `دیگهی`
+  - `replace` | base: `سوادمالی` → ref: `سواد مالی یه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+
+## 28.md
+- similarity: `0.9282`
+- tokens: base `2119` / ref `2046`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `سواده` → ref: `ثواده`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شیم` → ref: `میشیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `می ده؟` → ref: `میده؟`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه هزینه` → ref: `میشه حضینه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `هزینه` → ref: `حضینه`
+  - `replace` | base: `کاربردی` → ref: `کاربوردی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `کارتن خواب` → ref: `کارتونخواب`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می بینن` → ref: `میبینن`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `می ریم` → ref: `میریم`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `مواظبت` → ref: `موازبت`
+  - `replace` | base: `ارزش` → ref: `عرضش`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می گم` → ref: `میگم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `میلیونی` → ref: `ملیونی`
+  - `replace` | base: `ثروتمندی` → ref: `سروتمندی`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می شناسن` → ref: `میشناسن`
+  - `replace` | base: `می تونن` → ref: `میتونن`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `سؤال` → ref: `سوال`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `هزینهٔ` → ref: `حضینه ی`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `توانمندی` → ref: `توامندی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `ضعف` → ref: `زعف`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می دیم` → ref: `میدیم`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `صبره` → ref: `سبره`
+  - `replace` | base: `می تونم` → ref: `میتونم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `ثروتمندیه` → ref: `سروتمندیه`
+  - `replace` | base: `ثروتمندی` → ref: `سروتمندی`
+  - `replace` | base: `نمی تونه` → ref: `نمیتونه`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `ثروتمندیه` → ref: `سروتمندیه`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `نمی شه` → ref: `نمیشه`
+  - `replace` | base: `می گیرم` → ref: `میگیرم`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `سواد` → ref: `ثواد`
+  - `replace` | base: `سواد` → ref: `ثواد`
+
+## 29.md
+- similarity: `0.8846`
+- tokens: base `2103` / ref `2134`
+- large diff spans: `2`
+- small candidates:
+  - `replace` | base: `می خواییم` → ref: `میخواییم`
+  - `insert` | base: `` → ref: `یه`
+  - `replace` | base: `فوق العاده` → ref: `فوقلاده`
+  - `insert` | base: `` → ref: `منگاه های امریکایی این`
+  - `replace` | base: `1795،` → ref: `1795`
+  - `replace` | base: `داویس بودجه` → ref: `دابیس بوجه`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `درآمد` → ref: `درامد`
+  - `replace` | base: `کرده` → ref: `کرد`
+  - `replace` | base: `1855،` → ref: `1855`
+  - `replace` | base: `36` → ref: `سی و شش`
+  - `replace` | base: `36` → ref: `سی و شش`
+  - `replace` | base: `تق` → ref: `تگه`
+  - `replace` | base: `فعالیت های` → ref: `فعالیتهای`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `کرده` → ref: `کرد`
+  - `replace` | base: `تایی` → ref: `تا یه`
+  - `replace` | base: `ترح` → ref: `تره`
+  - `replace` | base: `درانها اقتصاص` → ref: `در آنها اختصاص`
+  - `replace` | base: `نوزده` → ref: `19`
+  - `replace` | base: `بیست` → ref: `20`
+  - `replace` | base: `مواحث` → ref: `مباحث`
+  - `replace` | base: `مصرف،` → ref: `مسرف،`
+  - `replace` | base: `شد` → ref: `شده`
+  - `replace` | base: `نمونه` → ref: `نمونه،`
+  - `replace` | base: `آدتها` → ref: `آدت ها`
+  - `replace` | base: `رفتارها` → ref: `رفتار ها`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `انجمن` → ref: `انجومن`
+  - `replace` | base: `عوض` → ref: `اوزو`
+  - `replace` | base: `کرد` → ref: `کرده`
+  - `replace` | base: `دهی` → ref: `دههی`
+  - `replace` | base: `عوض` → ref: `اوزو`
+  - `replace` | base: `خود` → ref: `خورده`
+  - `replace` | base: `واژه` → ref: `واجهگ`
+  - `replace` | base: `سرمایه داری` → ref: `سرماگداری`
+  - `replace` | base: `تجاری` → ref: `تجاری،`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `بودجه` → ref: `بوجه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `مطبعاتی` → ref: `مطبوعاتی`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `یک میلیون` → ref: `1 ملیون`
+  - `replace` | base: `پانست` → ref: `500`
+  - `replace` | base: `پنجاه میلیون` → ref: `50 ملیون`
+  - `replace` | base: `صد میلیون` → ref: `100 ملیون`
+  - `replace` | base: `نه میلیون` → ref: `9 ملیون`
+  - `replace` | base: `سه` → ref: `3`
+  - `replace` | base: `سیزده میلیون` → ref: `13 ملیون`
+  - `replace` | base: `محل های` → ref: `محلهای`
+  - `replace` | base: `واژه` → ref: `واجه`
+  - `replace` | base: `هوشی` → ref: `حوشی`
+  - `replace` | base: `سؤال` → ref: `سآل`
+  - `replace` | base: `هسته؟` → ref: `است؟`
+  - `replace` | base: `توانستند` → ref: `توانستن`
+  - `replace` | base: `بیازماید؟ توضیح` → ref: `بیازماید حوضیه`
+  - `replace` | base: `میلیون` → ref: `ملیون`
+  - `replace` | base: `هزینه` → ref: `حزینه`
+  - `replace` | base: `8` → ref: `هشت`
+  - `replace` | base: `در آن` → ref: `دران`
+  - `replace` | base: `ایمانند` → ref: `ای مانند`
+  - `replace` | base: `می پرداختند` → ref: `میپرداختند`
+  - `replace` | base: `همه هنگ` → ref: `هماهنگ`
+  - `replace` | base: `گرهد` → ref: `گرفته`
+  - `replace` | base: `اطلافه` → ref: `اعتلاف`
+  - `replace` | base: `شهست` → ref: `60`
+  - `replace` | base: `مأموریت` → ref: `معمولیت`
+  - `replace` | base: `استاندارد` → ref: `استاندارت`
+  - `replace` | base: `آمریکا` → ref: `امریکا`
+  - `replace` | base: `سطوخ` → ref: `سطوح`
+  - `replace` | base: `پیشرفتهای` → ref: `پیشرفت های`
+  - `replace` | base: `آمریکا` → ref: `امریکا`
+  - `replace` | base: `آمریکایی` → ref: `امریکایی`
+  - `replace` | base: `میتوان` → ref: `می توان`
+  - `replace` | base: `سواد` → ref: `فواد`
+  - `replace` | base: `هست` → ref: `است`
+  - `replace` | base: `استراتژی` → ref: `استراتیجی`
+  - `replace` | base: `استاندارد` → ref: `استاندارت`
+  - `replace` | base: `توسعه` → ref: `توصیه`
+  - `replace` | base: `محفقیت` → ref: `موفقیت`
+  - `replace` | base: `باست` → ref: `باز`
+  - `replace` | base: `افزایشه` → ref: `افضایشه`
+  - `replace` | base: `غیر قابل کنترل می ره ثوم` → ref: `غیرقابل کنترول میره سوون`
+  - `replace` | base: `بیدن` → ref: `دیدم`
+  - `replace` | base: `هی درون` → ref: `در اون`
+  - `replace` | base: `توصیه می دن` → ref: `توصیح میدن`
+  - `replace` | base: `نمی کنن` → ref: `نمیکنن`
+  - `replace` | base: `نمی رن` → ref: `نمیرن`
+  - `replace` | base: `اتحادی` → ref: `تادی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `پشتیوانی` → ref: `پشتیبانی`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `ها رو` → ref: `هارم`
+  - `replace` | base: `اطلاعات` → ref: `اطلاع`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `صندوق` → ref: `سندوق`
+  - `replace` | base: `می کنه باید` → ref: `میکنه و`
+  - `replace` | base: `می تونه` → ref: `میتونه`
+  - `replace` | base: `بخشهای` → ref: `بخشای`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `دستبسی` → ref: `دسترسی`
+  - `replace` | base: `توامن ساز` → ref: `توامنساز`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنیم` → ref: `میکنیم`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `توسعه` → ref: `توصیح`
+  - `replace` | base: `می گن` → ref: `میگن`
+  - `replace` | base: `تصویب` → ref: `تحصیل`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حکمرانیش` → ref: `حکمرانش`
+  - `replace` | base: `می شن` → ref: `میشن`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گیره` → ref: `میگیره`
+  - `replace` | base: `رهبری می کنه` → ref: `رحبری میکنه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `توی سراتیجی` → ref: `تو استراتیجی`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `حوزهی` → ref: `حوضهی`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می رن` → ref: `میرن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `خط می شه` → ref: `ختم میشه`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می کنن` → ref: `میکنن`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `می کنه می گه خالا` → ref: `میکنه میگه خلا`
+  - `replace` | base: `پاسخگویی` → ref: `پاسخگوی`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `دیگهش` → ref: `دیگش`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `replace` | base: `بالاخره` → ref: `بلاخره`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `عاطفی` → ref: `آتفی`
+  - `insert` | base: `` → ref: `این`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `جامپسارد` → ref: `جامپسارت`
+  - `replace` | base: `عوضبن` → ref: `عوضبند`
+  - `replace` | base: `آکادمی هوش` → ref: `اکادمی حوش`
+  - `replace` | base: `می گیم` → ref: `میگیم`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `پس انداز،` → ref: `پسنداز،`
+  - `replace` | base: `درآمد،` → ref: `درامت،`
+  - `replace` | base: `باشه` → ref: `باشه،`
+  - `replace` | base: `برش` → ref: `براش`
+  - `replace` | base: `می شه` → ref: `میشه`
+
+## 30.md
+- similarity: `0.8853`
+- tokens: base `852` / ref `813`
+- large diff spans: `0`
+- small candidates:
+  - `replace` | base: `رو` → ref: `نوع`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `می گیرن` → ref: `میگیرن`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می دن` → ref: `میدن`
+  - `replace` | base: `های` → ref: `ها یه`
+  - `replace` | base: `نگرش` → ref: `نیگرش`
+  - `insert` | base: `` → ref: `های`
+  - `replace` | base: `بیانید` → ref: `دونید`
+  - `replace` | base: `پس اندازی` → ref: `پسندازی`
+  - `replace` | base: `این ها` → ref: `اینها`
+  - `replace` | base: `لزوماً` → ref: `لزومن`
+  - `replace` | base: `عمدتا` → ref: `عمودتا`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می تونیم` → ref: `میتونیم`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `می گه` → ref: `میگه`
+  - `replace` | base: `موافقیم` → ref: `معافقیم`
+  - `replace` | base: `موافقم` → ref: `معافقم`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پولامو` → ref: `پولام رو`
+  - `replace` | base: `می کنم` → ref: `میکنم`
+  - `replace` | base: `می شه پس انداز` → ref: `میشه پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `درآمد` → ref: `درامت`
+  - `replace` | base: `پس انداز` → ref: `پسنداز`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `عمدتاً` → ref: `امدتا`
+  - `replace` | base: `می خواد` → ref: `میخواد`
+  - `replace` | base: `می کنه` → ref: `میکنه`
+  - `replace` | base: `توسع` → ref: `توسعه`
+  - `replace` | base: `مهارت` → ref: `محارت`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `نمی ده` → ref: `نمیده`
+  - `replace` | base: `طراحی` → ref: `تراحیه`
+  - `replace` | base: `جامبستارد` → ref: `جامبستارت`
+  - `replace` | base: `طراحی` → ref: `تراحی`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `عاملی` → ref: `آملی`
+  - `replace` | base: `مرتبط` → ref: `مرتبت`
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `حوزه` → ref: `و حوضه`
+  - `replace` | base: `کار با بانک` → ref: `کاربابانک`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `replace` | base: `حوزه` → ref: `حوضه`
+  - `delete` | base: `به` → ref: ``
+  - `replace` | base: `می ده` → ref: `میده`
+  - `replace` | base: `فرستون` → ref: `فرضتون`
+  - `replace` | base: `می گذرونید` → ref: `میگذارونید`
+  - `replace` | base: `افزایش` → ref: `افضایش`
+  - `replace` | base: `می کنه محکم تر` → ref: `میکنه محکمتر`
+  - `replace` | base: `می گیرید` → ref: `میگیرید`
+  - `replace` | base: `ضعف` → ref: `زعف`
+  - `replace` | base: `حوزه های` → ref: `حوضای`
+  - `replace` | base: `می شه` → ref: `میشه`
+  - `replace` | base: `حوزه های` → ref: `حوضای`
+  - `replace` | base: `می شه` → ref: `میشه`
+
