@@ -1,0 +1,77 @@
+name: Retry shared ASR cleanup Dar Jostojo Final C
+
+on:
+  push:
+    paths:
+      - '.github/workflows/retry-dar-jostojo-shared-asr-cleanup.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  retry:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reuse reviewed correction map and cover derived forms
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import textwrap
+
+          wf=Path('.github/workflows/apply-dar-jostojo-shared-asr-cleanup.yml').read_text(encoding='utf-8')
+          marker="          python - <<'PY'\n"
+          start=wf.index(marker)+len(marker)
+          end=wf.index("\n          PY\n      - name: Validate",start)
+          code=textwrap.dedent(wf[start:end])
+          exec(compile(code,'shared_asr_map.py','exec'),{})
+
+          # A few inflected/attached forms are not caught by whole-token matching.
+          derived={
+            'پجوهشها':'پژوهش‌ها','پجوهش ها':'پژوهش‌ها','پجوهش‌های':'پژوهش‌های','پجوهشی':'پژوهشی',
+            'پجوشها':'پژوهش‌ها','پجوش ها':'پژوهش‌ها','پجوش‌های':'پژوهش‌های',
+            'معلفهای':'مؤلفه‌های','معلف ها':'مؤلفه‌ها','معلف‌های':'مؤلفه‌های',
+            'سحامی':'سهامی','سحامه':'سهامه','صحامی':'سهامی','سهانی':'سهامی',
+            'جامبستارد':'جامپ‌استارت'
+          }
+          root=Path('final/dar-jostojo-final-C')
+          for p in root.glob('*.md'):
+              t=p.read_text(encoding='utf-8')
+              for a,b in derived.items():
+                  t=t.replace(a,b)
+              p.write_text(t,encoding='utf-8')
+          PY
+      - name: Validate final shape and source isolation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root=Path('final/dar-jostojo-final-C')
+          expected=set(range(1,21))|set(range(22,31))
+          found={int(p.stem) for p in root.glob('*.md') if p.stem.isdigit()}
+          assert found==expected
+          assert not (root/'21.md').exists()
+          alltext='\n'.join((root/f'{n}.md').read_text(encoding='utf-8') for n in sorted(expected))
+          forbidden=['نوستانگیری','رمزرز','رمزرس','خانابدگی','دوچار','انترنت','تشقیص','حدررفت','ثبتگردان','سحام','صحام','سهان','ترراحی','پجوهش','پجوش','معلف های','معلفها','جامبستارد']
+          for x in forbidden:
+              assert x not in alltext, x
+          assert 'نقدشوندگی' in alltext
+          print('PASS: 29 Final C files; 21 intentionally absent; known shared errors cleared')
+          PY
+          if git status --porcelain | grep -E '^(.. )?(outputs/|متن ها/)'; then
+            echo 'ERROR: source references modified'; git status --porcelain; exit 1
+          fi
+      - name: Commit cleanup and remove temporary workflows
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add final/dar-jostojo-final-C reports/dar_jostojo_final_c/shared_asr_applied.md
+          git rm .github/workflows/apply-dar-jostojo-shared-asr-cleanup.yml
+          git rm .github/workflows/retry-dar-jostojo-shared-asr-cleanup.yml
+          git commit -m "clean shared ASR errors in Dar Jostojo final C"
+          git push
