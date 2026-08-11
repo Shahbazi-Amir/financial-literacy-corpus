@@ -1,0 +1,36 @@
+name: Split Dar Jostojo ASR audit
+on:
+  push:
+    paths:
+      - '.github/workflows/split-dar-jostojo-asr-audit.yml'
+permissions:
+  contents: write
+jobs:
+  split:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Split report
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, shutil
+          src=Path('reports/dar_jostojo_final_c/shared_asr_suspicions.md').read_text(encoding='utf-8')
+          dst=Path('reports/dar_jostojo_final_c/shared_asr_by_episode')
+          if dst.exists(): shutil.rmtree(dst)
+          dst.mkdir(parents=True)
+          parts=re.split(r'(?m)^## (\d+)\.md\n',src)
+          for i in range(1,len(parts),2):
+              n=int(parts[i]); body=parts[i+1]
+              body=body.split('\n## ',1)[0].strip()
+              (dst/f'{n:02d}.md').write_text(f'# Shared ASR candidates — {n}\n\n{body}\n',encoding='utf-8')
+          PY
+      - name: Commit and self-delete
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/dar_jostojo_final_c/shared_asr_by_episode
+          git rm .github/workflows/split-dar-jostojo-asr-audit.yml
+          git commit -m "split Dar Jostojo shared ASR audit by episode"
+          git push
