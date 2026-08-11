@@ -1,0 +1,25 @@
+name: Khane To suspicious lines
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/khane-to-suspicious-lines.yml
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: pip install wordfreq
+      - run: python .github/khane_to_suspicious_lines.py
+      - name: Commit reports
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/khane_to_asr_lines
+          git commit -m "list khane-to suspicious ASR lines"
+          git push origin HEAD:agent/khane-to-asr-cleanup
