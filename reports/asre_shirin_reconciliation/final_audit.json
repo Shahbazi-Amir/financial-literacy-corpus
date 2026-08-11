@@ -1,0 +1,295 @@
+{
+  "output_count": 26,
+  "expected_episode_count": 26,
+  "missing_episode_ids": [],
+  "media_heading_episode_ids": [],
+  "total_unclear_markers": 0,
+  "total_unknown_speaker_markers": 0,
+  "retention_warning_episode_ids": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "archive_unchanged_from_merge_base": true,
+  "merge_base": "c4e3be61c1ad2d3b13869d67546595630c3e10e9",
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "سواد مالی برای خانم‌ها؛ واقعاً ضروری است؟",
+      "words": 3869,
+      "original_output_words": 3745,
+      "retention_ratio": 1.033,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "20cf712339d1abceb646f2f50b43ff7826ebd046871a3124e1129ba0f8ed1013"
+    },
+    {
+      "episode": 2,
+      "title": "سواد مالی خانم‌ها؛ وضعیت چقدر بحرانی است؟",
+      "words": 3027,
+      "original_output_words": 3329,
+      "retention_ratio": 0.909,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "2237c8e374b319221fde7d8a8aed32f0506103398d6e4c46f86925328273b5c5"
+    },
+    {
+      "episode": 3,
+      "title": "سواد مالی خانم‌ها؛ روی کدام پلکان؟",
+      "words": 3616,
+      "original_output_words": 3485,
+      "retention_ratio": 1.038,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "732bf5f39d1f8c74d4bb3b435fefb2aca2ac55a3cd7b82fd89135c021b655b29"
+    },
+    {
+      "episode": 4,
+      "title": "سواد مالی خانم‌ها؛ افزایش درآمد یا کاهش هزینه؟",
+      "words": 3382,
+      "original_output_words": 3229,
+      "retention_ratio": 1.047,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "b4541605f8b3930c820cafe70b8dd68765ce630549cc0c59b8b1273da5fa2066"
+    },
+    {
+      "episode": 5,
+      "title": "سواد مالی خانم‌ها؛ پول‌ها کجا می‌روند؟",
+      "words": 2715,
+      "original_output_words": 3793,
+      "retention_ratio": 0.716,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "8b0403e0285f4d25d7dd2a4d1e0ef9364562b0e628b13f0294422e0d04544bb4"
+    },
+    {
+      "episode": 6,
+      "title": "سواد مالی خانم‌ها؛ تصمیم‌های خرید را خودمان می‌گیریم یا عادت‌هایمان؟",
+      "words": 2224,
+      "original_output_words": 3928,
+      "retention_ratio": 0.566,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "b4eca588893f9f2590495ee29a12347f5db23d909339eb678095dd20082b8c7b"
+    },
+    {
+      "episode": 7,
+      "title": "سواد مالی خانم‌ها؛ فکری برای بحران‌ها و آینده‌مان کرده‌ایم؟",
+      "words": 2308,
+      "original_output_words": 3924,
+      "retention_ratio": 0.588,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "366eb7c834aa5a29109fc9b2cfecb2633fa5ad0e25c6eabbd383ce0d478a63e8"
+    },
+    {
+      "episode": 8,
+      "title": "سواد مالی خانم‌ها؛ بودجه‌بندی شخصی محدودیت است یا آزادی؟",
+      "words": 1942,
+      "original_output_words": 3639,
+      "retention_ratio": 0.534,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "7c8f340ff0db4ec12cbde6581e6cdf953609b12922ac189ef30f8c77bc1d3156"
+    },
+    {
+      "episode": 9,
+      "title": "سواد مالی خانم‌ها؛ هر دارایی ثروتمندترمان می‌کند؟",
+      "words": 1855,
+      "original_output_words": 3690,
+      "retention_ratio": 0.503,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "1a454d4966746ecb986119bb984846302528033230ce2533ae8f08b511ed3e3c"
+    },
+    {
+      "episode": 10,
+      "title": "سواد مالی برای خانم‌ها؛ ذوب یخ‌ها",
+      "words": 1844,
+      "original_output_words": 3910,
+      "retention_ratio": 0.472,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "450aaab52ce5d2b2c4dd675a3eaaf0dead8cbf1c9149b5fad5d024aa6aef33d1"
+    },
+    {
+      "episode": 11,
+      "title": "سواد مالی برای خانم‌ها؛ اول ایمنی، بعد کار",
+      "words": 1862,
+      "original_output_words": 4239,
+      "retention_ratio": 0.439,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "a0987fc7aa92cbe98e1900bf6633b2354d260462929a3f750fa111dbb010180a"
+    },
+    {
+      "episode": 12,
+      "title": "سواد مالی برای خانم‌ها؛ ساده اما بد",
+      "words": 1599,
+      "original_output_words": 4262,
+      "retention_ratio": 0.375,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "22adff37413d7b4535683b48d76f9782d8d2927cb0b1ae3899ccc796e7894ec1"
+    },
+    {
+      "episode": 13,
+      "title": "سواد مالی برای خانم‌ها؛ میدان عمل",
+      "words": 2022,
+      "original_output_words": 4246,
+      "retention_ratio": 0.476,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "65f1dfed2f7c419a786c43bb4f45a7adb32412daa112e15a59bb77e83830ab25"
+    },
+    {
+      "episode": 14,
+      "title": "سواد مالی برای خانم‌ها؛ کار رضایت‌بخش",
+      "words": 1959,
+      "original_output_words": 4294,
+      "retention_ratio": 0.456,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "a55945d2d2df05322e772a091721bf574c3bca049bead07a4fc9a6696645bd6e"
+    },
+    {
+      "episode": 15,
+      "title": "سواد مالی برای خانم‌ها؛ شناخت خود با کار داوطلبانه",
+      "words": 2014,
+      "original_output_words": null,
+      "retention_ratio": null,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "6fb2b9196a5a098d566c8ee4b68100d913409dc2057d68cf5287ac19a2bdbc70"
+    },
+    {
+      "episode": 16,
+      "title": "سواد مالی برای خانم‌ها؛ سبک شغلی مناسب",
+      "words": 1807,
+      "original_output_words": 4481,
+      "retention_ratio": 0.403,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "3c61975cacd1096abc22fb3e31b558196afab7f1bee7f56484676be37a4c84cb"
+    },
+    {
+      "episode": 17,
+      "title": "سواد مالی برای خانم‌ها؛ ارزش‌آفرینی",
+      "words": 2054,
+      "original_output_words": 4837,
+      "retention_ratio": 0.425,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "35b4d3ecc66b5cc3bfc9f4709fd1cab2cbe1e36f5e6cb26bfe485fd4f83c6b65"
+    },
+    {
+      "episode": 18,
+      "title": "سواد مالی برای خانم‌ها؛ صدای مشتری",
+      "words": 1762,
+      "original_output_words": 4390,
+      "retention_ratio": 0.401,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "384c016e3b383c244a4bba2e2a15d96d9e8f46ab14a5991df8112ad988ec9423"
+    },
+    {
+      "episode": 19,
+      "title": "سواد مالی برای خانم‌ها؛ هویت کسب‌وکار",
+      "words": 1716,
+      "original_output_words": 4452,
+      "retention_ratio": 0.385,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "4b7ad4c80e966fcb031f0dfbc52d60621014e432ae5caebfef1e221052615ec5"
+    },
+    {
+      "episode": 20,
+      "title": "سواد مالی برای خانم‌ها؛ نحوه دسترسی مشتری به محصول ما",
+      "words": 1432,
+      "original_output_words": 4392,
+      "retention_ratio": 0.326,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "1d7dfdd632a5cda2e0cd267deba61e91869e5e8b137deb52eb451ceed4a542ae"
+    },
+    {
+      "episode": 21,
+      "title": "سواد مالی برای خانم‌ها؛ شرکای کسب‌وکار",
+      "words": 1649,
+      "original_output_words": 4579,
+      "retention_ratio": 0.36,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "bd51d6f80728258261a82c2d4090e754dbcfa4b0bcacc621e0b366be600d92b6"
+    },
+    {
+      "episode": 22,
+      "title": "سواد مالی برای خانم‌ها؛ سرمایه انسانی",
+      "words": 1630,
+      "original_output_words": 4828,
+      "retention_ratio": 0.338,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "dcb0db784a31722998422d3b8b688df7196d94d87899503dc8252f1bc608da1c"
+    },
+    {
+      "episode": 23,
+      "title": "سواد مالی برای خانم‌ها؛ درآمد و قیمت‌گذاری",
+      "words": 1532,
+      "original_output_words": 4748,
+      "retention_ratio": 0.323,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "7adec38ac8115003af4e456eed9f3ce97bdd51c5a7580a8d71e1c178a09092ab"
+    },
+    {
+      "episode": 24,
+      "title": "سواد مالی برای خانم‌ها؛ سود، نقطهٔ سربه‌سر و ترازنامه",
+      "words": 1759,
+      "original_output_words": 4387,
+      "retention_ratio": 0.401,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "0c3b13d23fa90783aa1ca1a1654c36ae102bcb0ce570c2dca5401d383def07f8"
+    },
+    {
+      "episode": 25,
+      "title": "سواد مالی برای خانم‌ها؛ روش‌های تأمین مالی کسب‌وکار",
+      "words": 1685,
+      "original_output_words": 4327,
+      "retention_ratio": 0.389,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "d94c4310c43e01caf8e52868bc5acc654ae87d25df1d2b202a1ba181fac5e23b"
+    },
+    {
+      "episode": 26,
+      "title": "سواد مالی برای خانم‌ها؛ آمادگی برای کارآفرینی",
+      "words": 1733,
+      "original_output_words": 3571,
+      "retention_ratio": 0.485,
+      "unclear_markers": 0,
+      "unknown_speaker_markers": 0,
+      "sha256": "a2186eee9123a572352c1de5d2f56c7ecd1196c6c17b23e2b41ff5c95db7c431"
+    }
+  ]
+}
