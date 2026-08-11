@@ -1,0 +1,246 @@
+name: Finalize remaining transcript collections v2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-remaining-collections-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconcile collections conservatively
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from collections import Counter
+          import re, shutil, difflib, json
+
+          # ---------- helpers ----------
+          PERSIAN_RE = re.compile(r'[\u0600-\u06FF\u200c]+')
+          NUM_RE = re.compile(r'(\d+)')
+
+          def norm(s):
+              return (s.replace('ي','ی').replace('ك','ک').replace('ۀ','ه')
+                       .replace('\u200c','').replace('آ','ا'))
+
+          def words(s):
+              return [norm(x) for x in PERSIAN_RE.findall(s) if len(norm(x)) >= 2]
+
+          def num_from_name(p):
+              nums = NUM_RE.findall(p.stem)
+              return int(nums[-1]) if nums else None
+
+          def indexed_files(root, prefer_review=False):
+              root = Path(root)
+              if not root.exists(): return {}
+              files = list(root.rglob('*.md'))
+              if prefer_review:
+                  preferred = [p for p in files if '/review/md/' in ('/'+str(p).replace('\\','/'))]
+                  if preferred: files = preferred
+              out = {}
+              for p in files:
+                  n = num_from_name(p)
+                  if n is None: continue
+                  # prefer shortest path / exact numeric stem for duplicates
+                  if n not in out or (p.stem.isdigit() and not out[n].stem.isdigit()):
+                      out[n] = p
+              return dict(sorted(out.items()))
+
+          def token_overlap(a,b):
+              A=set(words(a)); B=set(words(b))
+              if not A or not B: return 0.0
+              return len(A&B)/max(1,min(len(A),len(B)))
+
+          def edit_dist(a,b):
+              # tiny strings only; standard DP
+              prev=list(range(len(b)+1))
+              for i,ca in enumerate(a,1):
+                  cur=[i]
+                  for j,cb in enumerate(b,1):
+                      cur.append(min(cur[-1]+1, prev[j]+1, prev[j-1]+(ca!=cb)))
+                  prev=cur
+              return prev[-1]
+
+          def conservative_repairs(text, ref_text, global_out_freq, global_ref_freq):
+              # Only single-token, morphology-preserving repairs. Never formalize colloquial ZWNJ tokens.
+              ref_tokens = words(ref_text)
+              local_ref = Counter(ref_tokens)
+              vocab = set(local_ref)
+              repairs=[]
+              # raw Persian token spans, preserve original punctuation
+              spans=list(PERSIAN_RE.finditer(text))
+              replacements=[]
+              for m in spans:
+                  raw=m.group(0)
+                  if '\u200c' in raw: continue
+                  t=norm(raw)
+                  if len(t)<5 or t in vocab: continue
+                  if global_out_freq[t] > 2: continue
+                  maxd=1 if len(t)<8 else 2
+                  cands=[]
+                  for c in vocab:
+                      if abs(len(c)-len(t))>maxd: continue
+                      if not c or c[0]!=t[0] or c[-1]!=t[-1]: continue
+                      d=edit_dist(t,c)
+                      if d<=maxd and global_ref_freq[c]>=2:
+                          cands.append((d,-local_ref[c],c))
+                  if not cands: continue
+                  cands.sort()
+                  best=cands[0]
+                  if len(cands)>1 and cands[1][:2]==best[:2]: continue
+                  c=best[2]
+                  # Avoid replacing valid common conversational suffix patterns.
+                  if t.endswith(('مون','تون','شون')) or c.endswith(('مان','تان','شان')): continue
+                  replacements.append((m.start(),m.end(),raw,c,best[0]))
+              # Apply back to front; limit to avoid pathological mass edits.
+              if len(replacements)>80:
+                  replacements=replacements[:80]
+              out=text
+              for s,e,raw,c,d in reversed(replacements):
+                  out=out[:s]+c+out[e:]
+                  repairs.append((raw,c,d))
+              repairs.reverse()
+              return out, repairs
+
+          # ---------- move Dar Jostojo extraction under its final ----------
+          old = Path('extracted/dar-jostojo-source3')
+          new = Path('final/dar-jostojo-final-C/extracted')
+          if old.exists():
+              if new.exists(): shutil.rmtree(new)
+              new.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copytree(old,new)
+              shutil.rmtree(old)
+
+          # ---------- config ----------
+          configs=[
+            dict(label='خانه تو', out='outputs/khane_to', ref='متن ها/khane-to', final='final/khane-to', report='reports/collections/khane_to.md', expected=13),
+            dict(label='MQ', out='outputs/mq', ref='متن ها/mq', final='final/mq', report='reports/collections/mq.md', expected=8),
+            dict(label='تربیت مربی', out='outputs/tarbiat_morabi', ref='متن ها/tarbiat_morabi', final='final/tarbiat-morabi', report='reports/collections/tarbiat_morabi.md', expected=14),
+            dict(label='دانشگاه تهران', out='outputs/uni_tehran', ref='متن ها/uni_tehran', final='final/uni-tehran', report='reports/collections/uni_tehran.md', expected=38),
+          ]
+          Path('reports/collections').mkdir(parents=True,exist_ok=True)
+
+          summary=[]
+          for cfg in configs:
+              outs=indexed_files(cfg['out'], prefer_review=True)
+              refs=indexed_files(cfg['ref'])
+              nums=sorted(set(outs)&set(refs))
+              out_only=sorted(set(outs)-set(refs)); ref_only=sorted(set(refs)-set(outs))
+
+              # global vocab counters for high-confidence typo repair
+              out_counter=Counter(); ref_counter=Counter()
+              texts={}; rtexts={}
+              for n,p in outs.items():
+                  t=p.read_text(encoding='utf-8'); texts[n]=t; out_counter.update(words(t))
+              for n,p in refs.items():
+                  t=p.read_text(encoding='utf-8'); rtexts[n]=t; ref_counter.update(words(t))
+
+              rows=[]
+              overlaps=[]
+              ratios=[]
+              for n in nums:
+                  ow=len(words(texts[n])); rw=len(words(rtexts[n])); ov=token_overlap(texts[n],rtexts[n])
+                  overlaps.append(ov); ratios.append(ow/max(1,rw))
+                  rows.append((n,ow,rw,ov))
+
+              # Alignment gate: numbered coverage must be nearly complete and semantic vocabulary overlap meaningful.
+              median_overlap=sorted(overlaps)[len(overlaps)//2] if overlaps else 0
+              coverage=len(nums)/max(1,max(len(outs),len(refs)))
+              eligible=(len(nums)>0 and coverage>=0.85 and median_overlap>=0.35)
+
+              repairs_total=[]
+              final_dir=Path(cfg['final'])
+              if eligible:
+                  if final_dir.exists(): shutil.rmtree(final_dir)
+                  final_dir.mkdir(parents=True,exist_ok=True)
+                  for n in sorted(outs):
+                      # If reference missing, preserve Output rather than omit it.
+                      base=texts[n]
+                      repaired=base; repairs=[]
+                      if n in rtexts:
+                          repaired, repairs=conservative_repairs(base,rtexts[n],out_counter,ref_counter)
+                      dst=final_dir/f'episode-{n:02d}.md'
+                      dst.write_text(repaired,encoding='utf-8')
+                      repairs_total.extend((n,a,b,d) for a,b,d in repairs)
+
+              # report
+              lines=[f"# گزارش نهایی‌سازی مجموعه «{cfg['label']}»",'',
+                     '## قاعده و منابع','',
+                     f"- متن مادر: `{cfg['out']}` (نسخه review/md در صورت وجود)",
+                     f"- مرجع اصلاحی: `{cfg['ref']}`",
+                     f"- خروجی: `{cfg['final']}`",
+                     '- اصل ویرایش: حفظ گفتار و جزئیات Output؛ مرجع دوم فقط برای repair قطعی. هیچ خلاصه‌سازی یا بازنویسی موضوعی اعمال نشده.',
+                     '', '## هم‌ترازی','',
+                     f"- فایل‌های مادر: {len(outs)}",
+                     f"- فایل‌های مرجع: {len(refs)}",
+                     f"- جفت‌های شماره‌ای: {len(nums)}",
+                     f"- فقط در Output: {out_only or 'ندارد'}",
+                     f"- فقط در مرجع: {ref_only or 'ندارد'}",
+                     f"- پوشش جفت‌شده: {coverage:.1%}",
+                     f"- میانه همپوشانی واژگانی: {median_overlap:.1%}",
+                     f"- وضعیت: {'FINALIZED' if eligible else 'SKIPPED — ساختار/هم‌ترازی نیازمند بررسی انسانی'}",'',
+                     '## مقایسه قسمت‌ها','',
+                     '| قسمت | کلمات مادر | کلمات مرجع | همپوشانی واژگانی |',
+                     '|---:|---:|---:|---:|']
+              for n,ow,rw,ov in rows:
+                  lines.append(f'| {n} | {ow} | {rw} | {ov:.1%} |')
+              lines += ['', '## اصلاحات قطعی خودکار','']
+              if eligible and repairs_total:
+                  lines.append('فقط اصلاحات تک‌واژه‌ای بسیار محافظه‌کارانه که شکل واژه در مرجع همان قسمت تأیید شده و از نظر فاصله نوشتاری نزدیک بوده‌اند اعمال شدند:')
+                  lines.append('')
+                  lines.append('| قسمت | قبل | بعد | فاصله |')
+                  lines.append('|---:|---|---|---:|')
+                  for n,a,b,d in repairs_total:
+                      lines.append(f'| {n} | `{a}` | `{b}` | {d} |')
+              else:
+                  lines.append('اصلاح خودکار قطعی ثبت نشد؛ متن مادر بدون حدس حفظ شد.' if eligible else 'به‌علت SKIP هیچ Final ساخته نشد.')
+              lines += ['', '## موارد حل‌نشده','',
+                        '- `[نامفهوم]` یا عبارت‌های مبهمی که مرجع دوم به‌طور قطعی حل نمی‌کند عمداً حدس زده نشدند.',
+                        '- این Final یک کاندید متن‌محور است و در تعارض مادی، صوت/ویدئوی اصلی مرجع نهایی است.',
+                        '- پوشه‌های `outputs/` و `متن ها/` در این فرایند read-only هستند.','']
+              Path(cfg['report']).write_text('\n'.join(lines),encoding='utf-8')
+              summary.append((cfg['label'],eligible,len(outs),len(refs),len(nums),median_overlap,len(repairs_total)))
+
+          # ---------- reports for completed collections ----------
+          asre = '''# گزارش مجموعه «عصر شیرین»\n\n- خروجی نهایی: `final/asre_shirin/season-1/episode-01..13.md` و `final/asre_shirin/season-2/episode-14..26.md`.\n- متن مادر: `outputs/asre_shirin/review/md/`.\n- مرجع اصلاحی: نسخه‌های Agent در `متن ها/۱/asre_shirin/`.\n- قاعده: Output پایه؛ Agent فقط برای ASR/متادیتا/عبارت قطعی؛ حفظ گفت‌وگو، مثال، ضرب‌المثل، عدد و امضای گفتاری دکتر.\n- میان‌برنامه‌های خارج از دانش اصلی حذف شدند.\n- قسمت ۱۵ پس از اضافه‌شدن Output تکمیل شد.\n- منابع اصلی در این فرایند دست‌نخورده باقی مانده‌اند.\n'''
+          Path('reports/collections/asre_shirin.md').write_text(asre,encoding='utf-8')
+
+          dar = '''# گزارش مجموعه «در جستجوی خوشبختی»\n\n- Final اصلی: `final/dar-jostojo-final-C/`.\n- متن مادر: `outputs/dar_jostojo_dar_again_raw_30/review/md/`.\n- مرجع اصلاحی: `متن ها/dar_jostojo_30/`.\n- منبع ۴۱تایی فقط برای Audit/بازیابی افزوده‌ها استفاده شد و در Final اصلی merge خودکار نشد.\n- استخراج‌های منبع ۴۱تایی اکنون داخل `final/dar-jostojo-final-C/extracted/` نگهداری می‌شوند.\n- `extracted/` شامل supplemental whole files، candidate differences و کاندید بازیابی درس ۲۱ است.\n- گزارش‌های جزئی‌تر قبلی در `reports/` حفظ شده‌اند.\n'''
+          Path('reports/collections/dar_jostojo.md').write_text(dar,encoding='utf-8')
+
+          # master index
+          idx=['# گزارش وضعیت مجموعه‌های ویدیویی','', '| مجموعه | وضعیت | مادر | مرجع | جفت | میانه همپوشانی | repair قطعی |','|---|---|---:|---:|---:|---:|---:|']
+          for label,eligible,no,nr,np,ov,rep in summary:
+              idx.append(f"| {label} | {'FINALIZED' if eligible else 'SKIPPED'} | {no} | {nr} | {np} | {ov:.1%} | {rep} |")
+          idx += ['', '- عصر شیرین: تکمیل ۲۶/۲۶.', '- در جستجوی خوشبختی: Final-C حفظ شده؛ extraction منبع سوم داخل همان پوشه منتقل شد.']
+          Path('reports/collections/README.md').write_text('\n'.join(idx)+'\n',encoding='utf-8')
+
+          # Ensure reference sources were not modified by this script.
+          PY
+
+      - name: Validate source isolation and commit
+        shell: bash
+        run: |
+          set -e
+          # Only final/, reports/, removal of old extracted path, and this workflow may change.
+          BAD=$(git status --porcelain | grep -E ' (outputs/|متن ها/)' || true)
+          if [ -n "$BAD" ]; then
+            echo "ERROR: source reference changed"
+            echo "$BAD"
+            exit 1
+          fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add final reports extracted .github/workflows/finalize-remaining-collections-v2.yml || true
+          git rm .github/workflows/finalize-remaining-collections-v2.yml
+          git commit -m "finalize remaining transcript collections conservatively"
+          git push
