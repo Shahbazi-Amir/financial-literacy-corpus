@@ -1,0 +1,119 @@
+name: Import reviewed transcript snapshot
+
+on:
+  push:
+    branches:
+      - agent/import-reviewed-transcripts
+    paths:
+      - .github/workflows/import-reviewed-snapshot.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import-reviewed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/import-reviewed-transcripts
+          fetch-depth: 0
+
+      - name: Clone source repository
+        run: git clone --depth 1 https://github.com/Shahbazi-Amir/vid_pipeline.git /tmp/vid_pipeline
+
+      - name: Import reviewed transcript sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import shutil
+          import subprocess
+
+          source_repo = Path('/tmp/vid_pipeline')
+          source_outputs = source_repo / 'outputs'
+          source_sha = subprocess.check_output(
+              ['git', '-C', str(source_repo), 'rev-parse', 'HEAD'],
+              text=True,
+          ).strip()
+
+          aliases = {
+              'dar_jostojo_dar_again_raw': 'dar_jostojoye_khoshbakhti',
+          }
+
+          imported = []
+          for review_dir in sorted(source_outputs.glob('*/review')):
+              md_dir = review_dir / 'md'
+              if not md_dir.is_dir():
+                  continue
+
+              source_collection = review_dir.parent.name
+              collection = aliases.get(source_collection, source_collection)
+              destination = Path('collections') / collection / 'sources' / 'pipeline_review'
+              destination.mkdir(parents=True, exist_ok=True)
+
+              formats = {}
+              for kind, ext in [('md', '.md'), ('timestamped', '.md')]:
+                  src = review_dir / kind
+                  if not src.is_dir():
+                      continue
+                  dst = destination / kind
+                  if dst.exists():
+                      shutil.rmtree(dst)
+                  shutil.copytree(src, dst)
+                  files = sorted(
+                      p.name for p in dst.iterdir()
+                      if p.is_file() and p.suffix == ext
+                  )
+                  formats[kind] = files
+
+              manifest = {
+                  'collection': collection,
+                  'source_collection': source_collection,
+                  'source_repository': 'Shahbazi-Amir/vid_pipeline',
+                  'source_commit': source_sha,
+                  'source_review_path': f'outputs/{source_collection}/review',
+                  'source_role': 'pipeline_review',
+                  'copied_formats': formats,
+                  'comparison_primary_format': 'md',
+                  'timestamp_sidecar_format': 'timestamped',
+              }
+              (destination / 'source_manifest.json').write_text(
+                  json.dumps(manifest, ensure_ascii=False, indent=2) + '\n',
+                  encoding='utf-8',
+              )
+              imported.append(manifest)
+
+          reports = Path('reports')
+          reports.mkdir(parents=True, exist_ok=True)
+          inventory = {
+              'source_repository': 'Shahbazi-Amir/vid_pipeline',
+              'source_commit': source_sha,
+              'collections': imported,
+          }
+          (reports / 'vid_pipeline_review_inventory.json').write_text(
+              json.dumps(inventory, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+
+          if not imported:
+              raise SystemExit('No reviewed transcript collections were found under outputs/*/review')
+
+          for item in imported:
+              count = len(item['copied_formats'].get('md', []))
+              print(f"{item['collection']}: {count} reviewed episodes")
+          print('source commit:', source_sha)
+          PY
+
+      - name: Commit imported snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/import-reviewed-snapshot.yml
+          git add -A
+          git commit -m 'data: import reviewed transcript sources'
+          git push origin HEAD:agent/import-reviewed-transcripts
