@@ -1,5 +1,5 @@
 from pathlib import Path
-import re, math, difflib
+import re, difflib
 
 OUT=Path('outputs/uni_tehran/review/md')
 REF=Path('متن ها/uni_tehran/md')
@@ -26,16 +26,25 @@ def norm(s):
 
 def words(s): return re.findall(r'[آ-یA-Za-z0-9_]+', norm(s))
 
-def headings(s):
-    return re.findall(r'^\*\*([^*\n]+)\*\*\s*$',s,flags=re.M)
+def headings(s): return re.findall(r'^\*\*([^*\n]+)\*\*\s*$',s,flags=re.M)
 
 def consecutive_dup_heads(s):
     hs=headings(s); return sum(a==b for a,b in zip(hs,hs[1:]))
 
-def similarity(a,b):
-    # compact token SequenceMatcher sample
-    aw=words(a); bw=words(b)
-    return difflib.SequenceMatcher(None,aw,bw,autojunk=True).ratio()
+def matcher(a,b): return difflib.SequenceMatcher(None,words(a),words(b),autojunk=True)
+
+def similarity(a,b): return matcher(a,b).ratio()
+
+def ref_heavy_spans(o,r):
+    ow,rw=words(o),words(r)
+    sm=difflib.SequenceMatcher(None,ow,rw,autojunk=True)
+    spans=[]
+    for tag,i1,i2,j1,j2 in sm.get_opcodes():
+        olen=i2-i1; rlen=j2-j1
+        if (tag=='insert' and rlen>=18) or (tag=='replace' and rlen-olen>=18):
+            spans.append((rlen-olen,tag,' '.join(ow[max(0,i1-18):min(len(ow),i2+18)]),' '.join(rw[max(0,j1-18):min(len(rw),j2+18)])))
+    spans.sort(reverse=True,key=lambda x:x[0])
+    return spans[:5]
 
 outs=numbered(OUT); refs=numbered(REF)
 allnums=sorted(set(outs)|set(refs))
@@ -49,7 +58,7 @@ f'- فقط در متن‌ها: `{sorted(set(refs)-set(outs))}`','',
 '## مقایسه قسمت‌به‌قسمت','',
 '| قسمت | کلمات Output | کلمات متن‌ها | نسبت O/R | شباهت توکنی | نامفهوم O/R | الگوی ASR بد O/R | تکرار پیاپی گوینده O/R |','|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
 
-susp=[]
+susp=[]; heavy={}
 for n in allnums:
     if n not in outs or n not in refs: continue
     o=outs[n].read_text(encoding='utf-8'); r=refs[n].read_text(encoding='utf-8')
@@ -57,6 +66,8 @@ for n in allnums:
     op=[p for p in BAD_PATTERNS if p in o]
     rp=[p for p in BAD_PATTERNS if p in r]
     lines.append(f'| {n} | {ow} | {rw} | {ow/rw:.2f} | {similarity(o,r):.3f} | {o.count("[نامفهوم]")}/{r.count("[نامفهوم]")} | {len(op)}/{len(rp)} | {consecutive_dup_heads(o)}/{consecutive_dup_heads(r)} |')
+    hs=ref_heavy_spans(o,r)
+    if hs: heavy[n]=hs
     if op:
         for p in op:
             for m in list(re.finditer(re.escape(p),o))[:3]:
@@ -66,16 +77,24 @@ for n in allnums:
 
 lines += ['', '## کاندیدهای ASR باقی‌مانده در Output','']
 if susp:
-    for n,p,ctx in susp:
-        lines += [f'- **قسمت {n} — `{p}`**: {ctx}']
+    for n,p,ctx in susp: lines += [f'- **قسمت {n} — `{p}`**: {ctx}']
 else:
     lines += ['- هیچ‌کدام از الگوهای شناخته‌شدهٔ ASR خام در Output پیدا نشد.']
 
-# crude exact n-gram containment: detects whether ref is mostly a noisier sibling vs separate content
+lines += ['', '## بازه‌های بزرگ‌تر در متن‌ها که ممکن است از Output افتاده باشند','',
+'این بخش فقط کاندید است؛ تفاوت شدید ASR یا تکرار متن هم می‌تواند چنین بازه‌ای بسازد.','']
+if not heavy:
+    lines.append('- کاندید بزرگ پیدا نشد.')
+else:
+    for n,spans in heavy.items():
+        lines += [f'### قسمت {n}','']
+        for delta,tag,oc,rc in spans:
+            lines += [f'- **{tag} / مازاد تقریبی متن‌ها: {delta} واژه**',f'  - Output context: `{oc[:650]}`',f'  - متن‌ها context: `{rc[:900]}`','']
+
 lines += ['', '## جمع‌بندی ماشینی','',
 '- نسبت حجم و شباهت فقط برای تشخیص ساختار استفاده می‌شود و مجوز جایگزینی خودکار متن نیست.',
 '- فهرست بالا باید پیش از هر اصلاح به‌صورت معنایی/دستی بررسی شود.',
 '- اگر Output در همه قسمت‌ها هم‌تراز و از نظر ASR پاک‌تر باشد، Output مادر و `متن ها` مرجع اصلاحی خواهد بود.','']
 REPORT.parent.mkdir(exist_ok=True)
 REPORT.write_text('\n'.join(lines),encoding='utf-8')
-print('audited',len(outs),len(refs),'suspicious output hits',len(susp))
+print('audited',len(outs),len(refs),'suspicious output hits',len(susp),'episodes with ref-heavy spans',len(heavy))
