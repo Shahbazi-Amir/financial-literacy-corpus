@@ -1,0 +1,132 @@
+name: Audit primary markdown source sets
+
+on:
+  push:
+    branches:
+      - agent/consolidate-transcript-sources
+    paths:
+      - .github/workflows/audit-primary-md-sources.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/consolidate-transcript-sources
+          fetch-depth: 0
+      - name: Audit primary MD source sets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, re
+          from collections import defaultdict, Counter
+
+          root=Path('.')
+
+          def collection_for(path):
+              s=str(path).lower()
+              if 'asre_shirin' in s or 'asre-shirin' in s:
+                  return 'asre_shirin'
+              if 'dar_jostojo' in s or 'dar-jostojo' in s or 'jostojoye' in s:
+                  return 'dar_jostojoye_khoshbakhti'
+              if 'khane_to' in s or 'khane-to' in s:
+                  return 'khane_to'
+              if re.search(r'(^|/)mq(/|$)', s):
+                  return 'mq'
+              if 'tarbiat_morabi' in s or 'tarbiat-morabi' in s or 'tarbiat morabi' in s or 'tarbiat' in s:
+                  return 'tarbiat_morabi'
+              if 'uni_tehran' in s or 'uni-tehran' in s or 'tehran' in s:
+                  return 'uni_tehran'
+              return None
+
+          def episode_for(path):
+              if path.stem.isdigit(): return int(path.stem)
+              s=str(path).lower()
+              for pat in [r'session[-_ ]?(\d+)',r'episode[-_ ]?(\d+)']:
+                  m=re.search(pat,s)
+                  if m: return int(m.group(1))
+              return None
+
+          def source_class(path):
+              s=str(path).lower()
+              if '/timestamped/' in s: return None
+              if '/raw/' in s: return None
+              if '/machine/' in s: return None
+              if 'pipeline_review' in s: return 'pipeline_review'
+              if '/review/md/' in s: return 'review_md'
+              if '/reviewed/' in s or 'transcript.reviewed' in s: return 'reviewed'
+              if '/final/' in s or '-final/' in s or '_final/' in s or 'transcript.final' in s: return 'final'
+              if 'asre-shirin-season-' in s: return 'agent_archive'
+              # Generic primary md directories (not timestamped/raw/machine)
+              if '/md/' in s or s.endswith('/md') or path.parent.name.lower()=='md': return 'plain_md'
+              return None
+
+          rows=[]
+          for p in root.rglob('*.md'):
+              if not p.is_file(): continue
+              col=collection_for(p)
+              if not col: continue
+              cls=source_class(p)
+              if not cls: continue
+              data=p.read_bytes()
+              rows.append({'collection':col,'episode':episode_for(p),'path':p.as_posix(),'source_class':cls,'sha256':hashlib.sha256(data).hexdigest(),'size':len(data)})
+
+          by_col=defaultdict(list)
+          for r in rows: by_col[r['collection']].append(r)
+          result={}
+          for col,items in sorted(by_col.items()):
+              by_cls=defaultdict(list)
+              for r in items: by_cls[r['source_class']].append(r)
+              classes={}
+              for cls,rs in sorted(by_cls.items()):
+                  eps=sorted({r['episode'] for r in rs if r['episode'] is not None})
+                  classes[cls]={
+                      'files':len(rs),
+                      'episodes':len(eps),
+                      'episode_list':eps,
+                      'exact_unique_contents':len({r['sha256'] for r in rs}),
+                      'paths':sorted({str(Path(r['path']).parent) for r in rs}),
+                  }
+              # per episode unique content across all primary MD sources
+              epmap=defaultdict(list)
+              for r in items:
+                  if r['episode'] is not None: epmap[r['episode']].append(r)
+              episodes={}
+              for ep,rs in sorted(epmap.items()):
+                  # group classes by exact unique hash
+                  h=defaultdict(list)
+                  for r in rs: h[r['sha256']].append(r)
+                  episodes[str(ep)]={
+                      'unique_primary_md_versions':len(h),
+                      'classes':sorted({r['source_class'] for r in rs}),
+                      'hash_groups':[{ 'classes':sorted({x['source_class'] for x in grp}), 'paths':[x['path'] for x in grp]} for grp in h.values()]
+                  }
+              result[col]={'classes':classes,'episodes':episodes,'version_distribution':dict(Counter(v['unique_primary_md_versions'] for v in episodes.values()))}
+
+          Path('reports/primary_md_source_sets.json').write_text(json.dumps({'collections':result,'files':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          lines=['# Primary MD source sets','', 'Only primary `.md` transcript files are counted. `timestamped`, `raw`, and `machine` are excluded. Exact-identical copies are shown but collapse when counting unique content versions.','']
+          for col,x in result.items():
+              lines += [f'## {col}']
+              for cls,d in x['classes'].items():
+                  lines.append(f"- {cls}: **{d['files']} files**, {d['episodes']} episodes, {d['exact_unique_contents']} exact-unique contents; paths={d['paths']}")
+              lines.append(f"- unique-primary-MD versions per episode distribution: `{x['version_distribution']}`")
+              lines.append('')
+          Path('reports/primary_md_source_sets.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          print('\n'.join(lines))
+          PY
+      - name: Commit report and remove workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/audit-primary-md-sources.yml
+          git add -A
+          git commit -m 'report: inventory primary markdown source sets'
+          git push origin HEAD:agent/consolidate-transcript-sources
