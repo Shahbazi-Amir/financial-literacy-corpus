@@ -1,0 +1,28 @@
+name: Apply Khane To ASR cleanup pass2
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/apply-khane-to-asr-pass2.yml
+permissions:
+  contents: write
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: python .github/apply_khane_to_asr_cleanup_pass2.py
+      - name: Verify scope
+        run: |
+          bad=$(git status --porcelain | grep -vE '^.. (outputs/khane_to/review/md/|reports/khane_to_asr_cleanup_applied.md)' || true)
+          if [ -n "$bad" ]; then echo "$bad"; exit 1; fi
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add outputs/khane_to/review/md reports/khane_to_asr_cleanup_applied.md
+          git commit -m "finish targeted khane-to ASR cleanup pass two"
+          git push origin HEAD:agent/khane-to-asr-cleanup
