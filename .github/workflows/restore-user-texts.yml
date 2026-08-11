@@ -1,0 +1,42 @@
+name: Restore user text archive
+
+on:
+  push:
+    branches:
+      - agent/consolidate-transcript-sources
+    paths:
+      - .github/workflows/restore-user-texts.yml
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/consolidate-transcript-sources
+          fetch-depth: 0
+      - name: Restore متن ها exactly from main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git rm -r --ignore-unmatch -- "متن ها" >/dev/null 2>&1 || true
+          git checkout origin/main -- "متن ها"
+          git diff --quiet origin/main -- "متن ها" || {
+            echo 'ERROR: متن ها does not match main after restore' >&2
+            git diff --stat origin/main -- "متن ها" >&2
+            exit 1
+          }
+      - name: Commit restoration and self-delete workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/restore-user-texts.yml
+          git add -A
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: restore complete user text archive from main'
+          git push origin HEAD:agent/consolidate-transcript-sources
