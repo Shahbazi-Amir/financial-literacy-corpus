@@ -1,0 +1,25 @@
+name: Khane To ASR strict filter
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/khane-to-asr-filter.yml
+permissions:
+  contents: write
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: pip install wordfreq
+      - run: python .github/khane_to_asr_filter.py
+      - name: Commit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/khane_to_asr_strict_candidates.md
+          git commit -m "filter khane-to ASR candidates"
+          git push origin HEAD:agent/khane-to-asr-cleanup
