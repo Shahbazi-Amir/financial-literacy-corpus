@@ -1,0 +1,151 @@
+name: Audit Asre two-version map
+
+on:
+  push:
+    branches:
+      - agent/asre-shirin-reconcile-final-md
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build mapping audit
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import math, re, json
+          from collections import Counter, defaultdict
+
+          root = Path('.')
+          old = []
+          for season in (1, 2):
+              for ep in range(1, 14):
+                  p = root / 'متن ها' / '۱' / 'asre_shirin' / f'asre-shirin-season-{season}' / f'episode-{ep:02d}.md'
+                  if p.exists():
+                      old.append((season, ep, p, p.read_text(encoding='utf-8')))
+
+          out_dir = root / 'outputs' / 'asre_shirin' / 'review' / 'md'
+          outputs = []
+          if out_dir.exists():
+              for p in sorted(out_dir.glob('*.md'), key=lambda x: int(x.stem) if x.stem.isdigit() else 9999):
+                  if p.stem.isdigit():
+                      outputs.append((int(p.stem), p, p.read_text(encoding='utf-8')))
+
+          trans = str.maketrans({'ي':'ی','ك':'ک','ۀ':'ه','ة':'ه','ؤ':'و','إ':'ا','أ':'ا'})
+          stop = set('و در به از که این آن را با برای یک می هم یا اما اگر تا بر روی ما من شما او آنها هست است بود شد شود کرده دارد دارم دارند چه چون خیلی خود فقط بعد قبل حالا خب یعنی مثلاً مثلا'.split())
+          def clean(s):
+              s = s.translate(trans)
+              s = re.sub(r'https?://\S+', ' ', s)
+              s = re.sub(r'[`#>*_\[\](){}|~]', ' ', s)
+              s = re.sub(r'[^\w\u0600-\u06ff]+', ' ', s)
+              toks = [t for t in s.split() if len(t) > 1 and t not in stop and not t.isdigit()]
+              return toks
+
+          docs = []
+          labels = []
+          for s,e,p,t in old:
+              docs.append(clean(t)); labels.append(f'S{s}E{e:02d}')
+          for n,p,t in outputs:
+              docs.append(clean(t)); labels.append(f'O{n:02d}')
+
+          N = len(docs)
+          df = Counter()
+          for toks in docs:
+              df.update(set(toks))
+          idf = {w: math.log((N+1)/(d+1))+1 for w,d in df.items()}
+
+          def vec(toks):
+              c = Counter(toks)
+              v = {w: (1+math.log(n))*idf[w] for w,n in c.items()}
+              norm = math.sqrt(sum(x*x for x in v.values())) or 1
+              return v, norm
+          vecs = [vec(x) for x in docs]
+
+          def cosine(i,j):
+              vi,ni = vecs[i]; vj,nj = vecs[j]
+              if len(vi)>len(vj): vi,vj = vj,vi
+              return sum(x*vj.get(w,0) for w,x in vi.items())/(ni*nj)
+
+          old_count=len(old)
+          scores={}
+          for i,(s,e,p,t) in enumerate(old):
+              vals=[]
+              for j,(n,op,ot) in enumerate(outputs):
+                  sc=cosine(i, old_count+j)
+                  vals.append((sc,n))
+                  scores[(s,e,n)] = sc
+              vals.sort(reverse=True)
+              scores[(s,e,'top')] = vals[:5]
+
+          # one-to-one greedy mapping by strongest similarity
+          pairs=[]
+          for i,(s,e,p,t) in enumerate(old):
+              for j,(n,op,ot) in enumerate(outputs):
+                  pairs.append((scores[(s,e,n)],s,e,n))
+          pairs.sort(reverse=True)
+          used_old=set(); used_out=set(); mapping={}
+          for sc,s,e,n in pairs:
+              if (s,e) not in used_old and n not in used_out:
+                  mapping[(s,e)] = (n,sc)
+                  used_old.add((s,e)); used_out.add(n)
+
+          report_dir = root / 'reports' / 'asre_shirin_reconciliation'
+          report_dir.mkdir(parents=True, exist_ok=True)
+          md=[]
+          md.append('# Asre Shirin two-version mapping audit')
+          md.append('')
+          md.append(f'- Two-season source files: **{len(old)}**')
+          md.append(f'- Output review MD files: **{len(outputs)}**')
+          md.append(f'- Missing numeric output IDs in 1..26: **{[n for n in range(1,27) if n not in {x[0] for x in outputs}]}**')
+          md.append('')
+          md.append('| Two-season | mapped output | cosine | top alternatives | source words | output words |')
+          md.append('|---|---:|---:|---|---:|---:|')
+          out_by_num={n:(p,t) for n,p,t in outputs}
+          for s,e,p,t in old:
+              n,sc=mapping.get((s,e),(None,0))
+              tops=scores[(s,e,'top')]
+              alt=', '.join(f'{nn}:{ss:.3f}' for ss,nn in tops[:3])
+              ow=len(clean(t))
+              nw=len(clean(out_by_num[n][1])) if n in out_by_num else 0
+              md.append(f'| S{s}E{e:02d} | {n if n is not None else "—"} | {sc:.3f} | {alt} | {ow} | {nw} |')
+          md.append('')
+          md.append('## Unmatched')
+          md.append('')
+          md.append(f'- Two-season unmatched: `{[f"S{s}E{e:02d}" for s,e,_,_ in old if (s,e) not in mapping]}`')
+          md.append(f'- Output unmatched: `{sorted({x[0] for x in outputs} - used_out)}`')
+          md.append('')
+          md.append('## Notes')
+          md.append('')
+          md.append('- Mapping is based on TF-IDF cosine similarity over normalized Persian word tokens, not filename assumptions.')
+          md.append('- This audit does not edit either source set.')
+          (report_dir/'mapping.md').write_text('\n'.join(md)+'\n', encoding='utf-8')
+
+          data={
+              'two_season_count':len(old), 'output_count':len(outputs),
+              'missing_output_ids':[n for n in range(1,27) if n not in {x[0] for x in outputs}],
+              'mapping':[{'season':s,'episode':e,'output':mapping.get((s,e),(None,None))[0],
+                          'score':mapping.get((s,e),(None,None))[1],
+                          'top':[{'output':n,'score':sc} for sc,n in scores[(s,e,'top')]]}
+                         for s,e,_,_ in old]
+          }
+          (report_dir/'mapping.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+
+      - name: Commit report and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/audit-asre-two-version-map.yml
+          git add reports/asre_shirin_reconciliation
+          git commit -m "audit: map Asre Shirin two-version episodes"
+          git push origin HEAD:agent/asre-shirin-reconcile-final-md
