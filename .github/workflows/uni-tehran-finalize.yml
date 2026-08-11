@@ -1,0 +1,29 @@
+name: Uni Tehran finalization
+on:
+  push:
+    branches: [agent/uni-tehran-audit-finalize]
+    paths:
+      - '.github/uni_tehran_finalize.py'
+      - '.github/workflows/uni-tehran-finalize.yml'
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/uni-tehran-audit-finalize
+      - name: Build finals
+        run: python .github/uni_tehran_finalize.py
+      - name: Validate scope and count
+        run: |
+          test "$(find final/uni-tehran -maxdepth 1 -name 'episode-*.md' | wc -l)" -eq 38
+          ! grep -R -n '\[نامفهوم\]' final/uni-tehran
+      - name: Commit finals
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add final/uni-tehran reports/uni_tehran_finalization.md
+          git commit -m 'finalize Uni Tehran corpus' || true
+          git push origin HEAD:agent/uni-tehran-audit-finalize
