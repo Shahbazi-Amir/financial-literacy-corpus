@@ -1,0 +1,156 @@
+name: Consolidate transcript sources
+
+on:
+  push:
+    branches:
+      - agent/consolidate-transcript-sources
+    paths:
+      - .github/workflows/consolidate-transcript-sources.yml
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/consolidate-transcript-sources
+          fetch-depth: 0
+
+      - name: Clone vid_pipeline read-only
+        run: git clone --depth 1 https://github.com/Shahbazi-Amir/vid_pipeline.git /tmp/vid_pipeline
+
+      - name: Import current reviewed sources and inventory all text sets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+          import shutil
+          import subprocess
+
+          repo = Path('.')
+          source_repo = Path('/tmp/vid_pipeline')
+          source_outputs = source_repo / 'outputs'
+          source_sha = subprocess.check_output(
+              ['git', '-C', str(source_repo), 'rev-parse', 'HEAD'], text=True
+          ).strip()
+
+          aliases = {
+              'dar_jostojo_dar_again_raw': 'dar_jostojoye_khoshbakhti',
+          }
+
+          imported = []
+          for review_dir in sorted(source_outputs.glob('*/review')):
+              md_dir = review_dir / 'md'
+              if not md_dir.is_dir():
+                  continue
+
+              source_collection = review_dir.parent.name
+              collection = aliases.get(source_collection, source_collection)
+              destination = repo / 'collections' / collection / 'sources' / 'pipeline_review'
+              destination.mkdir(parents=True, exist_ok=True)
+
+              formats = {}
+              for kind, ext in [('md', '.md'), ('timestamped', '.md')]:
+                  src = review_dir / kind
+                  if not src.is_dir():
+                      continue
+                  dst = destination / kind
+                  if dst.exists():
+                      shutil.rmtree(dst)
+                  shutil.copytree(src, dst)
+                  files = sorted(
+                      (p.name for p in dst.iterdir() if p.is_file() and p.suffix == ext),
+                      key=lambda x: (int(Path(x).stem) if Path(x).stem.isdigit() else 10**9, x),
+                  )
+                  formats[kind] = files
+
+              manifest = {
+                  'collection': collection,
+                  'source_collection': source_collection,
+                  'source_repository': 'Shahbazi-Amir/vid_pipeline',
+                  'source_commit': source_sha,
+                  'source_review_path': f'outputs/{source_collection}/review',
+                  'source_role': 'pipeline_review',
+                  'comparison_primary_format': 'md',
+                  'timestamp_sidecar_format': 'timestamped',
+                  'copied_formats': formats,
+              }
+              (destination / 'source_manifest.json').write_text(
+                  json.dumps(manifest, ensure_ascii=False, indent=2) + '\n',
+                  encoding='utf-8',
+              )
+              imported.append(manifest)
+
+          # Inventory directories that contain transcript-like files.
+          skip_parts = {'.git', '.github'}
+          groups = []
+          hash_to_files = {}
+          for directory in sorted(p for p in repo.rglob('*') if p.is_dir()):
+              rel_dir = directory.relative_to(repo)
+              if any(part in skip_parts for part in rel_dir.parts):
+                  continue
+              files = [
+                  p for p in directory.iterdir()
+                  if p.is_file() and p.suffix.lower() in {'.md', '.txt'} and p.name != 'README.md'
+              ]
+              if not files:
+                  continue
+              md_files = sorted([p.name for p in files if p.suffix.lower() == '.md'])
+              txt_files = sorted([p.name for p in files if p.suffix.lower() == '.txt'])
+              groups.append({
+                  'path': str(rel_dir),
+                  'md_count': len(md_files),
+                  'txt_count': len(txt_files),
+                  'md_files': md_files,
+                  'txt_files': txt_files,
+              })
+              for p in files:
+                  data = p.read_bytes()
+                  digest = hashlib.sha256(data).hexdigest()
+                  hash_to_files.setdefault(digest, []).append(str(p.relative_to(repo)))
+
+          exact_duplicates = [
+              {'sha256': digest, 'files': paths}
+              for digest, paths in sorted(hash_to_files.items())
+              if len(paths) > 1
+          ]
+
+          report_dir = repo / 'reports'
+          report_dir.mkdir(parents=True, exist_ok=True)
+          report = {
+              'financial_literacy_corpus_base_commit': subprocess.check_output(
+                  ['git', 'rev-parse', 'HEAD'], text=True
+              ).strip(),
+              'vid_pipeline_source_commit': source_sha,
+              'pipeline_review_collections': imported,
+              'transcript_file_groups': groups,
+              'exact_duplicate_groups': exact_duplicates,
+          }
+          (report_dir / 'transcript_source_inventory_pre_dedup.json').write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+
+          print('Imported pipeline review collections:')
+          for item in imported:
+              print(' -', item['collection'], len(item['copied_formats'].get('md', [])), 'md')
+          print('Transcript groups:', len(groups))
+          print('Exact duplicate groups:', len(exact_duplicates))
+          PY
+
+      - name: Commit consolidated sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/consolidate-transcript-sources.yml
+          git add -A
+          git commit -m 'data: consolidate transcript sources and inventory'
+          git push origin HEAD:agent/consolidate-transcript-sources
