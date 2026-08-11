@@ -1,0 +1,116 @@
+name: Final audit Asre reconciliation
+on:
+  push:
+    branches: [agent/asre-shirin-reconcile-final-md]
+permissions:
+  contents: write
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - shell: bash
+        run: |
+          git fetch origin main
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess,re,hashlib,json
+
+          outdir=Path('reports/asre_shirin_reconciliation')
+          outdir.mkdir(parents=True, exist_ok=True)
+          d=Path('outputs/asre_shirin/review/md')
+
+          def words(s):
+              return len(re.findall(r'[\w\u0600-\u06ff]+', s or ''))
+
+          def main_text(path):
+              r=subprocess.run(['git','show','origin/main:'+path],capture_output=True,text=True)
+              return r.stdout if r.returncode==0 else None
+
+          rows=[]
+          missing=[]
+          media=[]
+          total_unclear=0
+          total_unknown_speaker=0
+          low_ratio=[]
+
+          for n in range(1,27):
+              p=d/f'{n}.md'
+              if not p.exists():
+                  missing.append(n)
+                  continue
+              cur=p.read_text(encoding='utf-8')
+              prev=main_text(str(p))
+              title=next((ln[2:].strip() for ln in cur.splitlines() if ln.startswith('# ')), '')
+              wc=words(cur)
+              prev_wc=words(prev) if prev is not None else None
+              ratio=(wc/prev_wc) if prev_wc else None
+              unclear=cur.count('[نامفهوم]')
+              unknown=cur.count('گوینده نامشخص')
+              total_unclear += unclear
+              total_unknown_speaker += unknown
+              if cur.lstrip().startswith('# media'):
+                  media.append(n)
+              if ratio is not None and ratio < 0.75:
+                  low_ratio.append(n)
+              rows.append({
+                  'episode':n,
+                  'title':title,
+                  'words':wc,
+                  'original_output_words':prev_wc,
+                  'retention_ratio':round(ratio,3) if ratio is not None else None,
+                  'unclear_markers':unclear,
+                  'unknown_speaker_markers':unknown,
+                  'sha256':hashlib.sha256(cur.encode('utf-8')).hexdigest(),
+              })
+
+          base=subprocess.check_output(['git','merge-base','HEAD','origin/main'],text=True).strip()
+          archive_unchanged=(subprocess.run(['git','diff','--quiet',base,'HEAD','--','متن ها']).returncode==0)
+
+          payload={
+              'output_count':len(list(d.glob('*.md'))),
+              'expected_episode_count':26,
+              'missing_episode_ids':missing,
+              'media_heading_episode_ids':media,
+              'total_unclear_markers':total_unclear,
+              'total_unknown_speaker_markers':total_unknown_speaker,
+              'retention_warning_episode_ids':low_ratio,
+              'archive_unchanged_from_merge_base':archive_unchanged,
+              'merge_base':base,
+              'episodes':rows,
+          }
+          (outdir/'final_audit.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          lines=[
+              '# Asre Shirin final reconciliation audit','',
+              f'- Output MD count: **{payload["output_count"]}** / 26',
+              f'- Missing episode IDs: **{missing or "none"}**',
+              f'- Files still starting with `# media`: **{media or "none"}**',
+              f'- Total `[نامفهوم]`: **{total_unclear}**',
+              f'- Total `گوینده نامشخص`: **{total_unknown_speaker}**',
+              f'- Retention warnings (< 0.75 vs original Output): **{low_ratio or "none"}**',
+              f'- `متن ها/` unchanged by this branch from merge-base: **{archive_unchanged}**',
+              '',
+              '| Ep | Title | Words | Original Output | Ratio | `[نامفهوم]` | Unknown speaker | SHA-256 |',
+              '|---:|---|---:|---:|---:|---:|---:|---|',
+          ]
+          for r in rows:
+              original='—' if r['original_output_words'] is None else str(r['original_output_words'])
+              ratio='—' if r['retention_ratio'] is None else f"{r['retention_ratio']:.3f}"
+              lines.append(f"| {r['episode']} | {r['title'].replace('|','\\|')} | {r['words']} | {original} | {ratio} | {r['unclear_markers']} | {r['unknown_speaker_markers']} | `{r['sha256']}` |")
+          lines += [
+              '',
+              '> Retention ratio is only a warning signal, not a quality score. Episode 15 had no original Output MD and therefore has no ratio.',
+              '> Any residual uncertainty must be resolved from the original audio/video; neither text source should be guessed beyond its evidence.',
+          ]
+          (outdir/'final_audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/final-audit-asre-reconciliation.yml
+          git add reports/asre_shirin_reconciliation/final_audit.md reports/asre_shirin_reconciliation/final_audit.json
+          git commit -m "audit: finalize Asre reconciliation"
+          git push origin HEAD:agent/asre-shirin-reconcile-final-md
