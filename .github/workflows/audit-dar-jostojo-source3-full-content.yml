@@ -1,0 +1,197 @@
+name: Audit Dar Jostojo source3 full content
+
+on:
+  push:
+    branches:
+      - agent/dar-jostojo-source3-extraction-audit
+    paths:
+      - '.github/workflows/audit-dar-jostojo-source3-full-content.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/dar-jostojo-source3-extraction-audit
+          fetch-depth: 0
+
+      - name: Compare full contents and extract source3-only candidates
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, math, shutil
+
+          final_root=Path('final/dar-jostojo-final-C')
+          site_root=Path('متن ها/dar-jostojo-final')
+          out_root=Path('extracted/dar-jostojo-source3')
+          report_path=Path('reports/dar_jostojo_source3_full_content_audit.md')
+          if out_root.exists(): shutil.rmtree(out_root)
+          (out_root/'supplemental-whole-files').mkdir(parents=True,exist_ok=True)
+          (out_root/'missing-core').mkdir(parents=True,exist_ok=True)
+          (out_root/'candidate-differences').mkdir(parents=True,exist_ok=True)
+
+          # Explicit mapping inferred from course ordering; missing downloads are retained below.
+          map_site_final={
+            11:1,12:2,13:3,14:4,15:5,16:6,17:7,18:8,19:9,20:10,
+            21:11,22:12,23:13,24:14,25:15,
+            27:16,28:17,29:18,30:19,31:20,32:21,33:22,34:23,35:24,
+            36:25,37:26,38:27,39:28,40:29,41:30
+          }
+          supplemental={1,2,3,4,5,6,7,8,9,10,26}
+          missing_site={11,13,19,24,29,34,36,39}
+
+          def norm(s):
+            trans=str.maketrans({'ي':'ی','ك':'ک','ة':'ه','ۀ':'ه','ؤ':'و','إ':'ا','أ':'ا'})
+            s=s.translate(trans).lower()
+            s=re.sub(r'[#*_>`~\[\](){}|:،؛؟!?«»"“”\-–—/\\.,؛]', ' ', s)
+            s=re.sub(r'\s+',' ',s).strip()
+            return s
+
+          stop=set('و در به از که این را با برای یک یا ما شما من می هم اگر اما تا چون روی آن اون تو نه هست است بود شد شده های ها ی رو چه خیلی فقط بعد قبل باید یعنی مثل وقتی هر همون همین خود خودش خودشون خودمون خودش را'.split())
+          def toks(s):
+            return [x for x in norm(s).split() if len(x)>1 and x not in stop]
+
+          def paragraphs(text):
+            # Keep substantive blocks; headings and one-word speaker labels do not drive coverage.
+            blocks=[b.strip() for b in re.split(r'\n\s*\n+',text) if b.strip()]
+            out=[]
+            for b in blocks:
+              if b.startswith('#') or b.startswith('**') and len(toks(b))<4:
+                continue
+              if len(toks(b))>=6:
+                out.append(b)
+            return out
+
+          def ngrams(chars,n=4):
+            s=norm(chars).replace(' ','')
+            if len(s)<n:return {s} if s else set()
+            return {s[i:i+n] for i in range(len(s)-n+1)}
+
+          def sim(a,b):
+            A=set(toks(a)); B=set(toks(b))
+            tj=len(A&B)/max(1,len(A|B))
+            ca=ngrams(a); cb=ngrams(b)
+            cj=len(ca&cb)/max(1,len(ca|cb))
+            # sequence-like overlap: fraction of rare-ish content tokens from shorter paragraph in other
+            short=A if len(A)<=len(B) else B
+            contain=len(short & (B if short is A else A))/max(1,len(short))
+            return 0.45*tj+0.35*cj+0.20*contain
+
+          def best_scores(src_paras,dst_paras):
+            res=[]
+            for p in src_paras:
+              best=(-1,None)
+              for i,q in enumerate(dst_paras):
+                s=sim(p,q)
+                if s>best[0]: best=(s,i)
+              res.append((p,best[0],best[1]))
+            return res
+
+          def wc(s): return len(norm(s).split())
+          present_site={int(p.stem) for p in site_root.glob('*.md') if p.stem.isdigit()}
+          present_final={int(p.stem) for p in final_root.glob('*.md') if p.stem.isdigit()}
+
+          rows=['# Dar Jostojo — full-content audit: Final-C vs 41-part site source','',
+                '## Rules','',
+                '- Final-C is read-only in this audit.','- The 41-part source is read-only.','- Whole supplemental files are copied only into `extracted/`; they are NOT merged into Final-C.','- Paragraph differences in mapped lessons are candidates, not automatic truth: formalized site wording and conversational Final-C wording can paraphrase the same idea.','',
+                '## Inventory','',
+                f'- Final-C present: {sorted(present_final)}',
+                f'- Site source present: {sorted(present_site)}',
+                f'- Site downloads missing: {sorted(set(range(1,42))-present_site)}',
+                f'- Final-C lesson 21 present: {21 in present_final}', '',
+                '## Whole files outside the current Final-C lesson set','']
+
+          # Whole unmatched extras: preserve exactly as source3, with provenance header.
+          for n in sorted(supplemental & present_site):
+            src=site_root/f'{n}.md'
+            text=src.read_text(encoding='utf-8')
+            dst=out_root/'supplemental-whole-files'/f'site-{n:02d}.md'
+            dst.write_text(f'# Extracted from 41-part site source — file {n}\n\n> Not merged into Final-C. Preserved for later editorial decision.\n\n{text}',encoding='utf-8')
+            rows.append(f'- Site {n}: {wc(text)} words → preserved whole as supplemental/unmatched.')
+
+          # Missing core lesson: site 32 corresponds to Final-C 21, which is absent.
+          if 32 in present_site and 21 not in present_final:
+            text=(site_root/'32.md').read_text(encoding='utf-8')
+            (out_root/'missing-core'/'final-c-21_from_site-32.md').write_text(
+              '# Candidate recovery for missing Final-C lesson 21\n\n> Source: `متن ها/dar-jostojo-final/32.md`. Not merged into Final-C.\n\n'+text,encoding='utf-8')
+            rows += ['', '## Missing core lesson recovery', '', f'- Site 32 preserved separately as candidate Final-C 21 ({wc(text)} words).']
+
+          rows += ['', '## Mapped lesson full-content comparison','',
+                   '| Site | Final-C | site words | final words | size S/F | site likely-covered | final likely-covered | site candidate-extra words | result |',
+                   '|---:|---:|---:|---:|---:|---:|---:|---:|---|']
+
+          mapped_summaries=[]
+          for s,f in sorted(map_site_final.items()):
+            if s not in present_site:
+              if s in missing_site:
+                rows.append(f'| {s} | {f} | — | {wc((final_root/f"{f}.md").read_text(encoding="utf-8")) if f in present_final else "—"} | — | — | — | — | site file not downloaded |')
+              continue
+            if f not in present_final:
+              if f==21:
+                rows.append(f'| {s} | {f} | {wc((site_root/f"{s}.md").read_text(encoding="utf-8"))} | — | — | — | — | whole file preserved | Final-C missing |')
+              continue
+            st=(site_root/f'{s}.md').read_text(encoding='utf-8')
+            ft=(final_root/f'{f}.md').read_text(encoding='utf-8')
+            sp=paragraphs(st); fp=paragraphs(ft)
+            sres=best_scores(sp,fp); fres=best_scores(fp,sp)
+            # Thresholds deliberately permissive because one source is conversational, the other editorialized.
+            site_total=sum(wc(p) for p,_,_ in sres) or 1
+            final_total=sum(wc(p) for p,_,_ in fres) or 1
+            site_cov=sum(wc(p) for p,score,_ in sres if score>=0.20)/site_total
+            final_cov=sum(wc(p) for p,score,_ in fres if score>=0.20)/final_total
+            candidates=[(p,score,idx) for p,score,idx in sres if score<0.12 and wc(p)>=18]
+            cand_words=sum(wc(p) for p,_,_ in candidates)
+            ratio=wc(st)/max(1,wc(ft))
+            if ratio>1.12 and cand_words>80: result='site materially larger; inspect extras'
+            elif ratio<0.82: result='Final-C materially larger'
+            else: result='similar overall size / wording differs'
+            rows.append(f'| {s} | {f} | {wc(st)} | {wc(ft)} | {ratio:.2f}× | {site_cov:.0%} | {final_cov:.0%} | {cand_words} | {result} |')
+            mapped_summaries.append((s,f,candidates,site_cov,final_cov,ratio))
+
+            if candidates:
+              lines=[f'# Candidate source3-only differences: site {s} vs Final-C {f}','',
+                     '> Automated low-overlap extraction. These blocks are NOT merged into Final-C and must be read as candidates because paraphrasing can reduce lexical similarity.','']
+              for j,(p,score,idx) in enumerate(candidates,1):
+                lines += [f'## Candidate {j} — similarity {score:.3f}', '', p, '']
+              (out_root/'candidate-differences'/f'site-{s:02d}_vs_final-{f:02d}.md').write_text('\n'.join(lines),encoding='utf-8')
+
+          rows += ['', '## Interpretation guardrails','',
+                   '- `site candidate-extra words` counts low-overlap paragraphs; it is a screening signal, not proof of unique knowledge.',
+                   '- A site file smaller than Final-C is strong evidence that Final-C is not losing material at the gross-content level, but wording can still differ.',
+                   '- Files 1–10 and 26 are intentionally preserved whole because they do not map cleanly to a current Final-C lesson.',
+                   '- Site 32 is intentionally preserved whole as the missing lesson-21 recovery candidate.',
+                   '- When the missing site files 11, 13, 19, 24, 29, 34, 36, 39 become available, rerun this audit to complete coverage.', '']
+
+          report_path.parent.mkdir(parents=True,exist_ok=True)
+          report_path.write_text('\n'.join(rows),encoding='utf-8')
+
+          readme=out_root/'README.md'
+          readme.write_text('''# Dar Jostojo source-3 extraction\n\nThis folder is intentionally separate from `final/dar-jostojo-final-C/`.\n\n- `supplemental-whole-files/`: source-3 files that do not map cleanly to a Final-C lesson.\n- `missing-core/`: source-3 material that appears to recover a missing core Final-C lesson.\n- `candidate-differences/`: low-overlap paragraphs inside mapped lessons, kept for manual editorial inspection only.\n\nNothing here is automatically promoted into Final-C.\n''',encoding='utf-8')
+          PY
+
+      - name: Validate isolation
+        shell: bash
+        run: |
+          changed=$(git status --porcelain | awk '{print $2}')
+          echo "$changed"
+          if echo "$changed" | grep -E '^(final/|outputs/|متن ها/)'; then
+            echo 'ERROR: protected source/final paths modified'; exit 1
+          fi
+          test -f reports/dar_jostojo_source3_full_content_audit.md
+          test -f extracted/dar-jostojo-source3/README.md
+          test -f extracted/dar-jostojo-source3/missing-core/final-c-21_from_site-32.md
+
+      - name: Commit audit outputs and remove workflow
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add extracted/dar-jostojo-source3 reports/dar_jostojo_source3_full_content_audit.md
+          git rm .github/workflows/audit-dar-jostojo-source3-full-content.yml
+          git commit -m "extract Dar Jostojo source3 content differences"
+          git push origin agent/dar-jostojo-source3-extraction-audit
