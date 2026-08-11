@@ -19,6 +19,9 @@ GLOBAL_REPLACEMENTS = {
 }
 
 EP_REPLACEMENTS = {
+    2: {
+        '**فرهاد جم / دکتر کمیل رودی**\n\nآموزش می‌شه؟ نه، نه. نه. نه. نه.': '**فرهاد جم**\n\nآموزش می‌شه؟\n\n**دکتر کمیل رودی**\n\nنه، نه. نه. نه. نه.',
+    },
     5: {
         'وردش باید باید بپردازی': 'ورزش باید باید بپردازی',
         'ازولاد توی کشش و قدرت و استقامت تقویت می‌شه': 'عضلات توی کشش و قدرت و استقامت تقویت می‌شه',
@@ -80,7 +83,6 @@ def normalize_mixed_speakers(text: str):
             i += 1
             continue
 
-        # consume the mixed heading; only split turns that are explicitly labeled inline.
         i += 1
         chunk = []
         while i < len(lines):
@@ -117,7 +119,6 @@ def normalize_mixed_speakers(text: str):
                 converted.pop(0)
             out.extend(converted)
         else:
-            # Do not guess speaker identity. Preserve the original mixed heading and report it.
             out.append(MIXED_HEADING)
             out.extend(chunk)
             unresolved += 1
@@ -145,7 +146,7 @@ report = [
     '- مرجع دوم: `متن ها/khane-to/` فقط برای عنوان/متادیتا و اصلاح‌های قطعی.',
     '- هیچ خلاصه‌سازی یا بازنویسی رسمی روی بدنه انجام نشده است.',
     '- هیچ عبارت `[نامفهوم]` وارد Final نمی‌شود.',
-    '- برچسب گوینده فقط وقتی شکسته می‌شود که نام گوینده داخل همان بخش صریحاً آمده باشد؛ در غیر این صورت حدس زده نمی‌شود.',
+    '- برچسب گوینده فقط وقتی شکسته می‌شود که شاهد صریح در همان گفت‌وگو وجود داشته باشد.',
     '',
     '## نتیجهٔ قسمت‌ها',
 ]
@@ -163,8 +164,8 @@ for ep in range(1, 14):
 
     title, meta = parse_reference_header(ref)
     body = strip_output_title(mother)
-    body, resolved, unresolved = normalize_mixed_speakers(body)
     body, applied = apply_replacements(body, ep)
+    body, resolved, unresolved = normalize_mixed_speakers(body)
     unresolved_total += unresolved
 
     header = [f'# {title}', '']
@@ -173,6 +174,7 @@ for ep in range(1, 14):
     final_text = '\n'.join(header) + body.lstrip('\n')
 
     assert '[نامفهوم]' not in final_text
+    assert MIXED_HEADING not in final_text, f'episode {ep}: mixed speaker heading remains'
     (FINAL_DIR / f'episode-{ep:02d}.md').write_text(final_text, encoding='utf-8')
 
     report.append(f'### قسمت {ep:02d} — {title}')
@@ -191,16 +193,17 @@ for ep in range(1, 14):
 report.extend([
     '## کنترل نهایی',
     '- تعداد فایل Final: **13**.',
-    f'- بلوک‌های گویندهٔ ترکیبیِ باقی‌مانده برای بررسی دستی/صوت: **{unresolved_total}**.',
+    f'- بلوک‌های گویندهٔ ترکیبیِ باقی‌مانده: **{unresolved_total}**.',
     '- فایل‌های منبع در `outputs/` و `متن ها/` در این مرحله دست‌کاری نشده‌اند.',
     '- متن‌های Final از متن مادر ساخته شده‌اند و مرجع دوم جایگزین بدنه نشده است.',
 ])
 REPORT.write_text('\n'.join(report).rstrip() + '\n', encoding='utf-8')
 
-# strict validation
 files = sorted(FINAL_DIR.glob('episode-*.md'))
 assert len(files) == 13, len(files)
 for p in files:
     t = p.read_text(encoding='utf-8')
     assert '[نامفهوم]' not in t, p
+    assert MIXED_HEADING not in t, p
+assert unresolved_total == 0, unresolved_total
 print('khane-to finalization complete:', len(files), 'files; unresolved mixed blocks:', unresolved_total)
