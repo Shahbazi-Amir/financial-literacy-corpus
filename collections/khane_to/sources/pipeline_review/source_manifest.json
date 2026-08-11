@@ -1,0 +1,42 @@
+{
+  "collection": "khane_to",
+  "source_collection": "khane_to",
+  "source_repository": "Shahbazi-Amir/vid_pipeline",
+  "source_commit": "c1ff075504735bdf36dee2a3ba889c43054c4baf",
+  "source_review_path": "outputs/khane_to/review",
+  "source_role": "pipeline_review",
+  "comparison_primary_format": "md",
+  "timestamp_sidecar_format": "timestamped",
+  "copied_formats": {
+    "md": [
+      "1.md",
+      "2.md",
+      "3.md",
+      "4.md",
+      "5.md",
+      "6.md",
+      "7.md",
+      "8.md",
+      "9.md",
+      "10.md",
+      "11.md",
+      "12.md",
+      "13.md"
+    ],
+    "timestamped": [
+      "1.md",
+      "2.md",
+      "3.md",
+      "4.md",
+      "5.md",
+      "6.md",
+      "7.md",
+      "8.md",
+      "9.md",
+      "10.md",
+      "11.md",
+      "12.md",
+      "13.md"
+    ]
+  }
+}
