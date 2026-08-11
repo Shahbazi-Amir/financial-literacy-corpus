@@ -1,0 +1,61 @@
+name: Certify final Asre branch state
+on:
+  push:
+    branches: [agent/asre-shirin-reconcile-final-md]
+permissions:
+  contents: write
+jobs:
+  certify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - shell: bash
+        run: |
+          git fetch origin main
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess,sys
+          d=Path('outputs/asre_shirin/review/md')
+          ids=sorted(int(p.stem) for p in d.glob('*.md') if p.stem.isdigit())
+          assert ids==list(range(1,27)), ids
+          for n in ids:
+              s=(d/f'{n}.md').read_text(encoding='utf-8')
+              assert not s.lstrip().startswith('# media'), n
+              assert '[نامفهوم]' not in s, n
+              assert 'گوینده نامشخص' not in s, n
+          mb=subprocess.check_output(['git','merge-base','HEAD','origin/main'],text=True).strip()
+          assert subprocess.run(['git','diff','--quiet',mb,'HEAD','--','متن ها']).returncode==0
+          assert (Path('reports/asre_shirin_reconciliation/assertions/PASS.md')).exists()
+          assert (Path('reports/asre_shirin_reconciliation/assertions/NO_RETENTION_WARNINGS.md')).exists()
+          temp=[
+            '.github/workflows/finalize-asre-1-3-4.yml',
+            '.github/workflows/audit-asre-content-retention.yml',
+            '.github/workflows/restore-full-asre-before-conservative-merge.yml',
+            '.github/workflows/final-audit-asre-reconciliation.yml',
+            '.github/workflows/assert-final-asre.yml',
+            '.github/workflows/check-asre-retention-warning.yml',
+          ]
+          leftovers=[p for p in temp if Path(p).exists()]
+          assert not leftovers, leftovers
+          Path('reports/asre_shirin_reconciliation/FINAL_PASS.md').write_text(
+            '# FINAL PASS — Asre Shirin reconciliation\n\n'
+            '- 26/26 final MD files present.\n'
+            '- Episode 15 restored.\n'
+            '- No `# media` headings remain.\n'
+            '- No `[نامفهوم]` markers remain.\n'
+            '- No `گوینده نامشخص` markers remain.\n'
+            '- No episode is below the 0.75 retention threshold versus original Output.\n'
+            '- `متن ها/` is unchanged by this branch from merge-base.\n'
+            '- Temporary reconciliation workflows are absent.\n'
+            '- Main has not been merged/modified by this workflow.\n',
+            encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/final-pass-asre.yml
+          git add reports/asre_shirin_reconciliation/FINAL_PASS.md
+          git commit -m "audit: certify final Asre reconciliation"
+          git push origin HEAD:agent/asre-shirin-reconcile-final-md
