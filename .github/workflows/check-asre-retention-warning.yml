@@ -1,0 +1,33 @@
+name: Check Asre retention warnings
+on:
+  push:
+    branches: [agent/asre-shirin-reconcile-final-md]
+permissions:
+  contents: write
+jobs:
+  check:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          base=Path('reports/asre_shirin_reconciliation/assertions')
+          warnings=sorted(base.glob('retention_warning_ep*.md'))
+          target=base/'NO_RETENTION_WARNINGS.md'
+          if target.exists(): target.unlink()
+          target2=base/'HAS_RETENTION_WARNINGS.md'
+          if target2.exists(): target2.unlink()
+          if warnings:
+              target2.write_text('\n'.join(p.name for p in warnings)+'\n',encoding='utf-8')
+          else:
+              target.write_text('No episode is below the 0.75 retention warning threshold versus original Output.\n',encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/check-asre-retention-warning.yml
+          git add reports/asre_shirin_reconciliation/assertions
+          git commit -m "audit: summarize Asre retention warnings"
+          git push origin HEAD:agent/asre-shirin-reconcile-final-md
