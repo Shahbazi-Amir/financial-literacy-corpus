@@ -1,0 +1,29 @@
+name: Apply Khane To ASR cleanup
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/apply-khane-to-asr-cleanup.yml
+permissions:
+  contents: write
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - name: Apply curated cleanup
+        run: python .github/apply_khane_to_asr_cleanup.py
+      - name: Verify only intended source family changed
+        run: |
+          bad=$(git status --porcelain | grep -vE '^.. (outputs/khane_to/review/md/|reports/khane_to_asr_cleanup_applied.md)' || true)
+          if [ -n "$bad" ]; then echo "$bad"; exit 1; fi
+      - name: Commit cleaned outputs
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add outputs/khane_to/review/md reports/khane_to_asr_cleanup_applied.md
+          git commit -m "clean khane-to output ASR errors"
+          git push origin HEAD:agent/khane-to-asr-cleanup
