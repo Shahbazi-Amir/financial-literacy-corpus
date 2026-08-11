@@ -1,0 +1,39 @@
+name: Fix Khane To last three ASR errors
+on:
+  push:
+    branches: [agent/khane-to-asr-cleanup]
+    paths:
+      - .github/workflows/fix-khane-to-last3.yml
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/khane-to-asr-cleanup
+          fetch-depth: 0
+      - run: python .github/fix_khane_to_last3.py
+      - name: Validate no known bad stems
+        run: |
+          if grep -R -nE 'ازترار|استرار|استرالی|اسطلاح|زخیره|پجوهش|تقوییت|اقصات|قرد|قرز|کارگوزار|کارگذاری|سهان|صحام|سحام|نقض شوند|نقضشوند|روشت|اردش|دوشف|دیویس|کخصالیس|سرموغش|خونقاتو|قواز|دوشبار|انترنت|احساب|تلاتم|مذیعت|معلفه|تعییم|کارافرین|جبرام|آتشتوزی|سالست|فنجن|دخملینش|تاین حد|هزینهٔادگیری|سلام ارز می‌کنم|سلام ازم کنم|بازنشد|روانندگی|راندگی' outputs/khane_to/review/md; then exit 1; fi
+      - name: Validate line counts
+        run: |
+          python - <<'PY'
+          import subprocess,pathlib
+          base='197d286f7d793266c9e1bb8a4ca3549be76ce2ec'; ok=True
+          for i in range(1,14):
+              p=f'outputs/khane_to/review/md/{i}.md'
+              a=len(subprocess.check_output(['git','show',f'{base}:{p}']).decode().splitlines())
+              b=len(pathlib.Path(p).read_text().splitlines())
+              print(i,a,b); ok &= a==b
+          raise SystemExit(0 if ok else 1)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add outputs/khane_to/review/md reports/khane_to_asr_cleanup_applied.md
+          git commit -m "finish khane-to output ASR cleanup"
+          git push origin HEAD:agent/khane-to-asr-cleanup
