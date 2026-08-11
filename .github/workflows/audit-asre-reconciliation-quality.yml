@@ -1,0 +1,64 @@
+name: Audit Asre reconciliation quality
+
+on:
+  push:
+    branches: [agent/asre-shirin-reconcile-final-md]
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build quality report
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          root=Path('.')
+          outdir=root/'outputs/asre_shirin/review/md'
+          rows=[]
+          details=[]
+          def oldpath(n):
+              if n<=13:
+                  return root/'متن ها/۱/asre_shirin/asre-shirin-season-1'/f'episode-{n:02d}.md'
+              return root/'متن ها/۱/asre_shirin/asre-shirin-season-2'/f'episode-{n-13:02d}.md'
+          def count_words(s): return len(re.findall(r'[\w\u0600-\u06ff]+',s))
+          for n in range(1,27):
+              op=oldpath(n); np=outdir/f'{n}.md'
+              old=op.read_text(encoding='utf-8') if op.exists() else ''
+              new=np.read_text(encoding='utf-8') if np.exists() else ''
+              unknown=new.count('[نامفهوم]')+new.count('گوینده نامشخص')
+              media=1 if new.lstrip().startswith('# media') else 0
+              oldq=[]; newq=[]
+              kws=('«','»','روایت','حدیث','آیه','شعر','سعدی','می‌گه','میگه','گفت:','ضرب‌المثل','مثل معروف')
+              for line in old.splitlines():
+                  if any(k in line for k in kws): oldq.append(line.strip())
+              for line in new.splitlines():
+                  if any(k in line for k in kws): newq.append(line.strip())
+              rows.append((n,count_words(old),count_words(new),unknown,media,len(oldq),len(newq)))
+              if oldq or newq:
+                  details += [f'## Episode {n}', '', '### Two-season quote/proverb candidates']
+                  details += [f'- {x}' for x in oldq] or ['- —']
+                  details += ['', '### Output quote/proverb candidates']
+                  details += [f'- {x}' for x in newq] or ['- —']
+                  details += ['']
+          d=root/'reports/asre_shirin_reconciliation'; d.mkdir(parents=True,exist_ok=True)
+          lines=['# Asre Shirin reconciliation quality audit','', '| Output | two-season words | output words | unknown markers | `# media` | old quote candidates | output quote candidates |','|---:|---:|---:|---:|---:|---:|---:|']
+          for r in rows: lines.append('| '+' | '.join(map(str,r))+' |')
+          lines += ['', '## Interpretation','', '- `unknown markers` counts `[نامفهوم]` and `گوینده نامشخص` occurrences in Output.', '- `# media` indicates an Output that still carries the raw placeholder heading.', '- Word counts are diagnostic only; they are not a basis for deleting content.', '', *details]
+          (d/'quality_audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          PY
+      - name: Commit report and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/audit-asre-reconciliation-quality.yml
+          git add reports/asre_shirin_reconciliation/quality_audit.md
+          git commit -m "audit: profile Asre Shirin reconciliation quality"
+          git push origin HEAD:agent/asre-shirin-reconcile-final-md
