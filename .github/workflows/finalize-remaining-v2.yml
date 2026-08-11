@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add -A final reports extracted
+          git add -A
           git rm -f .github/finalize_remaining.py .github/workflows/finalize-remaining-v2.yml .github/workflows/finalize-remaining-collections.yml
           git commit -m "finalize remaining transcript collections and reports"
           git push
