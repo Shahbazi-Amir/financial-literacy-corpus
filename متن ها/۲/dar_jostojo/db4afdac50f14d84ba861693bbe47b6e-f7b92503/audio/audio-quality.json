@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "input_type": "audio",
+  "duration_seconds": 18.356188,
+  "sample_rate": 16000,
+  "channels": 1,
+  "codec": "pcm_s16le",
+  "peak_dbfs": -3.1,
+  "mean_volume_db": -24.6,
+  "clipping_detected": false,
+  "silence_ratio": 0.15122616961648028,
+  "very_low_volume": false,
+  "noise_probability": 0.0006130848082401413,
+  "preprocessing_profile": "safe",
+  "filters_applied": [
+    "highpass=f=60",
+    "lowpass=f=7800",
+    "loudnorm=I=-20:LRA=11:TP=-2"
+  ],
+  "warnings": []
+}
