@@ -1,11 +1,10 @@
-# Dar Jostojo Final C — applied pair corrections
+# Dar Jostojo Final C — applied pair corrections (safe rebuild)
 
 Mother: `outputs/dar_jostojo_dar_again_raw_30/review/md`  
 Secondary correction reference: `متن ها/dar_jostojo_30/md`  
-Rule: preserve mother transcript; apply only high-confidence corrections. No summarization.
+Method: reset each Final C file from the mother, then apply only boundary-safe high-confidence corrections. No summarization or compression.
 
 ## 1.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 1`
 - `زندگی موده` → `زندگیم بوده`
 - `منطق یک زندگی مالی رو براتون شهر میدم` → `منطق یک زندگی مالی رو براتون شرح میدم`
 - `رشتیافه` → `رشد‌یافته`
@@ -16,7 +15,6 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `لازم نباشیم اون سنگینی رو بار کنیم` → `لازم نباشه اون سنگینی رو بار کنیم`
 
 ## 2.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 2`
 - `الهمدلالله` → `الحمدلله`
 - `الحمدالله` → `الحمدلله` ×2
 - `بحچه` → `بچه`
@@ -25,16 +23,15 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `وزه مالی` → `وضع مالی`
 - `بلنگت تر` → `بلندقدتر`
 - `کتا قد تر` → `کوتاه‌قدتر`
-- `وایی سدن` → `وایسادن`
+- `وایی` → `وای`
 - `سلاقه` → `سراغ`
 - `دقیقت` → `دقت`
 
 ## 3.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 3`
 - `خواییم` → `خواهیم`
 - `مسارفت` → `مسافرت`
 - `گندوم` → `گندم` ×2
-- `تغیی` → `تغییر` ×4
+- `تغیی` → `تغییر`
 - `کفیت` → `کیفیت`
 - `پولچاب` → `پول چاپ`
 - `اوضاعع مالی` → `اوضاع مالی`
@@ -44,7 +41,6 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `داسان سواد` → `داستان سواد`
 
 ## 4.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 4`
 - `تعادله` → `تعادل`
 - `آموزای` → `آموزه`
 - `می گهن` → `میگه نه`
@@ -62,24 +58,21 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `اززواج` → `ازدواج`
 
 ## 5.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 5`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 6.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 6`
 - `باغی` → `باقی`
 
 ## 7.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 7`
 - `باغی` → `باقی` ×2
 
 ## 8.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 8`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 9.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 9`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 10.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 10`
 - `وضنی 100 کلوی` → `وزنی صد کیلویی`
 - `کلوی` → `کیلویی` ×2
 - `هرفیی` → `حرفه‌ای`
@@ -88,57 +81,54 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `زانودد` → `زانودرد`
 - `ورزشگار` → `ورزشکار`
 - `درصم` → `درصد`
-- ` زار` → ` هزار` ×2
-- `غرز` → `قرض` ×2
+- `زار` → `هزار` ×2
+- `غرز` → `قرض`
+- `غرزی` → `قرضی`
 - `رباس` → `رباست`
 - `خداس` → `خداست`
 - `اقصات` → `اقساط` ×3
 - `قصد هر ماه` → `قسط هر ماه`
 
 ## 11.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 11`
 - `باغی` → `باقی`
 
 ## 12.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 12`
 - `محسس` → `مؤسس`
 - `تالا` → `تا حالا` ×6
 - `داشت شوشم` → `داشته باشم`
-- `خودمونو خدشدار` → `خودمونو خدشه‌دار`
+- `خدشدار` → `خدشه‌دار`
 - `خواییم` → `خواهیم` ×2
 
 ## 13.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 13`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 14.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 14`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 15.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 15`
 - `پیادشی` → `پیاده شی`
 - `زرفیت` → `ظرفیت` ×2
-- `بعض ` → `بعضی `
+- `بعض` → `بعضی`
 - `آبدارچیه` → `آبدارچی`
 - `احدای` → `اهدای`
 - `بیل گیتز` → `بیل گیتس`
 - `نبیانی` → `نبینی`
 - `محره` → `مهره` ×2
-- ` صده ` → ` صد `
+- `صده` → `صد`
 
 ## 16.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 16`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 17.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 17`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 18.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 18`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 19.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 19`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 20.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 20`
 - `امو ایدایی` → `عمو، دایی`
 - `ناموهای` → `نامه‌های`
 - `اسطلاح` → `اصطلاح` ×2
@@ -146,48 +136,41 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `بخاریم` → `بخریم` ×2
 - `هزارتومان` → `هزار تومان` ×2
 - `اخیرم` → `اخیر هم`
-- `نقدش` → `نقش` ×15
+- `نقدش` → `نقش`
 
 ## 22.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 22`
 - `سرمای گذارتون چقده` → `سرمایه‌گذاریتون چقدره`
 - `چقده` → `چقدر`
-- `سرمای ` → `سرمایه ` ×2
+- `سرمای` → `سرمایه` ×2
 
 ## 23.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 23`
 - `داسان` → `داستان`
 - `بیخیار` → `بی‌خیال`
 - `متمرکیز` → `متمرکز`
 
 ## 24.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 24`
 - `حوزهٔه` → `حوزه‌ی`
 
 ## 25.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 25`
 - `باغی` → `باقی`
 - `هزینهٔه` → `هزینه‌ی` ×3
 
 ## 26.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 26`
 - `اهدام` → `اهدا` ×5
 
 ## 27.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 27`
-- `سبت` → `ثبت` ×3
+- `سبت` → `ثبت` ×2
 - `خداس` → `خداست`
 - `حوالت` → `البته`
 - `مجووز` → `مجوز` ×2
-- `بشت` → `بهش` ×2
+- `بشت` → `بهش`
 - `سوادمالی` → `سواد مالی`
 
 ## 28.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 28`
+- No high-confidence substantive correction from the second reference; mother wording retained.
 
 ## 29.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 29`
-- `ترح ` → `طرح `
+- `ترح` → `طرح`
 - `درانها اقتصاص` → `در آنها اختصاص`
 - `مواحث` → `مباحث`
 - `آدتها` → `عادت‌ها`
@@ -197,10 +180,9 @@ Rule: preserve mother transcript; apply only high-confidence corrections. No sum
 - `گرهد` → `گرفته`
 
 ## 30.md
-- `# media` → `# در جستجوی خوشبختی — قسمت 30`
 - `توسع` → `توسعه`
 
 ## 21.md
-- Not created: session 21 is absent from both the mother and secondary 30-session references. It is reserved for third-source review.
+- Not created: absent from both current 30-session references; reserved for third-source recovery.
 
-Total applied literal replacements/title labels: **194**
+Total safe replacements including title labels: **175**
