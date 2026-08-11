@@ -7,8 +7,10 @@
 - `tarbiat_morabi_finalization.md`
 - `uni_tehran_finalization.md`
 
-## وضعیت اجرای این مرحله
-- **خانه تو**: Output=13، مرجع دوم=13، Final=13، اصلاحات قطعی=2، مسیر=`final/khane-to/`
-- **MQ**: Output=8، مرجع دوم=8، Final=8، اصلاحات قطعی=13، مسیر=`final/mq/`
-- **تربیت مربی**: Output=14، مرجع دوم=14، Final=14، اصلاحات قطعی=239، مسیر=`final/tarbiat-morabi/`
-- **دانشگاه تهران**: Output=38، مرجع دوم=38، Final=38، اصلاحات قطعی=1384، مسیر=`final/uni-tehran/`
+## وضعیت امن نهایی این مرحله
+- **خانه تو**: 13 Final، Output مادر، Agent مرجع دوم، هیچ جایگزینی خودکار Agent، مسیر=`final/khane-to/`
+- **MQ**: 8 Final، Output مادر، Agent مرجع دوم، هیچ جایگزینی خودکار Agent، مسیر=`final/mq/`
+- **تربیت مربی**: 14 Final، Output مادر، Agent مرجع دوم، هیچ جایگزینی خودکار Agent، مسیر=`final/tarbiat-morabi/`
+- **دانشگاه تهران**: 38 Final، Output مادر، Agent مرجع دوم، هیچ جایگزینی خودکار Agent، مسیر=`final/uni-tehran/`
+
+> Audit محافظتی: جایگزینی‌های خودکار اجرای قبلی به دلیل مشاهدهٔ اصلاحات معکوس/نامعتبر کامل rollback شدند.
