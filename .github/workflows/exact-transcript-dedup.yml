@@ -1,0 +1,251 @@
+name: Exact transcript dedup
+
+on:
+  push:
+    branches:
+      - agent/consolidate-transcript-sources
+    paths:
+      - .github/workflows/exact-transcript-dedup.yml
+
+permissions:
+  contents: write
+
+jobs:
+  dedup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/consolidate-transcript-sources
+          fetch-depth: 0
+
+      - name: Exact byte-level deduplication
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, re
+
+          root = Path('.')
+          exts = {'.md', '.txt'}
+          skip_roots = {'.git', '.github', 'reports'}
+
+          def is_candidate(p: Path) -> bool:
+              if not p.is_file() or p.suffix.lower() not in exts:
+                  return False
+              rel = p.relative_to(root)
+              if rel.parts and rel.parts[0] in skip_roots:
+                  return False
+              if p.name == 'README.md' or p.name == 'source_manifest.json':
+                  return False
+              return True
+
+          def rank(path: str):
+              s = path.replace('\\','/').lower()
+              score = 100
+              if s.startswith('collections/') and '/sources/pipeline_review/md/' in s:
+                  score = 0
+              elif '/review/md/' in s:
+                  score = 5
+              elif '/reviewed/' in s:
+                  score = 10
+              elif '/final/' in s or 'dar-jostojo-final/' in s:
+                  score = 15
+              elif '/md/' in s or s.endswith('.md'):
+                  score = 20
+              elif s.endswith('.txt'):
+                  score = 30
+              # Prefer earlier user buckets when otherwise equal.
+              bucket = 9
+              m = re.search(r'متن ها/([۱۲۳123])/', path)
+              if m:
+                  bucket = {'۱':1,'۲':2,'۳':3,'1':1,'2':2,'3':3}[m.group(1)]
+              return (score, bucket, len(path), path)
+
+          files = [p for p in root.rglob('*') if is_candidate(p)]
+          size_groups = {}
+          for p in files:
+              size_groups.setdefault(p.stat().st_size, []).append(p)
+
+          exact_groups = []
+          for size, same_size in sorted(size_groups.items()):
+              if len(same_size) < 2:
+                  continue
+              hash_groups = {}
+              for p in same_size:
+                  h = hashlib.sha256(p.read_bytes()).hexdigest()
+                  hash_groups.setdefault(h, []).append(p)
+              for h, same_hash in hash_groups.items():
+                  if len(same_hash) < 2:
+                      continue
+                  # SHA-256 equality is additionally verified byte-for-byte.
+                  buckets = []
+                  for p in same_hash:
+                      data = p.read_bytes()
+                      placed = False
+                      for b in buckets:
+                          if data == b['bytes']:
+                              b['paths'].append(p)
+                              placed = True
+                              break
+                      if not placed:
+                          buckets.append({'bytes': data, 'paths': [p]})
+                  for b in buckets:
+                      if len(b['paths']) > 1:
+                          exact_groups.append((size, h, b['paths']))
+
+          deleted = []
+          retained = []
+          for size, h, paths in exact_groups:
+              ordered = sorted(paths, key=lambda p: rank(str(p.relative_to(root))))
+              keep = ordered[0]
+              retained.append(str(keep.relative_to(root)))
+              group_deleted = []
+              for p in ordered[1:]:
+                  rel = str(p.relative_to(root))
+                  p.unlink()
+                  deleted.append(rel)
+                  group_deleted.append(rel)
+
+          # Remove empty directories left by exact duplicate deletion, deepest first.
+          for d in sorted([p for p in root.rglob('*') if p.is_dir()], key=lambda p: len(p.parts), reverse=True):
+              rel = d.relative_to(root)
+              if rel.parts and rel.parts[0] in skip_roots:
+                  continue
+              try:
+                  next(d.iterdir())
+              except StopIteration:
+                  d.rmdir()
+              except Exception:
+                  pass
+
+          # Re-scan remaining transcript files and verify no exact duplicate remains.
+          remaining = [p for p in root.rglob('*') if is_candidate(p)]
+          seen = {}
+          residual = []
+          for p in remaining:
+              size = p.stat().st_size
+              h = hashlib.sha256(p.read_bytes()).hexdigest()
+              key = (size, h)
+              if key in seen and p.read_bytes() == seen[key].read_bytes():
+                  residual.append([str(seen[key].relative_to(root)), str(p.relative_to(root))])
+              else:
+                  seen[key] = p
+          if residual:
+              raise SystemExit(f'Residual exact duplicates remain: {residual[:5]}')
+
+          # Collection + chapter detection. This does NOT modify or normalize content.
+          def collection_for(path: str):
+              s = path.lower().replace('-', '_')
+              if 'asre_shirin' in s: return 'asre_shirin'
+              if 'khane_to' in s: return 'khane_to'
+              if 'uni_tehran' in s or 'tehran' in s: return 'uni_tehran'
+              if re.search(r'(^|[/_])mq([/_]|$)', s): return 'mq'
+              if 'tarbiat' in s or 'morabi' in s: return 'tarbiat_morabi'
+              if 'dar_jostojo' in s or 'dar_jostojoye' in s: return 'dar_jostojoye_khoshbakhti'
+              return None
+
+          def chapter_for(path: str):
+              s = path.replace('\\','/')
+              # Asre old-agent season mapping: season 1 => 1..13, season 2 => 14..26.
+              m = re.search(r'asre-shirin-season-(\d+)/episode-(\d+)\.md$', s, re.I)
+              if m:
+                  season, ep = int(m.group(1)), int(m.group(2))
+                  return str(ep if season == 1 else 13 + ep)
+              # Session folders represent numbered chapters in legacy dar_jostojo.
+              m = re.search(r'/session-(\d+)/', s, re.I)
+              if m:
+                  return str(int(m.group(1)))
+              # Standard numeric filenames.
+              stem = Path(s).stem
+              if stem.isdigit():
+                  return str(int(stem))
+              m = re.search(r'episode-(\d+)', stem, re.I)
+              if m:
+                  return str(int(m.group(1)))
+              return None
+
+          # For "version" counting, count distinct remaining files by chapter, but list their role/path;
+          # no semantic collapsing or normalization is performed.
+          chapters = {}
+          for p in remaining:
+              rel = str(p.relative_to(root))
+              c = collection_for(rel)
+              ch = chapter_for(rel)
+              if not c or not ch:
+                  continue
+              size = p.stat().st_size
+              h = hashlib.sha256(p.read_bytes()).hexdigest()
+              chapters.setdefault(c, {}).setdefault(ch, []).append({
+                  'path': rel,
+                  'size': size,
+                  'sha256': h,
+                  'ext': p.suffix.lower(),
+              })
+
+          # Old reports used broader family logic; remove them to avoid confusion.
+          for old in [
+              root/'reports/transcript_version_summary_pre_dedup.md',
+              root/'reports/transcript_version_summary_pre_dedup.json',
+              root/'reports/distinct_transcript_source_families_pre_dedup.md',
+              root/'reports/distinct_transcript_source_families_pre_dedup.json',
+          ]:
+              if old.exists(): old.unlink()
+
+          report_dir = root/'reports'; report_dir.mkdir(exist_ok=True)
+          exact_report = {
+              'method': 'size -> sha256 -> byte-for-byte equality; no normalization',
+              'candidate_extensions': sorted(exts),
+              'files_before': len(files),
+              'exact_duplicate_groups_removed': len(exact_groups),
+              'files_deleted_as_exact_copies': len(deleted),
+              'files_after': len(remaining),
+              'residual_exact_duplicates': residual,
+              'groups': [
+                  {
+                      'size': size,
+                      'sha256': h,
+                      'kept': str(sorted(paths, key=lambda p: rank(str(p.relative_to(root))))[0].relative_to(root)),
+                      'deleted': [str(p.relative_to(root)) for p in sorted(paths, key=lambda p: rank(str(p.relative_to(root))))[1:]],
+                  }
+                  for size, h, paths in exact_groups
+              ],
+          }
+          (report_dir/'exact_byte_dedup_report.json').write_text(json.dumps(exact_report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          (report_dir/'chapter_unique_files_after_exact_dedup.json').write_text(json.dumps(chapters, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+
+          lines = [
+              '# Exact byte-level deduplication report','',
+              '- Method: **file size → SHA-256 → byte-for-byte comparison**',
+              '- Content normalization: **none**',
+              f'- Transcript files before: **{len(files)}**',
+              f'- Exact duplicate groups removed: **{len(exact_groups)}**',
+              f'- Files deleted as exact copies: **{len(deleted)}**',
+              f'- Transcript files after: **{len(remaining)}**',
+              '- Residual exact duplicates: **0**','',
+              '## Unique remaining files per chapter','',
+          ]
+          for c in sorted(chapters):
+              lines.append(f'### {c}')
+              for ch in sorted(chapters[c], key=lambda x: int(x)):
+                  items = chapters[c][ch]
+                  lines.append(f'- Chapter {ch}: **{len(items)} unique files**')
+                  for item in sorted(items, key=lambda x: x['path']):
+                      lines.append(f"  - `{item['path']}` — {item['size']} bytes — `{item['sha256'][:12]}…`")
+              lines.append('')
+          (report_dir/'exact_byte_dedup_report.md').write_text('\n'.join(lines)+'\n', encoding='utf-8')
+
+          print('\n'.join(lines[:120]))
+          PY
+
+      - name: Commit exact deduplication
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/exact-transcript-dedup.yml
+          git add -A
+          git commit -m 'data: remove exact transcript copies byte-for-byte'
+          git push origin HEAD:agent/consolidate-transcript-sources
