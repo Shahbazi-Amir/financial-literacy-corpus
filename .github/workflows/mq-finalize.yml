@@ -1,0 +1,36 @@
+name: MQ finalization
+
+on:
+  push:
+    branches:
+      - agent/mq-audit-finalize
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/mq-audit-finalize
+      - name: Build MQ finals
+        run: python .github/mq_finalize.py
+      - name: Validate MQ finals
+        run: |
+          test "$(find final/mq -maxdepth 1 -type f -name 'episode-*.md' | wc -l)" -eq 8
+          ! grep -R -nF '[نامفهوم]' final/mq
+          ! grep -R -nF 'زبان تشخیص داده شده' final/mq
+          ! grep -R -nF 'این متن به‌صورت خودکار از صوت استخراج' final/mq
+      - name: Commit MQ finals
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add final/mq reports/mq_finalization.md
+          if git diff --cached --quiet; then
+            echo 'No final change'
+          else
+            git commit -m 'finalize MQ corpus'
+            git push
+          fi
