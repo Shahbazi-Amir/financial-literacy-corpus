@@ -19,7 +19,7 @@ REPL = {
          'یعنی «غیرت، حمیت محب است بر طلب قطع تعلق محبوب از غیر یا تعلق غیر از محبوب.»'),
     ],
     9: [
-        ('به سرمویی پسرخاله‌ای یا دوستی', 'به پسرعمویی، پسرخاله‌ای یا دوستی'),
+        ('به سرمویی پسرخاله‌ای', 'به پسرعمویی، پسرخاله‌ای'),
     ],
     11: [
         ('بابا این فرض کن بندازه یه دو هفته پول توجیبی‌ت‌ها',
@@ -66,7 +66,6 @@ UNRESOLVED = {
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
-# Freeze source hashes before writing final files.
 before_src = {p.name: sha(p) for p in sorted(SRC.glob('*.md'))}
 before_ref = {p.name: sha(p) for p in sorted(REF.glob('*.md'))}
 assert len(before_src) == 14 and len(before_ref) == 14
@@ -86,13 +85,11 @@ for i in range(1, 15):
         applied.append((i, old, new))
     (DST / f'episode-{i:02d}.md').write_text(text, encoding='utf-8')
 
-# Source isolation.
 after_src = {p.name: sha(p) for p in sorted(SRC.glob('*.md'))}
 after_ref = {p.name: sha(p) for p in sorted(REF.glob('*.md'))}
 assert before_src == after_src
 assert before_ref == after_ref
 
-# Final validation.
 finals = sorted(DST.glob('episode-*.md'))
 assert len(finals) == 14
 for p in finals:
