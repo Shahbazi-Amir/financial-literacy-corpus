@@ -1,0 +1,40 @@
+name: Tarbiat Morabi finalization
+on:
+  push:
+    branches: [agent/tarbiat-morabi-audit-finalize]
+    paths:
+      - '.github/tarbiat_morabi_finalize.py'
+      - '.github/workflows/tarbiat-morabi-finalize.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/tarbiat-morabi-audit-finalize
+      - name: Build Tarbiat Morabi finals
+        run: python .github/tarbiat_morabi_finalize.py
+      - name: Validate Tarbiat Morabi finals
+        run: |
+          test "$(find final/tarbiat-morabi -maxdepth 1 -name 'episode-*.md' | wc -l)" -eq 14
+          ! grep -R -F '[نامفهوم]' final/tarbiat-morabi
+          ! grep -R -F 'زبان تشخیص' final/tarbiat-morabi
+          grep -F 'رخت شستن' final/tarbiat-morabi/episode-03.md
+          grep -F 'ما فات مضى' final/tarbiat-morabi/episode-04.md
+          grep -F 'حمیت محب' final/tarbiat-morabi/episode-05.md
+          grep -F 'پسرعمویی' final/tarbiat-morabi/episode-09.md
+          grep -F 'ممنونم از توجهتون' final/tarbiat-morabi/episode-11.md
+          grep -F 'given' final/tarbiat-morabi/episode-12.md
+          grep -F 'نامشهوده' final/tarbiat-morabi/episode-14.md
+      - name: Commit Tarbiat Morabi finals
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add final/tarbiat-morabi reports/tarbiat_morabi_finalization.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'finalize tarbiat morabi corpus'
+            git push origin HEAD:agent/tarbiat-morabi-audit-finalize
+          fi
