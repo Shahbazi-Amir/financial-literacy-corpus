@@ -1,0 +1,28 @@
+name: Tarbiat Morabi semantic audit
+on:
+  push:
+    branches: [agent/tarbiat-morabi-audit-finalize]
+    paths:
+      - '.github/tarbiat_morabi_semantic.py'
+      - '.github/workflows/tarbiat-morabi-semantic.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  semantic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/tarbiat-morabi-audit-finalize
+      - name: Build semantic candidates
+        run: python .github/tarbiat_morabi_semantic.py
+      - name: Commit semantic report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/tarbiat_morabi_semantic_candidates.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'filter semantic tarbiat morabi candidates'
+            git push origin HEAD:agent/tarbiat-morabi-audit-finalize
+          fi
