@@ -1,0 +1,24 @@
+name: Tarbiat Morabi replacement diagnostics
+on:
+  push:
+    branches: [agent/tarbiat-morabi-audit-finalize]
+    paths:
+      - '.github/tarbiat_morabi_replacement_diag.py'
+      - '.github/workflows/tarbiat-morabi-replacement-diag.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/tarbiat-morabi-audit-finalize
+      - run: python .github/tarbiat_morabi_replacement_diag.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/tarbiat_morabi_replacement_diagnostics.md
+          git commit -m 'diagnose tarbiat morabi replacements'
+          git push origin HEAD:agent/tarbiat-morabi-audit-finalize
