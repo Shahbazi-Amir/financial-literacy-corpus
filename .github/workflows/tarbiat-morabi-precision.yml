@@ -1,0 +1,28 @@
+name: Tarbiat Morabi precision audit
+on:
+  push:
+    branches: [agent/tarbiat-morabi-audit-finalize]
+    paths:
+      - '.github/tarbiat_morabi_precision.py'
+      - '.github/workflows/tarbiat-morabi-precision.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  precision:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/tarbiat-morabi-audit-finalize
+      - name: Build precision audit
+        run: python .github/tarbiat_morabi_precision.py
+      - name: Commit precision report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/tarbiat_morabi_precision_candidates.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'audit tarbiat morabi precision differences'
+            git push origin HEAD:agent/tarbiat-morabi-audit-finalize
+          fi
