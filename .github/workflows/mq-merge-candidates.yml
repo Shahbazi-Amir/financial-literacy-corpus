@@ -1,0 +1,30 @@
+name: MQ merge candidates
+
+on:
+  push:
+    branches:
+      - agent/mq-audit-finalize
+
+permissions:
+  contents: write
+
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: agent/mq-audit-finalize
+      - name: Extract candidates
+        run: python .github/mq_merge_candidates.py
+      - name: Commit candidate report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add reports/mq_merge_candidates.md
+          if git diff --cached --quiet; then
+            echo 'No report change'
+          else
+            git commit -m 'extract MQ merge candidates'
+            git push
+          fi
