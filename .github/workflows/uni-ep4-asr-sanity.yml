@@ -1,0 +1,21 @@
+name: Uni Tehran ep4 ASR sanity
+on:
+  push:
+    branches: [agent/uni-tehran-ep4-three-way-final]
+    paths:
+      - '.github/uni_ep4_asr_sanity.py'
+      - '.github/workflows/uni-ep4-asr-sanity.yml'
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - run: python .github/uni_ep4_asr_sanity.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/uni_tehran_ep4_asr_sanity.md
+          git diff --cached --quiet || git commit -m 'scan uni tehran ep4 ASR sanity'
+          git push
