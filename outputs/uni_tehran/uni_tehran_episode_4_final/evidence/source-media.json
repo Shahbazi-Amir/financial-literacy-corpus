@@ -1,0 +1,11 @@
+{
+  "format": {
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration": "1526.272000",
+    "size": "155520202"
+  },
+  "source_url": "https://github.com/Shahbazi-Amir/vid_pipeline/releases/download/archive%2Ftest-khamenei-59617-full-20260730/4-.mp4",
+  "sha256": "295fe78d60e29b57f3541a19cbf499d24bed4d67cc6c7ab0f0861899f7f1dcbf",
+  "target_collection": "uni_tehran",
+  "episode": 4
+}
