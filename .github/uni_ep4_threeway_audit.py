@@ -20,7 +20,8 @@ def norm_word(w):
     w=w.replace('ي','ی').replace('ك','ک').replace('\u200c','')
     return re.sub(r'[^0-9A-Za-zآ-ی]+','',w).lower()
 
-def toks(s): return [norm_word(x) for x in clean(s).split() if norm_word(x)]
+def raw_toks(s): return [x for x in clean(s).split() if norm_word(x)]
+def toks(s): return [norm_word(x) for x in raw_toks(s)]
 def sha(s): return hashlib.sha256(s.encode()).hexdigest()
 def ratio(a,b): return difflib.SequenceMatcher(None,toks(a),toks(b),autojunk=False).ratio()
 
@@ -42,6 +43,22 @@ def add_gap_section(lines,title,a,b,min_words=5,limit=50):
     for n,tag,seq,ctx in gs:
         lines += [f'### {n} واژه — {tag}',f'`{seq}`',f'context: `{ctx}`','']
 
+def fine_replacements(a_name,b_name,limit=120):
+    a_raw=raw_toks(texts[a_name]); b_raw=raw_toks(texts[b_name])
+    a=[norm_word(x) for x in a_raw]; b=[norm_word(x) for x in b_raw]
+    sm=difflib.SequenceMatcher(None,a,b,autojunk=False)
+    out=[]
+    for tag,i1,i2,j1,j2 in sm.get_opcodes():
+        if tag!='equal' and max(i2-i1,j2-j1)<=4:
+            aa=' '.join(a_raw[i1:i2]); bb=' '.join(b_raw[j1:j2])
+            nums_a=re.findall(r'\d+', ''.join(a[i1:i2])); nums_b=re.findall(r'\d+', ''.join(b[j1:j2]))
+            # keep replacements, numeric changes, or non-trivial one-sided edits
+            if tag=='replace' or nums_a!=nums_b or max(i2-i1,j2-j1)>=2:
+                ctxa=' '.join(a_raw[max(0,i1-8):min(len(a_raw),i2+8)])
+                ctxb=' '.join(b_raw[max(0,j1-8):min(len(b_raw),j2+8)])
+                out.append((tag,aa,bb,ctxa,ctxb,nums_a,nums_b))
+    return out[:limit]
+
 lines=['# ممیزی سه‌نسخه‌ای دانشگاه تهران — قسمت ۴','']
 for k in paths:
     lines += [f'## {k}',f'- path: `{paths[k]}`',f'- bytes: {len(texts[k].encode())}',f'- words(normalized): {len(toks(texts[k]))}',f'- sha256: `{sha(texts[k])}`','']
@@ -57,9 +74,15 @@ add_gap_section(lines,'current_final → new_video_review: چیزهای Final ف
 add_gap_section(lines,'new_video_review → current_final: چیزهای جدید که Final فعلی ندارد','new_video_review','current_final',5,60)
 add_gap_section(lines,'reference → new_video_review: چیزهای مرجع خام که نسخه جدید ندارد','reference','new_video_review',5,40)
 
+lines += ['## اختلاف‌های ریز current_final ↔ new_video_review','']
+for tag,aa,bb,ctxa,ctxb,na,nb in fine_replacements('current_final','new_video_review'):
+    lines += [f'### {tag}: Final=`{aa}` | New=`{bb}`',f'- Final context: `{ctxa}`',f'- New context: `{ctxb}`']
+    if na!=nb: lines.append(f'- NUMERIC: Final={na} New={nb}')
+    lines.append('')
+
 patterns=['نامفهوم','Financial Capability','پرتغال','لهستان','۸۰۰ هزار','هشت میلیون','شورای تبلیغ','کسب‌وکار خرد','حقوق مصرف‌کننده','شمول مالی','ساخت آمریکا','هشتصد هزار','نه میلیون','۵۰ میلیون','۱۰۰ میلیون']
 lines += ['## نشانگرهای کلیدی','']
 for pat in patterns:
     lines.append(f'- `{pat}`: ' + ', '.join(f'{k}={texts[k].count(pat)}' for k in paths))
 Path('reports/uni_tehran_ep4_threeway_audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-print('wrote extended audit')
+print('wrote fine-grained audit')
