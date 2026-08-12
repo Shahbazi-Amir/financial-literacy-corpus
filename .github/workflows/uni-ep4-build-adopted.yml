@@ -1,0 +1,26 @@
+name: Uni Tehran ep4 adopted build
+on:
+  push:
+    branches: [agent/uni-tehran-ep4-three-way-final]
+    paths:
+      - '.github/uni_ep4_build_adopted.py'
+      - '.github/workflows/uni-ep4-build-adopted.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - run: python .github/uni_ep4_build_adopted.py
+      - name: Validate adopted output
+        run: |
+          test -f staging/uni-tehran-episode-04-adopted.md
+          test -f staging/uni-tehran-finalization-report.md
+          ! grep -q '\[نامفهوم\]' staging/uni-tehran-episode-04-adopted.md
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add staging/uni-tehran-episode-04-adopted.md staging/uni-tehran-finalization-report.md
+          git diff --cached --quiet || git commit -m 'build adopted uni tehran episode 4'
+          git push
